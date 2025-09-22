@@ -89,8 +89,10 @@ class CodeFixerAgent:
             # 添加调试信息
             print(f"🔧 执行修复任务: 文件={task.file_path}, 行号={defect.line_number}, 策略={task.strategy}")
             print(f"缺陷信息: {defect.message}")
-            print(
-                f"原始代码行: {original_code.splitlines()[defect.line_number - 1] if defect.line_number <= len(original_code.splitlines()) else 'N/A'}")
+            if defect.line_number <= len(original_code.splitlines()):
+                print(f"原始代码行: {original_code.splitlines()[defect.line_number - 1]}")
+            else:
+                print("原始代码行: N/A")
 
             strategy_func = self.strategies.get(task.strategy)
             if not strategy_func:
@@ -131,49 +133,95 @@ class CodeFixerAgent:
         """替换eval函数的策略"""
         changes = []
 
+        print(f"🔍 开始eval替换策略: 行号={defect.line_number}")
+        print(f"原始代码:\n{code}")
+
         # 分割代码行
         lines = code.split('\n')
 
         # 检查是否在指定行有eval调用
         if 0 < defect.line_number <= len(lines):
             line_index = defect.line_number - 1
-            line_content = lines[line_index]
+            original_line = lines[line_index]
+
+            print(f"目标行 {defect.line_number}: '{original_line}'")
 
             # 检查这一行是否有eval调用
-            if 'eval(' in line_content:
+            if 'eval(' in original_line:
+                print("找到eval调用，开始处理...")
+
                 # 首先确保导入了ast
-                if 'import ast' not in code:
+                ast_imported = False
+                ast_import_line = -1
+
+                # 检查是否已经导入了ast
+                for i, line in enumerate(lines):
+                    if 'import ast' in line:
+                        ast_imported = True
+                        ast_import_line = i
+                        break
+
+                if not ast_imported:
+                    print("需要添加import ast")
                     # 找到合适的导入位置
                     import_inserted = False
                     for i, line in enumerate(lines):
                         if line.strip().startswith('import ') or line.strip().startswith('from '):
                             # 在现有导入后添加
                             lines.insert(i + 1, 'import ast')
+                            ast_import_line = i + 1
                             import_inserted = True
                             changes.append("添加了 import ast")
-                            break
-                        elif line.strip() and not line.strip().startswith('#'):
-                            # 在代码开始前添加
-                            lines.insert(0, 'import ast')
-                            import_inserted = True
-                            changes.append("添加了 import ast")
+                            ast_imported = True
+                            print(f"在导入语句后添加import ast (第{ast_import_line + 1}行)")
                             break
 
                     if not import_inserted:
+                        # 在文件开头添加
                         lines.insert(0, 'import ast')
+                        ast_import_line = 0
                         changes.append("添加了 import ast")
+                        ast_imported = True
+                        print("在文件开头添加import ast")
+                else:
+                    print(f"import ast已存在 (第{ast_import_line + 1}行)")
+                    ast_imported = True
 
                 # 替换当前行的eval调用
-                fixed_line = line_content.replace('eval(', 'ast.literal_eval(')
+                fixed_line = original_line.replace('eval(', 'ast.literal_eval(')
                 lines[line_index] = fixed_line
                 changes.append(f"将第{defect.line_number}行的eval()替换为ast.literal_eval()")
+                print(f"替换行: '{original_line}' -> '{fixed_line}'")
 
                 fixed_code = '\n'.join(lines)
+
+                # 验证修复 - 检查是否还有eval调用（除了import语句）
+                remaining_evals = 0
+                for i, line in enumerate(lines):
+                    if i != ast_import_line and 'eval(' in line and not line.strip().startswith('#'):
+                        remaining_evals += 1
+                        print(f"发现剩余的eval调用在第{i + 1}行: {line}")
+
+                if remaining_evals > 0:
+                    changes.append(f"警告：修复后仍然存在{remaining_evals}个eval调用")
+                    print(f"⚠️ 警告：修复后代码中仍然存在{remaining_evals}个eval调用")
+
+                    # 如果还有eval调用，直接使用AI修复整个文件
+                    print("使用AI修复整个文件...")
+                    ai_result = ai_fixer.fix_with_ai(code, "将所有eval调用替换为ast.literal_eval，并确保导入ast模块", "",
+                                                     "python")
+                    if ai_result["success"]:
+                        changes.append("使用AI修复所有eval调用")
+                        return ai_result["fixed_code"], changes
+
+                print(f"修复后代码:\n{fixed_code}")
                 return fixed_code, changes
             else:
-                changes.append(f"第{defect.line_number}行没有找到eval调用")
+                changes.append(f"第{defect.line_number}行没有找到eval调用: {original_line}")
+                print(f"第{defect.line_number}行没有eval调用: '{original_line}'")
         else:
-            changes.append(f"行号{defect.line_number}超出范围")
+            changes.append(f"行号{defect.line_number}超出范围（总行数: {len(lines)}）")
+            print(f"行号{defect.line_number}超出范围（总行数: {len(lines)}）")
 
         return code, changes
 
@@ -310,3 +358,4 @@ class CodeFixerAgent:
         except Exception as e:
             logger.error(f"多轮修复时发生错误: {str(e)}")
             return initial_fix_result
+

@@ -417,3 +417,22 @@ if __name__ == "__main__":
             "expected_strategies": ["replace_eval_with_ast_literal_eval"],
             "description": "最小化的eval安全漏洞测试"
         }
+    # 在 comprehensive_test_cases.py 中添加
+    @staticmethod
+    def create_very_simple_eval_test_case() -> Dict:
+        """非常简单的eval测试用例（没有缩进问题）"""
+        test_code = """def calculate_expression(expr):
+        return eval(expr)
+    """
+
+        defects = [
+            Defect(type="security", message="Use of insecure eval", line_number=2,
+                   severity="CRITICAL", tool="bandit", confidence=0.95),
+        ]
+
+        return {
+            "code": test_code,
+            "defects": defects,
+            "expected_strategies": ["replace_eval_with_ast_literal_eval"],
+            "description": "非常简单的eval安全漏洞测试"
+        }

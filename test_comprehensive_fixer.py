@@ -6,6 +6,7 @@ import unittest
 import tempfile
 import os
 import json
+import re
 from unittest.mock import patch
 from agents.code_fixer import CodeFixerAgent
 from comprehensive_test_cases import ComprehensiveTestCases
@@ -35,10 +36,10 @@ class TestComprehensiveCodeFixer(unittest.TestCase):
 
     def test_simple_security_fix(self):
         """测试简单的安全漏洞修复"""
-        # 使用最小化的测试用例
-        test_case = ComprehensiveTestCases.create_minimal_eval_test_case()
+        # 使用非常简单的测试用例
+        test_case = ComprehensiveTestCases.create_very_simple_eval_test_case()
 
-        file_path = self.create_test_file(test_case["code"], "minimal_eval.py")
+        file_path = self.create_test_file(test_case["code"], "very_simple_eval.py")
 
         file_defects = FileDefects(file_path=file_path, defects=test_case["defects"])
         defect_report = DefectReport(files=[file_defects], summary={"CRITICAL": 1})
@@ -57,15 +58,26 @@ class TestComprehensiveCodeFixer(unittest.TestCase):
         )
 
         result = json.loads(result_json)
-
-        # 验证修复
         fixed_code = result["fixed_code"]
         print(f"修复后的代码:\n{fixed_code}")
 
-        # 更精确的检查
-        self.assertNotIn("eval(", fixed_code)
-        self.assertIn("ast.literal_eval(", fixed_code)
-        self.assertIn("import ast", fixed_code)
+        # 检查修复结果
+        lines = fixed_code.split('\n')
+
+        # 检查import ast是否存在
+        has_import_ast = any('import ast' in line for line in lines)
+        self.assertTrue(has_import_ast, "应该包含import ast")
+
+        # 检查eval是否被替换 - 使用更精确的匹配
+        # 排除 ast.literal_eval 中的 eval
+        has_unsafe_eval = any(
+            re.search(r'(?<!\.literal_)eval\(', line) for line in lines
+        )
+        self.assertFalse(has_unsafe_eval, "不应该包含不安全的eval调用")
+
+        # 检查ast.literal_eval是否存在
+        has_ast_literal_eval = any('ast.literal_eval(' in line for line in lines)
+        self.assertTrue(has_ast_literal_eval, "应该包含ast.literal_eval调用")
 
         print("✅ 简单安全漏洞修复测试通过")
 
@@ -117,7 +129,7 @@ class TestComprehensiveCodeFixer(unittest.TestCase):
     #             defect_index=i,
     #             strategy="ai_automatic_fix",
     #             priority=defect.severity,
-    #             context={"vulnerability_type": defect.type}
+    #            context={"vulnerability_type": defect.type}
     #         ))
     #
     #     repair_plan = RepairPlan(tasks=tasks, total_tasks=len(tasks))
