@@ -1,0 +1,6 @@
+{
+  "deepseek_api_key": "sk-c340dc402a624d99a04dc0865da97eda",
+  "model": "deepseek-chat",
+  "chunk_size": 2000,
+  "timeout": 60
+}
