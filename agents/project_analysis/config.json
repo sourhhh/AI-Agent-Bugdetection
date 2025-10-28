@@ -1,8 +1,0 @@
-{
-  "deepseek": {
-    "api_base": "https://platform.deepseek.com/usage",
-    "model": "deepseek-coder",
-    "timeout": 60,
-    "chunk_size": 5
-  }
-}
