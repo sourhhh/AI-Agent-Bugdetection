@@ -1,0 +1,1267 @@
+{
+    "project_context": "{\n  \"project_root\": \"D:\\\\PY\\\\requests-cache-main\",\n  \"python_files\": [\n    \"D:\\\\PY\\\\requests-cache-main\\\\noxfile.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\docs\\\\conf.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\basic_patching.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\basic_sessions.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\benchmark.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\convert_cache.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\custom_request_matcher.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\expiration.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\external_config.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\generate_test_db.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\log_requests.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\pygithub.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\rps_graph.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\threads.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\time_machine_backtesting.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\url_patterns.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\examples\\\\vcr.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\cache_keys.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\patcher.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\session.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\_utils.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\__init__.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\backends\\\\base.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\backends\\\\dynamodb.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\backends\\\\filesystem.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\backends\\\\gridfs.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\backends\\\\mongodb.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\backends\\\\redis.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\backends\\\\sqlite.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\backends\\\\__init__.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\models\\\\base.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\models\\\\raw_response.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\models\\\\request.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\models\\\\response.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\models\\\\__init__.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\policy\\\\actions.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\policy\\\\directives.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\policy\\\\expiration.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\policy\\\\settings.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\policy\\\\__init__.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\serializers\\\\cattrs.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\serializers\\\\pipeline.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\serializers\\\\preconf.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\requests_cache\\\\serializers\\\\__init__.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\benchmark_serializers.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\conftest.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\generate_test_db.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\__init__.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\compat\\\\test_requests_mock_combine_cache.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\compat\\\\test_requests_mock_disable_cache.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\compat\\\\test_requests_mock_load_cache.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\compat\\\\test_responses_load_cache.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\integration\\\\base_cache_test.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\integration\\\\base_storage_test.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\integration\\\\test_dynamodb.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\integration\\\\test_filesystem.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\integration\\\\test_memory.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\integration\\\\test_mongodb.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\integration\\\\test_redis.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\integration\\\\test_sqlite.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\integration\\\\test_upgrade.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\integration\\\\__init__.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\\\\test_base_cache.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\\\\test_cache_keys.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\\\\test_normalize.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\\\\test_patcher.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\\\\test_serializers.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\\\\test_session.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\\\\models\\\\test_base.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\\\\models\\\\test_raw_response.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\\\\models\\\\test_request.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\\\\models\\\\test_response.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\\\\policy\\\\test_actions.py\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\\\\policy\\\\test_expiration.py\"\n  ],\n  \"test_directories\": [\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\sample_data\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\compat\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\\\\models\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\\\\policy\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\integration\",\n    \"D:\\\\PY\\\\requests-cache-main\\\\tests\\\\unit\"\n  ],\n  \"dependencies\": [\n    \"requests       >=2.22\",\n    \"urllib3        >=1.25.5\",\n    \"attrs          >=21.2\",\n    \"cattrs         >=22.2\",\n    \"platformdirs   >=2.5\",\n    \"url-normalize  >=2.0\"\n  ],\n  \"entry_points\": [],\n  \"requirements_path\": \"D:\\\\PY\\\\requests-cache-main\\\\pyproject.toml\"\n}",
+    "raw_analysis": {
+        "modules": {
+            "noxfile.py": {
+                "functions": [
+                    "install_deps",
+                    "test",
+                    "test_current",
+                    "clean",
+                    "coverage",
+                    "stress_test",
+                    "docs",
+                    "linkcheck",
+                    "livedocs",
+                    "lint"
+                ],
+                "classes": []
+            },
+            "docs\\conf.py": {
+                "functions": [
+                    "setup",
+                    "patch_automodapi",
+                    "copy_module_docs",
+                    "find_local_mod_objs"
+                ],
+                "classes": []
+            },
+            "examples\\basic_patching.py": {
+                "functions": [
+                    "main"
+                ],
+                "classes": []
+            },
+            "examples\\basic_sessions.py": {
+                "functions": [
+                    "main"
+                ],
+                "classes": []
+            },
+            "examples\\benchmark.py": {
+                "functions": [
+                    "test_write_speed",
+                    "test_read_speed",
+                    "get_randomized_response"
+                ],
+                "classes": []
+            },
+            "examples\\convert_cache.py": {
+                "functions": [
+                    "convert_old_response",
+                    "convert_cache"
+                ],
+                "classes": [
+                    "_Store"
+                ]
+            },
+            "examples\\custom_request_matcher.py": {
+                "functions": [
+                    "create_custom_key",
+                    "test_cache_key"
+                ],
+                "classes": []
+            },
+            "examples\\expiration.py": {
+                "functions": [
+                    "main"
+                ],
+                "classes": []
+            },
+            "examples\\external_config.py": {
+                "functions": [
+                    "load_settings"
+                ],
+                "classes": []
+            },
+            "examples\\generate_test_db.py": {
+                "functions": [
+                    "populate_cache",
+                    "get_randomized_response",
+                    "remove_expired_responses",
+                    "main",
+                    "__setstate__"
+                ],
+                "classes": [
+                    "InvalidResponse"
+                ]
+            },
+            "examples\\log_requests.py": {
+                "functions": [
+                    "log_requests",
+                    "main"
+                ],
+                "classes": []
+            },
+            "examples\\pygithub.py": {
+                "functions": [
+                    "get_user_info",
+                    "test_non_github_requests",
+                    "check_cache",
+                    "main"
+                ],
+                "classes": []
+            },
+            "examples\\rps_graph.py": {
+                "functions": [
+                    "test_rps",
+                    "__init__",
+                    "next_interval",
+                    "count_request",
+                    "__init__",
+                    "__enter__",
+                    "__exit__",
+                    "total_requests",
+                    "count_request",
+                    "update_cache_size",
+                    "log",
+                    "random_request"
+                ],
+                "classes": [
+                    "RPSProgress",
+                    "CacheRPSProgress"
+                ]
+            },
+            "examples\\threads.py": {
+                "functions": [
+                    "send_requests"
+                ],
+                "classes": []
+            },
+            "examples\\time_machine_backtesting.py": {
+                "functions": [
+                    "demo",
+                    "request"
+                ],
+                "classes": [
+                    "BacktestCachedSession"
+                ]
+            },
+            "examples\\url_patterns.py": {
+                "functions": [
+                    "send_requests",
+                    "_expires_str",
+                    "main"
+                ],
+                "classes": []
+            },
+            "examples\\vcr.py": {
+                "functions": [
+                    "to_vcr_cassette",
+                    "to_vcr_cassettes_by_host",
+                    "to_vcr_cassette_dict",
+                    "to_vcr_episode",
+                    "to_vcr_cassette_dicts_by_host",
+                    "write_cassette",
+                    "_to_multidict"
+                ],
+                "classes": []
+            },
+            "requests_cache\\cache_keys.py": {
+                "functions": [
+                    "create_key",
+                    "get_matched_headers",
+                    "normalize_request",
+                    "normalize_headers",
+                    "normalize_url",
+                    "normalize_body",
+                    "normalize_json_body",
+                    "normalize_params",
+                    "redact_response",
+                    "filter_sort_json",
+                    "filter_sort_dict",
+                    "filter_sort_multidict",
+                    "filter_sort_list",
+                    "filter_url"
+                ],
+                "classes": []
+            },
+            "requests_cache\\patcher.py": {
+                "functions": [
+                    "install_cache",
+                    "uninstall_cache",
+                    "disabled",
+                    "enabled",
+                    "get_cache",
+                    "is_installed",
+                    "clear",
+                    "delete",
+                    "_patch_session_factory",
+                    "__init__"
+                ],
+                "classes": [
+                    "_ConfiguredCachedSession"
+                ]
+            },
+            "requests_cache\\session.py": {
+                "functions": [
+                    "get_504_response",
+                    "__init__",
+                    "wrap",
+                    "settings",
+                    "settings",
+                    "expire_after",
+                    "expire_after",
+                    "get",
+                    "options",
+                    "head",
+                    "post",
+                    "put",
+                    "patch",
+                    "delete",
+                    "request",
+                    "send",
+                    "_send_and_cache",
+                    "_resend",
+                    "_resend_async",
+                    "_handle_error",
+                    "cache_disabled",
+                    "close",
+                    "__getstate__",
+                    "__repr__"
+                ],
+                "classes": [
+                    "CacheMixin",
+                    "CachedSession"
+                ]
+            },
+            "requests_cache\\_utils.py": {
+                "functions": [
+                    "chunkify",
+                    "coalesce",
+                    "decode",
+                    "encode",
+                    "get_placeholder_class",
+                    "get_valid_kwargs",
+                    "patch_form_boundary",
+                    "split_kwargs",
+                    "try_int",
+                    "is_json_content_type",
+                    "_log_error",
+                    "__init__",
+                    "dumps",
+                    "loads"
+                ],
+                "classes": [
+                    "Placeholder"
+                ]
+            },
+            "requests_cache\\__init__.py": {
+                "functions": [],
+                "classes": []
+            },
+            "requests_cache\\backends\\base.py": {
+                "functions": [
+                    "__init__",
+                    "get_response",
+                    "save_response",
+                    "clear",
+                    "close",
+                    "create_key",
+                    "contains",
+                    "delete",
+                    "_prune_redirects",
+                    "filter",
+                    "recreate_keys",
+                    "remove_expired_responses",
+                    "reset_expiration",
+                    "update",
+                    "urls",
+                    "__str__",
+                    "__repr__",
+                    "__init__",
+                    "bulk_delete",
+                    "close",
+                    "serialize",
+                    "deserialize",
+                    "__str__",
+                    "__init__",
+                    "__getitem__"
+                ],
+                "classes": [
+                    "BaseCache",
+                    "BaseStorage",
+                    "DictStorage"
+                ]
+            },
+            "requests_cache\\backends\\dynamodb.py": {
+                "functions": [
+                    "__init__",
+                    "__init__",
+                    "_create_table",
+                    "_enable_ttl",
+                    "__getitem__",
+                    "__setitem__",
+                    "__delitem__",
+                    "__iter__",
+                    "__len__",
+                    "bulk_delete",
+                    "clear",
+                    "deserialize",
+                    "values"
+                ],
+                "classes": [
+                    "DynamoDbCache",
+                    "DynamoDbDict"
+                ]
+            },
+            "requests_cache\\backends\\filesystem.py": {
+                "functions": [
+                    "_get_extension",
+                    "__init__",
+                    "lock",
+                    "cache_dir",
+                    "paths",
+                    "clear",
+                    "delete",
+                    "__init__",
+                    "lock",
+                    "_try_io",
+                    "_key2path",
+                    "__getitem__",
+                    "__delitem__",
+                    "__setitem__",
+                    "__iter__",
+                    "__len__",
+                    "clear",
+                    "keys",
+                    "paths",
+                    "__init__",
+                    "get_new_file_id",
+                    "newest_id",
+                    "total_bytes",
+                    "_add_to_total_bytes",
+                    "_get_raw",
+                    "__getitem__",
+                    "__delitem__",
+                    "get_oldest_key",
+                    "__setitem__",
+                    "clear",
+                    "keys",
+                    "paths",
+                    "drop_oldest_key",
+                    "make_space",
+                    "debug_state",
+                    "compute_file_size"
+                ],
+                "classes": [
+                    "FileCache",
+                    "FileDict",
+                    "LimitedFileDict"
+                ]
+            },
+            "requests_cache\\backends\\gridfs.py": {
+                "functions": [
+                    "__init__",
+                    "delete",
+                    "__init__",
+                    "__getitem__",
+                    "__setitem__",
+                    "__delitem__",
+                    "__len__",
+                    "__iter__",
+                    "clear"
+                ],
+                "classes": [
+                    "GridFSCache",
+                    "GridFSDict"
+                ]
+            },
+            "requests_cache\\backends\\mongodb.py": {
+                "functions": [
+                    "__init__",
+                    "get_ttl",
+                    "set_ttl",
+                    "__init__",
+                    "get_ttl",
+                    "set_ttl",
+                    "_set_ttl",
+                    "__getitem__",
+                    "__setitem__",
+                    "__delitem__",
+                    "__len__",
+                    "__iter__",
+                    "bulk_delete",
+                    "clear",
+                    "close"
+                ],
+                "classes": [
+                    "MongoCache",
+                    "MongoDict"
+                ]
+            },
+            "requests_cache\\backends\\redis.py": {
+                "functions": [
+                    "__init__",
+                    "__init__",
+                    "_bkey",
+                    "_bkeys",
+                    "__contains__",
+                    "__getitem__",
+                    "__setitem__",
+                    "__delitem__",
+                    "__iter__",
+                    "__len__",
+                    "bulk_delete",
+                    "clear",
+                    "close",
+                    "keys",
+                    "items",
+                    "values",
+                    "__init__",
+                    "__contains__",
+                    "__getitem__",
+                    "__setitem__",
+                    "__delitem__",
+                    "__iter__",
+                    "__len__",
+                    "bulk_delete",
+                    "clear",
+                    "keys",
+                    "items",
+                    "values"
+                ],
+                "classes": [
+                    "RedisCache",
+                    "RedisDict",
+                    "RedisHashDict"
+                ]
+            },
+            "requests_cache\\backends\\sqlite.py": {
+                "functions": [
+                    "_format_sequence",
+                    "_get_sqlite_cache_path",
+                    "get_cache_path",
+                    "sqlite_template",
+                    "__init__",
+                    "db_path",
+                    "clear",
+                    "delete",
+                    "_delete_expired",
+                    "_prune_redirects",
+                    "count",
+                    "filter",
+                    "recreate_keys",
+                    "sorted",
+                    "__init__",
+                    "init_db",
+                    "connection",
+                    "close",
+                    "bulk_commit",
+                    "_acquire_sqlite_lock",
+                    "__del__",
+                    "__delitem__",
+                    "__getitem__",
+                    "__setitem__",
+                    "_write",
+                    "__iter__",
+                    "__len__",
+                    "bulk_delete",
+                    "clear",
+                    "count",
+                    "serialize",
+                    "size",
+                    "_estimate_size",
+                    "sorted",
+                    "vacuum"
+                ],
+                "classes": [
+                    "SQLiteCache",
+                    "SQLiteDict"
+                ]
+            },
+            "requests_cache\\backends\\__init__.py": {
+                "functions": [
+                    "init_backend"
+                ],
+                "classes": []
+            },
+            "requests_cache\\models\\base.py": {
+                "functions": [
+                    "__rich_repr__",
+                    "__repr__"
+                ],
+                "classes": [
+                    "RichMixin"
+                ]
+            },
+            "requests_cache\\models\\raw_response.py": {
+                "functions": [
+                    "_copy_body",
+                    "_reset_fp",
+                    "__init__",
+                    "from_response",
+                    "from_cached_response",
+                    "_request_url",
+                    "_request_url",
+                    "release_conn",
+                    "read",
+                    "reset",
+                    "stream"
+                ],
+                "classes": [
+                    "CachedHTTPResponse"
+                ]
+            },
+            "requests_cache\\models\\request.py": {
+                "functions": [
+                    "from_request",
+                    "path_url",
+                    "copy",
+                    "prepare",
+                    "_cookies",
+                    "__str__"
+                ],
+                "classes": [
+                    "CachedRequest"
+                ]
+            },
+            "requests_cache\\models\\response.py": {
+                "functions": [
+                    "format_datetime",
+                    "format_file_size",
+                    "from_cache",
+                    "is_expired",
+                    "__init__",
+                    "wrap_response",
+                    "__attrs_post_init__",
+                    "from_response",
+                    "_convert_redirects",
+                    "_content_consumed",
+                    "_content_consumed",
+                    "expires_delta",
+                    "expires_unix",
+                    "from_cache",
+                    "is_expired",
+                    "is_older_than",
+                    "next",
+                    "reset_expiration",
+                    "size",
+                    "__getstate__",
+                    "__setstate__",
+                    "__str__",
+                    "_format"
+                ],
+                "classes": [
+                    "BaseResponse",
+                    "OriginalResponse",
+                    "CachedResponse"
+                ]
+            },
+            "requests_cache\\models\\__init__.py": {
+                "functions": [],
+                "classes": []
+            },
+            "requests_cache\\policy\\actions.py": {
+                "functions": [
+                    "_is_method_allowed",
+                    "_log_vary_diff",
+                    "_log_cache_criteria",
+                    "from_request",
+                    "expires",
+                    "is_usable",
+                    "update_from_cached_response",
+                    "update_from_response",
+                    "update_request",
+                    "update_revalidated_response",
+                    "_update_from_response_headers",
+                    "_update_validation_headers",
+                    "_validate_vary"
+                ],
+                "classes": [
+                    "CacheActions"
+                ]
+            },
+            "requests_cache\\policy\\directives.py": {
+                "functions": [
+                    "_split_kv_directive",
+                    "set_request_headers",
+                    "from_headers",
+                    "get_expire_offset",
+                    "has_validator"
+                ],
+                "classes": [
+                    "CacheDirectives"
+                ]
+            },
+            "requests_cache\\policy\\expiration.py": {
+                "functions": [
+                    "get_expiration_datetime",
+                    "get_expiration_seconds",
+                    "get_url_expiration",
+                    "add_tzinfo",
+                    "utcnow",
+                    "_parse_http_date",
+                    "_url_match"
+                ],
+                "classes": []
+            },
+            "requests_cache\\policy\\settings.py": {
+                "functions": [
+                    "from_kwargs",
+                    "_rename_kwargs"
+                ],
+                "classes": [
+                    "CacheSettings"
+                ]
+            },
+            "requests_cache\\policy\\__init__.py": {
+                "functions": [],
+                "classes": []
+            },
+            "requests_cache\\serializers\\cattrs.py": {
+                "functions": [
+                    "init_converter",
+                    "make_decimal_timedelta_converter",
+                    "_decode_content",
+                    "_encode_content",
+                    "_convert_floats",
+                    "_to_datetime",
+                    "_to_timedelta",
+                    "__init__",
+                    "copy",
+                    "dumps",
+                    "_",
+                    "loads",
+                    "_",
+                    "structure_fwd_ref",
+                    "_float_to_decimal"
+                ],
+                "classes": [
+                    "CattrStage"
+                ]
+            },
+            "requests_cache\\serializers\\pipeline.py": {
+                "functions": [
+                    "__init__",
+                    "copy",
+                    "__init__",
+                    "copy",
+                    "dumps",
+                    "loads",
+                    "set_decode_content",
+                    "__str__"
+                ],
+                "classes": [
+                    "Stage",
+                    "SerializerPipeline"
+                ]
+            },
+            "requests_cache\\serializers\\preconf.py": {
+                "functions": [
+                    "make_stage",
+                    "signer_stage",
+                    "safe_pickle_serializer"
+                ],
+                "classes": []
+            },
+            "requests_cache\\serializers\\__init__.py": {
+                "functions": [
+                    "init_serializer"
+                ],
+                "classes": []
+            },
+            "tests\\benchmark_serializers.py": {
+                "functions": [
+                    "run_pickle",
+                    "run_cattrs",
+                    "run_cattrs_pickle",
+                    "run_cattrs_ujson",
+                    "run_cattrs_bson",
+                    "run_serialize_deserialize"
+                ],
+                "classes": []
+            },
+            "tests\\conftest.py": {
+                "functions": [
+                    "httpbin",
+                    "httpbin_wrapper",
+                    "mock_session",
+                    "tempfile_session",
+                    "tempfile_path",
+                    "installed_session",
+                    "mount_mock_adapter",
+                    "get_mock_adapter",
+                    "get_mock_response",
+                    "assert_delta_approx_equal",
+                    "timeout",
+                    "fail_if_no_connection",
+                    "is_installed",
+                    "skip_missing_deps",
+                    "ignore_deprecation",
+                    "decorator",
+                    "decorator",
+                    "wrapper",
+                    "wrapper",
+                    "target"
+                ],
+                "classes": []
+            },
+            "tests\\generate_test_db.py": {
+                "functions": [
+                    "make_sample_db"
+                ],
+                "classes": []
+            },
+            "tests\\__init__.py": {
+                "functions": [],
+                "classes": []
+            },
+            "tests\\compat\\test_requests_mock_combine_cache.py": {
+                "functions": [
+                    "mock_session",
+                    "test_mock_session"
+                ],
+                "classes": []
+            },
+            "tests\\compat\\test_requests_mock_disable_cache.py": {
+                "functions": [
+                    "requests_cache_mock",
+                    "test_requests_cache_mock"
+                ],
+                "classes": []
+            },
+            "tests\\compat\\test_requests_mock_load_cache.py": {
+                "functions": [
+                    "mock_session",
+                    "test_mock_session",
+                    "save_test_data"
+                ],
+                "classes": []
+            },
+            "tests\\compat\\test_responses_load_cache.py": {
+                "functions": [
+                    "get_responses",
+                    "test_mock_session"
+                ],
+                "classes": []
+            },
+            "tests\\integration\\base_cache_test.py": {
+                "functions": [
+                    "_send_request",
+                    "init_session",
+                    "teardown_class",
+                    "test_all_methods",
+                    "test_all_response_formats",
+                    "test_response_no_duplicate_read",
+                    "test_redirect_history",
+                    "test_redirect_responses",
+                    "test_cookies",
+                    "test_cache_control_expiration",
+                    "test_conditional_request",
+                    "test_conditional_request__response_headers",
+                    "test_conditional_request__refreshes_expire_date",
+                    "test_decode_gzip_response",
+                    "test_decode_json_response",
+                    "test_decode_json_variants",
+                    "test_decode_json_root_types",
+                    "test_multipart_upload",
+                    "test_delete__expired",
+                    "test_filter_request_headers",
+                    "test_filter_request_query_parameters",
+                    "test_filter_request_post_data",
+                    "test_concurrency",
+                    "get_json"
+                ],
+                "classes": [
+                    "BaseCacheTest"
+                ]
+            },
+            "tests\\integration\\base_storage_test.py": {
+                "functions": [
+                    "init_cache",
+                    "teardown_class",
+                    "test_basic_methods",
+                    "test_iterable_methods",
+                    "test_cache_key",
+                    "test_del",
+                    "test_bulk_delete",
+                    "test_bulk_delete__noop",
+                    "test_keyerrors",
+                    "test_deleting_key_that_does_not_exist_does_not_delete_other_keys",
+                    "test_picklable_dict",
+                    "test_clear_and_work_again",
+                    "test_same_settings",
+                    "test_str",
+                    "test_concurrency",
+                    "test_bool",
+                    "test_reused_keys_can_be_removed",
+                    "test_values_are_replaced",
+                    "write"
+                ],
+                "classes": [
+                    "BaseStorageTest",
+                    "BasicDataclass"
+                ]
+            },
+            "tests\\integration\\test_dynamodb.py": {
+                "functions": [
+                    "ensure_connection",
+                    "init_cache",
+                    "test_connection_kwargs",
+                    "test_no_create_table",
+                    "test_enable_ttl_error",
+                    "test_create_table_error",
+                    "test_ttl"
+                ],
+                "classes": [
+                    "TestDynamoDbDict",
+                    "TestDynamoDbCache"
+                ]
+            },
+            "tests\\integration\\test_filesystem.py": {
+                "functions": [
+                    "_valid_serializer",
+                    "maximum_cache_bytes",
+                    "lfd",
+                    "new_lfd",
+                    "lfd2",
+                    "broken_lfd",
+                    "broken_key",
+                    "block_lfd",
+                    "test_total_size_is_0_at_the_start",
+                    "test_file_dict_increases_size_when_adding_items",
+                    "test_removing_an_item_reduces_the_total_size",
+                    "test_replacing_an_items_changes_the_total_size",
+                    "test_no_error_if_cache_is_empty",
+                    "test_do_not_store_files_too_big",
+                    "test_drop_oldest_files",
+                    "test_size_of_cache_is_in_bytes",
+                    "test_clearing_empties_cache",
+                    "test_cannot_have_file_size_greater_than_maximum_cache_size",
+                    "test_maximum_file_bytes_is_same_as_max_size_if_not_given",
+                    "test_file_is_created_in_other_process",
+                    "test_file_is_deleted_in_other_process",
+                    "test_update_value_in_other_process",
+                    "test_replacing_a_value_does_not_delete_the_value_before",
+                    "test_delete_all_when_adding_a_big_file",
+                    "test_invalid_state_file_removed_set_value",
+                    "test_invalid_state_file_removed_del_value",
+                    "test_invalid_state_file_removed_get_value",
+                    "test_invalid_state_file_removed_drop_value",
+                    "test_versions_are_increasing_for_content",
+                    "test_size_is_updated_even_if_key_is_replaced",
+                    "test_getting_the_oldest_key_of_empty_cache",
+                    "test_oldest_key_set",
+                    "test_oldest_key_deleted",
+                    "test_oldest_key_deleted_new_value",
+                    "test_oldest_key_stays",
+                    "test_oldest_key_changes",
+                    "test_file_id_increases",
+                    "test_compute_block_bytes",
+                    "test_invalid_block_bytes",
+                    "test_upper_limit_of_block_bytes",
+                    "test_file_size_is_aligned_with_block_size",
+                    "test_make_sure_size_is_used_for_replace",
+                    "test_make_sure_size_is_used_for_delete",
+                    "test_free_up_space_with_unaligned_blocks",
+                    "teardown_class",
+                    "init_cache",
+                    "test_use_cache_dir",
+                    "test_use_temp",
+                    "test_custom_extension",
+                    "test_create_with_lock",
+                    "test_all_methods",
+                    "test_all_response_formats",
+                    "test_all_response_formats__no_decode_content",
+                    "test_paths",
+                    "test_drop_oldest_files",
+                    "test_do_not_store_files_too_big",
+                    "test_total_bytes_is_calculated_correctly"
+                ],
+                "classes": [
+                    "TestFileDict",
+                    "TestLimitedFileDict",
+                    "TestFileCache"
+                ]
+            },
+            "tests\\integration\\test_memory.py": {
+                "functions": [
+                    "init_cache",
+                    "test_same_settings",
+                    "test_response_no_duplicate_read"
+                ],
+                "classes": [
+                    "TestMemoryDict",
+                    "TestMemoryCache"
+                ]
+            },
+            "tests\\integration\\test_mongodb.py": {
+                "functions": [
+                    "ensure_connection",
+                    "test_connection_kwargs",
+                    "test_ttl",
+                    "test_ttl__overwrite",
+                    "test_concurrency",
+                    "test_connection_kwargs",
+                    "test_corrupt_file",
+                    "test_file_exists"
+                ],
+                "classes": [
+                    "TestMongoDict",
+                    "TestMongoCache",
+                    "TestGridFSDict",
+                    "TestGridFSCache"
+                ]
+            },
+            "tests\\integration\\test_redis.py": {
+                "functions": [
+                    "ensure_connection",
+                    "test_connection_kwargs",
+                    "test_ttl",
+                    "test_ttl__offset",
+                    "test_ttl__disabled"
+                ],
+                "classes": [
+                    "TestRedisDict",
+                    "TestRedisHashDict",
+                    "TestRedisCache"
+                ]
+            },
+            "tests\\integration\\test_sqlite.py": {
+                "functions": [
+                    "teardown_class",
+                    "test_connection_kwargs",
+                    "test_use_cache_dir",
+                    "test_use_temp",
+                    "test_use_memory",
+                    "test_use_memory__uri",
+                    "test_non_dir_parent_exists",
+                    "test_bulk_commit",
+                    "test_bulk_delete__chunked",
+                    "test_bulk_commit__noop",
+                    "test_pragma",
+                    "test_busy_timeout",
+                    "test_wal_sync_mode",
+                    "test_write_acquire_lock",
+                    "test_write_retry_acquire_lock",
+                    "test_write_retry__other_errors",
+                    "test_sorted__by_size",
+                    "test_sorted__reversed",
+                    "test_sorted__invalid_sort_key",
+                    "test_sorted__by_expires",
+                    "test_sorted__exclude_expired",
+                    "test_sorted__error",
+                    "test_size",
+                    "teardown_class",
+                    "test_clear__failure",
+                    "test_clear__file_already_deleted",
+                    "test_db_path",
+                    "test_count",
+                    "test_delete__single_key",
+                    "test_delete__skip_vacuum",
+                    "test_filter__expired",
+                    "test_sorted",
+                    "do_noop_bulk",
+                    "loads",
+                    "dumps"
+                ],
+                "classes": [
+                    "TestSQLiteDict",
+                    "TestSQLiteCache",
+                    "BadSerializer"
+                ]
+            },
+            "tests\\integration\\test_upgrade.py": {
+                "functions": [
+                    "test_version_upgrade"
+                ],
+                "classes": []
+            },
+            "tests\\integration\\__init__.py": {
+                "functions": [],
+                "classes": []
+            },
+            "tests\\unit\\test_base_cache.py": {
+                "functions": [
+                    "test_contains__key",
+                    "test_contains__request",
+                    "test_contains__multipart_request",
+                    "test_contains__url",
+                    "test_delete__keys",
+                    "test_delete__expired",
+                    "test_delete__expired__per_request",
+                    "test_delete__invalid",
+                    "test_delete__older_than",
+                    "test_delete__urls",
+                    "test_delete__requests",
+                    "test_recreate_keys",
+                    "test_recreate_keys__same_key_fn",
+                    "test_recreate_keys__empty_response_body",
+                    "test_reset_expiration__extend_expiration",
+                    "test_reset_expiration__shorten_expiration",
+                    "test_clear",
+                    "test_save_response__manual",
+                    "test_update",
+                    "test_urls",
+                    "test_urls__error",
+                    "test_remove_expired_responses",
+                    "__init__",
+                    "__setstate__",
+                    "new_key_fn",
+                    "new_key_fn",
+                    "dumps",
+                    "loads"
+                ],
+                "classes": [
+                    "InvalidResponse",
+                    "BadSerialzier"
+                ]
+            },
+            "tests\\unit\\test_cache_keys.py": {
+                "functions": [
+                    "test_create_key__normalize_url_params",
+                    "test_create_key__normalize_key_only_params",
+                    "test_create_key__normalize_duplicate_params",
+                    "test_create_key__fips_hash_fallback",
+                    "test_redact_response__escaped_params",
+                    "test_normalize_request__json_body",
+                    "test_normalize_request__json_body_list_filtered",
+                    "test_normalize_request__json_body_invalid",
+                    "test_normalize_request__json_body_empty",
+                    "test_normalize_request__binary_body",
+                    "test_normalize_request__oversized_body",
+                    "test_normalize_request__file_like_body",
+                    "test_normalize_request__file_like_reset_fails",
+                    "test_normalize_headers__single_header_value_as_bytes",
+                    "test_normalize_headers__multiple_header_values_as_bytes",
+                    "test_normalize_headers__single_header_value_as_string",
+                    "test_normalize_headers__multiple_header_values_as_string",
+                    "test_remove_ignored_headers__empty",
+                    "__init__",
+                    "__len__",
+                    "read"
+                ],
+                "classes": [
+                    "CustomBytesIO"
+                ]
+            },
+            "tests\\unit\\test_normalize.py": {
+                "functions": [
+                    "test_ignores_nested",
+                    "test_ignores_nested_specialcase"
+                ],
+                "classes": []
+            },
+            "tests\\unit\\test_patcher.py": {
+                "functions": [
+                    "test_install_uninstall",
+                    "test_session_settings",
+                    "test_session_is_a_class_with_original_attributes",
+                    "test_inheritance_after_monkey_patch",
+                    "test_clear",
+                    "test_clear__not_installed",
+                    "test_disabled",
+                    "test_enabled",
+                    "test_is_installed",
+                    "test_delete__expired_responses",
+                    "test_delete__cache_not_installed",
+                    "__init__"
+                ],
+                "classes": [
+                    "FooSession"
+                ]
+            },
+            "tests\\unit\\test_serializers.py": {
+                "functions": [
+                    "test_json_aliases",
+                    "test_json_explicit_lib",
+                    "test_optional_dependencies",
+                    "test_cache_signing",
+                    "test_custom_serializer",
+                    "test_plain_pickle",
+                    "test_cattrs_compat",
+                    "test_copy"
+                ],
+                "classes": []
+            },
+            "tests\\unit\\test_session.py": {
+                "functions": [
+                    "test_init_backend_instance",
+                    "test_init_unregistered_backend",
+                    "test_init_cache_path_expansion",
+                    "test_init_missing_backend_dependency",
+                    "test_wrap",
+                    "test_repr",
+                    "test_pickle__disabled",
+                    "test_response_defaults",
+                    "test_all_methods",
+                    "test_all_methods__ignored_parameters__not_matched",
+                    "test_all_methods__ignored_parameters__redacted",
+                    "test_params_positional_arg",
+                    "test_json",
+                    "test_https",
+                    "test_verify",
+                    "test_response_history",
+                    "test_raw_data",
+                    "test_normalize_params",
+                    "test_normalize_params__custom_dicts",
+                    "test_normalize_params__serialized_body",
+                    "test_normalize_params__urlencoded_body",
+                    "test_normalize_params__non_json_body",
+                    "test_normalize_params__url",
+                    "test_match_headers",
+                    "test_match_headers__normalize",
+                    "test_match_headers__list",
+                    "test_match_headers__vary",
+                    "test_match_headers__vary_with_redirects",
+                    "test_include_get_headers",
+                    "test_cache_error",
+                    "test_expired_request_error",
+                    "test_stale_if_error__exception",
+                    "test_stale_if_error__error_code",
+                    "test_stale_if_error__error_code_in_allowable_codes",
+                    "test_stale_if_error__max_stale",
+                    "test_old_data_on_error",
+                    "test_cache_disabled",
+                    "test_cache_disabled__nested",
+                    "test_unpickle_errors",
+                    "test_allowable_codes",
+                    "test_allowable_methods",
+                    "test_allowable_methods__override_headers",
+                    "test_always_revalidate",
+                    "test_default_ignored_parameters",
+                    "test_filter_fn",
+                    "test_filter_fn__retroactive",
+                    "test_key_fn",
+                    "test_hooks",
+                    "test_expire_after_alias",
+                    "test_do_not_cache",
+                    "test_expire_immediately",
+                    "test_304_not_modified",
+                    "test_url_allowlist",
+                    "test_invalid_expiration",
+                    "test_stale_while_revalidate",
+                    "test_stale_while_revalidate__time",
+                    "test_stale_while_revalidate__refresh",
+                    "test_request_expire_after__enable_expiration",
+                    "test_request_expire_after__disable_expiration",
+                    "test_request_expire_after__prepared_request",
+                    "test_request_only_if_cached__cached",
+                    "test_request_only_if_cached__uncached",
+                    "test_request_only_if_cached__expired",
+                    "test_request_only_if_cached__stale_if_error__expired",
+                    "test_request_only_if_cached__skips_revalidate",
+                    "test_request_only_if_cached__prepared_request",
+                    "test_revalidation__skip_update",
+                    "test_revalidation__update_cache",
+                    "test_request_refresh",
+                    "test_request_refresh__no_validator",
+                    "test_request_refresh__prepared_request",
+                    "test_request_force_refresh",
+                    "test_request_force_refresh__prepared_request",
+                    "test_send_and_cache__already_cached",
+                    "test_close",
+                    "test_close__autoclose_off",
+                    "get_request",
+                    "create_custom_key",
+                    "slow_request",
+                    "hook_func"
+                ],
+                "classes": [
+                    "MyCache"
+                ]
+            },
+            "tests\\unit\\models\\test_base.py": {
+                "functions": [
+                    "test_rich_mixin",
+                    "test_repr"
+                ],
+                "classes": [
+                    "DemoModel"
+                ]
+            },
+            "tests\\unit\\models\\test_raw_response.py": {
+                "functions": [
+                    "test_from_response",
+                    "test_read",
+                    "test_read__always_decode",
+                    "test_close",
+                    "test_reset",
+                    "test_stream"
+                ],
+                "classes": []
+            },
+            "tests\\unit\\models\\test_request.py": {
+                "functions": [
+                    "test_from_request"
+                ],
+                "classes": []
+            },
+            "tests\\unit\\models\\test_response.py": {
+                "functions": [
+                    "test_basic_attrs",
+                    "test_original_response",
+                    "test_history",
+                    "test_is_expired",
+                    "test_is_expired__timezone_naive",
+                    "test_iterator",
+                    "test_reset_expiration__extend_expiration",
+                    "test_reset_expiration__shorten_expiration",
+                    "test_size",
+                    "test_str",
+                    "test_repr",
+                    "test_format_file_size"
+                ],
+                "classes": []
+            },
+            "tests\\unit\\policy\\test_actions.py": {
+                "functions": [
+                    "test_init",
+                    "test_init_from_headers",
+                    "test_init_from_headers__no_store",
+                    "test_init_from_settings",
+                    "test_init_from_settings_and_headers",
+                    "test_update_from_cached_response__new_request",
+                    "test_update_from_cached_response__resend_request",
+                    "test_update_from_cached_response__revalidate",
+                    "test_update_from_cached_response__force_revalidate",
+                    "test_update_from_cached_response__no_revalidation",
+                    "test_update_from_cached_response__504",
+                    "test_update_from_cached_response__stale_if_error",
+                    "test_update_from_cached_response__stale_while_revalidate",
+                    "test_update_from_cached_response__vary",
+                    "test_is_usable__max_stale",
+                    "test_is_usable__min_fresh",
+                    "test_is_usable__stale_if_error",
+                    "test_is_usable__stale_while_revalidate",
+                    "test_update_from_response",
+                    "test_update_from_response__no_store",
+                    "test_update_from_response__ignored",
+                    "test_update_from_response__revalidate",
+                    "test_update_revalidated_response__transfer_encoding",
+                    "test_ignored_headers"
+                ],
+                "classes": []
+            },
+            "tests\\unit\\policy\\test_expiration.py": {
+                "functions": [
+                    "test_get_expiration_datetime__no_expiration",
+                    "test_get_expiration_datetime__relative",
+                    "test_get_expiration_datetime__tzinfo",
+                    "test_get_expiration_datetime__httpdate",
+                    "test_get_url_expiration",
+                    "test_get_url_expiration__evaluation_order",
+                    "test_set_request_headers",
+                    "test_set_request_headers__do_not_cache"
+                ],
+                "classes": []
+            }
+        }
+    },
+    "deepseek_analysis": {
+        "total_modules": 74,
+        "analysis_chunks": 8,
+        "chunk_results": [
+            "根据提供的项目结构（第1/8部分），以下是专业分析：\n\n## 1. 各模块主要功能和职责\n\n**noxfile.py**\n- **定位**：项目构建和测试管理入口\n- **核心功能**：\n  - 依赖管理（install_deps）\n  - 测试套件（test, test_current, stress_test）\n  - 代码质量（lint, coverage, clean）\n  - 文档管理（docs, linkcheck, livedocs）\n- **职责**：自动化项目开发工作流\n\n**docs\\\\conf.py**\n- **定位**：Sphinx文档配置模块\n- **核心功能**：\n  - 文档构建配置（setup）\n  - 自动API文档生成（patch_automodapi）\n  - 模块文档处理（copy_module_docs, find_local_mod_objs）\n- **职责**：项目文档生成和配置\n\n**examples目录模块**\n- **定位**：示例代码和用例演示\n- 各示例文件展示不同功能场景：\n  - `basic_*.py`：基础用法演示\n  - `benchmark.py`：性能测试和基准\n  - `convert_cache.py`：缓存数据迁移\n  - `custom_request_matcher.py`：自定义请求匹配\n  - `expiration.py`：过期策略演示\n  - `external_config.py`：外部配置集成\n  - `generate_test_db.py`：测试数据生成\n\n## 2. 模块间依赖关系\n\n```\nnoxfile.py (构建入口)\n    ├── 依赖所有测试和文档模块\n    └── 驱动examples中的测试用例\n\ndocs\\\\conf.py\n    ├── 依赖项目主模块（用于API文档生成）\n    └── 独立于examples示例代码\n\nexamples模块\n    ├── 相互独立，各自演示特定功能\n    └── 可能依赖项目核心库（从函数名推断）\n```\n\n## 3. 代码结构和设计模式\n\n**架构特点**：\n- **清晰的关注点分离**：构建、文档、示例严格分离\n- **示例驱动设计**：通过具体用例展示功能特性\n- **配置外部化**：`external_config.py`体现配置与代码分离原则\n\n**设计模式识别**：\n- **工厂模式**：`custom_request_matcher.py`中的键生成函数\n- **策略模式**：不同示例展示相同接口的不同实现\n- **适配器模式**：`convert_cache.py`中的数据格式转换\n\n## 4. 潜在问题与改进建议\n\n**潜在问题**：\n1. **示例代码重复**：多个示例中出现`get_randomized_response`函数，可能存在代码重复\n2. **状态管理复杂**：`generate_test_db.py`中的`__setstate__`方法暗示复杂的状态序列化需求\n3. **异常处理不明确**：`InvalidResponse`类定义位置可能不合适（应在核心模块）\n\n**改进建议**：\n1. **提取公共工具函数**：将重复的`get_randomized_response`移至共享工具模块\n2. **增强示例文档**：为每个示例添加明确的用途说明和前置条件\n3. **统一配置管理**：将`external_config.py`的模式推广到其他配置相关功能\n4. **添加集成测试**：在`noxfile.py`中增加示例代码的验证任务\n\n**架构建议**：\n- 考虑将示例按功能领域分组（基础、高级、性能等）\n- 为复杂的缓存转换操作添加回滚机制\n- 在文档配置中增加示例代码的自动引用功能\n\n这个项目结构显示了良好的工程实践，特别在构建自动化和示例完整性方面表现突出。",
+            "我将从专业角度分析这个Python项目的模块结构和设计：\n\n## 1. 各模块主要功能和职责\n\n### 核心模块\n**requests_cache/session.py**\n- 核心缓存会话实现\n- 包含`CachedSession`和`CacheMixin`类，提供HTTP请求缓存功能\n- 实现了完整的HTTP方法（GET、POST、PUT等）的缓存包装\n- 处理缓存失效、错误重试等逻辑\n\n**requests_cache/patcher.py**\n- 提供缓存安装和卸载功能\n- 实现猴子补丁(monkey-patching)机制，动态修改requests库行为\n- 包含`_ConfiguredCachedSession`配置类\n\n**requests_cache/cache_keys.py**\n- 请求/响应标准化和键生成\n- 处理URL、头部、参数、请求体的规范化\n- 响应数据脱敏和过滤\n\n### 示例模块\n**examples/log_requests.py**\n- 请求日志记录示例\n\n**examples/pygithub.py**\n- GitHub API请求缓存示例\n- 包含用户信息获取和缓存检查\n\n**examples/rps_graph.py**\n- RPS（每秒请求数）监控和图形展示\n- 包含进度跟踪和缓存大小管理\n\n**examples/threads.py**\n- 多线程请求示例\n\n**examples/time_machine_backtesting.py**\n- 时间回溯测试功能\n- 包含`BacktestCachedSession`回测会话类\n\n**examples/url_patterns.py**\n- URL模式匹配和过期策略示例\n\n**examples/vcr.py**\n- VCR测试磁带转换工具\n- 将缓存数据转换为VCR格式\n\n## 2. 模块间依赖关系\n\n```\n核心依赖链：\ncache_keys.py → session.py ← patcher.py\n    ↓\nexamples/ 所有模块依赖核心模块\n```\n\n- **session.py** 依赖 **cache_keys.py** 进行请求标准化和键生成\n- **patcher.py** 依赖 **session.py** 创建缓存会话实例\n- 所有示例模块都依赖核心缓存功能\n- **vcr.py** 可能与其他模块耦合度较低，专注于格式转换\n\n## 3. 代码结构和设计模式\n\n### 设计模式识别\n\n1. **装饰器模式(Decorator Pattern)**\n   - `session.py`中的`wrap`方法和各种HTTP方法包装\n   - `patcher.py`中的猴子补丁实现\n\n2. **混入模式(Mixin Pattern)**\n   - `CacheMixin`类提供缓存功能混入\n\n3. **工厂模式(Factory Pattern)**\n   - `patcher.py`中的`_patch_session_factory`\n\n4. **上下文管理器模式**\n   - `rps_graph.py`中的`__enter__`/`__exit__`方法\n   - `patcher.py`中的`disabled`/`enabled`上下文管理器\n\n### 架构特点\n- **关注点分离**：缓存逻辑、键生成、会话管理分离到不同模块\n- **可扩展性**：通过Mixin和装饰器模式支持功能扩展\n- **测试友好**：提供丰富的示例和测试工具\n\n## 4. 潜在问题及改进建议\n\n### 潜在问题\n1. **函数命名重复**：\n   - `rps_graph.py`中有重复的`__init__`和`count_request`函数\n   - 可能影响代码可读性和维护性\n\n2. **模块职责边界**：\n   - `cache_keys.py`功能过于集中，包含标准化、过滤、脱敏等多个职责\n   - 建议拆分为`normalizers.py`、`filters.py`等专门模块\n\n3. **错误处理**：\n   - `session.py`中的`_handle_error`方法需要更完善的异常处理策略\n\n### 改进建议\n\n1. **代码重构**\n```python\n# 建议拆分cache_keys.py\nrequests_cache/\n├── normalizers/\n│   ├── request_normalizer.py\n│   ├── response_normalizer.py\n│   └── url_normalizer.py\n└── filters/\n    ├── header_filter.py\n    └── body_filter.py\n```\n\n2. **增强类型提示**\n```python\n# 为所有公共方法添加类型注解\ndef create_key(request: Request, match_headers: List[str] = None) -> str:\n    ...\n```\n\n3. **配置管理**\n- 考虑引入集中式配置管理\n- 支持环境变量和配置文件\n\n4. **性能优化**\n- 实现异步缓存操作（已在`_resend_async`中有所体现）\n- 添加缓存压缩和序列化优化\n\n5. **文档完善**\n- 为所有公共API添加详细的docstring\n- 提供完整的类型注解便于IDE支持\n\n这个项目展现了良好的架构设计，通过清晰的模块划分和设计模式应用，实现了功能强大且易于扩展的HTTP请求缓存系统。",
+            "基于提供的项目结构，我将从专业角度分析这个Python缓存库的实现：\n\n## 1. 各模块主要功能和职责\n\n### **核心工具模块** (`requests_cache/_utils.py`)\n- **功能**：提供通用工具函数和辅助类\n- **关键组件**：\n  - 数据序列化：`encode`/`decode`、`dumps`/`loads`\n  - HTTP处理：`patch_form_boundary`、`is_json_content_type`\n  - 参数处理：`get_valid_kwargs`、`split_kwargs`\n  - 占位符模式：`Placeholder`类用于延迟初始化\n\n### **后端基类** (`requests_cache/backends/base.py`)\n- **核心抽象**：定义缓存后端的统一接口\n- **关键类**：\n  - `BaseCache`：缓存主接口，处理HTTP响应\n  - `BaseStorage`：存储抽象层\n  - `DictStorage`：内存字典存储实现\n\n### **具体存储后端**\n- **文件系统** (`filesystem.py`)：支持文件缓存、大小限制\n- **SQLite** (`sqlite.py`)：关系型数据库存储，支持复杂查询\n- **Redis** (`redis.py`)：内存数据库，高性能\n- **MongoDB** (`mongodb.py`)：文档数据库\n- **DynamoDB** (`dynamodb.py`)：AWS NoSQL服务\n- **GridFS** (`gridfs.py`)：MongoDB大文件存储\n\n### **后端初始化** (`backends/__init__.py`)\n- 工厂函数`init_backend`统一创建后端实例\n\n## 2. 模块间依赖关系\n\n```\n_utils.py (工具函数)\n    ↑\nbase.py (抽象基类)\n    ↑\n各具体后端 (继承实现)\n    ↑\n__init__.py (工厂模式统一入口)\n```\n\n**依赖流向**：\n- 所有后端依赖`base.py`中的基类\n- 工具模块被所有其他模块共享使用\n- 工厂模式解耦具体后端实现\n\n## 3. 代码结构和设计模式\n\n### **设计模式应用**：\n\n1. **策略模式**：不同存储后端实现统一的缓存接口\n2. **工厂模式**：`init_backend`根据配置创建对应后端\n3. **模板方法**：`BaseCache`定义算法骨架，子类实现具体步骤\n4. **适配器模式**：将不同数据库API适配为统一字典接口\n\n### **架构特点**：\n\n**分层设计**：\n```\n应用层 (HTTP缓存逻辑)\n    ↓\n缓存层 (BaseCache)\n    ↓\n存储层 (BaseStorage + 具体实现)\n```\n\n**统一接口**：所有后端都实现`__getitem__`、`__setitem__`等字典方法\n\n## 4. 潜在问题与改进建议\n\n### **发现的问题**：\n\n1. **函数名重复**：\n   - 多个模块都有`__init__`、`clear`等相同函数名，可能造成混淆\n   - 建议：使用更具体的命名，如`redis_clear`、`filesystem_clear`\n\n2. **SQLite模块复杂度高**：\n   - `sqlite.py`包含过多功能（27个函数），违反单一职责\n   - 建议：拆分为连接管理、查询处理、数据操作等子模块\n\n3. **文件系统后端风险**：\n   - `LimitedFileDict`的磁盘空间管理可能不够健壮\n   - 建议：增加磁盘空间监控和更智能的清理策略\n\n4. **错误处理不一致**：\n   - 各后端错误处理方式可能不统一\n   - 建议：在基类中定义统一的错误处理模板\n\n### **改进建议**：\n\n1. **性能优化**：\n   - 为频繁操作添加批量接口（如`bulk_save`）\n   - 实现连接池管理（特别是数据库后端）\n\n2. **可扩展性**：\n   - 定义插件接口，支持自定义存储后端\n   - 添加配置验证机制\n\n3. **监控和维护**：\n   - 添加缓存命中率统计\n   - 实现自动健康检查和恢复机制\n\n4. **代码质量**：\n   - 统一各后端的接口文档\n   - 增加类型注解提升代码可读性\n\n这个项目展现了良好的抽象设计和模块化架构，通过统一的接口支持多种存储方案，体现了面向接口编程的优秀实践。",
+            "基于提供的项目结构信息，我将从四个维度对requests_cache项目的模型层（models）和策略层（policy）进行专业分析：\n\n## 1. 各模块主要功能与职责\n\n### 模型层（models/）\n**base.py** - 基础工具类\n- `RichMixin`: 提供富文本显示支持，通过`__rich_repr__`方法增强调试输出体验\n\n**raw_response.py** - 原始HTTP响应处理\n- `CachedHTTPResponse`: 模拟requests库原始响应对象，支持流式读取(`stream`)、重置(`reset`)和连接释放(`release_conn`)\n\n**request.py** - 请求模型\n- `CachedRequest`: 封装HTTP请求，提供路径处理(`path_url`)、请求准备(`prepare`)和复制功能(`copy`)\n\n**response.py** - 响应模型体系（核心）\n- `BaseResponse`: 响应基类\n- `OriginalResponse`: 原始响应包装器  \n- `CachedResponse`: 缓存响应主体，包含过期管理(`is_expired`)、序列化(`__getstate__/__setstate__`)和重定向转换(`_convert_redirects`)\n\n### 策略层（policy/）\n**actions.py** - 缓存动作决策\n- `CacheActions`: 核心策略执行器，处理缓存验证(`_validate_vary`)、更新(`update_from_response`)和重新验证(`update_revalidated_response`)\n\n**directives.py** - HTTP缓存指令解析\n- `CacheDirectives`: 解析Cache-Control等HTTP头部指令，支持过期时间计算(`get_expire_offset`)\n\n**expiration.py** - 过期策略工具\n- 纯函数模块，提供时间处理(`get_expiration_datetime`)、URL模式匹配(`_url_match`)和HTTP日期解析\n\n**settings.py** - 配置管理\n- `CacheSettings`: 统一配置入口，支持参数别名处理(`_rename_kwargs`)\n\n## 2. 模块间依赖关系\n\n```\npolicy/actions.py ← depends on → policy/directives.py\n         ↓                              ↓\nmodels/response.py ← depends on → models/request.py\n         ↓\nmodels/raw_response.py ← inherits from → models/base.py\n```\n\n**关键依赖路径**：\n- `CacheActions` 依赖 `CacheDirectives` 解析HTTP指令\n- 响应模型依赖请求模型处理重定向链\n- 所有具体模型继承`RichMixin`获得调试能力\n- 过期策略被动作决策和响应模型共同使用\n\n## 3. 代码结构与设计模式\n\n### 应用的设计模式\n1. **策略模式(Strategy)**: policy模块将缓存策略算法独立封装\n2. **混入模式(Mixin)**: `RichMixin`提供横切关注点\n3. **工厂方法**: `from_response`, `from_request`等静态方法\n4. **装饰器模式**: `wrap_response`包装原始响应\n5. **状态模式**: `CacheActions`根据不同条件执行不同缓存操作\n\n### 架构特点\n- **清晰的层次分离**: 模型层负责数据封装，策略层负责业务逻辑\n- **响应式设计**: 支持流式处理和大文件场景\n- **不可变倾向**: 大量copy方法确保线程安全\n\n## 4. 潜在问题与改进建议\n\n### 发现的问题\n1. **重复函数定义**: \n   - `response.py`中存在重复的`_content_consumed`和`from_cache`函数\n   - `raw_response.py`中`_request_url`重复定义\n\n2. **职责边界模糊**:\n   - `CacheActions`类过于庞大，包含13个方法，违反单一职责原则\n\n3. **时间处理分散**:\n   - 过期时间计算分散在expiration.py和response.py中\n\n### 改进建议\n\n```python\n# 1. 重构重复代码\nclass ResponseValidator:\n    \"\"\"提取重复的验证逻辑\"\"\"\n    def validate_content_consumed(self): ...\n    def check_cache_status(self): ...\n\n# 2. 拆分巨型类\nclass CacheValidator:\n    def _validate_vary(self): ...\n    \nclass CacheUpdater:\n    def update_from_response(self): ...\n    \nclass RequestUpdater:\n    def update_request(self): ...\n\n# 3. 统一时间处理\nclass DateTimeProvider:\n    \"\"\"集中时间相关操作\"\"\"\n    @staticmethod\n    def get_expiration(settings, request): ...\n    @staticmethod  \n    def parse_http_date(date_str): ...\n```\n\n### 其他建议\n- 在`__init__.py`中明确定义模块导出，避免隐式导入\n- 为流式响应添加更完整的内存管理监控\n- 考虑为大型响应对象实现更高效的内存序列化方案\n\n这个缓存库的设计总体上体现了良好的架构思维，但在代码维护性和职责划分方面仍有优化空间。",
+            "我将从专业角度分析这个Python项目的序列化模块部分：\n\n## 1. 各模块主要功能和职责\n\n### **核心序列化模块**\n- **`requests_cache/serializers/cattrs.py`**\n  - 基于cattrs库的序列化实现\n  - 处理复杂类型转换（Decimal、timedelta、datetime等）\n  - 提供内容编码/解码功能\n  - 核心类：`CattrStage` - 序列化管道中的处理阶段\n\n- **`requests_cache/serializers/pipeline.py`**\n  - 序列化管道设计模式实现\n  - 核心类：`SerializerPipeline` - 管理多个处理阶段\n  - `Stage`类 - 管道中的基础处理单元\n  - 支持内容解码设置和管道复制\n\n- **`requests_cache/serializers/preconf.py`**\n  - 预配置序列化器工厂\n  - 提供常用序列化组合：`safe_pickle_serializer`\n  - 签名阶段创建：`signer_stage`\n\n- **`requests_cache/serializers/__init__.py`**\n  - 模块入口点，提供`init_serializer`初始化函数\n\n### **测试模块**\n- **`tests/benchmark_serializers.py`**\n  - 序列化性能基准测试\n  - 比较不同序列化方案（pickle、cattrs+pickle、cattrs+ujson等）\n\n- **`tests/conftest.py`**\n  - Pytest配置和共享fixture\n  - 提供mock会话、HTTP测试工具、依赖检查等\n\n- **`tests/generate_test_db.py`**\n  - 测试数据生成工具\n\n- **兼容性测试模块**\n  - 测试与requests-mock库的集成兼容性\n\n## 2. 模块间依赖关系\n\n```\nserializers/__init__.py (入口)\n    ↓\nserializers/pipeline.py (核心管道)\n    ↓\nserializers/cattrs.py (cattrs实现) ←→ serializers/preconf.py (预配置)\n    ↓\ntests/ (测试套件依赖所有序列化模块)\n```\n\n**依赖流向**：\n- 管道模块是核心，其他序列化实现基于Stage接口\n- 预配置模块依赖cattrs和管道模块\n- 所有测试模块依赖序列化实现\n\n## 3. 代码结构和设计模式\n\n### **主要设计模式**\n\n1. **管道模式 (Pipeline Pattern)**\n   - `SerializerPipeline` 管理多个 `Stage`\n   - 每个阶段专注单一职责\n   - 支持灵活的序列化组合\n\n2. **策略模式 (Strategy Pattern)**\n   - 不同的序列化实现（cattrs、pickle等）作为可替换策略\n   - 通过预配置模块提供常用组合\n\n3. **工厂模式 (Factory Pattern)**\n   - `preconf.py` 中的 `make_stage` 和序列化器创建函数\n\n4. **适配器模式 (Adapter Pattern)**\n   - `cattrs.py` 将cattrs库适配到项目的Stage接口\n\n### **架构特点**\n- 插件化设计：易于添加新的序列化实现\n- 关注点分离：序列化逻辑与缓存逻辑解耦\n- 可测试性：每个阶段可独立测试\n\n## 4. 潜在问题和改进建议\n\n### **潜在问题**\n\n1. **代码重复**\n   - `cattrs.py` 和 `pipeline.py` 中都有 `__init__` 和 `copy` 函数，可能存在重复代码\n\n2. **类型安全**\n   - 动态类型转换（如 `_convert_floats`, `_float_to_decimal`）可能引入运行时错误\n\n3. **错误处理**\n   - 序列化失败时的错误处理机制不够明确\n\n4. **性能考虑**\n   - 多层管道可能增加序列化开销\n\n### **改进建议**\n\n1. **抽象基类**\n   ```python\n   from abc import ABC, abstractmethod\n   \n   class BaseStage(ABC):\n       @abstractmethod\n       def dumps(self, obj): pass\n       \n       @abstractmethod  \n       def loads(self, data): pass\n   ```\n\n2. **配置化管道**\n   - 支持通过配置文件定义序列化管道\n   - 动态加载不同的序列化策略\n\n3. **性能优化**\n   - 添加序列化结果缓存\n   - 支持异步序列化操作\n\n4. **增强测试覆盖**\n   - 添加边界情况测试（大对象、特殊字符、编码问题）\n   - 内存使用和性能回归测试\n\n5. **文档完善**\n   - 添加序列化扩展指南\n   - 性能调优建议文档\n\n### **架构优化建议**\n```python\n# 建议的扩展接口\nclass SerializerConfig:\n    def __init__(self, stages, compression=None, encryption=None):\n        self.stages = stages\n        self.compression = compression\n        self.encryption = encryption\n\nclass ConfigurableSerializer:\n    def __init__(self, config: SerializerConfig):\n        self.pipeline = self._build_pipeline(config)\n```\n\n这个序列化模块设计总体上良好，体现了良好的软件工程实践，特别是在可扩展性和模块化方面表现突出。主要的改进空间在于错误处理、性能优化和配置灵活性方面。",
+            "我将从测试模块的角度对这个Python缓存库项目进行分析：\n\n## 1. 各模块的主要功能和职责\n\n### 测试兼容性模块\n- **test_requests_mock_load_cache.py**: 测试requests库的mock会话功能，验证缓存加载机制\n- **test_responses_load_cache.py**: 测试responses库的集成，验证响应缓存功能\n\n### 集成测试基础类\n- **base_cache_test.py**: 定义缓存核心功能的测试基类，包含HTTP方法、响应格式、重定向、Cookie等全面测试\n- **base_storage_test.py**: 定义存储后端的基础测试，涵盖基本CRUD操作、并发测试等\n\n### 具体存储后端测试\n- **test_dynamodb.py**: DynamoDB后端测试，包含TTL、表创建等AWS特定功能\n- **test_filesystem.py**: 文件系统缓存测试，最复杂的测试模块，包含磁盘空间管理、文件锁、跨进程操作等\n- **test_memory.py**: 内存缓存测试，相对简单，主要测试基本功能和重复读取\n- **test_mongodb.py**: MongoDB后端测试，包含GridFS和普通文档存储\n- **test_redis.py**: Redis后端测试，专注于TTL和连接参数\n- **test_sqlite.py**: SQLite后端测试，包含事务、锁机制、排序等数据库特性\n\n## 2. 模块间的依赖关系\n\n```\nbase_cache_test.py (基础缓存测试)\n    ↑\nbase_storage_test.py (基础存储测试)\n    ↑\n具体后端测试 (DynamoDB/Filesystem/Memory/MongoDB/Redis/SQLite)\n    ↑\n兼容性测试 (requests_mock/responses)\n```\n\n**依赖流向**：\n- 基础测试类为具体实现提供测试框架\n- 具体后端测试继承基础类并添加特定功能测试\n- 兼容性测试验证与第三方库的集成\n\n## 3. 代码结构和设计模式\n\n### 测试架构模式\n1. **基类模式**: `BaseCacheTest`和`BaseStorageTest`提供可重用的测试模板\n2. **工厂模式**: 各模块的`init_cache`函数作为缓存实例工厂\n3. **策略模式**: 不同存储后端实现相同的缓存接口\n\n### 测试组织特点\n- **分层测试**: 基础功能 → 存储特性 → 集成兼容性\n- **资源管理**: 使用`teardown_class`确保测试隔离\n- **并发测试**: 多个模块包含并发场景验证\n\n## 4. 潜在的问题和改进建议\n\n### 发现的问题\n1. **测试重复**: \n   - `test_filesystem.py`中有重复的`teardown_class`和`init_cache`函数\n   - `test_mongodb.py`中`test_connection_kwargs`函数重复定义\n\n2. **测试粒度不均**:\n   - 文件系统测试过于复杂(50+测试函数)，而内存测试过于简单(3个函数)\n   - 可能导致维护困难和测试执行时间不均衡\n\n3. **命名不一致**:\n   - 函数命名风格混合(`test_xxx` vs `do_xxx` vs `ensure_xxx`)\n\n### 改进建议\n\n1. **重构建议**:\n   ```python\n   # 将大型测试文件拆分\n   tests/integration/filesystem/\n   ├── test_file_dict.py\n   ├── test_limited_file_dict.py\n   ├── test_file_cache.py\n   └── test_concurrency.py\n   ```\n\n2. **代码质量改进**:\n   - 移除重复的函数定义\n   - 统一测试函数命名约定\n   - 为复杂测试添加更多文档注释\n\n3. **测试优化**:\n   - 考虑使用pytest fixture替代传统的setup/teardown\n   - 添加参数化测试减少重复代码\n   - 引入测试标签区分单元测试和集成测试\n\n4. **新增测试覆盖**:\n   - 为内存缓存添加更多边界条件测试\n   - 增加性能基准测试\n   - 添加错误恢复和容错测试\n\n这个测试套件整体设计良好，体现了对不同存储后端的全面覆盖，但需要在维护性和一致性方面进行优化。",
+            "基于提供的项目结构，我将从四个角度对这个Python测试套件进行分析：\n\n## 1. 各模块的主要功能和职责\n\n### 集成测试模块\n- **tests/integration/test_upgrade.py**: 版本升级集成测试，包含`test_version_upgrade`函数\n- **tests/integration/__init__.py**: 集成测试包的初始化文件\n\n### 单元测试核心模块\n- **tests/unit/test_base_cache.py**: 缓存基础功能测试，涵盖缓存操作、过期管理、序列化等\n- **tests/unit/test_cache_keys.py**: 缓存键生成和请求规范化测试，包括URL参数、请求体、头部的处理\n- **tests/unit/test_normalize.py**: 规范化逻辑测试，专注于嵌套结构的特殊处理\n- **tests/unit/test_patcher.py**: 补丁安装和会话管理测试，包含monkey patch相关功能\n- **tests/unit/test_serializers.py**: 序列化器测试，支持多种序列化格式和自定义序列化器\n- **tests/unit/test_session.py**: HTTP会话和缓存策略测试，覆盖完整的请求-响应生命周期\n\n### 模型测试模块\n- **tests/unit/models/test_base.py**: 基础模型功能测试，包含富文本表示和repr方法\n- **tests/unit/models/test_raw_response.py**: 原始响应处理测试，涉及响应流操作和解码\n\n## 2. 模块间的依赖关系\n\n### 层次结构\n```\n集成测试层 (integration)\n    ↓\n单元测试核心层 (unit)\n    ├── 缓存基础 (test_base_cache.py)\n    ├── 缓存键管理 (test_cache_keys.py)\n    ├── 规范化处理 (test_normalize.py)\n    ├── 补丁管理 (test_patcher.py)\n    ├── 序列化 (test_serializers.py)\n    └── 会话管理 (test_session.py)\n        ↓\n模型测试层 (unit/models)\n    ├── 基础模型 (test_base.py)\n    └── 响应模型 (test_raw_response.py)\n```\n\n### 关键依赖\n- `test_session.py` 依赖于缓存相关的所有模块\n- `test_base_cache.py` 和 `test_cache_keys.py` 紧密耦合\n- 模型测试模块依赖于核心缓存和会话功能\n\n## 3. 代码结构和设计模式\n\n### 测试组织结构\n- **模块化设计**: 按功能域清晰分离测试职责\n- **金字塔测试结构**: 包含单元测试和集成测试\n- **测试夹具模式**: 使用setup/teardown和fixture管理测试状态\n\n### 设计模式应用\n1. **策略模式**: 在序列化器和缓存键生成中体现\n2. **装饰器模式**: 在缓存补丁和会话包装中应用\n3. **工厂模式**: 在自定义序列化器和缓存后端创建中使用\n4. **观察者模式**: 通过钩子函数实现事件监听\n\n### 测试模式\n- 参数化测试：在`test_cache_keys.py`中大量使用\n- 模拟对象：使用自定义类如`CustomBytesIO`、`MyCache`\n- 边界测试：涵盖各种边缘情况和错误场景\n\n## 4. 潜在的问题或改进建议\n\n### 发现的问题\n1. **代码重复**: \n   - `test_base_cache.py`中出现重复的`new_key_fn`函数\n   - 多个模块都有`__init__`方法，可能缺乏统一的基类\n\n2. **测试粒度问题**:\n   - `test_session.py`过于庞大（70+测试函数），应考虑拆分\n   - 某些测试函数名称过长，影响可读性\n\n3. **依赖管理**:\n   - 模块间依赖关系复杂，可能造成测试执行顺序依赖\n\n### 改进建议\n\n1. **重构大型模块**\n```python\n# 建议将 test_session.py 拆分为:\ntest_session_basic.py        # 基础功能\ntest_session_cache.py        # 缓存策略\ntest_session_headers.py      # 头部处理\ntest_session_errors.py       # 错误处理\n```\n\n2. **提取公共测试工具**\n```python\n# 创建测试工具模块\ntests/unit/utils/__init__.py\ntests/unit/utils/cache_helpers.py\ntests/unit/utils/session_helpers.py\n```\n\n3. **改进测试组织**\n```python\n# 使用 pytest markers 更好组织测试\n@pytest.mark.integration\n@pytest.mark.unit\n@pytest.mark.slow\n```\n\n4. **增强测试可维护性**\n- 为复杂测试添加更多文档字符串\n- 使用参数化测试减少重复代码\n- 实现统一的测试数据管理\n\n5. **性能优化**\n- 考虑添加性能测试模块\n- 优化测试执行时间，特别是集成测试\n\n这个测试套件整体设计良好，覆盖了缓存库的核心功能，但在模块组织和代码维护性方面还有优化空间。",
+            "基于提供的测试模块结构，我将从四个维度进行专业分析：\n\n## 1. 各模块的主要功能和职责\n\n### tests/unit/models/test_request.py\n**核心职责**：HTTP请求模型的单元测试\n- `test_from_request`：测试从请求对象创建模型实例的功能\n- 专注于请求数据结构的验证和转换逻辑\n\n### tests/unit/models/test_response.py\n**核心职责**：HTTP响应模型的全面测试\n- **基础属性测试**：`test_basic_attrs`、`test_str`、`test_repr`\n- **缓存行为测试**：`test_is_expired`、`test_reset_expiration__*`\n- **数据处理测试**：`test_iterator`、`test_size`、`test_format_file_size`\n- **历史记录测试**：`test_history`、`test_original_response`\n\n### tests/unit/policy/test_actions.py\n**核心职责**：缓存策略动作的完整测试套件\n- **初始化测试**：`test_init_*`系列（从headers/settings初始化）\n- **缓存更新逻辑**：`test_update_from_cached_response__*`（多种场景）\n- **可用性验证**：`test_is_usable__*`（max-stale、min-fresh等策略）\n- **响应处理**：`test_update_from_response__*`（包括no-store、revalidate等）\n\n### tests/unit/policy/test_expiration.py\n**核心职责**：过期时间策略的专项测试\n- **时间计算**：`test_get_expiration_datetime__*`（多种时间格式）\n- **URL级过期策略**：`test_get_url_expiration`、`test_get_url_expiration__evaluation_order`\n- **请求头设置**：`test_set_request_headers__*`（缓存控制头）\n\n## 2. 模块间的依赖关系\n\n```\ntest_actions.py ←→ test_expiration.py\n     ↑                  ↑\n     |                  |\ntest_response.py ← test_request.py\n```\n\n**依赖分析**：\n- `test_actions.py` 和 `test_expiration.py` 存在强关联，共同构成完整的缓存策略测试\n- `test_response.py` 可能依赖 `test_request.py` 中的请求模型来构建测试场景\n- 所有policy测试模块依赖于models模块的基础数据结构\n\n## 3. 代码结构和设计模式\n\n### 测试结构特点\n1. **功能分组明确**：每个文件专注于特定领域（请求/响应模型、策略动作、过期策略）\n2. **场景覆盖全面**：特别是`test_actions.py`中的`test_update_from_cached_response__*`系列，覆盖了RFC 7234定义的主要缓存场景\n3. **边界条件测试**：包含时区处理(`test_is_expired__timezone_naive`)、错误处理(`test_update_from_cached_response__504`)等边界情况\n\n### 设计模式识别\n- **策略模式**：在policy模块中体现不同的缓存策略实现\n- **工厂模式**：`test_from_request`暗示可能存在工厂方法创建对象\n- **状态模式**：响应对象的过期状态管理\n\n## 4. 潜在的问题和改进建议\n\n### 潜在问题\n1. **测试粒度不均衡**：\n   - `test_response.py`包含12个测试函数，而`test_request.py`仅1个，可能存在测试覆盖不足\n   - `test_actions.py`过于庞大（23个函数），建议按功能进一步拆分\n\n2. **命名一致性**：\n   - 部分测试使用双下划线`__`分隔场景（如`test_is_expired__timezone_naive`）\n   - 建议统一命名约定\n\n### 改进建议\n1. **模块重构**：\n   ```python\n   # 建议将test_actions.py拆分为：\n   tests/unit/policy/actions/\n   ├── test_initialization.py\n   ├── test_cache_update.py  \n   ├── test_validation.py\n   └── test_headers.py\n   ```\n\n2. **增强测试覆盖**：\n   - 为`test_request.py`添加更多边界条件测试\n   - 增加集成测试验证模块间协作\n\n3. **测试数据管理**：\n   - 引入fixture共享测试数据\n   - 使用参数化测试减少重复代码\n\n4. **性能测试补充**：\n   - 添加缓存策略的性能基准测试\n   - 验证内存使用和响应时间\n\n### 架构优化建议\n```python\n# 建议的测试架构优化\ntests/unit/\n├── models/           # 数据模型测试\n├── policy/\n│   ├── actions/      # 策略动作测试（拆分后）\n│   ├── expiration/   # 过期策略测试  \n│   └── integration/  # 策略集成测试\n└── integration/      # 跨模块集成测试\n```\n\n这种结构将更好地支持项目的可维护性和测试的可扩展性。"
+        ],
+        "summary": "# requests-cache 项目分析报告\n\n## 1. 项目整体架构和设计理念\n\n### 架构概览\nrequests-cache 是一个基于 Python requests 库的 HTTP 请求缓存扩展，采用**分层架构**设计：\n\n```\n应用层 (HTTP缓存逻辑)\n    ↓\n缓存策略层 (policy/)\n    ↓  \n缓存核心层 (session.py)\n    ↓\n序列化层 (serializers/)\n    ↓\n存储层 (backends/)\n```\n\n### 核心设计理念\n- **透明缓存**：通过装饰器和混入模式实现无侵入式缓存\n- **策略模式**：将缓存策略与存储实现解耦\n- **多后端支持**：统一接口支持多种存储方案\n- **RFC 7234 合规**：遵循 HTTP 缓存标准规范\n\n## 2. 主要技术栈和框架使用\n\n### 核心技术栈\n- **HTTP 客户端**：基于 Python requests 库扩展\n- **存储后端**：SQLite、Redis、MongoDB、DynamoDB、文件系统、内存\n- **序列化**：pickle + cattrs 组合，支持复杂类型处理\n- **构建工具**：Nox 管理多环境测试和构建\n- **文档生成**：Sphinx + autodoc 自动 API 文档\n\n### 设计模式应用\n1. **装饰器模式**：HTTP 方法缓存包装\n2. **策略模式**：缓存策略和存储后端可插拔\n3. **工厂模式**：统一的后端和序列化器创建\n4. **混入模式**：CacheMixin 提供缓存功能复用\n5. **管道模式**：序列化处理流水线\n\n## 3. 代码质量和最佳实践遵循情况\n\n### 优秀实践\n- **类型安全**：广泛使用类型注解提升代码可读性\n- **测试覆盖全面**：单元测试 + 集成测试 + 兼容性测试\n- **文档完整**：自动生成的 API 文档 + 丰富的使用示例\n- **错误处理**：完善的异常处理机制\n- **性能优化**：支持异步操作和连接池\n\n### 待改进方面\n- **代码重复**：多个模块存在重复的函数定义\n- **模块职责过重**：部分类违反单一职责原则\n- **命名不一致**：测试函数命名风格不统一\n- **配置分散**：配置管理可以更加集中化\n\n## 4. 架构优缺点和改进建议\n\n### 架构优势\n1. **模块化设计**：清晰的职责分离，易于维护和扩展\n2. **可扩展性**：插件化架构支持自定义存储和序列化方案\n3. **标准兼容**：完整实现 HTTP 缓存规范\n4. **生产就绪**：支持并发、持久化、错误恢复等生产需求\n\n### 架构不足\n1. **复杂度分散**：某些核心类过于庞大（如 CacheActions）\n2. **依赖管理**：模块间依赖关系可以进一步优化\n3. **性能瓶颈**：多层序列化可能影响性能\n\n### 具体改进建议\n\n#### 代码重构\n```python\n# 1. 拆分巨型类\nclass CacheManager:\n    # 提取自 CacheActions 的核心逻辑\n    \nclass PolicyValidator:\n    # 策略验证专用类\n\n# 2. 统一配置管理\nclass CacheConfig:\n    def __init__(self, backend='memory', expire_after=300, **kwargs):\n        self.backend = backend\n        self.expire_after = expire_after\n        \n# 3. 优化序列化性能\nclass OptimizedSerializer:\n    def __init__(self, compress=True, use_cattrs=True):\n        self.compress = compress\n        self.use_cattrs = use_cattrs\n```\n\n#### 架构优化\n1. **引入依赖注入**：降低模块间耦合度\n2. **添加监控指标**：缓存命中率、性能统计等\n3. **实现配置验证**：运行时配置检查和验证\n4. **优化内存使用**：大型响应的流式处理改进\n\n## 5. 扩展性和维护性评估\n\n### 扩展性评估：优秀\n- **存储后端扩展**：通过 BaseStorage 接口轻松添加新后端\n- **序列化扩展**：Pipeline 模式支持自定义序列化阶段\n- **策略扩展**：策略模式支持自定义缓存逻辑\n- **钩子机制**：支持自定义预处理和后处理\n\n### 维护性评估：良好\n- **测试覆盖**：全面的测试套件保障代码质量\n- **文档完整**：详细的 API 文档和使用示例\n- **代码组织**：清晰的模块结构和包组织\n- **构建自动化**：Nox 管理完整的开发工作流\n\n### 维护性改进建议\n1. **代码质量工具**：集成 flake8、black、mypy 等工具\n2. **性能监控**：添加性能基准测试和监控\n3. **错误追踪**：完善日志记录和错误追踪\n4. **版本管理**：清晰的版本升级和迁移指南\n\n## 总结\n\nrequests-cache 项目展现了**优秀的软件工程实践**，其架构设计体现了对可扩展性、可维护性和标准兼容性的深度思考。项目通过清晰的分层架构和设计模式应用，成功实现了功能强大且易于扩展的 HTTP 请求缓存解决方案。\n\n**主要亮点**：\n- 完整遵循 HTTP 缓存标准 (RFC 7234)\n- 支持多种存储后端，适应不同部署场景\n- 完善的测试覆盖和文档体系\n- 良好的向后兼容性和升级支持\n\n**改进方向**：\n- 进一步优化大型类的职责划分\n- 统一配置管理和错误处理机制\n- 增强性能监控和调优能力\n\n该项目适合作为企业级缓存解决方案的基础，其架构设计也为类似的基础设施库开发提供了优秀参考。"
+    }
+}

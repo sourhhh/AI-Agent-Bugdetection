@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentcode"
+version = "0.1.0"
+authors = [{"name": "He", "email": ""}]  
+description = "Python项目结构分析工具，支持代码解析和AI辅助分析"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[dependencies]
+PyYAML = "*"
+requests = "*"  # 新增依赖（DeepSeek客户端需要）
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "flake8>=6.0",
+]

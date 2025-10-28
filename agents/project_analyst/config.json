@@ -1,0 +1,10 @@
+{
+  "deepseek": {
+    "api_base": "https://api.deepseek.com/v1",
+    "model": "deepseek-chat",
+    "timeout": 60,
+    "chunk_size": 5,
+    "stream": false,
+    "api_key": "你的api_key"
+  }
+}
