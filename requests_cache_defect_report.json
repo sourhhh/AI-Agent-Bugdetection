@@ -1,0 +1,4577 @@
+{
+  "files": [
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\docs\\conf.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'app'",
+          "line_number": 161,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'sphinx_automodapi'",
+          "line_number": 165,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'sphinx_automodapi.utils'",
+          "line_number": 166,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'app'",
+          "line_number": 175,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\basic_patching.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 19,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused variable 'response'",
+          "line_number": 19,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Requests call without timeout",
+          "line_number": 19,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 23,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Requests call without timeout",
+          "line_number": 23,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 27,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Requests call without timeout",
+          "line_number": 27,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\basic_sessions.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 8,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused variable 'response'",
+          "line_number": 16,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\noxfile.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'nox'",
+          "line_number": 23,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] Unused import 'getenv' from os module",
+          "line_number": 26,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[llm] Missing comma in list 'LIVE_DOCS_IGNORE' between string literals",
+          "line_number": 32,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] Function 'install_deps' is defined but not used in all test sessions",
+          "line_number": 49,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'session'",
+          "line_number": 77,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'dir'",
+          "line_number": 79,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "logic",
+          "message": "[llm] Potential IndexError if session.posargs is empty in stress_test function",
+          "line_number": 97,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[llm] Typo in command 'prek' should be 'pre-commit' in lint session",
+          "line_number": 127,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\convert_cache.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.backends.base'",
+          "line_number": 8,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _Store of a client class",
+          "line_number": 17,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _RawStore of a client class",
+          "line_number": 18,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\custom_request_matcher.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 24,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.cache_keys'",
+          "line_number": 25,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\expiration.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 7,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 19,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 21,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 22,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 35,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 40,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 44,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\benchmark.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] Unused import 'urandom' from os module (only used in get_randomized_response)",
+          "line_number": 10,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'print'",
+          "line_number": 16,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Requests call without timeout",
+          "line_number": 21,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[llm] Hardcoded AWS credentials found in AWS_OPTIONS dictionary",
+          "line_number": 32,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] Potential division by zero risk if ITERATIONS is 0",
+          "line_number": 56,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "performance",
+          "message": "[llm] Keys list is created once but may become outdated if cache is modified during read test",
+          "line_number": 60,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] Potential division by zero risk if ITERATIONS is 0",
+          "line_number": 77,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+          "line_number": 78,
+          "severity": "HIGH",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\external_config.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 14,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Using open without explicitly specifying an encoding",
+          "line_number": 21,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\log_requests.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 11,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.session'",
+          "line_number": 12,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 23,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Requests call without timeout",
+          "line_number": 23,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 33,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 34,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 42,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\pygithub.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'github'",
+          "line_number": 30,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 32,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 81,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 82,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 95,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\generate_test_db.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 导入了未使用的模块'time'，应该使用'from time import perf_counter'",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Requests call without timeout",
+          "line_number": 26,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "syntax",
+          "message": "[llm] 列表字面量中的字符串缺少逗号分隔符，导致字符串连接",
+          "line_number": 32,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "performance",
+          "message": "[llm] 在populate_cache函数中，大量响应保存操作在bulk_commit块内，但可能仍存在性能问题",
+          "line_number": 49,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+          "line_number": 64,
+          "severity": "HIGH",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+          "line_number": 83,
+          "severity": "HIGH",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 在remove_expired_responses函数中，当n_removed为0时会导致除零错误",
+          "line_number": 89,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\threads.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\rps_graph.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] Magic number 500 used as scale parameter without explanation; should be defined as a constant",
+          "line_number": 25,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] Potential division by zero risk if elapsed time is 0 in average requests/second calculation",
+          "line_number": 73,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "security",
+          "message": "[llm] Using random.randint() for security-sensitive operations is not cryptographically secure; consider using secrets module for better randomness",
+          "line_number": 95,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] No exception handling for network requests; network failures will crash the program",
+          "line_number": 95,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] Magic number 30 used as expire_after value without explanation; should be defined as a constant",
+          "line_number": 103,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+          "line_number": 107,
+          "severity": "HIGH",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\url_patterns.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 8,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\time_machine_backtesting.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'time_machine'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 11,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] BacktestCachedSession class overrides request method but doesn't call parent's request method with proper arguments, potentially missing caching logic",
+          "line_number": 16,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] In BacktestCachedSession.request(), comparing response.created_at with datetime.now(UTC) may not work correctly with time_machine as datetime.now() is patched but response.created_at was created in real time",
+          "line_number": 19,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.request' can cause your program to hang indefinitely",
+          "line_number": 20,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "performance",
+          "message": "[llm] When response is not cached, makes a new request using requests.request() directly instead of using the session's request method, bypassing any session-level configuration",
+          "line_number": 21,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 30,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 35,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\session.py",
+      "defects": [
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（174行），可能影响性能和可维护性",
+          "line_number": 125,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\base.py",
+      "defects": [
+        {
+          "type": "security",
+          "message": "[bandit] Consider possible security implications associated with PickleError module.",
+          "line_number": 14,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（89行），可能影响性能和可维护性",
+          "line_number": 105,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 339,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 351,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\dynamodb.py",
+      "defects": [
+        {
+          "type": "performance",
+          "message": "[llm] The __iter__ method performs a full table scan which can be inefficient for large tables and consume provisioned throughput",
+          "line_number": 125,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] The __len__ method returns an estimated item count which may be inaccurate and should not be relied upon for exact counts",
+          "line_number": 138,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] The clear method uses bulk_delete which iterates over all keys and performs individual delete operations, which may be inefficient for large tables",
+          "line_number": 147,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "performance",
+          "message": "[llm] The values method performs a full table scan without pagination support, which can be inefficient for large datasets",
+          "line_number": 153,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\filesystem.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 检测服务暂时不可用：LLM服务调用失败，建议手动检查代码",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.3
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Consider possible security implications associated with PickleError module.",
+          "line_number": 11,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（110行），可能影响性能和可维护性",
+          "line_number": 160,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（87行），可能影响性能和可维护性",
+          "line_number": 277,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\gridfs.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] GridFSDict.__init__ parameter 'collection_name' is defined but never used in the implementation",
+          "line_number": 69,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "security",
+          "message": "[llm] MongoClient connection parameters are passed through without validation, which could lead to security issues if untrusted input is used",
+          "line_number": 75,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] GridFSDict.__setitem__ method may fail to handle FileExists exception properly, potentially leading to data inconsistency when concurrent writes occur",
+          "line_number": 97,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "performance",
+          "message": "[llm] GridFSDict.__len__ uses estimated_document_count which may not be accurate and could return stale counts in high-write environments",
+          "line_number": 108,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+      "defects": [
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（51行），可能影响性能和可维护性",
+          "line_number": 74,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 130,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 140,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（56行），可能影响性能和可维护性",
+          "line_number": 171,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 324,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 332,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 355,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 373,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 390,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（53行），可能影响性能和可维护性",
+          "line_number": 395,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 440,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（60行），可能影响性能和可维护性",
+          "line_number": 449,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\redis.py",
+      "defects": [
+        {
+          "type": "performance",
+          "message": "[llm] Inefficient implementation of __len__ method in RedisDict class: iterates through all keys to count them",
+          "line_number": 95,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "performance",
+          "message": "[llm] Inefficient implementation of keys() method in RedisDict class: iterates through all keys without pagination for large datasets",
+          "line_number": 100,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "performance",
+          "message": "[llm] Inefficient implementation of items() and values() methods in RedisDict class: makes multiple round trips to Redis",
+          "line_number": 103,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] Potential resource leak: Redis connection is not properly closed in RedisHashDict class",
+          "line_number": 143,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\models\\raw_response.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 54,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 123,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\models\\request.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'attrs'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\policy\\actions.py",
+      "defects": [
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（67行），可能影响性能和可维护性",
+          "line_number": 154,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（59行），可能影响性能和可维护性",
+          "line_number": 222,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（73行），可能影响性能和可维护性",
+          "line_number": 297,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\policy\\expiration.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[llm] Function 'utcnow' is called but not defined in this module",
+          "line_number": 56,
+          "severity": "CRITICAL",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] Potential negative timedelta when calculating expiration seconds if 'expires' is in the past",
+          "line_number": 56,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] Function '_url_match' has inconsistent pattern handling - adds '**' to glob patterns but not regex patterns",
+          "line_number": 103,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\serializers\\cattrs.py",
+      "defects": [
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（54行），可能影响性能和可维护性",
+          "line_number": 83,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（76行），可能影响性能和可维护性",
+          "line_number": 138,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\serializers\\preconf.py",
+      "defects": [
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（159行），可能影响性能和可维护性",
+          "line_number": 19,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'e' from outer scope (line 92)",
+          "line_number": 37,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'itsdangerous'",
+          "line_number": 70,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'kwargs'",
+          "line_number": 79,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused import itsdangerous",
+          "line_number": 91,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\conftest.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_mock'",
+          "line_number": 28,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_mock'",
+          "line_number": 29,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（174行），可能影响性能和可维护性",
+          "line_number": 116,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] TODO: Debug OperationalErrors with pypy",
+          "line_number": 380,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\generate_test_db.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'format'",
+          "line_number": 20,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\__init__.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 检测服务暂时不可用：文件内容为空，建议手动检查代码",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.3
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\compat\\test_requests_mock_combine_cache.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_mock'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 6,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'mock_session' from outer scope (line 12)",
+          "line_number": 29,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\compat\\test_requests_mock_disable_cache.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 6,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'requests_cache_mock' from outer scope (line 10)",
+          "line_number": 15,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Requests call without timeout",
+          "line_number": 18,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 21,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Requests call without timeout",
+          "line_number": 21,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 22,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 25,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Requests call without timeout",
+          "line_number": 25,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 26,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\benchmark_serializers.py",
+      "defects": [
+        {
+          "type": "security",
+          "message": "[bandit] Consider possible security implications associated with pickle module.",
+          "line_number": 26,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 导入的模块 'rich'、'jsonpickle'、'memory_profiler' 未被使用",
+          "line_number": 28,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'ujson'",
+          "line_number": 31,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'cattrs.preconf.json'",
+          "line_number": 32,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'print'",
+          "line_number": 37,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 代码中有多个被注释掉的函数和测试代码，表明测试不完整",
+          "line_number": 45,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] run_cattrs_ujson() 函数中使用了错误的参数名 'factory'，应该使用 'converter_factory'",
+          "line_number": 78,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[llm] 函数调用缺少参数，serializer.dumps() 和 serializer.loads() 需要传入要序列化的对象",
+          "line_number": 97,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 函数 run_serialize_deserialize 中变量 'serialized' 和 'deserialized' 未被使用",
+          "line_number": 97,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\compat\\test_requests_mock_load_cache.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_mock'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 11,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'mock_session' from outer scope (line 23)",
+          "line_number": 45,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_http_adapter'",
+          "line_number": 45,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 49,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\compat\\test_responses_load_cache.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'ConnectionError'",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'responses'",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 12,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_http_adapter'",
+          "line_number": 51,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 56,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 60,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 65,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\base_cache_test.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'ConnectionError'",
+          "line_number": 16,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 78,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 79,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 91,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 92,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 96,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 98,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 110,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 113,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 125,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 126,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 135,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 136,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 137,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 138,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 148,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 152,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 157,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 182,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Requests call without timeout",
+          "line_number": 202,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 209,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 234,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 259,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 260,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 265,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 266,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 272,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 276,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 277,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] TODO: The following JSON-specific tests use requests-mock instead of httpbin. To make these",
+          "line_number": 279,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 292,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 320,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 340,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 346,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 360,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 363,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 364,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 365,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 366,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 373,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 375,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 376,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 383,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 385,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 388,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 404,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 407,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+          "line_number": 446,
+          "severity": "HIGH",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\test_dynamodb.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'boto3'",
+          "line_number": 24,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\base_storage_test.py",
+      "defects": [
+        {
+          "type": "logic",
+          "message": "[llm] teardown_class方法使用了实例方法init_cache，应该改为类方法或静态方法",
+          "line_number": 28,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 44,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 45,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 46,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 49,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 61,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 62,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 63,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 64,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 65,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 73,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 74,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 75,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 测试类缺少对bulk_delete方法的完整测试，特别是错误处理场景",
+          "line_number": 78,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 85,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 86,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 87,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 96,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 97,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 98,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 106,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 缺少对序列化错误的测试用例",
+          "line_number": 108,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 125,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 126,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 139,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 140,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 141,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 142,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] test_concurrency方法中使用了硬编码的乘数10，应该使用配置常量",
+          "line_number": 147,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 152,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 155,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 156,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 157,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 164,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 172,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "syntax",
+          "message": "[llm] 类定义不完整，缺少字段定义和结束括号",
+          "line_number": 175,
+          "severity": "CRITICAL",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 188,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 190,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 192,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 199,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 203,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 205,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 211,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 213,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 214,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 216,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 217,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 218,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\test_memory.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] TODO: Remove when fixed",
+          "line_number": 26,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\test_mongodb.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tenacity'",
+          "line_number": 7,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'pymongo'",
+          "line_number": 27,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\test_redis.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'redis'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'redis'",
+          "line_number": 16,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible hardcoded password: 'pass'",
+          "line_number": 32,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible hardcoded password: 'pass'",
+          "line_number": 33,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 51,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 58,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\test_sqlite.py",
+      "defects": [
+        {
+          "type": "security",
+          "message": "[bandit] Consider possible security implications associated with pickle module.",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Try, Except, Pass detected.",
+          "line_number": 30,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 48,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 49,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 54,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 55,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 59,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 65,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 66,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 67,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 70,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 73,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 80,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 91,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 92,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 110,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 114,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 129,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 143,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 144,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 150,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 157,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 163,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 170,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 179,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 207,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 211,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 221,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 223,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 245,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 249,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 267,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 271,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 272,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+          "line_number": 280,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 297,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 311,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Try, Except, Pass detected.",
+          "line_number": 322,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 333,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 334,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 343,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 350,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 359,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 360,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 408,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 412,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 413,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 414,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\test_upgrade.py",
+      "defects": [
+        {
+          "type": "logic",
+          "message": "[llm] 测试中缺少对缓存文件升级过程中可能出现的异常情况的处理，应该添加异常捕获和验证",
+          "line_number": 16,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 重复调用session.get(httpbin(response_format))，应该将第一次调用的结果保存到变量中避免重复调用",
+          "line_number": 18,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 测试函数缺少对不兼容情况的验证，应该添加对缓存失效情况的测试断言",
+          "line_number": 19,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 23,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\__init__.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 检测服务暂时不可用：文件内容为空，建议手动检查代码",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.3
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\test_base_cache.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.backends'",
+          "line_number": 12,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.cache_keys'",
+          "line_number": 13,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.models'",
+          "line_number": 14,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.policy'",
+          "line_number": 15,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.session'",
+          "line_number": 16,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 17,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_normalize_url'",
+          "line_number": 85,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 133,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_normalize_url'",
+          "line_number": 337,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\test_cache_keys.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.cache_keys'",
+          "line_number": 13,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _request_url of a client class",
+          "line_number": 107,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'data'",
+          "line_number": 129,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\test_normalize.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.cache_keys'",
+          "line_number": 2,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\test_patcher.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 6,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 7,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.backends'",
+          "line_number": 8,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Instance of 'Session' has no 'cache' member",
+          "line_number": 32,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Instance of 'Session' has no 'settings' member",
+          "line_number": 33,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Instance of 'Session' has no 'settings' member",
+          "line_number": 34,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Instance of 'Session' has no 'settings' member",
+          "line_number": 35,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Instance of 'Session' has no 'settings' member",
+          "line_number": 36,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'installed_session'",
+          "line_number": 41,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'installed_session'",
+          "line_number": 48,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'installed_session'",
+          "line_number": 63,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'installed_session'",
+          "line_number": 77,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 80,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 90,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\test_serializers.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'cattrs'",
+          "line_number": 11,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 13,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 24,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'json_serializer' from outer scope (line 13)",
+          "line_number": 38,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.serializers.preconf'",
+          "line_number": 38,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Reimport 'json_serializer' (imported line 13)",
+          "line_number": 38,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.serializers.preconf'",
+          "line_number": 50,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'safe_pickle_serializer' from outer scope (line 13)",
+          "line_number": 58,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.serializers.preconf'",
+          "line_number": 58,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Reimport 'safe_pickle_serializer' (imported line 13)",
+          "line_number": 58,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'itsdangerous'",
+          "line_number": 81,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'itsdangerous.exc'",
+          "line_number": 82,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Statement seems to have no effect",
+          "line_number": 97,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\test_session.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 19,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache._utils'",
+          "line_number": 20,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.backends'",
+          "line_number": 21,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.backends.base'",
+          "line_number": 22,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.models'",
+          "line_number": 23,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.policy'",
+          "line_number": 24,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.policy.actions'",
+          "line_number": 31,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.session'",
+          "line_number": 32,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 33,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_normalize_url'",
+          "line_number": 661,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_normalize_url'",
+          "line_number": 676,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'kwargs'",
+          "line_number": 685,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'args'",
+          "line_number": 701,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'kwargs'",
+          "line_number": 701,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Cell variable hook defined in loop",
+          "line_number": 702,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _send_and_cache of a client class",
+          "line_number": 820,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _send_and_cache of a client class",
+          "line_number": 1101,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\test_filesystem.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 检测服务暂时不可用：LLM服务调用失败，建议检查测试覆盖率",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.3
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible hardcoded password: 'hunter2'",
+          "line_number": 28,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 124,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 125,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 130,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 131,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 136,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 150,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 151,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 198,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 200,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 201,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 204,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 217,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 220,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 222,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 223,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 233,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 242,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 247,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 248,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 249,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 255,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 257,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 273,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 281,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 293,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 305,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 310,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 312,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 313,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 320,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 327,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 345,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 351,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 352,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 359,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 360,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 372,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 373,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 385,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 386,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 394,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 400,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 401,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 406,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 407,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 423,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 430,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 432,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 440,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 445,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 446,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 452,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 453,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 460,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 461,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 469,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 470,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 477,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 478,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 486,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 487,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 492,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 493,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 510,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 511,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 544,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 550,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 551,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 557,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 559,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 560,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 569,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 570,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 573,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 574,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 576,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 590,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 592,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 593,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\models\\test_base.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 测试用例不完整，缺少对私有属性 `_private_attr` 的测试验证",
+          "line_number": 18,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 测试用例缺少边界情况和异常场景测试，如空列表、None值处理等",
+          "line_number": 18,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 22,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 31,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 32,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 测试断言语法错误，缺少右括号，应该为 `repr(DemoModel()) == 'DemoModel()'`",
+          "line_number": 32,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 测试断言语法错误，缺少右括号，应该为 `repr(DemoModel(str_attr='str')) == \"DemoModel(str_attr='str')\"`",
+          "line_number": 33,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\models\\test_raw_response.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.models'",
+          "line_number": 3,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _fp of a client class",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _request_url of a client class",
+          "line_number": 10,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 13,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 14,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 15,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 16,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _request_url of a client class",
+          "line_number": 18,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 18,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 19,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 20,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 25,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 26,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 27,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _fp of a client class",
+          "line_number": 28,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 28,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 34,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _fp of a client class",
+          "line_number": 40,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 40,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 46,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _fp of a client class",
+          "line_number": 47,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 47,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 50,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 58,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _fp of a client class",
+          "line_number": 59,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 59,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\models\\test_request.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.models.response'",
+          "line_number": 3,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 12,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 13,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 14,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 15,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 16,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _cookies of a client class",
+          "line_number": 17,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 17,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\policy\\test_actions.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.cache_keys'",
+          "line_number": 7,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.models'",
+          "line_number": 8,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.policy'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _validation_headers of a client class",
+          "line_number": 181,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _validation_headers of a client class",
+          "line_number": 208,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _validation_headers of a client class",
+          "line_number": 211,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _validation_headers of a client class",
+          "line_number": 223,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（72行），可能影响性能和可维护性",
+          "line_number": 240,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\policy\\test_expiration.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.policy.expiration'",
+          "line_number": 7,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.policy.directives'",
+          "line_number": 14,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 15,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_session'",
+          "line_number": 75,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\models\\test_response.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 测试覆盖率不完整，缺少对CachedResponse和OriginalResponse所有重要方法的测试",
+          "line_number": 1,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.models.response'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.policy'",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 11,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content of a client class",
+          "line_number": 39,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content_consumed of a client class",
+          "line_number": 40,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 测试函数test_original_response中重复定义了response变量，覆盖了参数传入的response",
+          "line_number": 47,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] test_iterator函数过于复杂，包含多个测试逻辑，应该拆分为更小的测试函数",
+          "line_number": 79,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] test_reset_expiration__extend_expiration函数中sleep(0.1)可能导致测试不稳定，应该使用更可靠的时间比较方式",
+          "line_number": 108,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content of a client class",
+          "line_number": 137,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content of a client class",
+          "line_number": 139,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content of a client class",
+          "line_number": 148,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "CRITICAL": 10,
+    "HIGH": 98,
+    "MEDIUM": 60,
+    "LOW": 366
+  }
+}
