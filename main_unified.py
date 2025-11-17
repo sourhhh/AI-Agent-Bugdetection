@@ -3,22 +3,25 @@ import logging
 import os
 import sys
 import time
+import webbrowser
 from typing import Dict, Any, List
 from datetime import datetime
 import concurrent.futures
 from tqdm import tqdm
+import argparse
 
 # 添加项目路径
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from agents.decision_manager import DecisionManagerAgent
 from agents.code_fixer import CodeFixerAgent
+from agents.code_quality_evaluator import CodeQualityEvaluator
 from schemas.defect_report import DefectReport, FileDefects, Defect
 from schemas.repair_plan import RepairPlan, RepairTask
 from schemas.fix_result import FixResult
 from utils.file_utils import read_file, write_file
 
-# 配置日志
+# 配置日志（默认 INFO，关闭 DEBUG）
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -127,14 +130,14 @@ class UnifiedRepairSystem:
 
                 # 然后进行语言过滤
                 if target_language == "auto":
-                    # 自动检测文件语言 - 使用增强版本
+                    # 自动检测文件语言 - 使用增强版本（支持 python/cpp/java/other）
                     file_language = self._detect_file_language_enhanced(file_path)
-                    if file_language in ["python", "cpp"]:
-                        filtered_files.append(FileDefects(
-                            file_path=file_path,
-                            defects=filtered_defects
-                        ))
-                        logger.debug(f"包含文件: {file_path} - 语言: {file_language} - {len(filtered_defects)}个缺陷")
+                    # 接受所有已检测到语言（不再仅限 python/cpp），主流程会按文件语言处理
+                    filtered_files.append(FileDefects(
+                        file_path=file_path,
+                        defects=filtered_defects
+                    ))
+                    logger.debug(f"包含文件: {file_path} - 语言: {file_language} - {len(filtered_defects)}个缺陷")
                 elif target_language == "python":
                     if self._is_python_file(file_path):
                         filtered_files.append(FileDefects(
@@ -176,23 +179,29 @@ class UnifiedRepairSystem:
             return "python"
         elif self._is_cpp_file(file_path):
             return "cpp"
+        elif file_path.endswith('.java'):
+            return "java"
 
         # 备用方案：尝试读取文件内容检测
         try:
             if os.path.exists(file_path):
                 content = read_file(file_path)
-                # Python特征检测
-                python_keywords = ['def ', 'import ', 'from ', 'class ', 'print(', 'if __name__', 'lambda ']
-                cpp_keywords = ['#include', 'using namespace', 'class ', 'struct ', 'public:', 'private:', 'cout <<',
-                                'endl;']
+                # Python / C++ / Java 特征检测
+                python_keywords = ['def ', 'import ', 'from ', 'class ', 'print(', 'if __name__', 'lambda ', 'self.']
+                cpp_keywords = ['#include', 'using namespace', 'struct ', 'public:', 'private:', 'cout <<', 'endl;', '->', '::']
+                java_keywords = ['public static void main', 'System.out.println', 'import java.', 'package ', 'throws ', 'NullPointerException']
 
                 python_count = sum(1 for keyword in python_keywords if keyword in content)
                 cpp_count = sum(1 for keyword in cpp_keywords if keyword in content)
+                java_count = sum(1 for keyword in java_keywords if keyword in content)
 
-                if python_count > cpp_count and python_count > 0:
+                # 优先返回最高计数的语言
+                if python_count >= cpp_count and python_count >= java_count and python_count > 0:
                     return "python"
-                elif cpp_count > python_count and cpp_count > 0:
+                elif cpp_count >= python_count and cpp_count >= java_count and cpp_count > 0:
                     return "cpp"
+                elif java_count > 0 and java_count >= python_count and java_count >= cpp_count:
+                    return "java"
         except Exception as e:
             logger.debug(f"文件内容检测失败 {file_path}: {str(e)}")
 
@@ -327,6 +336,9 @@ class UnifiedRepairSystem:
             fix_results = self.code_fixer.get_fix_results()
             latest_result = fix_results[-1] if fix_results else {}
 
+            # 调试：记录最新修复记录的完整内容，便于排查成功标志与 AI 日志不一致的问题
+            logger.debug(f"最新修复记录: {latest_result}")
+
             # 使用修复器中的结果来判断成功状态
             success = latest_result.get('success', False) if latest_result else False
 
@@ -436,9 +448,29 @@ class UnifiedRepairSystem:
             success_rate = stats['success'] / stats['total'] if stats['total'] > 0 else 0
             logger.info(f"  {strategy}: {stats['success']}/{stats['total']} ({success_rate:.1%})")
 
-        # 保存JSON格式的报告
-        self._save_unified_json_report(repair_summary, detailed_results, total_time,
-                                       project_path, defect_report_path, language, min_severity)
+        # 保存JSON格式的报告并返回路径
+        try:
+            json_report_path = self._save_unified_json_report(repair_summary, detailed_results, total_time,
+                                                              project_path, defect_report_path, language, min_severity)
+            logger.info(f"📄 统一JSON报告已保存: {json_report_path}")
+        except Exception as e:
+            logger.warning(f"保存统一JSON报告时出错: {e}")
+            json_report_path = None
+
+        # 自动触发代码质量评估（如果报告写入成功）
+        if json_report_path:
+            try:
+                qe = CodeQualityEvaluator(json_report_path)
+                quality_out = os.path.splitext(json_report_path)[0] + '_quality_report.html'
+                qe.generate_html(quality_out)
+                logger.info(f"🔍 代码质量评估报告已生成: {quality_out}")
+                try:
+                    webbrowser.open(os.path.abspath(quality_out))
+                    logger.info(f"质量评估报告已在默认浏览器中打开: {quality_out}")
+                except Exception as e:
+                    logger.warning(f"尝试打开质量评估报告失败: {e}")
+            except Exception as e:
+                logger.warning(f"自动代码质量评估失败: {e}")
 
     def _calculate_language_stats(self, repair_results: List[Dict]) -> Dict:
         """计算语言统计"""
@@ -469,7 +501,13 @@ class UnifiedRepairSystem:
                                       language: str, min_severity: str) -> str:
         """生成统一的文本报告 - 修复版本"""
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        report_path = f"unified_repair_report_{timestamp}.txt"
+        # 使用缺陷报告文件名作为报告前缀，便于查找
+        try:
+            base_name = os.path.splitext(os.path.basename(defect_report_path))[0]
+            safe_base = ''.join(c if (c.isalnum() or c in ('-', '_', '.')) else '_' for c in base_name)
+        except Exception:
+            safe_base = 'report'
+        report_path = f"{safe_base}_repair_report_{timestamp}.txt"
 
         report_content = []
         report_content.append("=" * 80)
@@ -538,11 +576,18 @@ class UnifiedRepairSystem:
             "detailed_results": detailed_results if detailed_results else []
         }
 
-        report_path = f"unified_repair_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        try:
+            base_name = os.path.splitext(os.path.basename(defect_report_path))[0]
+            safe_base = ''.join(c if (c.isalnum() or c in ('-', '_', '.')) else '_' for c in base_name)
+        except Exception:
+            safe_base = 'report'
+
+        report_path = f"{safe_base}_repair_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         with open(report_path, 'w', encoding='utf-8') as f:
             json.dump(report_data, f, indent=2, ensure_ascii=False)
 
         logger.info(f"📄 统一JSON报告已保存: {report_path}")
+        return report_path
 
     def run_unified_workflow(self, project_path: str, defect_report_path: str,
                              language: str = "auto", max_tasks: int = 30, min_severity: str = "MEDIUM"):
@@ -562,16 +607,11 @@ class UnifiedRepairSystem:
         start_time = time.time()
 
         try:
-            # 1. 检测项目语言（如果需要）
+            # 1. 语言处理：当 language=='auto' 时，按缺陷报告中的文件逐个检测语言并处理（支持混合项目）
             if language == "auto":
-                language_stats = self.detect_project_language(project_path)
-                detected_language = language_stats.get("primary_language", "unknown")
-                if detected_language in ["python", "cpp"]:
-                    language = detected_language
-                    logger.info(f"自动检测到项目语言: {language}")
-                else:
-                    logger.warning(f"无法自动检测项目语言，使用默认处理")
-                    language = "all"
+                logger.info("使用缺陷报告中的文件逐个检测语言并自动修复（支持混合语言项目）")
+                # 将传入的 language 置为 'all'，load_defect_report + decision manager 会按文件语言处理
+                language = "all"
 
             # 2. 加载缺陷报告（使用严重程度过滤）
             defect_report = self.load_defect_report(defect_report_path, language, min_severity)
@@ -612,13 +652,50 @@ class UnifiedRepairSystem:
 
 def main():
     """统一修复主函数 - 修复版本"""
-    # 配置参数
-    PROJECT_PATH = input("请输入项目路径: ").strip() or "."
-    DEFECT_REPORT_PATH = input("请输入缺陷报告路径: ").strip() or "defect_report.json"
-    LANGUAGE = input("请输入目标语言 (python/cpp/auto): ").strip().lower() or "auto"
-    MIN_SEVERITY = input("请输入最小严重程度 (CRITICAL/HIGH/MEDIUM/LOW): ").strip().upper() or "MEDIUM"  # 新增
-    MAX_TASKS = int(input("请输入最大任务数: ").strip() or "30")
-    MAX_WORKERS = int(input("请输入并行线程数: ").strip() or "1")
+    parser = argparse.ArgumentParser(description='统一代码修复系统')
+    parser.add_argument('--defect-report', '-r', dest='defect_report', help='缺陷报告路径 (必需)', required=False)
+    parser.add_argument('--min-severity', dest='min_severity', help='最小严重程度 (CRITICAL/HIGH/MEDIUM/LOW)', default='MEDIUM')
+    parser.add_argument('--max-tasks', dest='max_tasks', type=int, help='最大任务数', default=30)
+    parser.add_argument('--max-workers', dest='max_workers', type=int, help='并行线程数', default=1)
+
+    args = parser.parse_args()
+
+    # 仅要求缺陷报告路径，自动从 JSON 推断项目路径
+    DEFECT_REPORT_PATH = args.defect_report if args.defect_report else (input("请输入缺陷报告路径: ").strip() or "defect_report.json")
+    MIN_SEVERITY = args.min_severity.upper() if args.min_severity else 'MEDIUM'
+    MAX_TASKS = args.max_tasks
+    MAX_WORKERS = args.max_workers
+
+    # 加载缺陷报告并推断项目路径
+    if not os.path.exists(DEFECT_REPORT_PATH):
+        logger.error(f"缺陷报告文件不存在: {DEFECT_REPORT_PATH}")
+        logger.info("请确保缺陷检测Agent已运行并生成了缺陷报告")
+        return
+
+    try:
+        report_json = read_file(DEFECT_REPORT_PATH)
+        defect_report = DefectReport.from_json(report_json)
+
+        # 从缺陷文件路径列表推断项目根目录（commonpath）
+        file_paths = [fd.file_path for fd in defect_report.files if fd.file_path]
+        if file_paths:
+            try:
+                PROJECT_PATH = os.path.commonpath(file_paths)
+                # 如果 commonpath 指向文件而非目录，取 dirname
+                if os.path.isfile(PROJECT_PATH):
+                    PROJECT_PATH = os.path.dirname(PROJECT_PATH)
+            except Exception:
+                # fallback to directory of report
+                PROJECT_PATH = os.path.dirname(os.path.abspath(DEFECT_REPORT_PATH)) or "."
+        else:
+            PROJECT_PATH = os.path.dirname(os.path.abspath(DEFECT_REPORT_PATH)) or "."
+
+    except Exception as e:
+        logger.error(f"读取或解析缺陷报告失败: {e}")
+        return
+
+    # 自动语言处理：不需要用户输入语言，系统会按文件检测并自动修复混合语言代码
+    LANGUAGE = 'auto'
 
     # 验证路径
     if not os.path.exists(PROJECT_PATH):

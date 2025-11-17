@@ -201,13 +201,29 @@ class DecisionManagerAgent:
 
     def _select_repair_strategy_fast(self, defect: Defect, file_path: str = "") -> str:
         """快速策略选择 - 减少AI调用"""
-        # 检测文件类型
-        is_cpp_file = file_path.endswith(('.cpp', '.cc', '.cxx', '.h', '.hpp'))
-
-        if is_cpp_file:
+        # 检测文件类型 (支持 C++, Java, Python)
+        lower = file_path.lower()
+        if lower.endswith(('.cpp', '.cc', '.cxx', '.c++', '.h', '.hpp', '.hxx', '.hh')):
             return self._select_cpp_repair_strategy_fast(defect)
+        elif lower.endswith('.java'):
+            return self._select_java_repair_strategy_fast(defect)
         else:
             return self._select_python_repair_strategy_fast(defect)
+
+    def _select_java_repair_strategy_fast(self, defect: Defect) -> str:
+        """快速Java策略选择（默认使用AI修复或特定规则）"""
+        message_lower = defect.message.lower()
+
+        # 简单关键词映射（以后可扩展为 Java 专用规则）
+        if 'nullpointer' in message_lower or 'null pointer' in message_lower or 'nullpointerexception' in message_lower:
+            return 'ai_automatic_fix'
+        if 'syntax' in message_lower or 'compile' in message_lower or 'missing' in message_lower:
+            return 'ai_automatic_fix'
+        if defect.type == 'security':
+            return 'ai_automatic_fix'
+
+        # 默认回退为 AI 自动修复（更稳健地处理各种 Java 问题）
+        return 'ai_automatic_fix'
 
     def _select_cpp_repair_strategy_fast(self, defect: Defect) -> str:
         """快速C++策略选择"""
