@@ -13,7 +13,7 @@ from schemas.fix_result import FixResult
 from schemas.repair_plan import RepairTask, RepairPlan
 from utils.file_utils import read_file
 from utils.ai_fixer import ai_fixer  # 导入AI修复引擎
-from utils.rule_based_fixer import RuleBasedFixer
+from utils.rule_based_utils import RuleBasedFixer
 
 
 logger = logging.getLogger(__name__)
