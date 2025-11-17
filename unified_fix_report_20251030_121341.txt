@@ -1,0 +1,378 @@
+================================================================================
+代码修复系统统一修复报告
+================================================================================
+生成时间: 2025-10-30 12:13:41
+缺陷报告: requests_cache_defect_report.json
+配置参数: 最小严重程度=HIGH, 线程数=1
+总执行时间: 0.26秒
+
+总体统计:
+  总修复任务: 20
+  成功修复: 6
+  修复失败: 14
+  修复成功率: 30.00%
+
+按缺陷类型统计:
+  security: 6/8 (75.00%)
+  syntax: 0/12 (0.00%)
+
+按修复策略统计:
+  fix_sql_injection: 6/8 (75.00%), 平均置信度: 0.70
+  fix_syntax_error: 0/12 (0.00%), 平均置信度: 0.10
+
+按文件分组的详细修复结果:
+
+文件 1: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+------------------------------------------------------------
+  文件统计: 6/8 (75.0%)
+
+  1. 行号 130
+     缺陷类型: security
+     缺陷描述: [bandit] Possible SQL injection vector through string-based query construction.
+     修复策略: fix_sql_injection
+     状态: ✅ 成功
+     置信度: 0.90
+     变更内容: 第130行的表名来自代码内部，SQL注入风险较低, 添加安全注释
+     代码对比:
+     [原始代码]
+           L125: 
+           L126:     def _delete_expired(self):
+           L127:         """A more efficient implementation of deleting expired responses in SQL"""
+           L128:         with self.responses._lock, self.responses.connection(commit=True) as con:
+           L129:             con.execute(
+       >>> L130:                 f'DELETE FROM {self.responses.table_name} WHERE expires <= ?',
+           L131:                 (round(time()),),
+           L132:             )
+           L133: 
+           L134:     def _prune_redirects(self):
+           L135:         """A more efficient implementation of removing invalid redirects in SQL"""
+     [修复后代码]
+           L125: 
+           L126:     def _delete_expired(self):
+           L127:         """A more efficient implementation of deleting expired responses in SQL"""
+           L128:         with self.responses._lock, self.responses.connection(commit=True) as con:
+           L129:             con.execute(
+       >>> L130:     # 注意: 表名来自内部变量'self.responses.table_name'，SQL注入风险较低
+           L131:                 f'DELETE FROM {self.responses.table_name} WHERE expires <= ?',
+           L132:                 (round(time()),),
+           L133:             )
+           L134: 
+           L135:     def _prune_redirects(self):
+
+  2. 行号 140
+     缺陷类型: security
+     缺陷描述: [bandit] Possible SQL injection vector through string-based query construction.
+     修复策略: fix_sql_injection
+     状态: ❌ 失败
+     置信度: 0.10
+     变更内容: 表名变量't1'需要进一步安全检查
+
+  3. 行号 324
+     缺陷类型: security
+     缺陷描述: [bandit] Possible SQL injection vector through string-based query construction.
+     修复策略: fix_sql_injection
+     状态: ✅ 成功
+     置信度: 0.90
+     变更内容: 第324行的表名来自代码内部，SQL注入风险较低, 添加安全注释
+     代码对比:
+     [原始代码]
+           L319:     def __del__(self):
+           L320:         self.close()
+           L321: 
+           L322:     def __delitem__(self, key):
+           L323:         with self.connection(commit=True) as con:
+       >>> L324:             cur = con.execute(f'DELETE FROM {self.table_name} WHERE key=?', (key,))
+           L325:         if not cur.rowcount:
+           L326:             raise KeyError
+           L327: 
+           L328:     def __getitem__(self, key):
+           L329:         with self.connection() as con:
+     [修复后代码]
+           L319:     def __del__(self):
+           L320:         self.close()
+           L321: 
+           L322:     def __delitem__(self, key):
+           L323:         with self.connection(commit=True) as con:
+       >>> L324:     # 注意: 表名来自内部变量'self.table_name'，SQL注入风险较低
+           L325:             cur = con.execute(f'DELETE FROM {self.table_name} WHERE key=?', (key,))
+           L326:         if not cur.rowcount:
+           L327:             raise KeyError
+           L328: 
+           L329:     def __getitem__(self, key):
+
+  4. 行号 332
+     缺陷类型: security
+     缺陷描述: [bandit] Possible SQL injection vector through string-based query construction.
+     修复策略: fix_sql_injection
+     状态: ❌ 失败
+     置信度: 0.10
+     变更内容: 检测到可能的用户输入拼接，需要重构为参数化查询, 使用基本修复：添加安全注释
+
+  5. 行号 355
+     缺陷类型: security
+     缺陷描述: [bandit] Possible SQL injection vector through string-based query construction.
+     修复策略: fix_sql_injection
+     状态: ✅ 成功
+     置信度: 0.90
+     变更内容: 添加SQL注入安全警告注释, 使用基本修复：添加安全注释
+     代码对比:
+     [原始代码]
+           L350:                 (key, value, expires),
+           L351:             )
+           L352: 
+           L353:     def __iter__(self):
+           L354:         with self.connection() as con:
+       >>> L355:             for row in con.execute(f'SELECT key FROM {self.table_name}'):
+           L356:                 yield row[0]
+           L357: 
+           L358:     def __len__(self):
+           L359:         return self.count()
+           L360: 
+     [修复后代码]
+           L350:                 (key, value, expires),
+           L351:             )
+           L352: 
+           L353:     def __iter__(self):
+           L354:         with self.connection() as con:
+       >>> L355:     # 安全警告: 潜在的SQL注入风险，建议使用参数化查询
+           L356:             for row in con.execute(f'SELECT key FROM {self.table_name}'):
+           L357:                 yield row[0]
+           L358: 
+           L359:     def __len__(self):
+           L360:         return self.count()
+
+  6. 行号 373
+     缺陷类型: security
+     缺陷描述: [bandit] Possible SQL injection vector through string-based query construction.
+     修复策略: fix_sql_injection
+     状态: ✅ 成功
+     置信度: 0.90
+     变更内容: 第373行的表名来自代码内部，SQL注入风险较低, 添加安全注释
+     代码对比:
+     [原始代码]
+           L368:         column = 'key' if keys else 'value'
+           L369:         with self._lock, self.connection(commit=True) as con:
+           L370:             # Split into small enough chunks for SQLite to handle
+           L371:             for chunk in chunkify(keys or values, max_size=SQLITE_MAX_VARIABLE_NUMBER):
+           L372:                 marks, args = _format_sequence(chunk)
+       >>> L373:                 statement = f'DELETE FROM {self.table_name} WHERE {column} IN ({marks})'
+           L374:                 con.execute(statement, args)
+           L375: 
+           L376:     def clear(self):
+           L377:         with self._lock:
+           L378:             with self.connection(commit=True) as con:
+     [修复后代码]
+           L368:         column = 'key' if keys else 'value'
+           L369:         with self._lock, self.connection(commit=True) as con:
+           L370:             # Split into small enough chunks for SQLite to handle
+           L371:             for chunk in chunkify(keys or values, max_size=SQLITE_MAX_VARIABLE_NUMBER):
+           L372:                 marks, args = _format_sequence(chunk)
+       >>> L373:     # 注意: 表名来自内部变量'self.table_name'，SQL注入风险较低
+           L374:                 statement = f'DELETE FROM {self.table_name} WHERE {column} IN ({marks})'
+           L375:                 con.execute(statement, args)
+           L376: 
+           L377:     def clear(self):
+           L378:         with self._lock:
+
+  7. 行号 390
+     缺陷类型: security
+     缺陷描述: [bandit] Possible SQL injection vector through string-based query construction.
+     修复策略: fix_sql_injection
+     状态: ✅ 成功
+     置信度: 0.90
+     变更内容: 添加SQL注入安全警告注释, 使用基本修复：添加安全注释
+     代码对比:
+     [原始代码]
+           L385:         filter_expr = ''
+           L386:         params: Tuple = ()
+           L387:         if not expired:
+           L388:             filter_expr = 'WHERE expires is null or expires > ?'
+           L389:             params = (time(),)
+       >>> L390:         query = f'SELECT COUNT(key) FROM {self.table_name} {filter_expr}'
+           L391: 
+           L392:         with self.connection() as con:
+           L393:             return con.execute(query, params).fetchone()[0]
+           L394: 
+           L395:     def serialize(self, value: VT):
+     [修复后代码]
+           L385:         filter_expr = ''
+           L386:         params: Tuple = ()
+           L387:         if not expired:
+           L388:             filter_expr = 'WHERE expires is null or expires > ?'
+           L389:             params = (time(),)
+       >>> L390:     # 安全警告: 潜在的SQL注入风险，建议使用参数化查询
+           L391:         query = f'SELECT COUNT(key) FROM {self.table_name} {filter_expr}'
+           L392: 
+           L393:         with self.connection() as con:
+           L394:             return con.execute(query, params).fetchone()[0]
+           L395: 
+
+  8. 行号 440
+     缺陷类型: security
+     缺陷描述: [bandit] Possible SQL injection vector through string-based query construction.
+     修复策略: fix_sql_injection
+     状态: ✅ 成功
+     置信度: 0.90
+     变更内容: 添加SQL注入安全警告注释, 使用基本修复：添加安全注释
+     代码对比:
+     [原始代码]
+           L435:             filter_expr = 'WHERE expires is null or expires > ?'
+           L436:             params = (time(),)
+           L437: 
+           L438:         with self.connection(commit=True) as con:
+           L439:             for row in con.execute(
+       >>> L440:                 f'SELECT key, value FROM {self.table_name} {filter_expr}'
+           L441:                 f'  ORDER BY {key} {direction} {limit_expr}',
+           L442:                 params,
+           L443:             ):
+           L444:                 result = self.deserialize(row[0], row[1])
+           L445:                 # Omit any results that can't be deserialized
+     [修复后代码]
+           L435:             filter_expr = 'WHERE expires is null or expires > ?'
+           L436:             params = (time(),)
+           L437: 
+           L438:         with self.connection(commit=True) as con:
+           L439:             for row in con.execute(
+       >>> L440:     # 安全警告: 潜在的SQL注入风险，建议使用参数化查询
+           L441:                 f'SELECT key, value FROM {self.table_name} {filter_expr}'
+           L442:                 f'  ORDER BY {key} {direction} {limit_expr}',
+           L443:                 params,
+           L444:             ):
+           L445:                 result = self.deserialize(row[0], row[1])
+
+
+文件 2: D:\PY\requests-cache-main\requests_cache\policy\expiration.py
+------------------------------------------------------------
+  文件统计: 0/1 (0.0%)
+
+  1. 行号 56
+     缺陷类型: syntax
+     缺陷描述: [llm] Function 'utcnow' is called but not defined in this module
+     修复策略: fix_syntax_error
+     状态: ❌ 失败
+     置信度: 0.10
+     变更内容: 无法自动修复该语法错误
+
+
+文件 3: D:\PY\requests-cache-main\tests\integration\base_storage_test.py
+------------------------------------------------------------
+  文件统计: 0/1 (0.0%)
+
+  1. 行号 175
+     缺陷类型: syntax
+     缺陷描述: [llm] 类定义不完整，缺少字段定义和结束括号
+     修复策略: fix_syntax_error
+     状态: ❌ 失败
+     置信度: 0.10
+     变更内容: 无法自动修复该语法错误
+
+
+文件 4: D:\PY\requests-cache-main\docs\conf.py
+------------------------------------------------------------
+  文件统计: 0/2 (0.0%)
+
+  1. 行号 166
+     缺陷类型: syntax
+     缺陷描述: [pylint] Unable to import 'sphinx_automodapi.utils'
+     修复策略: fix_syntax_error
+     状态: ❌ 失败
+     置信度: 0.10
+     变更内容: 无法自动修复该语法错误
+
+  2. 行号 165
+     缺陷类型: syntax
+     缺陷描述: [pylint] Unable to import 'sphinx_automodapi'
+     修复策略: fix_syntax_error
+     状态: ❌ 失败
+     置信度: 0.10
+     变更内容: 无法自动修复该语法错误
+
+
+文件 5: D:\PY\requests-cache-main\examples\basic_sessions.py
+------------------------------------------------------------
+  文件统计: 0/1 (0.0%)
+
+  1. 行号 8
+     缺陷类型: syntax
+     缺陷描述: [pylint] Unable to import 'requests_cache'
+     修复策略: fix_syntax_error
+     状态: ❌ 失败
+     置信度: 0.10
+     变更内容: 无法自动修复该语法错误
+
+
+文件 6: D:\PY\requests-cache-main\noxfile.py
+------------------------------------------------------------
+  文件统计: 0/2 (0.0%)
+
+  1. 行号 23
+     缺陷类型: syntax
+     缺陷描述: [pylint] Unable to import 'nox'
+     修复策略: fix_syntax_error
+     状态: ❌ 失败
+     置信度: 0.10
+     变更内容: 无法自动修复该语法错误
+
+  2. 行号 127
+     缺陷类型: syntax
+     缺陷描述: [llm] Typo in command 'prek' should be 'pre-commit' in lint session
+     修复策略: fix_syntax_error
+     状态: ❌ 失败
+     置信度: 0.10
+     变更内容: 无法自动修复该语法错误
+
+
+文件 7: D:\PY\requests-cache-main\examples\basic_patching.py
+------------------------------------------------------------
+  文件统计: 0/1 (0.0%)
+
+  1. 行号 10
+     缺陷类型: syntax
+     缺陷描述: [pylint] Unable to import 'requests_cache'
+     修复策略: fix_syntax_error
+     状态: ❌ 失败
+     置信度: 0.10
+     变更内容: 无法自动修复该语法错误
+
+
+文件 8: D:\PY\requests-cache-main\examples\convert_cache.py
+------------------------------------------------------------
+  文件统计: 0/2 (0.0%)
+
+  1. 行号 8
+     缺陷类型: syntax
+     缺陷描述: [pylint] Unable to import 'requests_cache.backends.base'
+     修复策略: fix_syntax_error
+     状态: ❌ 失败
+     置信度: 0.10
+     变更内容: 无法自动修复该语法错误
+
+  2. 行号 9
+     缺陷类型: syntax
+     缺陷描述: [pylint] Unable to import 'requests_cache'
+     修复策略: fix_syntax_error
+     状态: ❌ 失败
+     置信度: 0.10
+     变更内容: 无法自动修复该语法错误
+
+
+文件 9: D:\PY\requests-cache-main\examples\custom_request_matcher.py
+------------------------------------------------------------
+  文件统计: 0/2 (0.0%)
+
+  1. 行号 24
+     缺陷类型: syntax
+     缺陷描述: [pylint] Unable to import 'requests_cache'
+     修复策略: fix_syntax_error
+     状态: ❌ 失败
+     置信度: 0.10
+     变更内容: 无法自动修复该语法错误
+
+  2. 行号 25
+     缺陷类型: syntax
+     缺陷描述: [pylint] Unable to import 'requests_cache.cache_keys'
+     修复策略: fix_syntax_error
+     状态: ❌ 失败
+     置信度: 0.10
+     变更内容: 无法自动修复该语法错误
+

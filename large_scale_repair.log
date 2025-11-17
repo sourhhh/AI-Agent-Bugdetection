@@ -1,0 +1,1316 @@
+2025-10-14 19:52:24,672 - __main__ - INFO - 开始处理缺陷报告 (安全模式):
+2025-10-14 19:52:24,672 - __main__ - INFO -   - 缺陷报告: requests_cache_defect_report.json
+2025-10-14 19:52:24,679 - __main__ - INFO -   - 最小严重程度: HIGH
+2025-10-14 19:52:24,679 - __main__ - INFO -   - 并行线程数: 1
+2025-10-14 19:52:24,679 - __main__ - INFO -   - 最大任务数: 20
+2025-10-14 19:52:24,679 - agents.decision_manager - INFO - 初始化DecisionManagerAgent...
+2025-10-14 19:52:24,682 - __main__ - INFO - 大规模代码修复系统初始化完成，最大工作线程: 1
+2025-10-14 19:52:24,683 - __main__ - INFO - 🚀 开始代码修复系统工作流程
+2025-10-14 19:52:24,683 - __main__ - INFO - 配置: 最小严重程度=HIGH, 最大任务数=20
+2025-10-14 19:52:24,694 - agents.code_fixer - INFO - 已清空修复结果
+2025-10-14 19:52:24,694 - __main__ - INFO - 加载缺陷报告: requests_cache_defect_report.json
+2025-10-14 19:52:24,698 - __main__ - INFO - 缺陷过滤完成: 原始缺陷 534 -> 过滤后 108
+2025-10-14 19:52:24,703 - __main__ - INFO - 处理文件数: 43
+2025-10-14 19:52:24,703 - __main__ - INFO - 开始生成优先级修复计划...
+2025-10-14 19:52:24,707 - agents.decision_manager - INFO - 开始分析缺陷报告...
+2025-10-14 19:52:24,707 - agents.decision_manager - INFO - 解析成功，共发现 43 个文件有缺陷
+2025-10-14 19:58:12,295 - agents.decision_manager - INFO - 分析完成，生成 108 个修复任务
+2025-10-14 19:58:12,297 - __main__ - INFO - 修复计划生成完成: 108个修复任务 (耗时: 347.59s)
+2025-10-14 19:58:12,297 - __main__ - INFO -   CRITICAL: 14个任务
+2025-10-14 19:58:12,297 - __main__ - INFO -   HIGH: 94个任务
+2025-10-14 19:58:12,297 - __main__ - WARNING - 任务数量过多 (108)，限制为前20个高优先级任务
+2025-10-14 19:58:12,297 - __main__ - INFO - 将处理 20 个修复任务
+2025-10-14 19:58:12,297 - __main__ - INFO - 开始执行修复任务 (线程数: 1)...
+2025-10-14 19:58:12,307 - agents.code_fixer - INFO - 已清空修复结果
+2025-10-14 19:58:12,354 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\benchmark.py, 行号=32, 策略=fix_hardcoded_secrets
+2025-10-14 19:58:12,357 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AWS credentials found in AWS_OPTIONS dictionary
+
+   ...
+2025-10-14 19:58:12,359 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AW...
+2025-10-14 19:58:44,222 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 19:58:47,225 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AW...
+2025-10-14 19:59:19,260 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-14 19:59:19,264 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-14 19:59:19,264 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-14 19:59:19,266 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\benchmark.py, 行号=78, 策略=ai_automatic_fix
+2025-10-14 19:59:19,266 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-14 19:59:19,266 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-14 19:59:19,270 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 19:59:38,927 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 19:59:38,927 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1277
+2025-10-14 19:59:38,929 - agents.code_fixer - WARNING - AI修复未通过验证: 功能代码被删除
+2025-10-14 19:59:38,930 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-14 19:59:38,930 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\benchmark.py:78
+2025-10-14 19:59:38,934 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\generate_test_db.py, 行号=64, 策略=ai_automatic_fix
+2025-10-14 19:59:38,937 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-14 19:59:38,937 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-14 19:59:38,937 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 20:00:10,768 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 20:00:13,772 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 20:00:32,780 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:00:32,782 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1506
+2025-10-14 20:00:32,782 - agents.code_fixer - WARNING - AI修复未通过验证: 代码过度删减
+2025-10-14 20:00:32,782 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-14 20:00:32,790 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\generate_test_db.py:64
+2025-10-14 20:00:32,792 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\generate_test_db.py, 行号=83, 策略=ai_automatic_fix
+2025-10-14 20:00:32,794 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-14 20:00:32,796 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-14 20:00:32,798 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 20:01:04,730 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 20:01:07,732 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 20:01:27,365 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:01:27,366 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1506
+2025-10-14 20:01:27,374 - agents.code_fixer - WARNING - AI修复未通过验证: 功能代码被删除
+2025-10-14 20:01:27,381 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-14 20:01:27,388 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\generate_test_db.py:83
+2025-10-14 20:01:27,399 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\rps_graph.py, 行号=107, 策略=ai_automatic_fix
+2025-10-14 20:01:27,400 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-14 20:01:27,400 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-14 20:01:29,402 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 20:02:01,209 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 20:02:04,213 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 20:02:31,064 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:02:31,064 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 2359
+2025-10-14 20:02:31,069 - agents.code_fixer - WARNING - AI修复未通过验证: 代码过度删减
+2025-10-14 20:02:31,072 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-14 20:02:31,072 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\rps_graph.py:107
+2025-10-14 20:02:31,074 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=130, 策略=fix_sql_injection
+2025-10-14 20:02:31,081 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 22
+2025-10-14 20:02:31,087 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=140, 策略=fix_sql_injection
+2025-10-14 20:02:31,089 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 22
+2025-10-14 20:02:31,099 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=324, 策略=fix_sql_injection
+2025-10-14 20:02:31,101 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 22
+2025-10-14 20:02:31,109 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=332, 策略=fix_sql_injection
+2025-10-14 20:02:31,112 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 22
+2025-10-14 20:02:31,118 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=355, 策略=fix_sql_injection
+2025-10-14 20:02:31,121 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 22
+2025-10-14 20:02:31,128 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=373, 策略=fix_sql_injection
+2025-10-14 20:02:31,131 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 22
+2025-10-14 20:02:31,137 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=390, 策略=fix_sql_injection
+2025-10-14 20:02:31,141 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 22
+2025-10-14 20:02:31,151 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=440, 策略=fix_sql_injection
+2025-10-14 20:02:31,154 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 22
+2025-10-14 20:02:31,166 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\tests\integration\base_cache_test.py, 行号=446, 策略=ai_automatic_fix
+2025-10-14 20:02:31,168 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-14 20:02:31,171 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-14 20:02:31,172 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 20:02:50,809 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:02:50,811 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1505
+2025-10-14 20:02:50,812 - agents.code_fixer - WARNING - AI修复未通过验证: 功能代码被删除
+2025-10-14 20:02:50,812 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-14 20:02:50,815 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\tests\integration\base_cache_test.py:446
+2025-10-14 20:02:50,818 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\docs\conf.py, 行号=165, 策略=fix_syntax_error
+2025-10-14 20:02:50,818 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'sphinx_automodapi'...
+2025-10-14 20:02:50,818 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'sphinx_automodapi'...
+2025-10-14 20:03:10,275 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:03:10,277 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1517
+2025-10-14 20:03:10,298 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-14 20:03:10,302 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\docs\conf.py, 行号=166, 策略=fix_syntax_error
+2025-10-14 20:03:10,306 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'sphinx_automodapi.utils'...
+2025-10-14 20:03:10,306 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'sphinx_automodapi.utils...
+2025-10-14 20:03:31,471 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:03:31,471 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1517
+2025-10-14 20:03:31,479 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-14 20:03:31,483 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\basic_patching.py, 行号=10, 策略=fix_syntax_error
+2025-10-14 20:03:31,489 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'requests_cache'...
+2025-10-14 20:03:31,489 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'requests_cache'...
+2025-10-14 20:03:50,522 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:03:50,522 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1515
+2025-10-14 20:03:50,526 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 1
+2025-10-14 20:03:50,541 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\basic_sessions.py, 行号=8, 策略=fix_syntax_error
+2025-10-14 20:03:50,541 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'requests_cache'...
+2025-10-14 20:03:52,543 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'requests_cache'...
+2025-10-14 20:04:13,971 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:04:13,971 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1877
+2025-10-14 20:04:13,980 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 1
+2025-10-14 20:04:13,984 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\noxfile.py, 行号=23, 策略=fix_syntax_error
+2025-10-14 20:04:13,991 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'nox'...
+2025-10-14 20:04:13,991 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'nox'...
+2025-10-14 20:04:46,127 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 20:04:49,139 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [pylint] Unable to import 'nox'...
+2025-10-14 20:05:21,000 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-14 20:05:21,003 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-14 20:05:21,003 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-14 20:05:21,005 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\noxfile.py, 行号=127, 策略=fix_syntax_error
+2025-10-14 20:05:21,005 - utils.ai_fixer - INFO - 开始AI修复，问题: [llm] Typo in command 'prek' should be 'pre-commit' in lint session...
+2025-10-14 20:05:21,005 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [llm] Typo in command 'prek' should be 'pre-commit...
+2025-10-14 20:05:53,004 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 20:05:56,007 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [llm] Typo in command 'prek' should be 'pre-commit...
+2025-10-14 20:06:28,021 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-14 20:06:28,024 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-14 20:06:28,024 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-14 20:06:28,027 - __main__ - INFO - ======================================================================
+2025-10-14 20:06:28,027 - __main__ - INFO - 📊 大规模代码修复系统统一报告
+2025-10-14 20:06:28,027 - __main__ - INFO - ======================================================================
+2025-10-14 20:06:28,027 - __main__ - INFO - 配置参数:
+2025-10-14 20:06:28,028 - __main__ - INFO -   - 最小处理严重程度: HIGH
+2025-10-14 20:06:28,028 - __main__ - INFO -   - 最大并行线程数: 1
+2025-10-14 20:06:28,028 - __main__ - INFO -   - 总执行时间: 843.33秒
+2025-10-14 20:06:28,028 - __main__ - INFO - 修复统计:
+2025-10-14 20:06:28,028 - __main__ - INFO -   - 总修复任务: 20
+2025-10-14 20:06:28,028 - __main__ - INFO -   - 成功修复: 14
+2025-10-14 20:06:28,028 - __main__ - INFO -   - 修复失败: 6
+2025-10-14 20:06:28,028 - __main__ - INFO -   - 修复成功率: 70.00%
+2025-10-14 20:06:28,031 - __main__ - INFO - 生成统一修复报告，包含 20 个修复任务
+2025-10-14 20:06:28,033 - __main__ - INFO - 📄 统一修复报告已保存: unified_fix_report_20251014_200628.txt
+2025-10-14 20:06:28,035 - __main__ - INFO - 
+🔧 修复策略统计:
+2025-10-14 20:06:28,035 - __main__ - INFO -   fix_hardcoded_secrets: 1/1 (100.0%)
+2025-10-14 20:06:28,035 - __main__ - INFO -   ai_automatic_fix: 3/5 (60.0%)
+2025-10-14 20:06:28,035 - __main__ - INFO -   fix_sql_injection: 8/8 (100.0%)
+2025-10-14 20:06:28,035 - __main__ - INFO -   fix_syntax_error: 2/6 (33.3%)
+2025-10-14 20:06:28,043 - __main__ - INFO - 📄 统一JSON报告已保存: unified_repair_report_20251014_200628.json
+2025-10-14 20:14:42,524 - __main__ - INFO - 开始处理缺陷报告 (安全模式):
+2025-10-14 20:14:42,524 - __main__ - INFO -   - 缺陷报告: requests_cache_defect_report.json
+2025-10-14 20:14:42,530 - __main__ - INFO -   - 最小严重程度: HIGH
+2025-10-14 20:14:42,530 - __main__ - INFO -   - 并行线程数: 1
+2025-10-14 20:14:42,530 - __main__ - INFO -   - 最大任务数: 20
+2025-10-14 20:14:42,530 - agents.decision_manager - INFO - 初始化DecisionManagerAgent...
+2025-10-14 20:14:42,532 - __main__ - INFO - 大规模代码修复系统初始化完成，最大工作线程: 1
+2025-10-14 20:14:42,532 - __main__ - INFO - 🚀 开始代码修复系统工作流程
+2025-10-14 20:14:42,532 - __main__ - INFO - 配置: 最小严重程度=HIGH, 最大任务数=20
+2025-10-14 20:14:42,532 - agents.code_fixer - INFO - 已清空修复结果
+2025-10-14 20:14:42,534 - __main__ - INFO - 加载缺陷报告: requests_cache_defect_report.json
+2025-10-14 20:14:42,536 - __main__ - INFO - 缺陷过滤完成: 原始缺陷 534 -> 过滤后 108
+2025-10-14 20:14:42,536 - __main__ - INFO - 处理文件数: 43
+2025-10-14 20:14:42,536 - __main__ - INFO - 开始生成优先级修复计划...
+2025-10-14 20:14:42,543 - agents.decision_manager - INFO - 开始分析缺陷报告...
+2025-10-14 20:14:42,543 - agents.decision_manager - INFO - 解析成功，共发现 43 个文件有缺陷
+2025-10-14 20:20:21,173 - agents.decision_manager - INFO - 分析完成，生成 108 个修复任务
+2025-10-14 20:20:21,173 - __main__ - INFO - 修复计划生成完成: 108个修复任务 (耗时: 338.64s)
+2025-10-14 20:20:21,173 - __main__ - INFO -   CRITICAL: 14个任务
+2025-10-14 20:20:21,173 - __main__ - INFO -   HIGH: 94个任务
+2025-10-14 20:20:21,173 - __main__ - WARNING - 任务数量过多 (108)，限制为前20个高优先级任务
+2025-10-14 20:20:21,173 - __main__ - INFO - 将处理 20 个修复任务
+2025-10-14 20:20:21,173 - __main__ - INFO - 开始执行修复任务 (线程数: 1)...
+2025-10-14 20:20:21,183 - agents.code_fixer - INFO - 已清空修复结果
+2025-10-14 20:20:21,222 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\benchmark.py, 行号=32, 策略=fix_hardcoded_secrets
+2025-10-14 20:20:21,222 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AWS credentials found in AWS_OPTIONS dictionary
+
+   ...
+2025-10-14 20:20:21,227 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AW...
+2025-10-14 20:20:53,224 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 20:20:56,237 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AW...
+2025-10-14 20:21:28,106 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-14 20:21:28,110 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-14 20:21:28,110 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-14 20:21:28,114 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\benchmark.py, 行号=78, 策略=ai_automatic_fix
+2025-10-14 20:21:28,114 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-14 20:21:28,114 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-14 20:21:28,117 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 20:21:46,473 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:21:46,473 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1277
+2025-10-14 20:21:46,478 - agents.code_fixer - WARNING - AI修复未通过验证: 功能代码被删除
+2025-10-14 20:21:46,478 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-14 20:21:46,482 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\benchmark.py:78
+2025-10-14 20:21:46,484 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\generate_test_db.py, 行号=64, 策略=ai_automatic_fix
+2025-10-14 20:21:46,484 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-14 20:21:46,486 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-14 20:21:46,486 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 20:22:18,309 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 20:22:21,313 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 20:22:53,336 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-14 20:22:53,338 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-14 20:22:53,338 - agents.code_fixer - WARNING - AI修复失败: 所有重试尝试均失败
+2025-10-14 20:22:53,338 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-14 20:22:53,338 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\generate_test_db.py:64
+2025-10-14 20:22:53,338 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\generate_test_db.py, 行号=83, 策略=ai_automatic_fix
+2025-10-14 20:22:53,346 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-14 20:22:53,346 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-14 20:22:53,346 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 20:23:12,792 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:23:12,795 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1506
+2025-10-14 20:23:12,799 - agents.code_fixer - WARNING - AI修复未通过验证: 功能代码被删除
+2025-10-14 20:23:12,799 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-14 20:23:12,803 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\generate_test_db.py:83
+2025-10-14 20:23:12,806 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\rps_graph.py, 行号=107, 策略=ai_automatic_fix
+2025-10-14 20:23:12,806 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-14 20:23:12,809 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-14 20:23:14,811 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 20:23:46,857 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 20:23:49,861 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 20:24:21,820 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-14 20:24:21,823 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-14 20:24:21,823 - agents.code_fixer - WARNING - AI修复失败: 所有重试尝试均失败
+2025-10-14 20:24:21,823 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-14 20:24:21,826 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\rps_graph.py:107
+2025-10-14 20:24:21,828 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=130, 策略=fix_sql_injection
+2025-10-14 20:24:21,830 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-14 20:24:21,835 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=140, 策略=fix_sql_injection
+2025-10-14 20:24:21,836 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-14 20:24:21,839 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=324, 策略=fix_sql_injection
+2025-10-14 20:24:21,845 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-14 20:24:21,853 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=332, 策略=fix_sql_injection
+2025-10-14 20:24:21,853 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-14 20:24:21,853 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-14 20:24:53,795 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 20:24:56,797 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-14 20:25:28,994 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-14 20:25:28,996 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-14 20:25:28,996 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 2
+2025-10-14 20:25:29,000 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=355, 策略=fix_sql_injection
+2025-10-14 20:25:29,002 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-14 20:25:29,002 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-14 20:26:01,050 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 20:26:04,054 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-14 20:26:35,928 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-14 20:26:35,933 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-14 20:26:35,933 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-14 20:26:35,933 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=373, 策略=fix_sql_injection
+2025-10-14 20:26:35,939 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-14 20:26:35,947 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=390, 策略=fix_sql_injection
+2025-10-14 20:26:35,947 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-14 20:26:35,949 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-14 20:27:07,970 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 20:27:10,972 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-14 20:27:43,452 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-14 20:27:43,454 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-14 20:27:43,454 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-14 20:27:43,460 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=440, 策略=fix_sql_injection
+2025-10-14 20:27:43,463 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-14 20:27:43,465 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-14 20:28:16,024 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 20:28:19,027 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-14 20:28:51,033 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-14 20:28:51,037 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-14 20:28:51,037 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-14 20:28:51,042 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\tests\integration\base_cache_test.py, 行号=446, 策略=ai_automatic_fix
+2025-10-14 20:28:51,044 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-14 20:28:51,044 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-14 20:28:53,047 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-14 20:29:12,845 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:29:12,845 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1505
+2025-10-14 20:29:12,845 - agents.code_fixer - WARNING - AI修复未通过验证: 功能代码被删除
+2025-10-14 20:29:12,845 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-14 20:29:12,845 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\tests\integration\base_cache_test.py:446
+2025-10-14 20:29:12,855 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\docs\conf.py, 行号=165, 策略=fix_syntax_error
+2025-10-14 20:29:12,858 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'sphinx_automodapi'...
+2025-10-14 20:29:12,860 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'sphinx_automodapi'...
+2025-10-14 20:29:32,506 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:29:32,508 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1517
+2025-10-14 20:29:32,514 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-14 20:29:32,518 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\docs\conf.py, 行号=166, 策略=fix_syntax_error
+2025-10-14 20:29:32,518 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'sphinx_automodapi.utils'...
+2025-10-14 20:29:32,522 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'sphinx_automodapi.utils...
+2025-10-14 20:29:52,606 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:29:52,608 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1517
+2025-10-14 20:29:52,610 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-14 20:29:52,614 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\basic_patching.py, 行号=10, 策略=fix_syntax_error
+2025-10-14 20:29:52,616 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'requests_cache'...
+2025-10-14 20:29:52,616 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'requests_cache'...
+2025-10-14 20:30:11,420 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:30:11,420 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1515
+2025-10-14 20:30:11,424 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 1
+2025-10-14 20:30:11,430 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\basic_sessions.py, 行号=8, 策略=fix_syntax_error
+2025-10-14 20:30:11,430 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'requests_cache'...
+2025-10-14 20:30:11,430 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'requests_cache'...
+2025-10-14 20:30:27,805 - utils.ai_fixer - INFO - AI修复成功
+2025-10-14 20:30:27,807 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1175
+2025-10-14 20:30:27,810 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 1
+2025-10-14 20:30:27,815 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\noxfile.py, 行号=23, 策略=fix_syntax_error
+2025-10-14 20:30:27,819 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'nox'...
+2025-10-14 20:30:29,820 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'nox'...
+2025-10-14 20:31:01,643 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 20:31:04,648 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [pylint] Unable to import 'nox'...
+2025-10-14 20:31:36,621 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-14 20:31:36,621 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-14 20:31:36,625 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-14 20:31:36,625 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\noxfile.py, 行号=127, 策略=fix_syntax_error
+2025-10-14 20:31:36,625 - utils.ai_fixer - INFO - 开始AI修复，问题: [llm] Typo in command 'prek' should be 'pre-commit' in lint session...
+2025-10-14 20:31:36,625 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [llm] Typo in command 'prek' should be 'pre-commit...
+2025-10-14 20:32:08,571 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-14 20:32:11,576 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [llm] Typo in command 'prek' should be 'pre-commit...
+2025-10-14 20:32:43,488 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-14 20:32:43,490 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-14 20:32:43,493 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-14 20:32:43,493 - __main__ - INFO - ======================================================================
+2025-10-14 20:32:43,498 - __main__ - INFO - 📊 大规模代码修复系统统一报告
+2025-10-14 20:32:43,498 - __main__ - INFO - ======================================================================
+2025-10-14 20:32:43,500 - __main__ - INFO - 配置参数:
+2025-10-14 20:32:43,500 - __main__ - INFO -   - 最小处理严重程度: HIGH
+2025-10-14 20:32:43,500 - __main__ - INFO -   - 最大并行线程数: 1
+2025-10-14 20:32:43,500 - __main__ - INFO -   - 总执行时间: 1080.96秒
+2025-10-14 20:32:43,500 - __main__ - INFO - 修复统计:
+2025-10-14 20:32:43,503 - __main__ - INFO -   - 总修复任务: 20
+2025-10-14 20:32:43,503 - __main__ - INFO -   - 成功修复: 12
+2025-10-14 20:32:43,503 - __main__ - INFO -   - 修复失败: 8
+2025-10-14 20:32:43,503 - __main__ - INFO -   - 修复成功率: 60.00%
+2025-10-14 20:32:43,503 - __main__ - INFO - 生成统一修复报告，包含 20 个修复任务
+2025-10-14 20:32:43,507 - __main__ - INFO - 📄 统一修复报告已保存: unified_fix_report_20251014_203243.txt
+2025-10-14 20:32:43,509 - __main__ - INFO - 
+🔧 修复策略统计:
+2025-10-14 20:32:43,509 - __main__ - INFO -   fix_hardcoded_secrets: 1/1 (100.0%)
+2025-10-14 20:32:43,509 - __main__ - INFO -   ai_automatic_fix: 3/5 (60.0%)
+2025-10-14 20:32:43,509 - __main__ - INFO -   fix_sql_injection: 6/8 (75.0%)
+2025-10-14 20:32:43,510 - __main__ - INFO -   fix_syntax_error: 2/6 (33.3%)
+2025-10-14 20:32:43,516 - __main__ - INFO - 📄 统一JSON报告已保存: unified_repair_report_20251014_203243.json
+2025-10-19 18:54:27,717 - __main__ - INFO - 开始处理缺陷报告 (安全模式):
+2025-10-19 18:54:27,719 - __main__ - INFO -   - 缺陷报告: requests_cache_defect_report.json
+2025-10-19 18:54:27,719 - __main__ - INFO -   - 最小严重程度: HIGH
+2025-10-19 18:54:27,719 - __main__ - INFO -   - 并行线程数: 1
+2025-10-19 18:54:27,721 - __main__ - INFO -   - 最大任务数: 20
+2025-10-19 18:54:27,721 - agents.decision_manager - INFO - 初始化DecisionManagerAgent...
+2025-10-19 18:54:27,721 - __main__ - INFO - 大规模代码修复系统初始化完成，最大工作线程: 1
+2025-10-19 18:54:27,721 - __main__ - INFO - 🚀 开始代码修复系统工作流程
+2025-10-19 18:54:27,723 - __main__ - INFO - 配置: 最小严重程度=HIGH, 最大任务数=20
+2025-10-19 18:54:27,723 - agents.code_fixer - INFO - 已清空修复结果
+2025-10-19 18:54:27,723 - __main__ - INFO - 加载缺陷报告: requests_cache_defect_report.json
+2025-10-19 18:54:27,729 - __main__ - INFO - 缺陷过滤完成: 原始缺陷 534 -> 过滤后 108
+2025-10-19 18:54:27,729 - __main__ - INFO - 处理文件数: 43
+2025-10-19 18:54:27,731 - __main__ - INFO - 开始生成优先级修复计划...
+2025-10-19 18:54:27,735 - agents.decision_manager - INFO - 开始分析缺陷报告...
+2025-10-19 18:54:27,735 - agents.decision_manager - INFO - 解析成功，共发现 43 个文件有缺陷
+2025-10-19 18:57:00,121 - utils.ai_analyzer - WARNING - AI优先级分析失败: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2025-10-19 18:58:39,186 - agents.decision_manager - INFO - 分析完成，生成 108 个修复任务
+2025-10-19 18:58:39,187 - __main__ - INFO - 修复计划生成完成: 108个修复任务 (耗时: 251.46s)
+2025-10-19 18:58:39,187 - __main__ - INFO -   CRITICAL: 14个任务
+2025-10-19 18:58:39,188 - __main__ - INFO -   HIGH: 94个任务
+2025-10-19 18:58:39,188 - __main__ - WARNING - 任务数量过多 (108)，限制为前20个高优先级任务
+2025-10-19 18:58:39,188 - __main__ - INFO - 将处理 20 个修复任务
+2025-10-19 18:58:39,188 - __main__ - INFO - 开始执行修复任务 (线程数: 1)...
+2025-10-19 18:58:39,192 - agents.code_fixer - INFO - 已清空修复结果
+2025-10-19 18:58:39,232 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\benchmark.py, 行号=32, 策略=fix_hardcoded_secrets
+2025-10-19 18:58:39,234 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AWS credentials found in AWS_OPTIONS dictionary
+
+   ...
+2025-10-19 18:58:39,235 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AW...
+2025-10-19 18:59:10,327 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 18:59:13,330 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AW...
+2025-10-19 18:59:44,467 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 18:59:44,467 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 18:59:44,470 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 18:59:44,470 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\benchmark.py, 行号=78, 策略=ai_automatic_fix
+2025-10-19 18:59:44,470 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 18:59:44,470 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-19 18:59:44,470 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-19 19:00:00,126 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 19:00:00,126 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1277
+2025-10-19 19:00:00,126 - agents.code_fixer - WARNING - AI修复未通过验证: 功能代码被删除
+2025-10-19 19:00:00,126 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 19:00:00,132 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\benchmark.py:78
+2025-10-19 19:00:00,164 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\generate_test_db.py, 行号=64, 策略=ai_automatic_fix
+2025-10-19 19:00:00,164 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 19:00:00,164 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-19 19:00:00,164 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-19 19:00:31,304 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 19:00:34,308 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-19 19:01:05,044 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 19:01:05,044 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 3149
+2025-10-19 19:01:05,044 - agents.code_fixer - INFO - AI修复成功并通过验证: 修复质量良好
+2025-10-19 19:01:05,044 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 1
+2025-10-19 19:01:05,054 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\generate_test_db.py:64
+2025-10-19 19:01:05,054 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\generate_test_db.py, 行号=83, 策略=ai_automatic_fix
+2025-10-19 19:01:05,054 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 19:01:05,054 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-19 19:01:05,054 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-19 19:01:20,397 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 19:01:20,397 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1506
+2025-10-19 19:01:20,408 - agents.code_fixer - WARNING - AI修复未通过验证: 功能代码被删除
+2025-10-19 19:01:20,408 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 19:01:20,412 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\generate_test_db.py:83
+2025-10-19 19:01:20,446 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\rps_graph.py, 行号=107, 策略=ai_automatic_fix
+2025-10-19 19:01:20,446 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 19:01:20,446 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-19 19:01:22,448 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-19 19:01:52,292 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 19:01:52,293 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 3493
+2025-10-19 19:01:52,295 - agents.code_fixer - INFO - AI修复成功并通过验证: 修复质量良好
+2025-10-19 19:01:52,296 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 1
+2025-10-19 19:01:52,299 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\rps_graph.py:107
+2025-10-19 19:01:52,330 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=130, 策略=fix_sql_injection
+2025-10-19 19:01:52,330 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 19:01:52,330 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=140, 策略=fix_sql_injection
+2025-10-19 19:01:52,341 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 19:01:52,345 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=324, 策略=fix_sql_injection
+2025-10-19 19:01:52,345 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 19:01:52,353 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=332, 策略=fix_sql_injection
+2025-10-19 19:01:52,355 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-19 19:01:52,357 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 19:02:23,541 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 19:02:26,545 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 19:02:57,746 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 19:02:57,748 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 19:02:57,748 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 2
+2025-10-19 19:02:57,748 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=355, 策略=fix_sql_injection
+2025-10-19 19:02:57,748 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-19 19:02:57,748 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 19:03:28,937 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 19:03:31,939 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 19:04:03,134 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 19:04:03,137 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 19:04:03,137 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 19:04:03,142 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=373, 策略=fix_sql_injection
+2025-10-19 19:04:03,142 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 19:04:03,146 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=390, 策略=fix_sql_injection
+2025-10-19 19:04:03,150 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-19 19:04:03,150 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 19:04:34,388 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 19:04:37,392 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 19:05:08,573 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 19:05:08,574 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 19:05:08,574 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 19:05:08,581 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=440, 策略=fix_sql_injection
+2025-10-19 19:05:08,582 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-19 19:05:08,582 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 19:05:39,803 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 19:05:42,808 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 19:06:14,190 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 19:06:14,194 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 19:06:14,195 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 19:06:14,227 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\tests\integration\base_cache_test.py, 行号=446, 策略=ai_automatic_fix
+2025-10-19 19:06:14,228 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 19:06:14,231 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-19 19:06:16,232 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-19 19:06:32,151 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 19:06:32,151 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1505
+2025-10-19 19:06:32,153 - agents.code_fixer - WARNING - AI修复未通过验证: 功能代码被删除
+2025-10-19 19:06:32,153 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 19:06:32,155 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\tests\integration\base_cache_test.py:446
+2025-10-19 19:06:32,157 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\docs\conf.py, 行号=165, 策略=fix_syntax_error
+2025-10-19 19:06:32,159 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'sphinx_automodapi'...
+2025-10-19 19:06:32,159 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'sphinx_automodapi'...
+2025-10-19 19:06:48,292 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 19:06:48,294 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1517
+2025-10-19 19:06:48,295 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 19:06:48,297 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\docs\conf.py, 行号=166, 策略=fix_syntax_error
+2025-10-19 19:06:48,298 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'sphinx_automodapi.utils'...
+2025-10-19 19:06:48,299 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'sphinx_automodapi.utils...
+2025-10-19 19:07:04,631 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 19:07:04,631 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1517
+2025-10-19 19:07:04,633 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 19:07:04,665 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\basic_patching.py, 行号=10, 策略=fix_syntax_error
+2025-10-19 19:07:04,665 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'requests_cache'...
+2025-10-19 19:07:04,665 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'requests_cache'...
+2025-10-19 19:07:20,619 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 19:07:20,620 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1515
+2025-10-19 19:07:20,623 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 1
+2025-10-19 19:07:20,656 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\basic_sessions.py, 行号=8, 策略=fix_syntax_error
+2025-10-19 19:07:20,656 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'requests_cache'...
+2025-10-19 19:07:20,657 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'requests_cache'...
+2025-10-19 19:07:38,681 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 19:07:38,681 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1922
+2025-10-19 19:07:38,684 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 1
+2025-10-19 19:07:38,692 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\noxfile.py, 行号=23, 策略=fix_syntax_error
+2025-10-19 19:07:38,693 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'nox'...
+2025-10-19 19:07:40,694 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'nox'...
+2025-10-19 19:08:11,888 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 19:08:14,890 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [pylint] Unable to import 'nox'...
+2025-10-19 19:08:46,055 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 19:08:46,057 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 19:08:46,057 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 19:08:46,059 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\noxfile.py, 行号=127, 策略=fix_syntax_error
+2025-10-19 19:08:46,089 - utils.ai_fixer - INFO - 开始AI修复，问题: [llm] Typo in command 'prek' should be 'pre-commit' in lint session...
+2025-10-19 19:08:46,089 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [llm] Typo in command 'prek' should be 'pre-commit...
+2025-10-19 19:09:17,232 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 19:09:20,234 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [llm] Typo in command 'prek' should be 'pre-commit...
+2025-10-19 19:09:51,363 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 19:09:51,366 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 19:09:51,366 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 19:09:51,367 - __main__ - INFO - ======================================================================
+2025-10-19 19:09:51,370 - __main__ - INFO - 📊 大规模代码修复系统统一报告
+2025-10-19 19:09:51,370 - __main__ - INFO - ======================================================================
+2025-10-19 19:09:51,370 - __main__ - INFO - 配置参数:
+2025-10-19 19:09:51,370 - __main__ - INFO -   - 最小处理严重程度: HIGH
+2025-10-19 19:09:51,370 - __main__ - INFO -   - 最大并行线程数: 1
+2025-10-19 19:09:51,370 - __main__ - INFO -   - 总执行时间: 923.64秒
+2025-10-19 19:09:51,370 - __main__ - INFO - 修复统计:
+2025-10-19 19:09:51,370 - __main__ - INFO -   - 总修复任务: 20
+2025-10-19 19:09:51,370 - __main__ - INFO -   - 成功修复: 13
+2025-10-19 19:09:51,370 - __main__ - INFO -   - 修复失败: 7
+2025-10-19 19:09:51,370 - __main__ - INFO -   - 修复成功率: 65.00%
+2025-10-19 19:09:51,374 - __main__ - INFO - 生成统一修复报告，包含 20 个修复任务
+2025-10-19 19:09:51,405 - __main__ - INFO - 📄 统一修复报告已保存: unified_fix_report_20251019_190951.txt
+2025-10-19 19:09:51,405 - __main__ - INFO - 
+🔧 修复策略统计:
+2025-10-19 19:09:51,405 - __main__ - INFO -   fix_hardcoded_secrets: 1/1 (100.0%)
+2025-10-19 19:09:51,405 - __main__ - INFO -   ai_automatic_fix: 4/5 (80.0%)
+2025-10-19 19:09:51,405 - __main__ - INFO -   fix_sql_injection: 6/8 (75.0%)
+2025-10-19 19:09:51,405 - __main__ - INFO -   fix_syntax_error: 2/6 (33.3%)
+2025-10-19 19:09:51,414 - __main__ - INFO - 📄 统一JSON报告已保存: unified_repair_report_20251019_190951.json
+2025-10-19 20:51:32,668 - __main__ - INFO - 开始处理缺陷报告 (安全模式):
+2025-10-19 20:51:32,668 - __main__ - INFO -   - 缺陷报告: requests_cache_defect_report.json
+2025-10-19 20:51:32,668 - __main__ - INFO -   - 最小严重程度: HIGH
+2025-10-19 20:51:32,668 - __main__ - INFO -   - 并行线程数: 1
+2025-10-19 20:51:32,668 - __main__ - INFO -   - 最大任务数: 20
+2025-10-19 20:51:32,668 - agents.decision_manager - INFO - 初始化DecisionManagerAgent...
+2025-10-19 20:51:32,668 - __main__ - INFO - 大规模代码修复系统初始化完成，最大工作线程: 1
+2025-10-19 20:51:32,668 - __main__ - INFO - 🚀 开始代码修复系统工作流程
+2025-10-19 20:51:32,668 - __main__ - INFO - 配置: 最小严重程度=HIGH, 最大任务数=20
+2025-10-19 20:51:32,668 - agents.code_fixer - INFO - 已清空修复结果
+2025-10-19 20:51:32,678 - __main__ - INFO - 加载缺陷报告: requests_cache_defect_report.json
+2025-10-19 20:51:32,679 - __main__ - INFO - 缺陷过滤完成: 原始缺陷 534 -> 过滤后 108
+2025-10-19 20:51:32,679 - __main__ - INFO - 处理文件数: 43
+2025-10-19 20:51:32,679 - __main__ - INFO - 开始生成优先级修复计划...
+2025-10-19 20:51:32,689 - agents.decision_manager - INFO - 开始分析缺陷报告...
+2025-10-19 20:51:32,689 - agents.decision_manager - INFO - 解析成功，共发现 43 个文件有缺陷
+2025-10-19 20:55:25,663 - agents.decision_manager - INFO - 分析完成，生成 108 个修复任务
+2025-10-19 20:55:25,663 - __main__ - INFO - 修复计划生成完成: 108个修复任务 (耗时: 232.98s)
+2025-10-19 20:55:25,663 - __main__ - INFO -   CRITICAL: 14个任务
+2025-10-19 20:55:25,663 - __main__ - INFO -   HIGH: 94个任务
+2025-10-19 20:55:25,663 - __main__ - WARNING - 任务数量过多 (108)，限制为前20个高优先级任务
+2025-10-19 20:55:25,663 - __main__ - INFO - 将处理 20 个修复任务
+2025-10-19 20:55:25,663 - __main__ - INFO - 开始执行修复任务 (线程数: 1)...
+2025-10-19 20:55:25,663 - agents.code_fixer - INFO - 已清空修复结果
+2025-10-19 20:55:25,703 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\benchmark.py, 行号=32, 策略=fix_hardcoded_secrets
+2025-10-19 20:55:25,704 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AWS credentials found in AWS_OPTIONS dictionary
+
+   ...
+2025-10-19 20:55:25,704 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AW...
+2025-10-19 20:55:56,799 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 20:55:59,801 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AW...
+2025-10-19 20:56:30,951 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 20:56:30,955 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 20:56:30,955 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 20:56:30,961 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\benchmark.py, 行号=78, 策略=ai_automatic_fix
+2025-10-19 20:56:30,961 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 20:56:30,961 - agents.code_fixer - ERROR - 执行修复任务时发生错误: 'imports'
+2025-10-19 20:56:30,961 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\benchmark.py:78
+2025-10-19 20:56:30,964 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\generate_test_db.py, 行号=64, 策略=ai_automatic_fix
+2025-10-19 20:56:30,967 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 20:56:30,967 - agents.code_fixer - ERROR - 执行修复任务时发生错误: 'imports'
+2025-10-19 20:56:30,967 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\generate_test_db.py:64
+2025-10-19 20:56:30,969 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\generate_test_db.py, 行号=83, 策略=ai_automatic_fix
+2025-10-19 20:56:30,970 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 20:56:30,970 - agents.code_fixer - ERROR - 执行修复任务时发生错误: 'imports'
+2025-10-19 20:56:30,970 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\generate_test_db.py:83
+2025-10-19 20:56:30,972 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\rps_graph.py, 行号=107, 策略=ai_automatic_fix
+2025-10-19 20:56:30,972 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 20:56:30,972 - agents.code_fixer - ERROR - 执行修复任务时发生错误: 'imports'
+2025-10-19 20:56:30,972 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\rps_graph.py:107
+2025-10-19 20:56:30,975 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=130, 策略=fix_sql_injection
+2025-10-19 20:56:30,975 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 20:56:30,985 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=140, 策略=fix_sql_injection
+2025-10-19 20:56:30,985 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 20:56:30,985 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=324, 策略=fix_sql_injection
+2025-10-19 20:56:30,985 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 20:56:30,995 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=332, 策略=fix_sql_injection
+2025-10-19 20:56:30,995 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-19 20:56:30,995 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 20:57:02,229 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 20:57:05,230 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 20:57:36,458 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 20:57:36,458 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 20:57:36,461 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 2
+2025-10-19 20:57:36,461 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=355, 策略=fix_sql_injection
+2025-10-19 20:57:36,464 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-19 20:57:36,464 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 20:58:07,547 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 20:58:10,552 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 20:58:41,718 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 20:58:41,718 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 20:58:41,718 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 20:58:41,718 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=373, 策略=fix_sql_injection
+2025-10-19 20:58:41,718 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 20:58:41,728 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=390, 策略=fix_sql_injection
+2025-10-19 20:58:41,728 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-19 20:58:41,728 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 20:59:12,885 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 20:59:15,888 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 20:59:47,167 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 20:59:47,167 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 20:59:47,167 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 20:59:47,167 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=440, 策略=fix_sql_injection
+2025-10-19 20:59:47,167 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-19 20:59:49,178 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 21:00:20,587 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 21:00:23,590 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 21:00:54,846 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 21:00:54,847 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 21:00:54,847 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 21:00:54,883 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\tests\integration\base_cache_test.py, 行号=446, 策略=ai_automatic_fix
+2025-10-19 21:00:54,884 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 21:00:54,885 - agents.code_fixer - ERROR - 执行修复任务时发生错误: 'imports'
+2025-10-19 21:00:54,886 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\tests\integration\base_cache_test.py:446
+2025-10-19 21:00:54,891 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\docs\conf.py, 行号=165, 策略=fix_syntax_error
+2025-10-19 21:00:54,891 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'sphinx_automodapi'...
+2025-10-19 21:00:54,892 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'sphinx_automodapi'...
+2025-10-19 21:01:11,169 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 21:01:11,171 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1517
+2025-10-19 21:01:11,173 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 21:01:11,175 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\docs\conf.py, 行号=166, 策略=fix_syntax_error
+2025-10-19 21:01:11,175 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'sphinx_automodapi.utils'...
+2025-10-19 21:01:11,175 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'sphinx_automodapi.utils...
+2025-10-19 21:01:27,758 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 21:01:27,758 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1517
+2025-10-19 21:01:27,758 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 21:01:27,792 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\basic_patching.py, 行号=10, 策略=fix_syntax_error
+2025-10-19 21:01:27,793 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'requests_cache'...
+2025-10-19 21:01:27,793 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'requests_cache'...
+2025-10-19 21:01:42,221 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 21:01:42,221 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1396
+2025-10-19 21:01:42,221 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 1
+2025-10-19 21:01:42,254 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\basic_sessions.py, 行号=8, 策略=fix_syntax_error
+2025-10-19 21:01:42,254 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'requests_cache'...
+2025-10-19 21:01:42,254 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'requests_cache'...
+2025-10-19 21:02:00,095 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 21:02:00,095 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1700
+2025-10-19 21:02:00,095 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 1
+2025-10-19 21:02:00,127 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\noxfile.py, 行号=23, 策略=fix_syntax_error
+2025-10-19 21:02:00,137 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'nox'...
+2025-10-19 21:02:02,138 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'nox'...
+2025-10-19 21:02:33,242 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 21:02:36,245 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [pylint] Unable to import 'nox'...
+2025-10-19 21:03:07,427 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 21:03:07,429 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 21:03:07,429 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 21:03:07,429 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\noxfile.py, 行号=127, 策略=fix_syntax_error
+2025-10-19 21:03:07,429 - utils.ai_fixer - INFO - 开始AI修复，问题: [llm] Typo in command 'prek' should be 'pre-commit' in lint session...
+2025-10-19 21:03:07,429 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [llm] Typo in command 'prek' should be 'pre-commit...
+2025-10-19 21:03:38,548 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 21:03:41,552 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [llm] Typo in command 'prek' should be 'pre-commit...
+2025-10-19 21:04:12,719 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 21:04:12,722 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 21:04:12,722 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 21:04:12,722 - __main__ - INFO - ======================================================================
+2025-10-19 21:04:12,722 - __main__ - INFO - 📊 大规模代码修复系统统一报告
+2025-10-19 21:04:12,722 - __main__ - INFO - ======================================================================
+2025-10-19 21:04:12,722 - __main__ - INFO - 配置参数:
+2025-10-19 21:04:12,722 - __main__ - INFO -   - 最小处理严重程度: HIGH
+2025-10-19 21:04:12,722 - __main__ - INFO -   - 最大并行线程数: 1
+2025-10-19 21:04:12,722 - __main__ - INFO -   - 总执行时间: 760.04秒
+2025-10-19 21:04:12,722 - __main__ - INFO - 修复统计:
+2025-10-19 21:04:12,722 - __main__ - INFO -   - 总修复任务: 20
+2025-10-19 21:04:12,722 - __main__ - INFO -   - 成功修复: 9
+2025-10-19 21:04:12,730 - __main__ - INFO -   - 修复失败: 11
+2025-10-19 21:04:12,730 - __main__ - INFO -   - 修复成功率: 45.00%
+2025-10-19 21:04:12,730 - __main__ - INFO - 生成统一修复报告，包含 20 个修复任务
+2025-10-19 21:04:12,730 - __main__ - INFO - 📄 统一修复报告已保存: unified_fix_report_20251019_210412.txt
+2025-10-19 21:04:12,730 - __main__ - INFO - 
+🔧 修复策略统计:
+2025-10-19 21:04:12,734 - __main__ - INFO -   fix_hardcoded_secrets: 1/1 (100.0%)
+2025-10-19 21:04:12,734 - __main__ - INFO -   ai_automatic_fix: 0/5 (0.0%)
+2025-10-19 21:04:12,734 - __main__ - INFO -   fix_sql_injection: 6/8 (75.0%)
+2025-10-19 21:04:12,734 - __main__ - INFO -   fix_syntax_error: 2/6 (33.3%)
+2025-10-19 21:04:12,765 - __main__ - INFO - 📄 统一JSON报告已保存: unified_repair_report_20251019_210412.json
+2025-10-19 21:06:09,385 - __main__ - INFO - 开始处理缺陷报告 (安全模式):
+2025-10-19 21:06:09,385 - __main__ - INFO -   - 缺陷报告: requests_cache_defect_report.json
+2025-10-19 21:06:09,385 - __main__ - INFO -   - 最小严重程度: HIGH
+2025-10-19 21:06:09,385 - __main__ - INFO -   - 并行线程数: 1
+2025-10-19 21:06:09,385 - __main__ - INFO -   - 最大任务数: 20
+2025-10-19 21:06:09,385 - agents.decision_manager - INFO - 初始化DecisionManagerAgent...
+2025-10-19 21:06:09,385 - __main__ - INFO - 大规模代码修复系统初始化完成，最大工作线程: 1
+2025-10-19 21:06:09,385 - __main__ - INFO - 🚀 开始代码修复系统工作流程
+2025-10-19 21:06:09,385 - __main__ - INFO - 配置: 最小严重程度=HIGH, 最大任务数=20
+2025-10-19 21:06:09,385 - agents.code_fixer - INFO - 已清空修复结果
+2025-10-19 21:06:09,385 - __main__ - INFO - 加载缺陷报告: requests_cache_defect_report.json
+2025-10-19 21:06:09,395 - __main__ - INFO - 缺陷过滤完成: 原始缺陷 534 -> 过滤后 108
+2025-10-19 21:06:09,395 - __main__ - INFO - 处理文件数: 43
+2025-10-19 21:06:09,395 - __main__ - INFO - 开始生成优先级修复计划...
+2025-10-19 21:06:09,399 - agents.decision_manager - INFO - 开始分析缺陷报告...
+2025-10-19 21:06:09,399 - agents.decision_manager - INFO - 解析成功，共发现 43 个文件有缺陷
+2025-10-19 21:10:07,660 - agents.decision_manager - INFO - 分析完成，生成 108 个修复任务
+2025-10-19 21:10:07,669 - __main__ - INFO - 修复计划生成完成: 108个修复任务 (耗时: 238.27s)
+2025-10-19 21:10:07,669 - __main__ - INFO -   CRITICAL: 14个任务
+2025-10-19 21:10:07,669 - __main__ - INFO -   HIGH: 94个任务
+2025-10-19 21:10:07,669 - __main__ - WARNING - 任务数量过多 (108)，限制为前20个高优先级任务
+2025-10-19 21:10:07,669 - __main__ - INFO - 将处理 20 个修复任务
+2025-10-19 21:10:07,671 - __main__ - INFO - 开始执行修复任务 (线程数: 1)...
+2025-10-19 21:10:07,671 - agents.code_fixer - INFO - 已清空修复结果
+2025-10-19 21:10:07,699 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\benchmark.py, 行号=32, 策略=fix_hardcoded_secrets
+2025-10-19 21:10:07,699 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AWS credentials found in AWS_OPTIONS dictionary
+
+   ...
+2025-10-19 21:10:07,699 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AW...
+2025-10-19 21:10:38,797 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 21:10:41,801 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AW...
+2025-10-19 21:11:12,897 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 21:11:12,897 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 21:11:12,897 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 21:11:12,903 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\benchmark.py, 行号=78, 策略=ai_automatic_fix
+2025-10-19 21:11:12,903 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 21:11:12,903 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-19 21:11:12,903 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-19 21:11:28,432 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 21:11:28,432 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1277
+2025-10-19 21:11:28,432 - agents.code_fixer - WARNING - AI修复未通过验证: 功能代码被删除
+2025-10-19 21:11:28,440 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 21:11:28,440 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\benchmark.py:78
+2025-10-19 21:11:28,444 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\generate_test_db.py, 行号=64, 策略=ai_automatic_fix
+2025-10-19 21:11:28,445 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 21:11:28,445 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-19 21:11:28,445 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-19 21:11:59,552 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 21:12:02,555 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-19 21:12:18,686 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 21:12:18,686 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1506
+2025-10-19 21:12:18,686 - agents.code_fixer - WARNING - AI修复未通过验证: 代码过度删减
+2025-10-19 21:12:18,686 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 21:12:18,686 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\generate_test_db.py:64
+2025-10-19 21:12:18,686 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\generate_test_db.py, 行号=83, 策略=ai_automatic_fix
+2025-10-19 21:12:18,686 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 21:12:18,686 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-19 21:12:18,686 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-19 21:12:49,818 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 21:12:52,820 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-19 21:13:09,015 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 21:13:09,015 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1506
+2025-10-19 21:13:09,015 - agents.code_fixer - WARNING - AI修复未通过验证: 功能代码被删除
+2025-10-19 21:13:09,015 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 21:13:09,015 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\generate_test_db.py:83
+2025-10-19 21:13:09,025 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\rps_graph.py, 行号=107, 策略=ai_automatic_fix
+2025-10-19 21:13:09,025 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 21:13:09,028 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-19 21:13:11,029 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-19 21:13:38,182 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 21:13:38,182 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 2855
+2025-10-19 21:13:38,185 - agents.code_fixer - INFO - AI修复成功并通过验证: 修复质量良好
+2025-10-19 21:13:38,185 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 1
+2025-10-19 21:13:38,185 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\rps_graph.py:107
+2025-10-19 21:13:38,185 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=130, 策略=fix_sql_injection
+2025-10-19 21:13:38,185 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 21:13:38,194 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=140, 策略=fix_sql_injection
+2025-10-19 21:13:38,194 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 21:13:38,194 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=324, 策略=fix_sql_injection
+2025-10-19 21:13:38,194 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 21:13:38,204 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=332, 策略=fix_sql_injection
+2025-10-19 21:13:38,204 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-19 21:13:38,207 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 21:14:09,523 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 21:14:12,525 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 21:14:43,749 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 21:14:43,749 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 21:14:43,749 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 2
+2025-10-19 21:14:43,756 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=355, 策略=fix_sql_injection
+2025-10-19 21:14:43,757 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-19 21:14:43,757 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 21:15:15,001 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 21:15:18,004 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 21:15:49,310 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 21:15:49,310 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 21:15:49,310 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 21:15:49,310 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=373, 策略=fix_sql_injection
+2025-10-19 21:15:49,320 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 21:15:49,325 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=390, 策略=fix_sql_injection
+2025-10-19 21:15:49,325 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-19 21:15:49,325 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 21:16:20,537 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 21:16:23,539 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 21:16:55,089 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 21:16:55,089 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 21:16:55,089 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 21:16:55,089 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=440, 策略=fix_sql_injection
+2025-10-19 21:16:55,089 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...
+2025-10-19 21:16:55,100 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 21:17:26,302 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 21:17:29,304 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possibl...
+2025-10-19 21:18:00,567 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 21:18:00,567 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 21:18:00,567 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 2
+2025-10-19 21:18:00,575 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\tests\integration\base_cache_test.py, 行号=446, 策略=ai_automatic_fix
+2025-10-19 21:18:00,575 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+2025-10-19 21:18:00,577 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....
+2025-10-19 21:18:02,578 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [bandit] Standard pseudo-random generators are not...
+2025-10-19 21:18:19,155 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 21:18:19,155 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1505
+2025-10-19 21:18:19,158 - agents.code_fixer - WARNING - AI修复未通过验证: 功能代码被删除
+2025-10-19 21:18:19,158 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 21:18:19,161 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\tests\integration\base_cache_test.py:446
+2025-10-19 21:18:19,162 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\docs\conf.py, 行号=165, 策略=fix_syntax_error
+2025-10-19 21:18:19,162 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'sphinx_automodapi'...
+2025-10-19 21:18:19,163 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'sphinx_automodapi'...
+2025-10-19 21:18:35,858 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 21:18:35,858 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1517
+2025-10-19 21:18:35,858 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 21:18:35,858 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\docs\conf.py, 行号=166, 策略=fix_syntax_error
+2025-10-19 21:18:35,858 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'sphinx_automodapi.utils'...
+2025-10-19 21:18:35,858 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'sphinx_automodapi.utils...
+2025-10-19 21:18:52,357 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 21:18:52,357 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1517
+2025-10-19 21:18:52,363 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 21:18:52,366 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\basic_patching.py, 行号=10, 策略=fix_syntax_error
+2025-10-19 21:18:52,366 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'requests_cache'...
+2025-10-19 21:18:52,366 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'requests_cache'...
+2025-10-19 21:19:08,422 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 21:19:08,422 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1515
+2025-10-19 21:19:08,424 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 1
+2025-10-19 21:19:08,429 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\basic_sessions.py, 行号=8, 策略=fix_syntax_error
+2025-10-19 21:19:08,429 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'requests_cache'...
+2025-10-19 21:19:08,429 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'requests_cache'...
+2025-10-19 21:19:25,787 - utils.ai_fixer - INFO - AI修复成功
+2025-10-19 21:19:25,797 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1740
+2025-10-19 21:19:25,798 - agents.code_fixer - INFO - 修复完成，成功: True, 变更数量: 1
+2025-10-19 21:19:25,807 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\noxfile.py, 行号=23, 策略=fix_syntax_error
+2025-10-19 21:19:25,807 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'nox'...
+2025-10-19 21:19:27,810 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [pylint] Unable to import 'nox'...
+2025-10-19 21:19:59,121 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 21:20:02,123 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [pylint] Unable to import 'nox'...
+2025-10-19 21:20:33,260 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 21:20:33,260 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 21:20:33,260 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 21:20:33,260 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\noxfile.py, 行号=127, 策略=fix_syntax_error
+2025-10-19 21:20:33,260 - utils.ai_fixer - INFO - 开始AI修复，问题: [llm] Typo in command 'prek' should be 'pre-commit' in lint session...
+2025-10-19 21:20:33,260 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 错误: [llm] Typo in command 'prek' should be 'pre-commit...
+2025-10-19 21:21:04,367 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-19 21:21:07,371 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 错误: [llm] Typo in command 'prek' should be 'pre-commit...
+2025-10-19 21:21:38,454 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-19 21:21:38,454 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-19 21:21:38,454 - agents.code_fixer - INFO - 修复完成，成功: False, 变更数量: 1
+2025-10-19 21:21:38,454 - __main__ - INFO - ======================================================================
+2025-10-19 21:21:38,454 - __main__ - INFO - 📊 大规模代码修复系统统一报告
+2025-10-19 21:21:38,454 - __main__ - INFO - ======================================================================
+2025-10-19 21:21:38,454 - __main__ - INFO - 配置参数:
+2025-10-19 21:21:38,454 - __main__ - INFO -   - 最小处理严重程度: HIGH
+2025-10-19 21:21:38,454 - __main__ - INFO -   - 最大并行线程数: 1
+2025-10-19 21:21:38,454 - __main__ - INFO -   - 总执行时间: 929.07秒
+2025-10-19 21:21:38,454 - __main__ - INFO - 修复统计:
+2025-10-19 21:21:38,454 - __main__ - INFO -   - 总修复任务: 20
+2025-10-19 21:21:38,454 - __main__ - INFO -   - 成功修复: 13
+2025-10-19 21:21:38,454 - __main__ - INFO -   - 修复失败: 7
+2025-10-19 21:21:38,454 - __main__ - INFO -   - 修复成功率: 65.00%
+2025-10-19 21:21:38,454 - __main__ - INFO - 生成统一修复报告，包含 20 个修复任务
+2025-10-19 21:21:38,487 - __main__ - INFO - 📄 统一修复报告已保存: unified_fix_report_20251019_212138.txt
+2025-10-19 21:21:38,495 - __main__ - INFO - 
+🔧 修复策略统计:
+2025-10-19 21:21:38,495 - __main__ - INFO -   fix_hardcoded_secrets: 1/1 (100.0%)
+2025-10-19 21:21:38,495 - __main__ - INFO -   ai_automatic_fix: 4/5 (80.0%)
+2025-10-19 21:21:38,495 - __main__ - INFO -   fix_sql_injection: 6/8 (75.0%)
+2025-10-19 21:21:38,495 - __main__ - INFO -   fix_syntax_error: 2/6 (33.3%)
+2025-10-19 21:21:38,499 - __main__ - INFO - 📄 统一JSON报告已保存: unified_repair_report_20251019_212138.json
+2025-10-29 22:59:18,145 - __main__ - INFO - 开始处理缺陷报告 (安全模式):
+2025-10-29 22:59:18,145 - __main__ - INFO -   - 缺陷报告: requests_cache_defect_report.json
+2025-10-29 22:59:18,145 - __main__ - INFO -   - 最小严重程度: HIGH
+2025-10-29 22:59:18,147 - __main__ - INFO -   - 并行线程数: 1
+2025-10-29 22:59:18,147 - __main__ - INFO -   - 最大任务数: 20
+2025-10-29 22:59:18,147 - agents.decision_manager - INFO - 初始化DecisionManagerAgent...
+2025-10-29 22:59:18,147 - __main__ - INFO - 大规模代码修复系统初始化完成，最大工作线程: 1
+2025-10-29 22:59:18,147 - __main__ - INFO - 🚀 开始代码修复系统工作流程
+2025-10-29 22:59:18,147 - __main__ - INFO - 配置: 最小严重程度=HIGH, 最大任务数=20
+2025-10-29 22:59:18,147 - agents.code_fixer - INFO - 已清空修复结果
+2025-10-29 22:59:18,147 - __main__ - INFO - 加载缺陷报告: requests_cache_defect_report.json
+2025-10-29 22:59:18,147 - __main__ - INFO - 缺陷过滤完成: 原始缺陷 534 -> 过滤后 108
+2025-10-29 22:59:18,147 - __main__ - INFO - 处理文件数: 43
+2025-10-29 22:59:18,147 - __main__ - INFO - 开始生成优先级修复计划...
+2025-10-29 22:59:18,154 - agents.decision_manager - INFO - 开始分析缺陷报告...
+2025-10-29 22:59:18,154 - agents.decision_manager - INFO - 解析成功，共发现 43 个文件有缺陷
+2025-10-29 22:59:18,154 - agents.decision_manager - INFO - 共收集到 108 个缺陷，开始批量处理...
+2025-10-29 22:59:58,076 - agents.decision_manager - INFO - 修复任务排序完成，最高优先级: CRITICAL
+2025-10-29 22:59:58,076 - agents.decision_manager - INFO - 分析完成，生成 108 个修复任务
+2025-10-29 22:59:58,076 - __main__ - INFO - 修复计划生成完成: 108个修复任务 (耗时: 39.93s)
+2025-10-29 22:59:58,076 - __main__ - INFO -   CRITICAL: 14个任务
+2025-10-29 22:59:58,076 - __main__ - INFO -   HIGH: 94个任务
+2025-10-29 22:59:58,076 - __main__ - WARNING - 任务数量过多 (108)，限制为前20个高优先级任务
+2025-10-29 22:59:58,076 - __main__ - INFO - 将处理 20 个修复任务
+2025-10-29 22:59:58,076 - __main__ - INFO - 开始执行修复任务 (线程数: 1)...
+2025-10-29 22:59:58,086 - agents.code_fixer - INFO - 已清空修复结果
+2025-10-29 22:59:58,106 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\examples\benchmark.py
+2025-10-29 22:59:58,106 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\benchmark.py, 行号=32, 策略=fix_hardcoded_secrets, 语言=python, 缺陷类型=security
+2025-10-29 22:59:58,110 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的硬编码密码问题：
+
+    问题：[llm] Hardcoded AWS credentials found in AWS_OPTIONS dictionary
+
+   ...，语言: python
+2025-10-29 22:59:58,110 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:00:29,045 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-29 23:00:32,048 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 语言: python
+2025-10-29 23:01:03,005 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-29 23:01:03,005 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-29 23:01:03,005 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 2
+2025-10-29 23:01:03,005 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\examples\benchmark.py
+2025-10-29 23:01:03,005 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\benchmark.py, 行号=78, 策略=ai_automatic_fix, 语言=python, 缺陷类型=security
+2025-10-29 23:01:03,005 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes., 语言: python
+2025-10-29 23:01:03,040 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....，语言: python
+2025-10-29 23:01:03,041 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:01:26,778 - utils.ai_fixer - INFO - AI修复成功
+2025-10-29 23:01:26,782 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 2288
+2025-10-29 23:01:26,783 - agents.code_fixer - WARNING - AI修复未通过验证: 修复后代码语法错误: unterminated triple-quoted string literal (detected at line 81) (<string>, line 49)
+2025-10-29 23:01:26,783 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-29 23:01:26,783 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\benchmark.py:78
+2025-10-29 23:01:26,783 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\examples\generate_test_db.py
+2025-10-29 23:01:26,783 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\generate_test_db.py, 行号=64, 策略=ai_automatic_fix, 语言=python, 缺陷类型=security
+2025-10-29 23:01:26,787 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes., 语言: python
+2025-10-29 23:01:26,787 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....，语言: python
+2025-10-29 23:01:26,787 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:01:57,725 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-29 23:02:00,726 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 语言: python
+2025-10-29 23:02:30,413 - utils.ai_fixer - INFO - AI修复成功
+2025-10-29 23:02:30,413 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 3256
+2025-10-29 23:02:30,419 - agents.code_fixer - INFO - AI修复成功: Python修复质量良好
+2025-10-29 23:02:30,419 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-10-29 23:02:30,450 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\generate_test_db.py:64
+2025-10-29 23:02:30,450 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\examples\generate_test_db.py
+2025-10-29 23:02:30,450 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\generate_test_db.py, 行号=83, 策略=ai_automatic_fix, 语言=python, 缺陷类型=security
+2025-10-29 23:02:30,450 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes., 语言: python
+2025-10-29 23:02:30,450 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....，语言: python
+2025-10-29 23:02:30,453 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:03:01,419 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-29 23:03:04,421 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 语言: python
+2025-10-29 23:03:35,412 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-29 23:03:35,412 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-29 23:03:35,412 - agents.code_fixer - WARNING - AI修复失败: 所有重试尝试均失败
+2025-10-29 23:03:35,412 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-29 23:03:35,412 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\generate_test_db.py:83
+2025-10-29 23:03:35,418 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\examples\rps_graph.py
+2025-10-29 23:03:35,418 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\rps_graph.py, 行号=107, 策略=ai_automatic_fix, 语言=python, 缺陷类型=security
+2025-10-29 23:03:35,418 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes., 语言: python
+2025-10-29 23:03:35,418 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....，语言: python
+2025-10-29 23:03:37,421 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:03:58,302 - utils.ai_fixer - INFO - AI修复成功
+2025-10-29 23:03:58,302 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 2490
+2025-10-29 23:03:58,305 - agents.code_fixer - INFO - AI修复成功: Python修复质量良好
+2025-10-29 23:03:58,308 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-10-29 23:03:58,308 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\examples\rps_graph.py:107
+2025-10-29 23:03:58,308 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-29 23:03:58,308 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=130, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-29 23:03:58,314 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 2
+2025-10-29 23:03:58,317 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-29 23:03:58,317 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=332, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-29 23:03:58,317 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...，语言: python
+2025-10-29 23:03:58,317 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:04:29,331 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-29 23:04:32,333 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 语言: python
+2025-10-29 23:05:03,378 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-29 23:05:03,378 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-29 23:05:03,378 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 2
+2025-10-29 23:05:03,378 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-29 23:05:03,378 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=355, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-29 23:05:03,378 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...，语言: python
+2025-10-29 23:05:03,378 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:05:34,390 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-29 23:05:37,394 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 语言: python
+2025-10-29 23:06:08,428 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-29 23:06:08,430 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-29 23:06:08,430 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 2
+2025-10-29 23:06:08,433 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-29 23:06:08,433 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=373, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-29 23:06:08,433 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 2
+2025-10-29 23:06:08,438 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-29 23:06:08,438 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=390, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-29 23:06:08,438 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...，语言: python
+2025-10-29 23:06:08,438 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:06:39,438 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-29 23:06:42,442 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 语言: python
+2025-10-29 23:07:13,475 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-29 23:07:13,478 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-29 23:07:13,478 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 2
+2025-10-29 23:07:13,482 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-29 23:07:13,483 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=440, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-29 23:07:13,484 - utils.ai_fixer - INFO - 开始AI修复，问题: 请修复以下Python代码中的SQL注入安全问题：
+
+    问题：[bandit] Possible SQL injection vector through string-based query ...，语言: python
+2025-10-29 23:07:13,484 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:07:44,459 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-29 23:07:47,463 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 语言: python
+2025-10-29 23:08:18,435 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-29 23:08:18,438 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-29 23:08:18,438 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 2
+2025-10-29 23:08:18,443 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-29 23:08:18,443 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=140, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-29 23:08:18,445 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-29 23:08:18,445 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-29 23:08:18,445 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=324, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-29 23:08:18,445 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 2
+2025-10-29 23:08:18,451 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\tests\integration\base_cache_test.py
+2025-10-29 23:08:18,454 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\tests\integration\base_cache_test.py, 行号=446, 策略=ai_automatic_fix, 语言=python, 缺陷类型=security
+2025-10-29 23:08:18,454 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes., 语言: python
+2025-10-29 23:08:18,454 - utils.ai_fixer - INFO - 开始AI修复，问题: [bandit] Standard pseudo-random generators are not suitable for security/cryptographic purposes....，语言: python
+2025-10-29 23:08:20,455 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:08:36,294 - utils.ai_fixer - INFO - AI修复成功
+2025-10-29 23:08:36,294 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1505
+2025-10-29 23:08:36,297 - agents.code_fixer - WARNING - AI修复未通过验证: 修复后代码语法错误: invalid syntax (<string>, line 56)
+2025-10-29 23:08:36,297 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-29 23:08:36,297 - __main__ - INFO - 执行AI自动修复: D:\PY\requests-cache-main\tests\integration\base_cache_test.py:446
+2025-10-29 23:08:36,300 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\docs\conf.py
+2025-10-29 23:08:36,300 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\docs\conf.py, 行号=166, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-29 23:08:36,302 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'sphinx_automodapi.utils'...，语言: python
+2025-10-29 23:08:36,302 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:08:51,841 - utils.ai_fixer - INFO - AI修复成功
+2025-10-29 23:08:51,841 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1517
+2025-10-29 23:08:51,847 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-29 23:08:51,847 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\examples\basic_patching.py
+2025-10-29 23:08:51,847 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\basic_patching.py, 行号=10, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-29 23:08:51,847 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'requests_cache'...，语言: python
+2025-10-29 23:08:51,847 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:09:06,692 - utils.ai_fixer - INFO - AI修复成功
+2025-10-29 23:09:06,692 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1525
+2025-10-29 23:09:06,692 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-10-29 23:09:06,692 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\docs\conf.py
+2025-10-29 23:09:06,703 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\docs\conf.py, 行号=165, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-29 23:09:06,703 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'sphinx_automodapi'...，语言: python
+2025-10-29 23:09:06,703 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:09:37,774 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-29 23:09:40,777 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 语言: python
+2025-10-29 23:09:56,100 - utils.ai_fixer - INFO - AI修复成功
+2025-10-29 23:09:56,100 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1517
+2025-10-29 23:09:56,100 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-29 23:09:56,100 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\noxfile.py
+2025-10-29 23:09:56,100 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\noxfile.py, 行号=23, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-29 23:09:56,100 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'nox'...，语言: python
+2025-10-29 23:09:56,100 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:10:27,047 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-10-29 23:10:30,049 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 语言: python
+2025-10-29 23:11:00,997 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-10-29 23:11:01,000 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-10-29 23:11:01,000 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-29 23:11:01,000 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\examples\basic_sessions.py
+2025-10-29 23:11:01,000 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\basic_sessions.py, 行号=8, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-29 23:11:01,000 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'requests_cache'...，语言: python
+2025-10-29 23:11:03,005 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:11:20,927 - utils.ai_fixer - INFO - AI修复成功
+2025-10-29 23:11:20,927 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 2095
+2025-10-29 23:11:20,927 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-10-29 23:11:20,964 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\examples\convert_cache.py
+2025-10-29 23:11:20,964 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\convert_cache.py, 行号=9, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-29 23:11:20,964 - utils.ai_fixer - INFO - 开始AI修复，问题: [pylint] Unable to import 'requests_cache'...，语言: python
+2025-10-29 23:11:20,964 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: python
+2025-10-29 23:11:32,993 - utils.ai_fixer - INFO - AI修复成功
+2025-10-29 23:11:32,993 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1381
+2025-10-29 23:11:33,000 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-10-29 23:11:33,024 - __main__ - INFO - ======================================================================
+2025-10-29 23:11:33,024 - __main__ - INFO - 📊 大规模代码修复系统统一报告
+2025-10-29 23:11:33,024 - __main__ - INFO - ======================================================================
+2025-10-29 23:11:33,024 - __main__ - INFO - 配置参数:
+2025-10-29 23:11:33,024 - __main__ - INFO -   - 最小处理严重程度: HIGH
+2025-10-29 23:11:33,024 - __main__ - INFO -   - 最大并行线程数: 1
+2025-10-29 23:11:33,033 - __main__ - INFO -   - 总执行时间: 734.88秒
+2025-10-29 23:11:33,033 - __main__ - INFO - 修复统计:
+2025-10-29 23:11:33,033 - __main__ - INFO -   - 总修复任务: 20
+2025-10-29 23:11:33,033 - __main__ - INFO -   - 成功修复: 12
+2025-10-29 23:11:33,033 - __main__ - INFO -   - 修复失败: 8
+2025-10-29 23:11:33,033 - __main__ - INFO -   - 修复成功率: 60.00%
+2025-10-29 23:11:33,035 - __main__ - INFO - 生成统一修复报告，包含 20 个修复任务
+2025-10-29 23:11:33,037 - __main__ - INFO - 📄 统一修复报告已保存: unified_fix_report_20251029_231133.txt
+2025-10-29 23:11:33,037 - __main__ - INFO - 
+🔧 修复策略统计:
+2025-10-29 23:11:33,037 - __main__ - INFO -   fix_hardcoded_secrets: 1/1 (100.0%)
+2025-10-29 23:11:33,037 - __main__ - INFO -   ai_automatic_fix: 2/5 (40.0%)
+2025-10-29 23:11:33,037 - __main__ - INFO -   fix_sql_injection: 6/8 (75.0%)
+2025-10-29 23:11:33,037 - __main__ - INFO -   fix_syntax_error: 3/6 (50.0%)
+2025-10-29 23:11:33,041 - __main__ - INFO - 📄 统一JSON报告已保存: unified_repair_report_20251029_231133.json
+2025-10-30 12:13:41,272 - __main__ - INFO - 开始处理缺陷报告 (安全模式):
+2025-10-30 12:13:41,274 - __main__ - INFO -   - 缺陷报告: requests_cache_defect_report.json
+2025-10-30 12:13:41,274 - __main__ - INFO -   - 最小严重程度: HIGH
+2025-10-30 12:13:41,274 - __main__ - INFO -   - 并行线程数: 1
+2025-10-30 12:13:41,274 - __main__ - INFO -   - 最大任务数: 20
+2025-10-30 12:13:41,274 - agents.decision_manager - INFO - 初始化DecisionManagerAgent...
+2025-10-30 12:13:41,274 - agents.decision_manager - WARNING - AI分析引擎不可用，将使用默认规则
+2025-10-30 12:13:41,274 - __main__ - INFO - 大规模代码修复系统初始化完成，最大工作线程: 1
+2025-10-30 12:13:41,274 - __main__ - INFO - 🚀 开始代码修复系统工作流程
+2025-10-30 12:13:41,274 - __main__ - INFO - 配置: 最小严重程度=HIGH, 最大任务数=20
+2025-10-30 12:13:41,274 - agents.code_fixer - INFO - 已清空修复结果
+2025-10-30 12:13:41,274 - __main__ - INFO - 加载缺陷报告: requests_cache_defect_report.json
+2025-10-30 12:13:41,290 - __main__ - INFO - 缺陷过滤完成: 原始缺陷 534 -> 过滤后 108
+2025-10-30 12:13:41,294 - __main__ - INFO - 处理文件数: 43
+2025-10-30 12:13:41,294 - __main__ - INFO - 开始生成优先级修复计划...
+2025-10-30 12:13:41,303 - agents.decision_manager - INFO - 开始分析缺陷报告...
+2025-10-30 12:13:41,305 - agents.decision_manager - INFO - 解析成功，共发现 43 个文件有缺陷
+2025-10-30 12:13:41,305 - agents.decision_manager - INFO - 共收集到 108 个缺陷，开始批量处理...
+2025-10-30 12:13:41,321 - agents.decision_manager - INFO - 修复任务排序完成，最高优先级: CRITICAL
+2025-10-30 12:13:41,323 - agents.decision_manager - INFO - 分析完成，生成 108 个修复任务
+2025-10-30 12:13:41,329 - __main__ - INFO - 修复计划生成完成: 108个修复任务 (耗时: 0.03s)
+2025-10-30 12:13:41,329 - __main__ - INFO -   CRITICAL: 10个任务
+2025-10-30 12:13:41,329 - __main__ - INFO -   HIGH: 98个任务
+2025-10-30 12:13:41,329 - __main__ - WARNING - 任务数量过多 (108)，限制为前20个高优先级任务
+2025-10-30 12:13:41,329 - __main__ - INFO - 将处理 20 个修复任务
+2025-10-30 12:13:41,331 - __main__ - INFO - 开始执行修复任务 (线程数: 1)...
+2025-10-30 12:13:41,337 - agents.code_fixer - INFO - 已清空修复结果
+2025-10-30 12:13:41,401 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-30 12:13:41,401 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=130, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-30 12:13:41,405 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 2
+2025-10-30 12:13:41,417 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-30 12:13:41,417 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=140, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-30 12:13:41,420 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-30 12:13:41,423 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-30 12:13:41,423 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=324, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-30 12:13:41,423 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 2
+2025-10-30 12:13:41,431 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-30 12:13:41,431 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=332, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-30 12:13:41,435 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 2
+2025-10-30 12:13:41,435 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-30 12:13:41,435 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=355, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-30 12:13:41,441 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 2
+2025-10-30 12:13:41,447 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-30 12:13:41,449 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=373, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-30 12:13:41,449 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 2
+2025-10-30 12:13:41,455 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-30 12:13:41,455 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=390, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-30 12:13:41,457 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 2
+2025-10-30 12:13:41,465 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+2025-10-30 12:13:41,465 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\backends\sqlite.py, 行号=440, 策略=fix_sql_injection, 语言=python, 缺陷类型=security
+2025-10-30 12:13:41,467 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 2
+2025-10-30 12:13:41,475 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\requests_cache\policy\expiration.py
+2025-10-30 12:13:41,475 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\requests_cache\policy\expiration.py, 行号=56, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-30 12:13:41,475 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-30 12:13:41,486 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\tests\integration\base_storage_test.py
+2025-10-30 12:13:41,486 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\tests\integration\base_storage_test.py, 行号=175, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-30 12:13:41,486 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-30 12:13:41,492 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\docs\conf.py
+2025-10-30 12:13:41,492 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\docs\conf.py, 行号=166, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-30 12:13:41,494 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-30 12:13:41,494 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\examples\basic_sessions.py
+2025-10-30 12:13:41,499 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\basic_sessions.py, 行号=8, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-30 12:13:41,499 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-30 12:13:41,502 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\docs\conf.py
+2025-10-30 12:13:41,502 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\docs\conf.py, 行号=165, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-30 12:13:41,502 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-30 12:13:41,502 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\noxfile.py
+2025-10-30 12:13:41,508 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\noxfile.py, 行号=23, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-30 12:13:41,508 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-30 12:13:41,510 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\noxfile.py
+2025-10-30 12:13:41,510 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\noxfile.py, 行号=127, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-30 12:13:41,512 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-30 12:13:41,512 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\examples\basic_patching.py
+2025-10-30 12:13:41,512 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\basic_patching.py, 行号=10, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-30 12:13:41,512 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-30 12:13:41,520 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\examples\convert_cache.py
+2025-10-30 12:13:41,520 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\convert_cache.py, 行号=8, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-30 12:13:41,522 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-30 12:13:41,524 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\examples\convert_cache.py
+2025-10-30 12:13:41,524 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\convert_cache.py, 行号=9, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-30 12:13:41,527 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-30 12:13:41,527 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\examples\custom_request_matcher.py
+2025-10-30 12:13:41,527 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\custom_request_matcher.py, 行号=24, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-30 12:13:41,527 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-30 12:13:41,532 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\requests-cache-main\examples\custom_request_matcher.py
+2025-10-30 12:13:41,532 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\PY\requests-cache-main\examples\custom_request_matcher.py, 行号=25, 策略=fix_syntax_error, 语言=python, 缺陷类型=syntax
+2025-10-30 12:13:41,534 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: python, 变更数量: 1
+2025-10-30 12:13:41,534 - __main__ - INFO - ======================================================================
+2025-10-30 12:13:41,534 - __main__ - INFO - 📊 大规模代码修复系统统一报告
+2025-10-30 12:13:41,534 - __main__ - INFO - ======================================================================
+2025-10-30 12:13:41,534 - __main__ - INFO - 配置参数:
+2025-10-30 12:13:41,534 - __main__ - INFO -   - 最小处理严重程度: HIGH
+2025-10-30 12:13:41,538 - __main__ - INFO -   - 最大并行线程数: 1
+2025-10-30 12:13:41,538 - __main__ - INFO -   - 总执行时间: 0.26秒
+2025-10-30 12:13:41,538 - __main__ - INFO - 修复统计:
+2025-10-30 12:13:41,538 - __main__ - INFO -   - 总修复任务: 20
+2025-10-30 12:13:41,538 - __main__ - INFO -   - 成功修复: 6
+2025-10-30 12:13:41,538 - __main__ - INFO -   - 修复失败: 14
+2025-10-30 12:13:41,538 - __main__ - INFO -   - 修复成功率: 30.00%
+2025-10-30 12:13:41,538 - __main__ - INFO - 生成统一修复报告，包含 20 个修复任务
+2025-10-30 12:13:41,542 - __main__ - INFO - 📄 统一修复报告已保存: unified_fix_report_20251030_121341.txt
+2025-10-30 12:13:41,542 - __main__ - INFO - 
+🔧 修复策略统计:
+2025-10-30 12:13:41,542 - __main__ - INFO -   fix_sql_injection: 6/8 (75.0%)
+2025-10-30 12:13:41,542 - __main__ - INFO -   fix_syntax_error: 0/12 (0.0%)
+2025-10-30 12:13:41,542 - __main__ - INFO - 📄 统一JSON报告已保存: unified_repair_report_20251030_121341.json

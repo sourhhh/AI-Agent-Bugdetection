@@ -1,0 +1,81 @@
+============================================================
+代码修复Agent测试报告
+============================================================
+总测试数: 10
+通过数: 5
+成功率: 50.00%
+
+按缺陷类型统计:
+  unknown: 10/10 (100.00%)
+
+按修复策略统计:
+  fix_hardcoded_secrets: 0/1 (0.00%), 平均置信度: 0.10
+  ai_automatic_fix: 0/4 (0.00%), 平均置信度: 0.10
+  fix_sql_injection: 5/5 (100.00%), 平均置信度: 0.80
+
+详细结果:
+
+1. D:\PY\requests-cache-main\examples\benchmark.py
+   状态: 失败
+   策略: fix_hardcoded_secrets
+   置信度: 0.10
+   变更: ['修复失败: 代码无变化']
+   代码比较:
+
+2. D:\PY\requests-cache-main\examples\benchmark.py
+   状态: 失败
+   策略: ai_automatic_fix
+   置信度: 0.10
+   变更: ['修复失败: 代码无变化']
+   代码比较:
+
+3. D:\PY\requests-cache-main\examples\generate_test_db.py
+   状态: 失败
+   策略: ai_automatic_fix
+   置信度: 0.10
+   变更: ['修复失败: 代码无变化']
+   代码比较:
+
+4. D:\PY\requests-cache-main\examples\generate_test_db.py
+   状态: 失败
+   策略: ai_automatic_fix
+   置信度: 0.10
+   变更: ['修复失败: 代码无变化']
+   代码比较:
+
+5. D:\PY\requests-cache-main\examples\rps_graph.py
+   状态: 失败
+   策略: ai_automatic_fix
+   置信度: 0.10
+   变更: ['修复失败: 代码无变化']
+   代码比较:
+
+6. D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+   状态: 通过
+   策略: fix_sql_injection
+   置信度: 0.80
+   变更: ['在第130行添加SQL注入安全建议', '修复验证: 修复有效']
+
+7. D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+   状态: 通过
+   策略: fix_sql_injection
+   置信度: 0.80
+   变更: ['在第140行添加SQL注入安全建议', '修复验证: 修复有效']
+
+8. D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+   状态: 通过
+   策略: fix_sql_injection
+   置信度: 0.80
+   变更: ['在第324行添加SQL注入安全建议', '修复验证: 修复有效']
+
+9. D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+   状态: 通过
+   策略: fix_sql_injection
+   置信度: 0.80
+   变更: ['在第332行添加SQL注入安全建议', '修复验证: 修复有效']
+
+10. D:\PY\requests-cache-main\requests_cache\backends\sqlite.py
+   状态: 通过
+   策略: fix_sql_injection
+   置信度: 0.80
+   变更: ['在第355行添加SQL注入安全建议', '修复验证: 修复有效']

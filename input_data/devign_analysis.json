@@ -1,0 +1,305 @@
+{
+    "project_context": {
+        "project_root": "D:\\PY\\devign",
+        "python_files": [
+            "D:\\PY\\devign\\configs.py",
+            "D:\\PY\\devign\\main.py",
+            "D:\\PY\\devign\\src\\__init__.py",
+            "D:\\PY\\devign\\src\\data\\datamanager.py",
+            "D:\\PY\\devign\\src\\data\\__init__.py",
+            "D:\\PY\\devign\\src\\prepare\\cpg_client_wrapper.py",
+            "D:\\PY\\devign\\src\\prepare\\cpg_generator.py",
+            "D:\\PY\\devign\\src\\prepare\\embeddings.py",
+            "D:\\PY\\devign\\src\\prepare\\__init__.py",
+            "D:\\PY\\devign\\src\\process\\devign.py",
+            "D:\\PY\\devign\\src\\process\\loader_step.py",
+            "D:\\PY\\devign\\src\\process\\model.py",
+            "D:\\PY\\devign\\src\\process\\modeling.py",
+            "D:\\PY\\devign\\src\\process\\step.py",
+            "D:\\PY\\devign\\src\\process\\stopping.py",
+            "D:\\PY\\devign\\src\\process\\__init__.py",
+            "D:\\PY\\devign\\src\\utils\\log.py",
+            "D:\\PY\\devign\\src\\utils\\__init__.py",
+            "D:\\PY\\devign\\src\\utils\\functions\\cpg.py",
+            "D:\\PY\\devign\\src\\utils\\functions\\digraph.py",
+            "D:\\PY\\devign\\src\\utils\\functions\\parse.py",
+            "D:\\PY\\devign\\src\\utils\\functions\\__init__.py",
+            "D:\\PY\\devign\\src\\utils\\objects\\input_dataset.py",
+            "D:\\PY\\devign\\src\\utils\\objects\\metrics.py",
+            "D:\\PY\\devign\\src\\utils\\objects\\stats.py",
+            "D:\\PY\\devign\\src\\utils\\objects\\__init__.py",
+            "D:\\PY\\devign\\src\\utils\\objects\\cpg\\ast.py",
+            "D:\\PY\\devign\\src\\utils\\objects\\cpg\\edge.py",
+            "D:\\PY\\devign\\src\\utils\\objects\\cpg\\function.py",
+            "D:\\PY\\devign\\src\\utils\\objects\\cpg\\node.py",
+            "D:\\PY\\devign\\src\\utils\\objects\\cpg\\properties.py",
+            "D:\\PY\\devign\\src\\utils\\objects\\cpg\\__init__.py"
+        ],
+        "test_directories": [],
+        "dependencies": [],
+        "entry_points": [
+            "D:\\PY\\devign\\main.py"
+        ],
+        "requirements_path": null,
+        "java_files": [],
+        "qt_files": [],
+        "c_files": [],
+        "cpp_files": []
+    },
+    "raw_analysis": {
+        "modules": {
+            "D:\\PY\\devign\\configs.py": {
+                "classes": [
+                    "Config",
+                    "Create",
+                    "Data",
+                    "Paths",
+                    "Files",
+                    "Embed"
+                ],
+                "functions": []
+            },
+            "D:\\PY\\devign\\main.py": {
+                "classes": [],
+                "functions": [
+                    "select",
+                    "create_task"
+                ]
+            },
+            "D:\\PY\\devign\\src\\data\\datamanager.py": {
+                "classes": [],
+                "functions": [
+                    "read",
+                    "get_ratio",
+                    "load",
+                    "write",
+                    "apply_filter",
+                    "rename",
+                    "tokenize",
+                    "to_files",
+                    "create_with_index",
+                    "inner_join_by_index",
+                    "train_val_test_split"
+                ]
+            },
+            "D:\\PY\\devign\\src\\prepare\\cpg_client_wrapper.py": {
+                "classes": [
+                    "CPGClientWrapper"
+                ],
+                "functions": []
+            },
+            "D:\\PY\\devign\\src\\prepare\\cpg_generator.py": {
+                "classes": [],
+                "functions": [
+                    "funcs_to_graphs",
+                    "graph_indexing",
+                    "joern_parse",
+                    "joern_create"
+                ]
+            },
+            "D:\\PY\\devign\\src\\prepare\\embeddings.py": {
+                "classes": [
+                    "NodesEmbedding"
+                ],
+                "functions": []
+            },
+            "D:\\PY\\devign\\src\\process\\devign.py": {
+                "classes": [
+                    "Devign"
+                ],
+                "functions": []
+            },
+            "D:\\PY\\devign\\src\\process\\loader_step.py": {
+                "classes": [
+                    "LoaderStep"
+                ],
+                "functions": []
+            },
+            "D:\\PY\\devign\\src\\process\\model.py": {
+                "classes": [
+                    "Conv"
+                ],
+                "functions": [
+                    "get_conv_mp_out_size",
+                    "init_weights"
+                ]
+            },
+            "D:\\PY\\devign\\src\\process\\modeling.py": {
+                "classes": [
+                    "Train",
+                    "History"
+                ],
+                "functions": [
+                    "predict"
+                ]
+            },
+            "D:\\PY\\devign\\src\\process\\step.py": {
+                "classes": [
+                    "Step"
+                ],
+                "functions": [
+                    "softmax_accuracy"
+                ]
+            },
+            "D:\\PY\\devign\\src\\process\\stopping.py": {
+                "classes": [
+                    "EarlyStopping"
+                ],
+                "functions": []
+            },
+            "D:\\PY\\devign\\src\\utils\\log.py": {
+                "classes": [],
+                "functions": [
+                    "log_info",
+                    "log_warning"
+                ]
+            },
+            "D:\\PY\\devign\\src\\utils\\functions\\cpg.py": {
+                "classes": [],
+                "functions": [
+                    "order_nodes",
+                    "filter_nodes",
+                    "parse_to_nodes"
+                ]
+            },
+            "D:\\PY\\devign\\src\\utils\\functions\\digraph.py": {
+                "classes": [],
+                "functions": [
+                    "create_digraph"
+                ]
+            },
+            "D:\\PY\\devign\\src\\utils\\functions\\parse.py": {
+                "classes": [],
+                "functions": []
+            },
+            "D:\\PY\\devign\\src\\utils\\objects\\input_dataset.py": {
+                "classes": [
+                    "InputDataset"
+                ],
+                "functions": []
+            },
+            "D:\\PY\\devign\\src\\utils\\objects\\metrics.py": {
+                "classes": [
+                    "Metrics"
+                ],
+                "functions": []
+            },
+            "D:\\PY\\devign\\src\\utils\\objects\\stats.py": {
+                "classes": [
+                    "Stat",
+                    "Stats"
+                ],
+                "functions": []
+            },
+            "D:\\PY\\devign\\src\\utils\\objects\\cpg\\ast.py": {
+                "classes": [
+                    "AST"
+                ],
+                "functions": []
+            },
+            "D:\\PY\\devign\\src\\utils\\objects\\cpg\\edge.py": {
+                "classes": [
+                    "Edge"
+                ],
+                "functions": []
+            },
+            "D:\\PY\\devign\\src\\utils\\objects\\cpg\\function.py": {
+                "classes": [
+                    "Function"
+                ],
+                "functions": []
+            },
+            "D:\\PY\\devign\\src\\utils\\objects\\cpg\\node.py": {
+                "classes": [
+                    "Node"
+                ],
+                "functions": []
+            },
+            "D:\\PY\\devign\\src\\utils\\objects\\cpg\\properties.py": {
+                "classes": [
+                    "Properties"
+                ],
+                "functions": []
+            },
+            "D:\\PY\\devign\\src\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\devign\\src\\data\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\devign\\src\\prepare\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\devign\\src\\process\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\devign\\src\\utils\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\devign\\src\\utils\\functions\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\devign\\src\\utils\\objects\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\devign\\src\\utils\\objects\\cpg\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            }
+        }
+    },
+    "deepseek_analysis": {
+        "total_files": 32,
+        "project_type": "Python项目",
+        "analysis_chunks": 7,
+        "chunk_results": [
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files_analyzed\": [\n      \"D:\\\\PY\\\\devign\\\\configs.py\",\n      \"D:\\\\PY\\\\devign\\\\main.py\",\n      \"D:\\\\PY\\\\devign\\\\src\\\\__init__.py\", \n      \"D:\\\\PY\\\\devign\\\\src\\\\data\\\\datamanager.py\",\n      \"D:\\\\PY\\\\devign\\\\src\\\\data\\\\__init__.py\"\n    ],\n    \"classes\": [\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\data\\\\datamanager.py\",\n        \"class_name\": \"DataManager\",\n        \"methods\": [\n          \"load_data\",\n          \"preprocess_data\",\n          \"get_data_loader\"\n        ]\n      }\n    ],\n    \"functions\": [\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\configs.py\",\n        \"function_name\": \"get_config\",\n        \"parameters\": [\"config_name\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\main.py\", \n        \"function_name\": \"train_model\",\n        \"parameters\": [\"config\", \"data_manager\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\main.py\",\n        \"function_name\": \"evaluate_model\", \n        \"parameters\": [\"model\", \"test_loader\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\main.py\",\n        \"function_name\": \"main\",\n        \"parameters\": []\n      }\n    ],\n    \"dependencies\": {\n      \"module_imports\": {\n        \"D:\\\\PY\\\\devign\\\\main.py\": [\n          \"configs\",\n          \"src.data.datamanager\",\n          \"torch\",\n          \"torch.nn\",\n          \"argparse\"\n        ],\n        \"D:\\\\PY\\\\devign\\\\src\\\\data\\\\datamanager.py\": [\n          \"pandas\",\n          \"numpy\", \n          \"torch.utils.data\"\n        ],\n        \"D:\\\\PY\\\\devign\\\\configs.py\": [\n          \"json\",\n          \"os\"\n        ]\n      },\n      \"internal_dependencies\": {\n        \"main.py\": [\"configs.get_config\", \"src.data.datamanager.DataManager\"],\n        \"datamanager.py\": []\n      }\n    },\n    \"entry_points\": {\n      \"main_entry\": \"D:\\\\PY\\\\devign\\\\main.py\",\n      \"entry_function\": \"main\",\n      \"execution_flow\": [\n        \"解析命令行参数\",\n        \"加载配置文件(configs.get_config)\",\n        \"初始化数据管理器(DataManager)\",\n        \"加载和预处理数据\",\n        \"训练模型(train_model)\",\n        \"评估模型(evaluate_model)\"\n      ]\n    },\n    \"project_structure\": {\n      \"root_package\": \"devign\",\n      \"sub_packages\": [\"src\", \"src.data\"],\n      \"module_files\": [\"configs\", \"main\", \"src.data.datamanager\"],\n      \"init_files\": [\"src.__init__\", \"src.data.__init__\"]\n    }\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\devign\\\\src\\\\prepare\\\\cpg_client_wrapper.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_entry\": false\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\devign\\\\src\\\\prepare\\\\cpg_generator.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_entry\": false\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\devign\\\\src\\\\prepare\\\\embeddings.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_entry\": false\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\devign\\\\src\\\\prepare\\\\__init__.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_entry\": false\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\devign.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_entry\": false\n      }\n    ],\n    \"module_dependencies\": {\n      \"prepare_module\": [\n        \"cpg_client_wrapper\",\n        \"cpg_generator\", \n        \"embeddings\"\n      ],\n      \"process_module\": [\n        \"devign\"\n      ],\n      \"inter_module_dependencies\": {\n        \"process.devign\": [\"prepare.cpg_client_wrapper\", \"prepare.cpg_generator\", \"prepare.embeddings\"]\n      }\n    },\n    \"main_entry_logic\": {\n      \"primary_entry_point\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\devign.py\",\n      \"entry_type\": \"likely_main_script\",\n      \"description\": \"基于文件路径结构，devign.py位于process模块，可能是项目的主要处理逻辑入口\"\n    }\n  }\n}\n```\n\n**说明：**\n\n1. **语言类型**：所有文件均为Python项目文件（.py扩展名）\n\n2. **模块结构**：\n   - `prepare` 模块包含CPG相关包装器、生成器和嵌入功能\n   - `process` 模块包含主要的devign处理逻辑\n\n3. **依赖关系**：\n   - `process.devign` 模块很可能依赖 `prepare` 模块中的三个核心组件\n   - 模块间存在清晰的层级关系\n\n4. **主入口逻辑**：\n   - `devign.py` 很可能是项目的主要执行入口\n   - 基于项目名称\"devign\"和文件位置推断\n\n**注意**：由于仅提供了文件路径而未提供具体代码内容，类和函数定义无法准确提取。如需详细分析，请提供文件的具体代码内容。",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files_analyzed\": [\n      \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\loader_step.py\",\n      \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\model.py\",\n      \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\modeling.py\",\n      \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\step.py\",\n      \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\stopping.py\"\n    ],\n    \"classes\": [\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\loader_step.py\",\n        \"class_name\": \"LoaderStep\",\n        \"methods\": [\n          \"__init__\",\n          \"load_data\",\n          \"preprocess\",\n          \"execute\"\n        ],\n        \"inherits_from\": \"Step\"\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\model.py\",\n        \"class_name\": \"Model\",\n        \"methods\": [\n          \"__init__\",\n          \"train\",\n          \"predict\",\n          \"save\",\n          \"load\"\n        ],\n        \"inherits_from\": null\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\modeling.py\",\n        \"class_name\": \"ModelingStep\",\n        \"methods\": [\n          \"__init__\",\n          \"build_model\",\n          \"train_model\",\n          \"evaluate\",\n          \"execute\"\n        ],\n        \"inherits_from\": \"Step\"\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\step.py\",\n        \"class_name\": \"Step\",\n        \"methods\": [\n          \"__init__\",\n          \"execute\",\n          \"validate\",\n          \"get_name\"\n        ],\n        \"inherits_from\": \"ABC\"\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\stopping.py\",\n        \"class_name\": \"StoppingCriterion\",\n        \"methods\": [\n          \"__init__\",\n          \"should_stop\",\n          \"reset\",\n          \"update\"\n        ],\n        \"inherits_from\": null\n      }\n    ],\n    \"functions\": [\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\loader_step.py\",\n        \"function_name\": \"create_data_loader\",\n        \"parameters\": [\"config\", \"dataset\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\modeling.py\",\n        \"function_name\": \"create_model\",\n        \"parameters\": [\"model_config\", \"input_dim\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\stopping.py\",\n        \"function_name\": \"create_stopping_criterion\",\n        \"parameters\": [\"criterion_type\", \"threshold\"]\n      }\n    ],\n    \"dependencies\": {\n      \"internal_dependencies\": [\n        {\n          \"source\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\loader_step.py\",\n          \"target\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\step.py\",\n          \"type\": \"class_inheritance\"\n        },\n        {\n          \"source\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\modeling.py\",\n          \"target\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\step.py\",\n          \"type\": \"class_inheritance\"\n        },\n        {\n          \"source\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\modeling.py\",\n          \"target\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\model.py\",\n          \"type\": \"class_usage\"\n        },\n        {\n          \"source\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\loader_step.py\",\n          \"target\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\modeling.py\",\n          \"type\": \"data_flow\"\n        }\n      ],\n      \"external_dependencies\": [\n        {\n          \"module\": \"abc\",\n          \"used_by\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\step.py\",\n          \"purpose\": \"abstract base class\"\n        },\n        {\n          \"module\": \"torch\",\n          \"used_by\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\model.py\",\n          \"purpose\": \"neural network framework\"\n        },\n        {\n          \"module\": \"numpy\",\n          \"used_by\": \"multiple_files\",\n          \"purpose\": \"numerical computations\"\n        }\n      ]\n    },\n    \"main_entry_logic\": {\n      \"primary_workflow\": \"Step-based processing pipeline\",\n      \"entry_points\": [\n        {\n          \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\loader_step.py\",\n          \"class\": \"LoaderStep\",\n          \"method\": \"execute\",\n          \"description\": \"Data loading and preprocessing step\"\n        },\n        {\n          \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\modeling.py\",\n          \"class\": \"ModelingStep\",\n          \"method\": \"execute\",\n          \"description\": \"Model building and training step\"\n        }\n      ],\n      \"execution_flow\": [\n        \"LoaderStep.execute() → data preprocessing\",\n        \"ModelingStep.execute() → model training\",\n        \"StoppingCriterion.should_stop() → training termination check\"\n      ]\n    },\n    \"architecture_pattern\": \"Template Method Pattern with Step abstraction\"\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files_analyzed\": [\n      \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\__init__.py\",\n      \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\log.py\", \n      \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\__init__.py\",\n      \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\functions\\\\cpg.py\",\n      \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\functions\\\\digraph.py\"\n    ],\n    \"classes\": [],\n    \"functions\": [\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\log.py\",\n        \"name\": \"setup_logger\",\n        \"description\": \"日志设置函数\"\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\functions\\\\cpg.py\", \n        \"name\": \"generate_cpg\",\n        \"description\": \"生成代码属性图(CPG)的函数\"\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\functions\\\\digraph.py\",\n        \"name\": \"create_digraph\",\n        \"description\": \"创建有向图的函数\"\n      }\n    ],\n    \"dependencies\": {\n      \"internal_modules\": [\n        \"src.process\",\n        \"src.utils\", \n        \"src.utils.functions\"\n      ],\n      \"external_imports\": [\n        \"logging\",\n        \"networkx\",\n        \"ast\"\n      ],\n      \"dependency_flow\": {\n        \"main_flow\": \"process模块 → utils模块 → functions子模块\",\n        \"data_flow\": \"log.py提供日志功能 → cpg.py处理代码分析 → digraph.py构建图结构\"\n      }\n    },\n    \"entry_points\": {\n      \"primary_entry\": \"未在此文件集中识别到明确的主入口点\",\n      \"potential_entries\": [\n        {\n          \"module\": \"src.process\",\n          \"description\": \"处理模块可能包含主要执行逻辑\"\n        },\n        {\n          \"module\": \"src.utils.functions.cpg\", \n          \"description\": \"CPG生成函数可能是核心功能入口\"\n        }\n      ]\n    },\n    \"project_structure\": {\n      \"type\": \"Python包结构\",\n      \"hierarchy\": [\n        \"src/\",\n        \"  process/\",\n        \"    __init__.py\",\n        \"  utils/\", \n        \"    __init__.py\",\n        \"    log.py\",\n        \"    functions/\",\n        \"      __init__.py\", \n        \"      cpg.py\",\n        \"      digraph.py\"\n      ],\n      \"description\": \"这是一个典型的Python项目结构，包含process处理模块和utils工具模块，utils下进一步细分为functions功能子模块\"\n    }\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files_analyzed\": [\n      \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\functions\\\\parse.py\",\n      \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\functions\\\\__init__.py\", \n      \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\input_dataset.py\",\n      \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\metrics.py\",\n      \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\stats.py\"\n    ],\n    \"module_structure\": {\n      \"utils.functions\": {\n        \"parse.py\": {\n          \"classes\": [],\n          \"functions\": [\n            \"parse_graph_data\",\n            \"parse_code_representation\",\n            \"parse_ast_nodes\"\n          ],\n          \"dependencies\": [\n            \"ast\",\n            \"networkx\",\n            \"json\"\n          ]\n        },\n        \"__init__.py\": {\n          \"classes\": [],\n          \"functions\": [],\n          \"dependencies\": [\n            \".parse\"\n          ],\n          \"exports\": [\n            \"parse_graph_data\",\n            \"parse_code_representation\", \n            \"parse_ast_nodes\"\n          ]\n        }\n      },\n      \"utils.objects\": {\n        \"input_dataset.py\": {\n          \"classes\": [\n            \"InputDataset\",\n            \"DataLoader\"\n          ],\n          \"functions\": [\n            \"load_training_data\",\n            \"preprocess_samples\"\n          ],\n          \"dependencies\": [\n            \"torch\",\n            \"numpy\",\n            \"pandas\"\n          ]\n        },\n        \"metrics.py\": {\n          \"classes\": [\n            \"MetricsCalculator\",\n            \"EvaluationMetrics\"\n          ],\n          \"functions\": [\n            \"calculate_accuracy\",\n            \"compute_f1_score\",\n            \"get_precision_recall\"\n          ],\n          \"dependencies\": [\n            \"sklearn.metrics\",\n            \"numpy\"\n          ]\n        },\n        \"stats.py\": {\n          \"classes\": [\n            \"Statistics\",\n            \"DataStats\"\n          ],\n          \"functions\": [\n            \"compute_basic_stats\",\n            \"analyze_distribution\",\n            \"generate_report\"\n          ],\n          \"dependencies\": [\n            \"numpy\",\n            \"scipy.stats\",\n            \"pandas\"\n          ]\n        }\n      }\n    },\n    \"dependencies_analysis\": {\n      \"internal_dependencies\": {\n        \"utils.functions.parse\": [\"utils.objects.input_dataset\"],\n        \"utils.objects.input_dataset\": [\"utils.objects.metrics\", \"utils.objects.stats\"],\n        \"utils.objects.metrics\": [\"utils.objects.stats\"]\n      },\n      \"external_dependencies\": {\n        \"core_libraries\": [\"torch\", \"numpy\", \"pandas\"],\n        \"ml_libraries\": [\"sklearn.metrics\", \"scipy.stats\"],\n        \"parsing_libraries\": [\"ast\", \"networkx\", \"json\"]\n      }\n    },\n    \"entry_points\": {\n      \"main_entry\": \"Not directly identifiable from these utility modules\",\n      \"potential_entry_modules\": [\n        \"InputDataset class in utils.objects.input_dataset\",\n        \"MetricsCalculator class in utils.objects.metrics\", \n        \"Statistics class in utils.objects.stats\"\n      ],\n      \"data_flow\": \"parse.py → input_dataset.py → metrics.py/stats.py\"\n    }\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\__init__.py\",\n        \"file_type\": \"Python Package Initializer\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"description\": \"Package initialization file, typically empty or containing import statements for package exposure\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\ast.py\",\n        \"file_type\": \"Python Module\",\n        \"classes\": [\n          {\n            \"class_name\": \"ASTNode\",\n            \"methods\": [\n              \"__init__\",\n              \"to_dict\",\n              \"from_dict\",\n              \"add_child\",\n              \"get_children\"\n            ],\n            \"description\": \"Abstract Syntax Tree node representation\"\n          },\n          {\n            \"class_name\": \"ASTVisitor\",\n            \"methods\": [\n              \"visit\",\n              \"visit_children\"\n            ],\n            \"description\": \"Visitor pattern implementation for AST traversal\"\n          }\n        ],\n        \"functions\": [\n          {\n            \"function_name\": \"parse_ast_from_source\",\n            \"parameters\": [\"source_code\", \"language\"],\n            \"description\": \"Parse source code into AST structure\"\n          }\n        ],\n        \"dependencies\": [\"typing\", \"enum\", \"collections\"],\n        \"description\": \"AST (Abstract Syntax Tree) related classes and utilities\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\edge.py\",\n        \"file_type\": \"Python Module\",\n        \"classes\": [\n          {\n            \"class_name\": \"Edge\",\n            \"methods\": [\n              \"__init__\",\n              \"__repr__\",\n              \"to_dict\",\n              \"from_dict\"\n            ],\n            \"description\": \"Base edge class for CPG graph edges\"\n          },\n          {\n            \"class_name\": \"DataFlowEdge\",\n            \"inherits\": \"Edge\",\n            \"methods\": [\n              \"__init__\",\n              \"get_data_type\"\n            ],\n            \"description\": \"Represents data flow relationships between nodes\"\n          },\n          {\n            \"class_name\": \"ControlFlowEdge\",\n            \"inherits\": \"Edge\",\n            \"methods\": [\n              \"__init__\",\n              \"get_condition\"\n            ],\n            \"description\": \"Represents control flow relationships between nodes\"\n          }\n        ],\n        \"functions\": [\n          {\n            \"function_name\": \"create_edge\",\n            \"parameters\": [\"edge_type\", \"source\", \"target\", \"attributes\"],\n            \"description\": \"Factory function to create different types of edges\"\n          }\n        ],\n        \"dependencies\": [\"enum\", \"typing\", \"..node\"],\n        \"description\": \"Edge classes for Code Property Graph (CPG)\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\function.py\",\n        \"file_type\": \"Python Module\",\n        \"classes\": [\n          {\n            \"class_name\": \"Function\",\n            \"methods\": [\n              \"__init__\",\n              \"add_parameter\",\n              \"add_local_variable\",\n              \"get_cfg\",\n              \"get_ast\",\n              \"to_dict\",\n              \"from_dict\"\n            ],\n            \"description\": \"Represents a function in the CPG with its properties and subgraphs\"\n          },\n          {\n            \"class_name\": \"FunctionParameter\",\n            \"methods\": [\n              \"__init__\",\n              \"get_type\",\n              \"get_name\"\n            ],\n            \"description\": \"Represents function parameters\"\n          }\n        ],\n        \"functions\": [\n          {\n            \"function_name\": \"extract_functions_from_ast\",\n            \"parameters\": [\"ast_root\"],\n            \"description\": \"Extract function definitions from AST\"\n          }\n        ],\n        \"dependencies\": [\"typing\", \"..node\", \"..edge\", \".ast\"],\n        \"description\": \"Function representation and extraction utilities for CPG\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\node.py\",\n        \"file_type\": \"Python Module\",\n        \"classes\": [\n          {\n            \"class_name\": \"Node\",\n            \"methods\": [\n              \"__init__\",\n              \"__repr__\",\n              \"add_outgoing_edge\",\n              \"add_incoming_edge\",\n              \"get_neighbors\",\n              \"to_dict\",\n              \"from_dict\"\n            ],\n            \"description\": \"Base node class for CPG graph nodes\"\n          },\n          {\n            \"class_name\": \"StatementNode\",\n            \"inherits\": \"Node\",\n            \"methods\": [\n              \"__init__\",\n              \"get_statement_type\",\n              \"get_code\"\n            ],\n            \"description\": \"Represents statements in the code\"\n          },\n          {\n            \"class_name\": \"ExpressionNode\",\n            \"inherits\": \"Node\",\n            \"methods\": [\n              \"__init__\",\n              \"get_expression_type\",\n              \"get_value\"\n            ],\n            \"description\": \"Represents expressions in the code\"\n          }\n        ],\n        \"functions\": [\n          {\n            \"function_name\": \"create_node\",\n            \"parameters\": [\"node_type\", \"attributes\"],\n            \"description\": \"Factory function to create different types of nodes\"\n          }\n        ],\n        \"dependencies\": [\"enum\", \"typing\", \"..edge\"],\n        \"description\": \"Node classes for Code Property Graph (CPG)\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"cpg_package\": {\n        \"internal_dependencies\": [\n          \"cpg.ast → cpg.node (for AST node relationships)\",\n          \"cpg.edge → cpg.node (for node references)\",\n          \"cpg.function → cpg.ast (for AST parsing)\",\n          \"cpg.function → cpg.node (for function nodes)\",\n          \"cpg.function → cpg.edge (for control/data flow edges)\"\n        ],\n        \"external_dependencies\": [\"typing\", \"enum\", \"collections\"]\n      }\n    },\n    \"main_entry_logic\": {\n      \"description\": \"This appears to be a utility package for Code Property Graph (CPG) construction and manipulation. The main logic would typically be invoked through:\",\n      \"entry_points\": [\n        \"Function extraction via extract_functions_from_ast()\",\n        \"AST parsing via parse_ast_from_source()\",\n        \"Graph construction via Node and Edge factory functions\"\n      ],\n      \"typical_workflow\": [\n        \"Parse source code to AST using ast.py utilities\",\n        \"Extract functions and their components using function.py\",\n        \"Build CPG nodes and edges using node.py and edge.py\",\n        \"Connect nodes with appropriate edge types to form the complete graph\"\n      ]\n    }\n  }\n}\n```",
+            "```json\n{\n  \"analysis_result\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\properties.py\",\n        \"classes\": [\n          {\n            \"name\": \"Property\",\n            \"methods\": [\n              \"to_json\",\n              \"from_json\"\n            ]\n          },\n          {\n            \"name\": \"PropertyList\",\n            \"methods\": [\n              \"to_json\",\n              \"from_json\",\n              \"add_property\",\n              \"get_property\",\n              \"remove_property\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"create_property_from_dict\",\n          \"validate_property_data\"\n        ],\n        \"dependencies\": [\n          \"json\",\n          \"typing\"\n        ]\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\__init__.py\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [\n          \".properties\"\n        ],\n        \"exports\": [\n          \"Property\",\n          \"PropertyList\",\n          \"create_property_from_dict\"\n        ]\n      }\n    ],\n    \"module_dependencies\": {\n      \"internal_deps\": [\n        \"src.utils.objects.cpg.properties -> src.utils.objects.cpg\"\n      ],\n      \"external_deps\": [\n        \"json\",\n        \"typing\"\n      ]\n    },\n    \"entry_points\": {\n      \"main_entry\": \"Not applicable - these are utility modules\",\n      \"exported_components\": [\n        \"Property class\",\n        \"PropertyList class\", \n        \"create_property_from_dict function\"\n      ]\n    },\n    \"project_structure\": {\n      \"module_type\": \"Utility/Data Model\",\n      \"purpose\": \"CPG (Code Property Graph) property management utilities\",\n      \"architecture_layer\": \"Data Layer / Object Model\"\n    }\n  }\n}\n```"
+        ],
+        "summary": "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"project_overview\": {\n      \"name\": \"devign\",\n      \"description\": \"基于代码属性图(CPG)的深度学习项目，用于代码漏洞检测\",\n      \"architecture\": \"模块化设计，包含数据处理、模型训练、CPG构建等组件\"\n    },\n    \"classes\": [\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\data\\\\datamanager.py\",\n        \"class_name\": \"DataManager\",\n        \"methods\": [\"load_data\", \"preprocess_data\", \"get_data_loader\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\loader_step.py\",\n        \"class_name\": \"LoaderStep\",\n        \"methods\": [\"__init__\", \"load_data\", \"preprocess\", \"execute\"],\n        \"inherits_from\": \"Step\"\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\model.py\",\n        \"class_name\": \"Model\",\n        \"methods\": [\"__init__\", \"train\", \"predict\", \"save\", \"load\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\modeling.py\",\n        \"class_name\": \"ModelingStep\",\n        \"methods\": [\"__init__\", \"build_model\", \"train_model\", \"evaluate\", \"execute\"],\n        \"inherits_from\": \"Step\"\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\step.py\",\n        \"class_name\": \"Step\",\n        \"methods\": [\"__init__\", \"execute\", \"validate\", \"get_name\"],\n        \"inherits_from\": \"ABC\"\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\stopping.py\",\n        \"class_name\": \"StoppingCriterion\",\n        \"methods\": [\"__init__\", \"should_stop\", \"reset\", \"update\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\input_dataset.py\",\n        \"class_name\": \"InputDataset\",\n        \"methods\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\input_dataset.py\",\n        \"class_name\": \"DataLoader\",\n        \"methods\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\metrics.py\",\n        \"class_name\": \"MetricsCalculator\",\n        \"methods\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\metrics.py\",\n        \"class_name\": \"EvaluationMetrics\",\n        \"methods\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\stats.py\",\n        \"class_name\": \"Statistics\",\n        \"methods\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\stats.py\",\n        \"class_name\": \"DataStats\",\n        \"methods\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\ast.py\",\n        \"class_name\": \"ASTNode\",\n        \"methods\": [\"__init__\", \"to_dict\", \"from_dict\", \"add_child\", \"get_children\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\ast.py\",\n        \"class_name\": \"ASTVisitor\",\n        \"methods\": [\"visit\", \"visit_children\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\edge.py\",\n        \"class_name\": \"Edge\",\n        \"methods\": [\"__init__\", \"__repr__\", \"to_dict\", \"from_dict\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\edge.py\",\n        \"class_name\": \"DataFlowEdge\",\n        \"methods\": [\"__init__\", \"get_data_type\"],\n        \"inherits_from\": \"Edge\"\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\edge.py\",\n        \"class_name\": \"ControlFlowEdge\",\n        \"methods\": [\"__init__\", \"get_condition\"],\n        \"inherits_from\": \"Edge\"\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\function.py\",\n        \"class_name\": \"Function\",\n        \"methods\": [\"__init__\", \"add_parameter\", \"add_local_variable\", \"get_cfg\", \"get_ast\", \"to_dict\", \"from_dict\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\function.py\",\n        \"class_name\": \"FunctionParameter\",\n        \"methods\": [\"__init__\", \"get_type\", \"get_name\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\node.py\",\n        \"class_name\": \"Node\",\n        \"methods\": [\"__init__\", \"__repr__\", \"add_outgoing_edge\", \"add_incoming_edge\", \"get_neighbors\", \"to_dict\", \"from_dict\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\node.py\",\n        \"class_name\": \"StatementNode\",\n        \"methods\": [\"__init__\", \"get_statement_type\", \"get_code\"],\n        \"inherits_from\": \"Node\"\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\node.py\",\n        \"class_name\": \"ExpressionNode\",\n        \"methods\": [\"__init__\", \"get_expression_type\", \"get_value\"],\n        \"inherits_from\": \"Node\"\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\properties.py\",\n        \"class_name\": \"Property\",\n        \"methods\": [\"to_json\", \"from_json\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\properties.py\",\n        \"class_name\": \"PropertyList\",\n        \"methods\": [\"to_json\", \"from_json\", \"add_property\", \"get_property\", \"remove_property\"]\n      }\n    ],\n    \"functions\": [\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\configs.py\",\n        \"function_name\": \"get_config\",\n        \"parameters\": [\"config_name\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\main.py\",\n        \"function_name\": \"train_model\",\n        \"parameters\": [\"config\", \"data_manager\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\main.py\",\n        \"function_name\": \"evaluate_model\",\n        \"parameters\": [\"model\", \"test_loader\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\main.py\",\n        \"function_name\": \"main\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\loader_step.py\",\n        \"function_name\": \"create_data_loader\",\n        \"parameters\": [\"config\", \"dataset\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\modeling.py\",\n        \"function_name\": \"create_model\",\n        \"parameters\": [\"model_config\", \"input_dim\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\process\\\\stopping.py\",\n        \"function_name\": \"create_stopping_criterion\",\n        \"parameters\": [\"criterion_type\", \"threshold\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\log.py\",\n        \"function_name\": \"setup_logger\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\functions\\\\cpg.py\",\n        \"function_name\": \"generate_cpg\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\functions\\\\digraph.py\",\n        \"function_name\": \"create_digraph\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\functions\\\\parse.py\",\n        \"function_name\": \"parse_graph_data\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\functions\\\\parse.py\",\n        \"function_name\": \"parse_code_representation\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\functions\\\\parse.py\",\n        \"function_name\": \"parse_ast_nodes\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\input_dataset.py\",\n        \"function_name\": \"load_training_data\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\input_dataset.py\",\n        \"function_name\": \"preprocess_samples\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\metrics.py\",\n        \"function_name\": \"calculate_accuracy\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\metrics.py\",\n        \"function_name\": \"compute_f1_score\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\metrics.py\",\n        \"function_name\": \"get_precision_recall\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\stats.py\",\n        \"function_name\": \"compute_basic_stats\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\stats.py\",\n        \"function_name\": \"analyze_distribution\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\stats.py\",\n        \"function_name\": \"generate_report\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\ast.py\",\n        \"function_name\": \"parse_ast_from_source\",\n        \"parameters\": [\"source_code\", \"language\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\edge.py\",\n        \"function_name\": \"create_edge\",\n        \"parameters\": [\"edge_type\", \"source\", \"target\", \"attributes\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\function.py\",\n        \"function_name\": \"extract_functions_from_ast\",\n        \"parameters\": [\"ast_root\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\node.py\",\n        \"function_name\": \"create_node\",\n        \"parameters\": [\"node_type\", \"attributes\"]\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\properties.py\",\n        \"function_name\": \"create_property_from_dict\",\n        \"parameters\": []\n      },\n      {\n        \"file\": \"D:\\\\PY\\\\devign\\\\src\\\\utils\\\\objects\\\\cpg\\\\properties.py\",\n        \"function_name\": \"validate_property_data\",\n        \"parameters\": []\n      }\n    ],\n    \"module_dependencies\": {\n      \"internal_dependencies\": {\n        \"main_dependencies\": [\n          \"main.py → configs.get_config\",\n          \"main.py → src.data.datamanager.DataManager\",\n          \"process.devign → prepare.cpg_client_wrapper\",\n          \"process.devign → prepare.cpg_generator\", \n          \"process.devign → prepare.embeddings\",\n          \"process.loader_step → process.step (inheritance)\",\n          \"process.modeling → process.step (inheritance)\",\n          \"process.modeling → process.model (usage)\",\n          \"utils.functions.parse → utils.objects.input_dataset\",\n          \"utils.objects.input_dataset → utils.objects.metrics\",\n          \"utils.objects.input_dataset → utils.objects.stats\",\n          \"utils.objects.metrics → utils.objects.stats\"\n        ],\n        \"cpg_module_dependencies\": [\n          \"cpg.ast → cpg.node\",\n          \"cpg.edge → cpg.node\", \n          \"cpg.function → cpg.ast\",\n          \"cpg.function → cpg.node\",\n          \"cpg.function → cpg.edge\"\n        ]\n      },\n      \"external_dependencies\": {\n        \"core_libraries\": [\"torch\", \"numpy\", \"pandas\"],\n        \"ml_libraries\": [\"sklearn.metrics\", \"scipy.stats\"],\n        \"parsing_libraries\": [\"ast\", \"networkx\", \"json\"],\n        \"system_libraries\": [\"logging\", \"argparse\", \"abc\", \"typing\", \"enum\", \"collections\"]\n      }\n    },\n    \"entry_points\": {\n      \"primary_entry\": \"D:\\\\PY\\\\devign\\\\main.py\",\n      \"entry_function\": \"main\",\n      \"execution_flow\": [\n        \"解析命令行参数\",\n        \"加载配置文件(configs.get_config)\",\n        \"初始化数据管理器(DataManager)\",\n        \"加载和预处理数据\",\n        \"训练模型(train_model)\",\n        \"评估模型(evaluate_model)\"\n      ],\n      \"step_based_workflow\": [\n        \"LoaderStep.execute() → 数据加载和预处理\",\n        \"ModelingStep.execute() → 模型构建和训练\", \n        \"StoppingCriterion.should_stop() → 训练终止检查\"\n      ],\n      \"cpg_workflow\": [\n        \"parse_ast_from_source() → 源代码解析为AST\",\n        \"extract_functions_from_ast() → 从AST提取函数\",\n        \"create_node()/create_edge() → 构建CPG节点和边\",\n        \"generate_cpg() → 生成完整代码属性图\"\n      ]\n    },\n    \"architecture_patterns\": [\n      \"Template Method Pattern (Step抽象类)\",\n      \"Factory Pattern (Node/Edge创建函数)\", \n      \"Visitor Pattern (AST遍历)\",\n      \"Module-based Architecture (清晰的模块分层)\"\n    ]\n  }\n}\n```"
+    }
+}

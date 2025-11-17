@@ -1,0 +1,7 @@
+{
+  "problem_code": "package com.fasterxml.jackson.core.json;\n\nimport com.fasterxml.jackson.core.Version;\nimport com.fasterxml.jackson.core.Versioned;\nimport com.fasterxml.jackson.core.util.VersionUtil;\n\n/**\n * Automatically generated from PackageVersion.java.in during\n * packageVersion-generate execution of maven-replacer-plugin in\n * pom.xml.\n */\npublic final class PackageVersion implements Versioned {\n    public final static Version VERSION = VersionUtil.parseVersion(\n        \"2.6.3-SNAPSHOT\", \"com.fasterxml.jackson.core\", \"jackson-core\");\n\n    @Override\n    public Version version() {\n        return VERSION;\n    }\n}\n",
+  "error_info": "[checkstyle] 'static' 修饰符顺序违反 JLS 建议.",
+  "language": "java",
+  "last_ai_response": "```java\npackage com.fasterxml.jackson.core.json;\n\nimport com.fasterxml.jackson.core.Version;\nimport com.fasterxml.jackson.core.Versioned;\nimport com.fasterxml.jackson.core.util.VersionUtil;\n\n/**\n * Automatically generated from PackageVersion.java.in during\n * packageVersion-generate execution of maven-replacer-plugin in\n * pom.xml.\n */\npublic final class PackageVersion implements Versioned {\n    public static final Version VERSION = VersionUtil.parseVersion(\n        \"2.6.3-SNAPSHOT\", \"com.fasterxml.jackson.core\", \"jackson-core\");\n\n    @Override\n    public Version version() {\n        return VERSION;\n    }\n}\n```",
+  "timestamp": 1763355517.5381477
+}

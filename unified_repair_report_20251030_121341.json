@@ -1,0 +1,735 @@
+{
+  "timestamp": "2025-10-30T12:13:41.542966",
+  "configuration": {
+    "min_severity": "HIGH",
+    "max_workers": 1,
+    "total_execution_time_seconds": 0.2600235939025879
+  },
+  "summary": {
+    "total_tasks": 20,
+    "successful_repairs": 6,
+    "failed_repairs": 14,
+    "success_rate": 0.3
+  },
+  "detailed_results": [
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+      "defect_type": "security",
+      "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+      "line_number": 130,
+      "strategy": "fix_sql_injection",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "第130行的表名来自代码内部，SQL注入风险较低",
+        "添加安全注释"
+      ],
+      "original_code_snippet": "    L125: \n    L126:     def _delete_expired(self):\n    L127:         \"\"\"A more efficient implementation of deleting expired responses in SQL\"\"\"\n    L128:         with self.responses._lock, self.responses.connection(commit=True) as con:\n    L129:             con.execute(\n>>> L130:                 f'DELETE FROM {self.responses.table_name} WHERE expires <= ?',\n    L131:                 (round(time()),),\n    L132:             )\n    L133: \n    L134:     def _prune_redirects(self):\n    L135:         \"\"\"A more efficient implementation of removing invalid redirects in SQL\"\"\"",
+      "fixed_code_snippet": "    L125: \n    L126:     def _delete_expired(self):\n    L127:         \"\"\"A more efficient implementation of deleting expired responses in SQL\"\"\"\n    L128:         with self.responses._lock, self.responses.connection(commit=True) as con:\n    L129:             con.execute(\n>>> L130:     # 注意: 表名来自内部变量'self.responses.table_name'，SQL注入风险较低\n    L131:                 f'DELETE FROM {self.responses.table_name} WHERE expires <= ?',\n    L132:                 (round(time()),),\n    L133:             )\n    L134: \n    L135:     def _prune_redirects(self):",
+      "timestamp": "2025-10-30T12:13:41.405075"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+      "defect_type": "security",
+      "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+      "line_number": 140,
+      "strategy": "fix_sql_injection",
+      "language": "python",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "表名变量't1'需要进一步安全检查"
+      ],
+      "original_code_snippet": "    L135:         \"\"\"A more efficient implementation of removing invalid redirects in SQL\"\"\"\n    L136:         with self.redirects.connection(commit=True) as conn:\n    L137:             t1 = self.redirects.table_name\n    L138:             t2 = self.responses.table_name\n    L139:             conn.execute(\n>>> L140:                 f'DELETE FROM {t1} WHERE key IN ('\n    L141:                 f'    SELECT {t1}.key FROM {t1}'\n    L142:                 f'    LEFT JOIN {t2} ON {t2}.key = {t1}.value'\n    L143:                 f'    WHERE {t2}.key IS NULL'\n    L144:                 ')'\n    L145:             )",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-10-30T12:13:41.420896"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+      "defect_type": "security",
+      "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+      "line_number": 324,
+      "strategy": "fix_sql_injection",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "第324行的表名来自代码内部，SQL注入风险较低",
+        "添加安全注释"
+      ],
+      "original_code_snippet": "    L319:     def __del__(self):\n    L320:         self.close()\n    L321: \n    L322:     def __delitem__(self, key):\n    L323:         with self.connection(commit=True) as con:\n>>> L324:             cur = con.execute(f'DELETE FROM {self.table_name} WHERE key=?', (key,))\n    L325:         if not cur.rowcount:\n    L326:             raise KeyError\n    L327: \n    L328:     def __getitem__(self, key):\n    L329:         with self.connection() as con:",
+      "fixed_code_snippet": "    L319:     def __del__(self):\n    L320:         self.close()\n    L321: \n    L322:     def __delitem__(self, key):\n    L323:         with self.connection(commit=True) as con:\n>>> L324:     # 注意: 表名来自内部变量'self.table_name'，SQL注入风险较低\n    L325:             cur = con.execute(f'DELETE FROM {self.table_name} WHERE key=?', (key,))\n    L326:         if not cur.rowcount:\n    L327:             raise KeyError\n    L328: \n    L329:     def __getitem__(self, key):",
+      "timestamp": "2025-10-30T12:13:41.423404"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+      "defect_type": "security",
+      "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+      "line_number": 332,
+      "strategy": "fix_sql_injection",
+      "language": "python",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "检测到可能的用户输入拼接，需要重构为参数化查询",
+        "使用基本修复：添加安全注释"
+      ],
+      "original_code_snippet": "    L327: \n    L328:     def __getitem__(self, key):\n    L329:         with self.connection() as con:\n    L330:             # Using placeholders here with python 3.12+ and concurrency results in the error:\n    L331:             # sqlite3.InterfaceError: bad parameter or other API misuse\n>>> L332:             cur = con.execute(f\"SELECT value FROM {self.table_name} WHERE key='{key}'\")\n    L333:             row = cur.fetchone()\n    L334:             cur.close()\n    L335:             if not row:\n    L336:                 raise KeyError(key)\n    L337: ",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-10-30T12:13:41.435661"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+      "defect_type": "security",
+      "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+      "line_number": 355,
+      "strategy": "fix_sql_injection",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "添加SQL注入安全警告注释",
+        "使用基本修复：添加安全注释"
+      ],
+      "original_code_snippet": "    L350:                 (key, value, expires),\n    L351:             )\n    L352: \n    L353:     def __iter__(self):\n    L354:         with self.connection() as con:\n>>> L355:             for row in con.execute(f'SELECT key FROM {self.table_name}'):\n    L356:                 yield row[0]\n    L357: \n    L358:     def __len__(self):\n    L359:         return self.count()\n    L360: ",
+      "fixed_code_snippet": "    L350:                 (key, value, expires),\n    L351:             )\n    L352: \n    L353:     def __iter__(self):\n    L354:         with self.connection() as con:\n>>> L355:     # 安全警告: 潜在的SQL注入风险，建议使用参数化查询\n    L356:             for row in con.execute(f'SELECT key FROM {self.table_name}'):\n    L357:                 yield row[0]\n    L358: \n    L359:     def __len__(self):\n    L360:         return self.count()",
+      "timestamp": "2025-10-30T12:13:41.441512"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+      "defect_type": "security",
+      "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+      "line_number": 373,
+      "strategy": "fix_sql_injection",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "第373行的表名来自代码内部，SQL注入风险较低",
+        "添加安全注释"
+      ],
+      "original_code_snippet": "    L368:         column = 'key' if keys else 'value'\n    L369:         with self._lock, self.connection(commit=True) as con:\n    L370:             # Split into small enough chunks for SQLite to handle\n    L371:             for chunk in chunkify(keys or values, max_size=SQLITE_MAX_VARIABLE_NUMBER):\n    L372:                 marks, args = _format_sequence(chunk)\n>>> L373:                 statement = f'DELETE FROM {self.table_name} WHERE {column} IN ({marks})'\n    L374:                 con.execute(statement, args)\n    L375: \n    L376:     def clear(self):\n    L377:         with self._lock:\n    L378:             with self.connection(commit=True) as con:",
+      "fixed_code_snippet": "    L368:         column = 'key' if keys else 'value'\n    L369:         with self._lock, self.connection(commit=True) as con:\n    L370:             # Split into small enough chunks for SQLite to handle\n    L371:             for chunk in chunkify(keys or values, max_size=SQLITE_MAX_VARIABLE_NUMBER):\n    L372:                 marks, args = _format_sequence(chunk)\n>>> L373:     # 注意: 表名来自内部变量'self.table_name'，SQL注入风险较低\n    L374:                 statement = f'DELETE FROM {self.table_name} WHERE {column} IN ({marks})'\n    L375:                 con.execute(statement, args)\n    L376: \n    L377:     def clear(self):\n    L378:         with self._lock:",
+      "timestamp": "2025-10-30T12:13:41.449616"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+      "defect_type": "security",
+      "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+      "line_number": 390,
+      "strategy": "fix_sql_injection",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "添加SQL注入安全警告注释",
+        "使用基本修复：添加安全注释"
+      ],
+      "original_code_snippet": "    L385:         filter_expr = ''\n    L386:         params: Tuple = ()\n    L387:         if not expired:\n    L388:             filter_expr = 'WHERE expires is null or expires > ?'\n    L389:             params = (time(),)\n>>> L390:         query = f'SELECT COUNT(key) FROM {self.table_name} {filter_expr}'\n    L391: \n    L392:         with self.connection() as con:\n    L393:             return con.execute(query, params).fetchone()[0]\n    L394: \n    L395:     def serialize(self, value: VT):",
+      "fixed_code_snippet": "    L385:         filter_expr = ''\n    L386:         params: Tuple = ()\n    L387:         if not expired:\n    L388:             filter_expr = 'WHERE expires is null or expires > ?'\n    L389:             params = (time(),)\n>>> L390:     # 安全警告: 潜在的SQL注入风险，建议使用参数化查询\n    L391:         query = f'SELECT COUNT(key) FROM {self.table_name} {filter_expr}'\n    L392: \n    L393:         with self.connection() as con:\n    L394:             return con.execute(query, params).fetchone()[0]\n    L395: ",
+      "timestamp": "2025-10-30T12:13:41.457712"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+      "defect_type": "security",
+      "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+      "line_number": 440,
+      "strategy": "fix_sql_injection",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "添加SQL注入安全警告注释",
+        "使用基本修复：添加安全注释"
+      ],
+      "original_code_snippet": "    L435:             filter_expr = 'WHERE expires is null or expires > ?'\n    L436:             params = (time(),)\n    L437: \n    L438:         with self.connection(commit=True) as con:\n    L439:             for row in con.execute(\n>>> L440:                 f'SELECT key, value FROM {self.table_name} {filter_expr}'\n    L441:                 f'  ORDER BY {key} {direction} {limit_expr}',\n    L442:                 params,\n    L443:             ):\n    L444:                 result = self.deserialize(row[0], row[1])\n    L445:                 # Omit any results that can't be deserialized",
+      "fixed_code_snippet": "    L435:             filter_expr = 'WHERE expires is null or expires > ?'\n    L436:             params = (time(),)\n    L437: \n    L438:         with self.connection(commit=True) as con:\n    L439:             for row in con.execute(\n>>> L440:     # 安全警告: 潜在的SQL注入风险，建议使用参数化查询\n    L441:                 f'SELECT key, value FROM {self.table_name} {filter_expr}'\n    L442:                 f'  ORDER BY {key} {direction} {limit_expr}',\n    L443:                 params,\n    L444:             ):\n    L445:                 result = self.deserialize(row[0], row[1])",
+      "timestamp": "2025-10-30T12:13:41.467851"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\policy\\expiration.py",
+      "defect_type": "syntax",
+      "defect_message": "[llm] Function 'utcnow' is called but not defined in this module",
+      "line_number": 56,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "无法自动修复该语法错误"
+      ],
+      "original_code_snippet": "    L 51:     # Otherwise, it must be a timedelta or time in seconds\n    L 52:     if not isinstance(expire_after, timedelta):\n    L 53:         expire_after = timedelta(seconds=expire_after)\n    L 54:     if negative_delta:\n    L 55:         expire_after = -expire_after\n>>> L 56:     return (start_time or utcnow()) + expire_after\n    L 57: \n    L 58: \n    L 59: def get_expiration_seconds(expire_after: ExpirationTime) -> int:\n    L 60:     \"\"\"Convert an expiration value in any supported format to an expiration time in seconds\"\"\"\n    L 61:     expires = get_expiration_datetime(expire_after, ignore_invalid_httpdate=True)",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-10-30T12:13:41.475943"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\base_storage_test.py",
+      "defect_type": "syntax",
+      "defect_message": "[llm] 类定义不完整，缺少字段定义和结束括号",
+      "line_number": 175,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "无法自动修复该语法错误"
+      ],
+      "original_code_snippet": "    L170:             cache[f'key_{i}'] = f'value_{i}'\n    L171:         for i in range(10):\n    L172:             assert f'key_{i}' in str(cache)\n    L173: \n    L174:     def test_concurrency(self):\n>>> L175:         \"\"\"Test a large number of concurrent write operations for each backend\"\"\"\n    L176:         cache = self.init_cache()\n    L177: \n    L178:         def write(i):\n    L179:             cache[f'key_{i}'] = f'value_{i}'\n    L180: ",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-10-30T12:13:41.486537"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\docs\\conf.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'sphinx_automodapi.utils'",
+      "line_number": 166,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "无法自动修复该语法错误"
+      ],
+      "original_code_snippet": "    L161: def patch_automodapi(app):\n    L162:     \"\"\"Monkey-patch the automodapi extension to exclude imported members:\n    L163:     https://github.com/astropy/sphinx-automodapi/blob/main/sphinx_automodapi/automodsumm.py#L151\n    L164:     \"\"\"\n    L165:     from sphinx_automodapi import automodsumm\n>>> L166:     from sphinx_automodapi.utils import find_mod_objs\n    L167: \n    L168:     def find_local_mod_objs(*args, **kwargs):\n    L169:         kwargs['onlylocals'] = True\n    L170:         return find_mod_objs(*args, **kwargs)\n    L171: ",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-10-30T12:13:41.492239"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\basic_sessions.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'requests_cache'",
+      "line_number": 8,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "无法自动修复该语法错误"
+      ],
+      "original_code_snippet": "    L  3: \"\"\"\n    L  4: A simple example using requests-cache with [httpbin](https://httpbin.org)\n    L  5: \"\"\"\n    L  6: import time\n    L  7: \n>>> L  8: from requests_cache import CachedSession\n    L  9: \n    L 10: \n    L 11: def main():\n    L 12:     session = CachedSession('example_cache', backend='sqlite')\n    L 13: ",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-10-30T12:13:41.499358"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\docs\\conf.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'sphinx_automodapi'",
+      "line_number": 165,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "无法自动修复该语法错误"
+      ],
+      "original_code_snippet": "    L160: \n    L161: def patch_automodapi(app):\n    L162:     \"\"\"Monkey-patch the automodapi extension to exclude imported members:\n    L163:     https://github.com/astropy/sphinx-automodapi/blob/main/sphinx_automodapi/automodsumm.py#L151\n    L164:     \"\"\"\n>>> L165:     from sphinx_automodapi import automodsumm\n    L166:     from sphinx_automodapi.utils import find_mod_objs\n    L167: \n    L168:     def find_local_mod_objs(*args, **kwargs):\n    L169:         kwargs['onlylocals'] = True\n    L170:         return find_mod_objs(*args, **kwargs)",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-10-30T12:13:41.502619"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\noxfile.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'nox'",
+      "line_number": 23,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "无法自动修复该语法错误"
+      ],
+      "original_code_snippet": "    L 18: from os import getenv\n    L 19: from os.path import join\n    L 20: from pathlib import Path\n    L 21: from shutil import rmtree\n    L 22: \n>>> L 23: import nox\n    L 24: \n    L 25: nox.options.reuse_existing_virtualenvs = True\n    L 26: nox.options.sessions = ['lint', 'cov']\n    L 27: \n    L 28: LIVE_DOCS_PORT = 8181",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-10-30T12:13:41.508523"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\noxfile.py",
+      "defect_type": "syntax",
+      "defect_message": "[llm] Typo in command 'prek' should be 'pre-commit' in lint session",
+      "line_number": 127,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "无法自动修复该语法错误"
+      ],
+      "original_code_snippet": "    L122: @nox.session(python=False)\n    L123: def linkcheck(session):\n    L124:     \"\"\"Check documentation for dead links\"\"\"\n    L125:     session.run('sphinx-build', 'docs', DOC_BUILD_DIR, '-b', 'linkcheck')\n    L126: \n>>> L127: \n    L128: @nox.session(python=False)\n    L129: def livedocs(session):\n    L130:     \"\"\"Auto-build docs with live reload in browser.\n    L131:     Add `--open` to also open the browser after starting.\n    L132:     \"\"\"",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-10-30T12:13:41.512577"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\basic_patching.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'requests_cache'",
+      "line_number": 10,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "无法自动修复该语法错误"
+      ],
+      "original_code_snippet": "    L  5: \"\"\"\n    L  6: import time\n    L  7: \n    L  8: import requests\n    L  9: \n>>> L 10: import requests_cache\n    L 11: \n    L 12: # After installation, all requests functions and Session methods will be cached\n    L 13: requests_cache.install_cache('example_cache', backend='sqlite')\n    L 14: \n    L 15: ",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-10-30T12:13:41.512577"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\convert_cache.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'requests_cache.backends.base'",
+      "line_number": 8,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "无法自动修复该语法错误"
+      ],
+      "original_code_snippet": "    L  3: Example of converting data cached in older versions of requests-cache (<=0.5.2)\n    L  4: into the current format\n    L  5: \"\"\"\n    L  6: from requests import Response\n    L  7: \n>>> L  8: import requests_cache.backends.base\n    L  9: from requests_cache import CachedResponse, CachedSession\n    L 10: \n    L 11: \n    L 12: class _Store:\n    L 13:     pass",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-10-30T12:13:41.522411"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\convert_cache.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'requests_cache'",
+      "line_number": 9,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "无法自动修复该语法错误"
+      ],
+      "original_code_snippet": "    L  4: into the current format\n    L  5: \"\"\"\n    L  6: from requests import Response\n    L  7: \n    L  8: import requests_cache.backends.base\n>>> L  9: from requests_cache import CachedResponse, CachedSession\n    L 10: \n    L 11: \n    L 12: class _Store:\n    L 13:     pass\n    L 14: ",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-10-30T12:13:41.527421"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\custom_request_matcher.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'requests_cache'",
+      "line_number": 24,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "无法自动修复该语法错误"
+      ],
+      "original_code_snippet": "    L 19: from unittest.mock import patch\n    L 20: \n    L 21: from requests import PreparedRequest\n    L 22: from requests.help import info as get_requests_info\n    L 23: \n>>> L 24: from requests_cache import CachedSession\n    L 25: from requests_cache.cache_keys import create_key\n    L 26: \n    L 27: \n    L 28: def create_custom_key(request: PreparedRequest, **kwargs) -> str:\n    L 29:     \"\"\"Make a custom cache key that includes library versions\"\"\"",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-10-30T12:13:41.527421"
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\custom_request_matcher.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'requests_cache.cache_keys'",
+      "line_number": 25,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "无法自动修复该语法错误"
+      ],
+      "original_code_snippet": "    L 20: \n    L 21: from requests import PreparedRequest\n    L 22: from requests.help import info as get_requests_info\n    L 23: \n    L 24: from requests_cache import CachedSession\n>>> L 25: from requests_cache.cache_keys import create_key\n    L 26: \n    L 27: \n    L 28: def create_custom_key(request: PreparedRequest, **kwargs) -> str:\n    L 29:     \"\"\"Make a custom cache key that includes library versions\"\"\"\n    L 30:     # Start with the default key created by requests-cache",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-10-30T12:13:41.534701"
+    }
+  ],
+  "file_grouping": {
+    "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py": {
+      "total_tasks": 8,
+      "successful_repairs": 6,
+      "failed_repairs": 2,
+      "tasks": [
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+          "defect_type": "security",
+          "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 130,
+          "strategy": "fix_sql_injection",
+          "language": "python",
+          "success": true,
+          "confidence": 0.9,
+          "changes_made": [
+            "第130行的表名来自代码内部，SQL注入风险较低",
+            "添加安全注释"
+          ],
+          "original_code_snippet": "    L125: \n    L126:     def _delete_expired(self):\n    L127:         \"\"\"A more efficient implementation of deleting expired responses in SQL\"\"\"\n    L128:         with self.responses._lock, self.responses.connection(commit=True) as con:\n    L129:             con.execute(\n>>> L130:                 f'DELETE FROM {self.responses.table_name} WHERE expires <= ?',\n    L131:                 (round(time()),),\n    L132:             )\n    L133: \n    L134:     def _prune_redirects(self):\n    L135:         \"\"\"A more efficient implementation of removing invalid redirects in SQL\"\"\"",
+          "fixed_code_snippet": "    L125: \n    L126:     def _delete_expired(self):\n    L127:         \"\"\"A more efficient implementation of deleting expired responses in SQL\"\"\"\n    L128:         with self.responses._lock, self.responses.connection(commit=True) as con:\n    L129:             con.execute(\n>>> L130:     # 注意: 表名来自内部变量'self.responses.table_name'，SQL注入风险较低\n    L131:                 f'DELETE FROM {self.responses.table_name} WHERE expires <= ?',\n    L132:                 (round(time()),),\n    L133:             )\n    L134: \n    L135:     def _prune_redirects(self):",
+          "timestamp": "2025-10-30T12:13:41.405075"
+        },
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+          "defect_type": "security",
+          "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 140,
+          "strategy": "fix_sql_injection",
+          "language": "python",
+          "success": false,
+          "confidence": 0.1,
+          "changes_made": [
+            "表名变量't1'需要进一步安全检查"
+          ],
+          "original_code_snippet": "    L135:         \"\"\"A more efficient implementation of removing invalid redirects in SQL\"\"\"\n    L136:         with self.redirects.connection(commit=True) as conn:\n    L137:             t1 = self.redirects.table_name\n    L138:             t2 = self.responses.table_name\n    L139:             conn.execute(\n>>> L140:                 f'DELETE FROM {t1} WHERE key IN ('\n    L141:                 f'    SELECT {t1}.key FROM {t1}'\n    L142:                 f'    LEFT JOIN {t2} ON {t2}.key = {t1}.value'\n    L143:                 f'    WHERE {t2}.key IS NULL'\n    L144:                 ')'\n    L145:             )",
+          "fixed_code_snippet": "无变化",
+          "timestamp": "2025-10-30T12:13:41.420896"
+        },
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+          "defect_type": "security",
+          "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 324,
+          "strategy": "fix_sql_injection",
+          "language": "python",
+          "success": true,
+          "confidence": 0.9,
+          "changes_made": [
+            "第324行的表名来自代码内部，SQL注入风险较低",
+            "添加安全注释"
+          ],
+          "original_code_snippet": "    L319:     def __del__(self):\n    L320:         self.close()\n    L321: \n    L322:     def __delitem__(self, key):\n    L323:         with self.connection(commit=True) as con:\n>>> L324:             cur = con.execute(f'DELETE FROM {self.table_name} WHERE key=?', (key,))\n    L325:         if not cur.rowcount:\n    L326:             raise KeyError\n    L327: \n    L328:     def __getitem__(self, key):\n    L329:         with self.connection() as con:",
+          "fixed_code_snippet": "    L319:     def __del__(self):\n    L320:         self.close()\n    L321: \n    L322:     def __delitem__(self, key):\n    L323:         with self.connection(commit=True) as con:\n>>> L324:     # 注意: 表名来自内部变量'self.table_name'，SQL注入风险较低\n    L325:             cur = con.execute(f'DELETE FROM {self.table_name} WHERE key=?', (key,))\n    L326:         if not cur.rowcount:\n    L327:             raise KeyError\n    L328: \n    L329:     def __getitem__(self, key):",
+          "timestamp": "2025-10-30T12:13:41.423404"
+        },
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+          "defect_type": "security",
+          "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 332,
+          "strategy": "fix_sql_injection",
+          "language": "python",
+          "success": false,
+          "confidence": 0.1,
+          "changes_made": [
+            "检测到可能的用户输入拼接，需要重构为参数化查询",
+            "使用基本修复：添加安全注释"
+          ],
+          "original_code_snippet": "    L327: \n    L328:     def __getitem__(self, key):\n    L329:         with self.connection() as con:\n    L330:             # Using placeholders here with python 3.12+ and concurrency results in the error:\n    L331:             # sqlite3.InterfaceError: bad parameter or other API misuse\n>>> L332:             cur = con.execute(f\"SELECT value FROM {self.table_name} WHERE key='{key}'\")\n    L333:             row = cur.fetchone()\n    L334:             cur.close()\n    L335:             if not row:\n    L336:                 raise KeyError(key)\n    L337: ",
+          "fixed_code_snippet": "无变化",
+          "timestamp": "2025-10-30T12:13:41.435661"
+        },
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+          "defect_type": "security",
+          "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 355,
+          "strategy": "fix_sql_injection",
+          "language": "python",
+          "success": true,
+          "confidence": 0.9,
+          "changes_made": [
+            "添加SQL注入安全警告注释",
+            "使用基本修复：添加安全注释"
+          ],
+          "original_code_snippet": "    L350:                 (key, value, expires),\n    L351:             )\n    L352: \n    L353:     def __iter__(self):\n    L354:         with self.connection() as con:\n>>> L355:             for row in con.execute(f'SELECT key FROM {self.table_name}'):\n    L356:                 yield row[0]\n    L357: \n    L358:     def __len__(self):\n    L359:         return self.count()\n    L360: ",
+          "fixed_code_snippet": "    L350:                 (key, value, expires),\n    L351:             )\n    L352: \n    L353:     def __iter__(self):\n    L354:         with self.connection() as con:\n>>> L355:     # 安全警告: 潜在的SQL注入风险，建议使用参数化查询\n    L356:             for row in con.execute(f'SELECT key FROM {self.table_name}'):\n    L357:                 yield row[0]\n    L358: \n    L359:     def __len__(self):\n    L360:         return self.count()",
+          "timestamp": "2025-10-30T12:13:41.441512"
+        },
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+          "defect_type": "security",
+          "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 373,
+          "strategy": "fix_sql_injection",
+          "language": "python",
+          "success": true,
+          "confidence": 0.9,
+          "changes_made": [
+            "第373行的表名来自代码内部，SQL注入风险较低",
+            "添加安全注释"
+          ],
+          "original_code_snippet": "    L368:         column = 'key' if keys else 'value'\n    L369:         with self._lock, self.connection(commit=True) as con:\n    L370:             # Split into small enough chunks for SQLite to handle\n    L371:             for chunk in chunkify(keys or values, max_size=SQLITE_MAX_VARIABLE_NUMBER):\n    L372:                 marks, args = _format_sequence(chunk)\n>>> L373:                 statement = f'DELETE FROM {self.table_name} WHERE {column} IN ({marks})'\n    L374:                 con.execute(statement, args)\n    L375: \n    L376:     def clear(self):\n    L377:         with self._lock:\n    L378:             with self.connection(commit=True) as con:",
+          "fixed_code_snippet": "    L368:         column = 'key' if keys else 'value'\n    L369:         with self._lock, self.connection(commit=True) as con:\n    L370:             # Split into small enough chunks for SQLite to handle\n    L371:             for chunk in chunkify(keys or values, max_size=SQLITE_MAX_VARIABLE_NUMBER):\n    L372:                 marks, args = _format_sequence(chunk)\n>>> L373:     # 注意: 表名来自内部变量'self.table_name'，SQL注入风险较低\n    L374:                 statement = f'DELETE FROM {self.table_name} WHERE {column} IN ({marks})'\n    L375:                 con.execute(statement, args)\n    L376: \n    L377:     def clear(self):\n    L378:         with self._lock:",
+          "timestamp": "2025-10-30T12:13:41.449616"
+        },
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+          "defect_type": "security",
+          "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 390,
+          "strategy": "fix_sql_injection",
+          "language": "python",
+          "success": true,
+          "confidence": 0.9,
+          "changes_made": [
+            "添加SQL注入安全警告注释",
+            "使用基本修复：添加安全注释"
+          ],
+          "original_code_snippet": "    L385:         filter_expr = ''\n    L386:         params: Tuple = ()\n    L387:         if not expired:\n    L388:             filter_expr = 'WHERE expires is null or expires > ?'\n    L389:             params = (time(),)\n>>> L390:         query = f'SELECT COUNT(key) FROM {self.table_name} {filter_expr}'\n    L391: \n    L392:         with self.connection() as con:\n    L393:             return con.execute(query, params).fetchone()[0]\n    L394: \n    L395:     def serialize(self, value: VT):",
+          "fixed_code_snippet": "    L385:         filter_expr = ''\n    L386:         params: Tuple = ()\n    L387:         if not expired:\n    L388:             filter_expr = 'WHERE expires is null or expires > ?'\n    L389:             params = (time(),)\n>>> L390:     # 安全警告: 潜在的SQL注入风险，建议使用参数化查询\n    L391:         query = f'SELECT COUNT(key) FROM {self.table_name} {filter_expr}'\n    L392: \n    L393:         with self.connection() as con:\n    L394:             return con.execute(query, params).fetchone()[0]\n    L395: ",
+          "timestamp": "2025-10-30T12:13:41.457712"
+        },
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+          "defect_type": "security",
+          "defect_message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 440,
+          "strategy": "fix_sql_injection",
+          "language": "python",
+          "success": true,
+          "confidence": 0.9,
+          "changes_made": [
+            "添加SQL注入安全警告注释",
+            "使用基本修复：添加安全注释"
+          ],
+          "original_code_snippet": "    L435:             filter_expr = 'WHERE expires is null or expires > ?'\n    L436:             params = (time(),)\n    L437: \n    L438:         with self.connection(commit=True) as con:\n    L439:             for row in con.execute(\n>>> L440:                 f'SELECT key, value FROM {self.table_name} {filter_expr}'\n    L441:                 f'  ORDER BY {key} {direction} {limit_expr}',\n    L442:                 params,\n    L443:             ):\n    L444:                 result = self.deserialize(row[0], row[1])\n    L445:                 # Omit any results that can't be deserialized",
+          "fixed_code_snippet": "    L435:             filter_expr = 'WHERE expires is null or expires > ?'\n    L436:             params = (time(),)\n    L437: \n    L438:         with self.connection(commit=True) as con:\n    L439:             for row in con.execute(\n>>> L440:     # 安全警告: 潜在的SQL注入风险，建议使用参数化查询\n    L441:                 f'SELECT key, value FROM {self.table_name} {filter_expr}'\n    L442:                 f'  ORDER BY {key} {direction} {limit_expr}',\n    L443:                 params,\n    L444:             ):\n    L445:                 result = self.deserialize(row[0], row[1])",
+          "timestamp": "2025-10-30T12:13:41.467851"
+        }
+      ]
+    },
+    "D:\\PY\\requests-cache-main\\requests_cache\\policy\\expiration.py": {
+      "total_tasks": 1,
+      "successful_repairs": 0,
+      "failed_repairs": 1,
+      "tasks": [
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\policy\\expiration.py",
+          "defect_type": "syntax",
+          "defect_message": "[llm] Function 'utcnow' is called but not defined in this module",
+          "line_number": 56,
+          "strategy": "fix_syntax_error",
+          "language": "python",
+          "success": false,
+          "confidence": 0.1,
+          "changes_made": [
+            "无法自动修复该语法错误"
+          ],
+          "original_code_snippet": "    L 51:     # Otherwise, it must be a timedelta or time in seconds\n    L 52:     if not isinstance(expire_after, timedelta):\n    L 53:         expire_after = timedelta(seconds=expire_after)\n    L 54:     if negative_delta:\n    L 55:         expire_after = -expire_after\n>>> L 56:     return (start_time or utcnow()) + expire_after\n    L 57: \n    L 58: \n    L 59: def get_expiration_seconds(expire_after: ExpirationTime) -> int:\n    L 60:     \"\"\"Convert an expiration value in any supported format to an expiration time in seconds\"\"\"\n    L 61:     expires = get_expiration_datetime(expire_after, ignore_invalid_httpdate=True)",
+          "fixed_code_snippet": "无变化",
+          "timestamp": "2025-10-30T12:13:41.475943"
+        }
+      ]
+    },
+    "D:\\PY\\requests-cache-main\\tests\\integration\\base_storage_test.py": {
+      "total_tasks": 1,
+      "successful_repairs": 0,
+      "failed_repairs": 1,
+      "tasks": [
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\base_storage_test.py",
+          "defect_type": "syntax",
+          "defect_message": "[llm] 类定义不完整，缺少字段定义和结束括号",
+          "line_number": 175,
+          "strategy": "fix_syntax_error",
+          "language": "python",
+          "success": false,
+          "confidence": 0.1,
+          "changes_made": [
+            "无法自动修复该语法错误"
+          ],
+          "original_code_snippet": "    L170:             cache[f'key_{i}'] = f'value_{i}'\n    L171:         for i in range(10):\n    L172:             assert f'key_{i}' in str(cache)\n    L173: \n    L174:     def test_concurrency(self):\n>>> L175:         \"\"\"Test a large number of concurrent write operations for each backend\"\"\"\n    L176:         cache = self.init_cache()\n    L177: \n    L178:         def write(i):\n    L179:             cache[f'key_{i}'] = f'value_{i}'\n    L180: ",
+          "fixed_code_snippet": "无变化",
+          "timestamp": "2025-10-30T12:13:41.486537"
+        }
+      ]
+    },
+    "D:\\PY\\requests-cache-main\\docs\\conf.py": {
+      "total_tasks": 2,
+      "successful_repairs": 0,
+      "failed_repairs": 2,
+      "tasks": [
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\docs\\conf.py",
+          "defect_type": "syntax",
+          "defect_message": "[pylint] Unable to import 'sphinx_automodapi.utils'",
+          "line_number": 166,
+          "strategy": "fix_syntax_error",
+          "language": "python",
+          "success": false,
+          "confidence": 0.1,
+          "changes_made": [
+            "无法自动修复该语法错误"
+          ],
+          "original_code_snippet": "    L161: def patch_automodapi(app):\n    L162:     \"\"\"Monkey-patch the automodapi extension to exclude imported members:\n    L163:     https://github.com/astropy/sphinx-automodapi/blob/main/sphinx_automodapi/automodsumm.py#L151\n    L164:     \"\"\"\n    L165:     from sphinx_automodapi import automodsumm\n>>> L166:     from sphinx_automodapi.utils import find_mod_objs\n    L167: \n    L168:     def find_local_mod_objs(*args, **kwargs):\n    L169:         kwargs['onlylocals'] = True\n    L170:         return find_mod_objs(*args, **kwargs)\n    L171: ",
+          "fixed_code_snippet": "无变化",
+          "timestamp": "2025-10-30T12:13:41.492239"
+        },
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\docs\\conf.py",
+          "defect_type": "syntax",
+          "defect_message": "[pylint] Unable to import 'sphinx_automodapi'",
+          "line_number": 165,
+          "strategy": "fix_syntax_error",
+          "language": "python",
+          "success": false,
+          "confidence": 0.1,
+          "changes_made": [
+            "无法自动修复该语法错误"
+          ],
+          "original_code_snippet": "    L160: \n    L161: def patch_automodapi(app):\n    L162:     \"\"\"Monkey-patch the automodapi extension to exclude imported members:\n    L163:     https://github.com/astropy/sphinx-automodapi/blob/main/sphinx_automodapi/automodsumm.py#L151\n    L164:     \"\"\"\n>>> L165:     from sphinx_automodapi import automodsumm\n    L166:     from sphinx_automodapi.utils import find_mod_objs\n    L167: \n    L168:     def find_local_mod_objs(*args, **kwargs):\n    L169:         kwargs['onlylocals'] = True\n    L170:         return find_mod_objs(*args, **kwargs)",
+          "fixed_code_snippet": "无变化",
+          "timestamp": "2025-10-30T12:13:41.502619"
+        }
+      ]
+    },
+    "D:\\PY\\requests-cache-main\\examples\\basic_sessions.py": {
+      "total_tasks": 1,
+      "successful_repairs": 0,
+      "failed_repairs": 1,
+      "tasks": [
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\examples\\basic_sessions.py",
+          "defect_type": "syntax",
+          "defect_message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 8,
+          "strategy": "fix_syntax_error",
+          "language": "python",
+          "success": false,
+          "confidence": 0.1,
+          "changes_made": [
+            "无法自动修复该语法错误"
+          ],
+          "original_code_snippet": "    L  3: \"\"\"\n    L  4: A simple example using requests-cache with [httpbin](https://httpbin.org)\n    L  5: \"\"\"\n    L  6: import time\n    L  7: \n>>> L  8: from requests_cache import CachedSession\n    L  9: \n    L 10: \n    L 11: def main():\n    L 12:     session = CachedSession('example_cache', backend='sqlite')\n    L 13: ",
+          "fixed_code_snippet": "无变化",
+          "timestamp": "2025-10-30T12:13:41.499358"
+        }
+      ]
+    },
+    "D:\\PY\\requests-cache-main\\noxfile.py": {
+      "total_tasks": 2,
+      "successful_repairs": 0,
+      "failed_repairs": 2,
+      "tasks": [
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\noxfile.py",
+          "defect_type": "syntax",
+          "defect_message": "[pylint] Unable to import 'nox'",
+          "line_number": 23,
+          "strategy": "fix_syntax_error",
+          "language": "python",
+          "success": false,
+          "confidence": 0.1,
+          "changes_made": [
+            "无法自动修复该语法错误"
+          ],
+          "original_code_snippet": "    L 18: from os import getenv\n    L 19: from os.path import join\n    L 20: from pathlib import Path\n    L 21: from shutil import rmtree\n    L 22: \n>>> L 23: import nox\n    L 24: \n    L 25: nox.options.reuse_existing_virtualenvs = True\n    L 26: nox.options.sessions = ['lint', 'cov']\n    L 27: \n    L 28: LIVE_DOCS_PORT = 8181",
+          "fixed_code_snippet": "无变化",
+          "timestamp": "2025-10-30T12:13:41.508523"
+        },
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\noxfile.py",
+          "defect_type": "syntax",
+          "defect_message": "[llm] Typo in command 'prek' should be 'pre-commit' in lint session",
+          "line_number": 127,
+          "strategy": "fix_syntax_error",
+          "language": "python",
+          "success": false,
+          "confidence": 0.1,
+          "changes_made": [
+            "无法自动修复该语法错误"
+          ],
+          "original_code_snippet": "    L122: @nox.session(python=False)\n    L123: def linkcheck(session):\n    L124:     \"\"\"Check documentation for dead links\"\"\"\n    L125:     session.run('sphinx-build', 'docs', DOC_BUILD_DIR, '-b', 'linkcheck')\n    L126: \n>>> L127: \n    L128: @nox.session(python=False)\n    L129: def livedocs(session):\n    L130:     \"\"\"Auto-build docs with live reload in browser.\n    L131:     Add `--open` to also open the browser after starting.\n    L132:     \"\"\"",
+          "fixed_code_snippet": "无变化",
+          "timestamp": "2025-10-30T12:13:41.512577"
+        }
+      ]
+    },
+    "D:\\PY\\requests-cache-main\\examples\\basic_patching.py": {
+      "total_tasks": 1,
+      "successful_repairs": 0,
+      "failed_repairs": 1,
+      "tasks": [
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\examples\\basic_patching.py",
+          "defect_type": "syntax",
+          "defect_message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 10,
+          "strategy": "fix_syntax_error",
+          "language": "python",
+          "success": false,
+          "confidence": 0.1,
+          "changes_made": [
+            "无法自动修复该语法错误"
+          ],
+          "original_code_snippet": "    L  5: \"\"\"\n    L  6: import time\n    L  7: \n    L  8: import requests\n    L  9: \n>>> L 10: import requests_cache\n    L 11: \n    L 12: # After installation, all requests functions and Session methods will be cached\n    L 13: requests_cache.install_cache('example_cache', backend='sqlite')\n    L 14: \n    L 15: ",
+          "fixed_code_snippet": "无变化",
+          "timestamp": "2025-10-30T12:13:41.512577"
+        }
+      ]
+    },
+    "D:\\PY\\requests-cache-main\\examples\\convert_cache.py": {
+      "total_tasks": 2,
+      "successful_repairs": 0,
+      "failed_repairs": 2,
+      "tasks": [
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\examples\\convert_cache.py",
+          "defect_type": "syntax",
+          "defect_message": "[pylint] Unable to import 'requests_cache.backends.base'",
+          "line_number": 8,
+          "strategy": "fix_syntax_error",
+          "language": "python",
+          "success": false,
+          "confidence": 0.1,
+          "changes_made": [
+            "无法自动修复该语法错误"
+          ],
+          "original_code_snippet": "    L  3: Example of converting data cached in older versions of requests-cache (<=0.5.2)\n    L  4: into the current format\n    L  5: \"\"\"\n    L  6: from requests import Response\n    L  7: \n>>> L  8: import requests_cache.backends.base\n    L  9: from requests_cache import CachedResponse, CachedSession\n    L 10: \n    L 11: \n    L 12: class _Store:\n    L 13:     pass",
+          "fixed_code_snippet": "无变化",
+          "timestamp": "2025-10-30T12:13:41.522411"
+        },
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\examples\\convert_cache.py",
+          "defect_type": "syntax",
+          "defect_message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 9,
+          "strategy": "fix_syntax_error",
+          "language": "python",
+          "success": false,
+          "confidence": 0.1,
+          "changes_made": [
+            "无法自动修复该语法错误"
+          ],
+          "original_code_snippet": "    L  4: into the current format\n    L  5: \"\"\"\n    L  6: from requests import Response\n    L  7: \n    L  8: import requests_cache.backends.base\n>>> L  9: from requests_cache import CachedResponse, CachedSession\n    L 10: \n    L 11: \n    L 12: class _Store:\n    L 13:     pass\n    L 14: ",
+          "fixed_code_snippet": "无变化",
+          "timestamp": "2025-10-30T12:13:41.527421"
+        }
+      ]
+    },
+    "D:\\PY\\requests-cache-main\\examples\\custom_request_matcher.py": {
+      "total_tasks": 2,
+      "successful_repairs": 0,
+      "failed_repairs": 2,
+      "tasks": [
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\examples\\custom_request_matcher.py",
+          "defect_type": "syntax",
+          "defect_message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 24,
+          "strategy": "fix_syntax_error",
+          "language": "python",
+          "success": false,
+          "confidence": 0.1,
+          "changes_made": [
+            "无法自动修复该语法错误"
+          ],
+          "original_code_snippet": "    L 19: from unittest.mock import patch\n    L 20: \n    L 21: from requests import PreparedRequest\n    L 22: from requests.help import info as get_requests_info\n    L 23: \n>>> L 24: from requests_cache import CachedSession\n    L 25: from requests_cache.cache_keys import create_key\n    L 26: \n    L 27: \n    L 28: def create_custom_key(request: PreparedRequest, **kwargs) -> str:\n    L 29:     \"\"\"Make a custom cache key that includes library versions\"\"\"",
+          "fixed_code_snippet": "无变化",
+          "timestamp": "2025-10-30T12:13:41.527421"
+        },
+        {
+          "file_path": "D:\\PY\\requests-cache-main\\examples\\custom_request_matcher.py",
+          "defect_type": "syntax",
+          "defect_message": "[pylint] Unable to import 'requests_cache.cache_keys'",
+          "line_number": 25,
+          "strategy": "fix_syntax_error",
+          "language": "python",
+          "success": false,
+          "confidence": 0.1,
+          "changes_made": [
+            "无法自动修复该语法错误"
+          ],
+          "original_code_snippet": "    L 20: \n    L 21: from requests import PreparedRequest\n    L 22: from requests.help import info as get_requests_info\n    L 23: \n    L 24: from requests_cache import CachedSession\n>>> L 25: from requests_cache.cache_keys import create_key\n    L 26: \n    L 27: \n    L 28: def create_custom_key(request: PreparedRequest, **kwargs) -> str:\n    L 29:     \"\"\"Make a custom cache key that includes library versions\"\"\"\n    L 30:     # Start with the default key created by requests-cache",
+          "fixed_code_snippet": "无变化",
+          "timestamp": "2025-10-30T12:13:41.534701"
+        }
+      ]
+    }
+  }
+}

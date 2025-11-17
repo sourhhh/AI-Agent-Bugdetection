@@ -1,0 +1,2007 @@
+{
+  "files": [
+    {
+      "file_path": "D:\\QtWork\\chatPart\\chatwindow.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 文件过长（656行），建议拆分",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "detector",
+          "confidence": 0.6
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFileDialog> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QPixmap> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTextBrowser> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFile> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDataStream> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTcpSocket> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 8,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlQuery> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlError> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 10,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 11,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTextStream> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 12,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QListWidgetItem> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 13,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QLabel> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 14,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QVBoxLayout> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 15,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTextCursor> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 16,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTextDocument> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 17,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTextCharFormat> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 18,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTextImageFormat> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 19,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonObject> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 21,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonArray> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 22,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 函数过长（375行），影响可维护性",
+          "line_number": 282,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\chatPart\\ClientHandlerThread.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFile> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 范围循环中可能产生不必要的拷贝，建议使用引用",
+          "line_number": 20,
+          "severity": "LOW",
+          "tool": "detector",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\chatPart\\fixed_chatwindow.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 文件过长（657行），建议拆分",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "detector",
+          "confidence": 0.6
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFileDialog> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QPixmap> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTextBrowser> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFile> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDataStream> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTcpSocket> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 8,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlQuery> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlError> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 10,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 11,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTextStream> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 12,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QListWidgetItem> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 13,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QLabel> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 14,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QVBoxLayout> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 15,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTextCursor> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 16,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTextDocument> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 17,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTextCharFormat> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 18,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTextImageFormat> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 19,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonObject> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 21,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonArray> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 22,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 函数过长（375行），影响可维护性",
+          "line_number": 283,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\chatPart\\fixed_main.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QApplication> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] C++检测服务暂时不可用：LLM服务调用失败，建议手动检查代码",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.3
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlDatabase> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlQuery> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlError> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QThread> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "memory",
+          "message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+          "line_number": 91,
+          "severity": "HIGH",
+          "tool": "detector",
+          "confidence": 0.8
+        },
+        {
+          "type": "memory",
+          "message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+          "line_number": 92,
+          "severity": "HIGH",
+          "tool": "detector",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\chatPart\\fixed_server.cpp",
+      "defects": [
+        {
+          "type": "memory",
+          "message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+          "line_number": 24,
+          "severity": "HIGH",
+          "tool": "detector",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\chatPart\\loginwindow.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlDatabase> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlQuery> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlError> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\chatPart\\main.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QApplication> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlDatabase> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlQuery> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlError> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QThread> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "memory",
+          "message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+          "line_number": 91,
+          "severity": "HIGH",
+          "tool": "detector",
+          "confidence": 0.8
+        },
+        {
+          "type": "memory",
+          "message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+          "line_number": 92,
+          "severity": "HIGH",
+          "tool": "detector",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\chatPart\\server.cpp",
+      "defects": [
+        {
+          "type": "memory",
+          "message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+          "line_number": 24,
+          "severity": "HIGH",
+          "tool": "detector",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\chatPart\\SocketThread.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFile> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QHostAddress> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFileInfo> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\DataBase_00\\fixed_tcpserver.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 文件过长（1505行），建议拆分",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "detector",
+          "confidence": 0.6
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDateTime> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 函数过长（164行），影响可维护性",
+          "line_number": 119,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 函数过长（1222行），影响可维护性",
+          "line_number": 284,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\DataBase_00\\main.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QApplication> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QCoreApplication> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlDatabase> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QSqlQuery> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <TcpServer.h> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\DataBase_00\\tcpserver.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 文件过长（1504行），建议拆分",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "detector",
+          "confidence": 0.6
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDateTime> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 函数过长（163行），影响可维护性",
+          "line_number": 119,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 函数过长（1222行），影响可维护性",
+          "line_number": 283,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\DataBase_00\\widget.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 重复的代码模式：多个相似的if-else条件判断，建议使用switch或映射表来简化代码",
+          "line_number": 24,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 重复的条件判断：medicalHistoryButton 被检查了三次，这可能是复制粘贴错误，会导致后续的条件永远无法执行",
+          "line_number": 31,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 重复的条件判断：medicalHistoryButton 被检查了三次，这可能是复制粘贴错误，会导致后续的条件永远无法执行",
+          "line_number": 37,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\allinformationwindow.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonArray> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonObject> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\createaccoutwindow.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\dailycheckinwindow.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonArray> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonValue> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\fixed_GlobalUserInformation.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] The function 'instance' is never used.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "memory",
+          "message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "detector",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\fixed_networkmanager.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QHostAddress> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "memory",
+          "message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "detector",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\GlobalUserInformation.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] The function 'instance' is never used.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "memory",
+          "message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "detector",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\leaverequestwindow.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonObject> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonDocument> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\loginwindow.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QToolButton> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QStyle> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\main.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QApplication> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\messageboxutils.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] The function 'showStyledMessageBox' is never used.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\networkmanager.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QHostAddress> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "memory",
+          "message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "detector",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 在onReadyRead方法中，当没有找到JSON对象开始标记时，直接清空整个缓冲区，可能导致数据丢失。应该保留缓冲区内容等待更多数据",
+          "line_number": 95,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "performance",
+          "message": "[llm] 在onReadyRead中频繁使用QByteArray的mid操作可能导致不必要的内存拷贝，应考虑使用更高效的方式处理缓冲区",
+          "line_number": 118,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] JSON解析循环中，当找到完整JSON对象后，缓冲区被截断，但没有检查是否还有其他JSON对象",
+          "line_number": 125,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] processJsonResponse函数末尾有未完成的代码，emit regist... 语句不完整",
+          "line_number": 163,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\registerwindow.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\selectwindow.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] C++检测服务暂时不可用：LLM服务调用失败，建议手动检查代码",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.3
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QResizeEvent> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QPixmap> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QPalette> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QStyle> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\bookwindow.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 文件过长（592行），建议拆分",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "detector",
+          "confidence": 0.6
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTcpSocket> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonObject> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonDocument> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDate> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 8,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFont> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 可能存在不必要的容器拷贝，建议使用移动语义",
+          "line_number": 376,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.65
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 范围循环中可能产生不必要的拷贝，建议使用引用",
+          "line_number": 377,
+          "severity": "LOW",
+          "tool": "detector",
+          "confidence": 0.6
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 可能存在不必要的容器拷贝，建议使用移动语义",
+          "line_number": 395,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.65
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 范围循环中可能产生不必要的拷贝，建议使用引用",
+          "line_number": 396,
+          "severity": "LOW",
+          "tool": "detector",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\casehistory.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFont> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDate> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QtDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QPrinter> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QPrintDialog> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QTextDocument> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 8,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QPalette> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\doctordetail.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 文件过长（526行），建议拆分",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "detector",
+          "confidence": 0.6
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFont> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QPixmap> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFrame> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QPalette> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QInputDialog> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 8,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDateTime> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 10,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 函数过长（177行），影响可维护性",
+          "line_number": 350,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\fixed_doctordetail.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 文件过长（527行），建议拆分",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "detector",
+          "confidence": 0.6
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFont> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QPixmap> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFrame> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QPalette> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QInputDialog> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 8,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDateTime> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 10,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[code_smell] 函数过长（177行），影响可维护性",
+          "line_number": 351,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\fixed_globaluserinformation.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] The function 'instance' is never used.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "memory",
+          "message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+          "line_number": 8,
+          "severity": "HIGH",
+          "tool": "detector",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\fixed_networkmanager.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QHostAddress> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "memory",
+          "message": "[llm] Singleton instance is not properly deleted, causing potential memory leak",
+          "line_number": 8,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "memory",
+          "message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "detector",
+          "confidence": 0.8
+        },
+        {
+          "type": "qt_specific",
+          "message": "[llm] Signal connection using deprecated QOverload syntax, should use qOverload or function pointer",
+          "line_number": 21,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] Potential infinite loop in JSON parsing if malformed data is received",
+          "line_number": 78,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "performance",
+          "message": "[llm] Inefficient buffer handling with repeated mid() calls, should use QByteArray::remove()",
+          "line_number": 95,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] Missing break statement at end of switch/case in truncated code section",
+          "line_number": 120,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\globaluserinformation.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] The function 'instance' is never used.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "memory",
+          "message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+          "line_number": 8,
+          "severity": "HIGH",
+          "tool": "detector",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\HealthAssessmentPage.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QRegExp> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <cmath> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QtCharts/QChart> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QtCharts/QChartView> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QtCharts/QBarSet> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 8,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QtCharts/QBarSeries> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QtCharts/QBarCategoryAxis> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 10,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QtCharts/QValueAxis> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 11,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QPainter> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 12,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\information.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonArray> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonObject> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonValue> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\LoginWindow.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QGuiApplication> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 8,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QScreen> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QGraphicsDropShadowEffect> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 10,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\main.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QApplication> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\networkmanager.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] C++检测服务暂时不可用：LLM服务调用失败，建议手动检查代码",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.3
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QHostAddress> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "memory",
+          "message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "detector",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\PatientInfoPage.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QLabel> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFormLayout> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QGroupBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QScrollArea> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFrame> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QLineEdit> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 8,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QComboBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDateEdit> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 10,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QPushButton> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 11,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 12,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QJsonObject> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 13,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\PatientMainPage.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QScreen> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QVBoxLayout> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QHBoxLayout> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QLabel> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 8,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QIcon> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QFont> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 10,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QPixmap> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 11,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\RegisterWindow.cpp",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QMessageBox> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QLineEdit> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDateTime> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QDebug> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QGuiApplication> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QScreen> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 8,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        },
+        {
+          "type": "code_smell",
+          "message": "[cppcheck] Include file: <QButtonGroup> not found. Please note: Cppcheck does not need standard library headers to get proper results.",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "cppcheck",
+          "confidence": 0.85
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "CRITICAL": 0,
+    "HIGH": 15,
+    "MEDIUM": 18,
+    "LOW": 191
+  }
+}

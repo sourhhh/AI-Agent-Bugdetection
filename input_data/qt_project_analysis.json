@@ -1,0 +1,2324 @@
+{
+    "project_context": {
+        "project_root": "D:\\QtWork",
+        "python_files": [],
+        "test_directories": [],
+        "dependencies": [],
+        "entry_points": [
+            "chatPart\\main.cpp",
+            "DataBase_00\\main.cpp",
+            "doctor1\\main.cpp",
+            "doctor1\\mainwindow.cpp",
+            "Patient\\main.cpp"
+        ],
+        "requirements_path": null
+    },
+    "raw_analysis": {
+        "modules": {
+            "D:\\QtWork\\chatPart\\char.qrc": {
+                "classes": [],
+                "functions": []
+            },
+            "D:\\QtWork\\chatPart\\chat.pro": {
+                "classes": [],
+                "functions": []
+            },
+            "D:\\QtWork\\chatPart\\chatwindow.cpp": {
+                "classes": [
+                    "[自动填充]chatwindow"
+                ],
+                "functions": [
+                    "chatwindow::chatwindow",
+                    "chatwindow::setCurrentUsername",
+                    "chatwindow::initializeContactList",
+                    "chatwindow::onContactClicked",
+                    "chatwindow::saveMessageToHistory",
+                    "chatwindow::loadChatHistory",
+                    "chatwindow::readyRead_slot",
+                    "QString::fromLocal8Bit",
+                    "chatwindow::createMessageBubble",
+                    "chatwindow::createImageBubble",
+                    "chatwindow::createFileBubble",
+                    "chatwindow::getAvatarPathFromUsername",
+                    "chatwindow::on_btn1_clicked",
+                    "chatwindow::sendPhotoButton_clicked",
+                    "QFileDialog::getOpenFileName",
+                    "chatwindow::sendFileButton_clicked",
+                    "QFileDialog::getOpenFileName",
+                    "chatwindow::receiveFileButton_clicked",
+                    "QFileDialog::getSaveFileName",
+                    "chatwindow::startRecording",
+                    "chatwindow::writeAudioData",
+                    "chatwindow::stopRecording",
+                    "chatwindow::recognizeSpeech",
+                    "QJsonDocument::fromJson",
+                    "QJsonDocument::fromJson",
+                    "chatwindow::on_backButton_clicked"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\chatwindow.h": {
+                "classes": [
+                    "chatwindow",
+                    "chatwindow"
+                ],
+                "functions": [
+                    "chatwindow",
+                    "chatwindow",
+                    "setCurrentUsername",
+                    "initializeContactList",
+                    "readyRead_slot",
+                    "on_btn1_clicked",
+                    "onContactClicked",
+                    "sendPhotoButton_clicked",
+                    "sendFileButton_clicked",
+                    "receiveFileButton_clicked",
+                    "startRecording",
+                    "writeAudioData",
+                    "stopRecording",
+                    "recognizeSpeech",
+                    "on_backButton_clicked",
+                    "loadChatHistory",
+                    "createMessageBubble",
+                    "createImageBubble",
+                    "createFileBubble",
+                    "getAvatarPathFromUsername",
+                    "saveMessageToHistory",
+                    "loadChatHistory",
+                    "startConnect",
+                    "sendMsgSignal"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\chatwindow.ui": {
+                "classes": [
+                    "chatwindow"
+                ],
+                "functions": [
+                    "chatwindow",
+                    "frame",
+                    "label",
+                    "label_2",
+                    "ui_mag",
+                    "idt",
+                    "btn1",
+                    "voiceInputButton",
+                    "sendPhotoButton",
+                    "sendFileButton",
+                    "receiveFileButton",
+                    "label_3",
+                    "backButton",
+                    "chatList",
+                    "chatWindowTitleLabel"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\ClientHandlerThread.cpp": {
+                "classes": [
+                    "[自动填充]ClientHandlerThread"
+                ],
+                "functions": [
+                    "ClientHandlerThread::ClientHandlerThread",
+                    "ClientHandlerThread::run",
+                    "QThread::currentThread"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\ClientHandlerThread.h": {
+                "classes": [
+                    "ClientHandlerThread"
+                ],
+                "functions": [
+                    "ClientHandlerThread",
+                    "run",
+                    "error"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\fixed_chatwindow.cpp": {
+                "classes": [
+                    "[自动填充]fixed_chatwindow"
+                ],
+                "functions": [
+                    "chatwindow::chatwindow",
+                    "chatwindow::setCurrentUsername",
+                    "chatwindow::initializeContactList",
+                    "chatwindow::onContactClicked",
+                    "chatwindow::saveMessageToHistory",
+                    "chatwindow::loadChatHistory",
+                    "chatwindow::readyRead_slot",
+                    "QString::fromLocal8Bit",
+                    "chatwindow::createMessageBubble",
+                    "chatwindow::createImageBubble",
+                    "chatwindow::createFileBubble",
+                    "chatwindow::getAvatarPathFromUsername",
+                    "chatwindow::on_btn1_clicked",
+                    "chatwindow::sendPhotoButton_clicked",
+                    "QFileDialog::getOpenFileName",
+                    "chatwindow::sendFileButton_clicked",
+                    "QFileDialog::getOpenFileName",
+                    "chatwindow::receiveFileButton_clicked",
+                    "QFileDialog::getSaveFileName",
+                    "chatwindow::startRecording",
+                    "chatwindow::writeAudioData",
+                    "chatwindow::stopRecording",
+                    "chatwindow::recognizeSpeech",
+                    "QJsonDocument::fromJson",
+                    "QJsonDocument::fromJson",
+                    "chatwindow::on_backButton_clicked"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\fixed_main.cpp": {
+                "classes": [
+                    "[自动填充]fixed_main"
+                ],
+                "functions": [
+                    "QSqlDatabase::addDatabase",
+                    "QObject::connect"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\fixed_server.cpp": {
+                "classes": [
+                    "[自动填充]fixed_server"
+                ],
+                "functions": [
+                    "Server::Server",
+                    "Server::start"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\loginwindow.cpp": {
+                "classes": [
+                    "[自动填充]loginwindow"
+                ],
+                "functions": [
+                    "LoginWindow::LoginWindow",
+                    "LoginWindow::on_loginButton_clicked",
+                    "LoginWindow::authenticateUser",
+                    "QMessageBox::warning"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\loginwindow.h": {
+                "classes": [
+                    "LoginWindow",
+                    "LoginWindow"
+                ],
+                "functions": [
+                    "LoginWindow",
+                    "LoginWindow",
+                    "loginSuccessful",
+                    "on_loginButton_clicked",
+                    "authenticateUser"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\loginwindow.ui": {
+                "classes": [
+                    "LoginWindow"
+                ],
+                "functions": [
+                    "LoginWindow",
+                    "frame",
+                    "frame_2",
+                    "label",
+                    "label_2",
+                    "usernameLineEdit",
+                    "passwordLineEdit",
+                    "loginButton"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\main.cpp": {
+                "classes": [
+                    "[自动填充]main"
+                ],
+                "functions": [
+                    "QSqlDatabase::addDatabase",
+                    "QObject::connect"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\server.cpp": {
+                "classes": [
+                    "[自动填充]server"
+                ],
+                "functions": [
+                    "Server::Server",
+                    "Server::start"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\server.h": {
+                "classes": [
+                    "Server"
+                ],
+                "functions": [
+                    "Server",
+                    "start"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\SocketThread.cpp": {
+                "classes": [
+                    "[自动填充]SocketThread"
+                ],
+                "functions": [
+                    "SocketThread::SocketThread",
+                    "SocketThread::connectServer",
+                    "SocketThread::sendMsgToServer",
+                    "SocketThread::onReadyRead"
+                ]
+            },
+            "D:\\QtWork\\chatPart\\SocketThread.h": {
+                "classes": [
+                    "SocketThread"
+                ],
+                "functions": [
+                    "SocketThread",
+                    "connectServer",
+                    "sendMsgToServer",
+                    "connectOK",
+                    "gameOver",
+                    "messageReceived",
+                    "onReadyRead"
+                ]
+            },
+            "D:\\QtWork\\DataBase_00\\DataBase.pro": {
+                "classes": [],
+                "functions": []
+            },
+            "D:\\QtWork\\DataBase_00\\fixed_tcpserver.cpp": {
+                "classes": [
+                    "[自动填充]fixed_tcpserver"
+                ],
+                "functions": [
+                    "DatabaseAccess::DatabaseAccess",
+                    "QSqlDatabase::addDatabase",
+                    "QDir::currentPath",
+                    "DatabaseAccess::executeQuery",
+                    "DatabaseAccess::runQuery",
+                    "ClientConnection::ClientConnection",
+                    "ClientConnection::slotReadyRead",
+                    "QJsonDocument::fromJson",
+                    "ClientConnection::slotDisconnected",
+                    "ClientConnection::handleLoginRequest",
+                    "ClientConnection::handleRegisterRequest",
+                    "QSqlDatabase::database",
+                    "ClientConnection::handleMakeAppointment",
+                    "QSqlDatabase::database",
+                    "ClientConnection::handleGetPatientAppointments",
+                    "ClientConnection::handleGetDoctorAppointments",
+                    "QDate::currentDate",
+                    "QDate::currentDate",
+                    "QDate::currentDate",
+                    "ClientConnection::handleUpdateAppointmentStatus",
+                    "ClientConnection::handleGetDiagnoseAppointments",
+                    "ClientConnection::handleGetAttendanceRecords",
+                    "ClientConnection::handleCheckInRequest",
+                    "QDateTime::currentDateTime",
+                    "ClientConnection::handleCheckOutRequest",
+                    "QDateTime::currentDateTime",
+                    "ClientConnection::handleLeaveRequest",
+                    "ClientConnection::handleCancelLeaveRequest",
+                    "QSqlDatabase::database",
+                    "ClientConnection::handleGetLeaveRequests",
+                    "ClientConnection::handleGetDoctorProfile",
+                    "ClientConnection::handleUpdateDoctorProfile",
+                    "QSqlDatabase::database",
+                    "ClientConnection::handleGetDoctorPatients",
+                    "ClientConnection::handleGetPatientRecords",
+                    "ClientConnection::handleGetRecordDetails",
+                    "ClientConnection::handleSaveDiagnosis",
+                    "QSqlDatabase::database",
+                    "ClientConnection::handleGetDepartmentsList",
+                    "ClientConnection::handleGetAllDoctors",
+                    "ClientConnection::handleGetAvailableDoctors",
+                    "ClientConnection::handleGetDoctorsList",
+                    "ClientConnection::sendErrorResponse",
+                    "ClientConnection::sendSuccessResponse",
+                    "ClientConnection::sendJsonResponse",
+                    "Server::Server",
+                    "Server::onNewConnection",
+                    "Server::processQueries",
+                    "Server::addQueryToQueue",
+                    "QTimer::singleShot"
+                ]
+            },
+            "D:\\QtWork\\DataBase_00\\fixed_widget.cpp": {
+                "classes": [
+                    "[自动填充]fixed_widget"
+                ],
+                "functions": [
+                    "Widget::Widget",
+                    "Widget::on_SelectButton_clicked"
+                ]
+            },
+            "D:\\QtWork\\DataBase_00\\main.cpp": {
+                "classes": [
+                    "[自动填充]main"
+                ],
+                "functions": [
+                    "main",
+                    "a",
+                    "show",
+                    "server",
+                    "exec"
+                ]
+            },
+            "D:\\QtWork\\DataBase_00\\tcpserver.cpp": {
+                "classes": [
+                    "[自动填充]tcpserver"
+                ],
+                "functions": [
+                    "DatabaseAccess::DatabaseAccess",
+                    "QSqlDatabase::addDatabase",
+                    "QDir::currentPath",
+                    "DatabaseAccess::executeQuery",
+                    "DatabaseAccess::runQuery",
+                    "ClientConnection::ClientConnection",
+                    "ClientConnection::slotReadyRead",
+                    "QJsonDocument::fromJson",
+                    "ClientConnection::slotDisconnected",
+                    "ClientConnection::handleLoginRequest",
+                    "ClientConnection::handleRegisterRequest",
+                    "QSqlDatabase::database",
+                    "ClientConnection::handleMakeAppointment",
+                    "QSqlDatabase::database",
+                    "ClientConnection::handleGetPatientAppointments",
+                    "ClientConnection::handleGetDoctorAppointments",
+                    "QDate::currentDate",
+                    "QDate::currentDate",
+                    "QDate::currentDate",
+                    "ClientConnection::handleUpdateAppointmentStatus",
+                    "ClientConnection::handleGetDiagnoseAppointments",
+                    "ClientConnection::handleGetAttendanceRecords",
+                    "ClientConnection::handleCheckInRequest",
+                    "QDateTime::currentDateTime",
+                    "ClientConnection::handleCheckOutRequest",
+                    "QDateTime::currentDateTime",
+                    "ClientConnection::handleLeaveRequest",
+                    "ClientConnection::handleCancelLeaveRequest",
+                    "QSqlDatabase::database",
+                    "ClientConnection::handleGetLeaveRequests",
+                    "ClientConnection::handleGetDoctorProfile",
+                    "ClientConnection::handleUpdateDoctorProfile",
+                    "QSqlDatabase::database",
+                    "ClientConnection::handleGetDoctorPatients",
+                    "ClientConnection::handleGetPatientRecords",
+                    "ClientConnection::handleGetRecordDetails",
+                    "ClientConnection::handleSaveDiagnosis",
+                    "QSqlDatabase::database",
+                    "ClientConnection::handleGetDepartmentsList",
+                    "ClientConnection::handleGetAllDoctors",
+                    "ClientConnection::handleGetAvailableDoctors",
+                    "ClientConnection::handleGetDoctorsList",
+                    "ClientConnection::sendErrorResponse",
+                    "ClientConnection::sendSuccessResponse",
+                    "ClientConnection::sendJsonResponse",
+                    "Server::Server",
+                    "Server::onNewConnection",
+                    "Server::processQueries",
+                    "Server::addQueryToQueue",
+                    "QTimer::singleShot"
+                ]
+            },
+            "D:\\QtWork\\DataBase_00\\tcpserver.h": {
+                "classes": [
+                    "DatabaseAccess",
+                    "Server",
+                    "ClientConnection",
+                    "Server"
+                ],
+                "functions": [
+                    "DatabaseAccess",
+                    "executeQuery",
+                    "runQuery",
+                    "ClientConnection",
+                    "slotReadyRead",
+                    "slotDisconnected",
+                    "disconnected",
+                    "handleLoginRequest",
+                    "handleRegisterRequest",
+                    "handleMakeAppointment",
+                    "handleGetPatientAppointments",
+                    "handleGetDoctorAppointments",
+                    "handleUpdateAppointmentStatus",
+                    "handleGetDoctorsList",
+                    "handleGetDiagnoseAppointments",
+                    "handleGetAttendanceRecords",
+                    "handleCheckInRequest",
+                    "handleCheckOutRequest",
+                    "handleLeaveRequest",
+                    "handleGetLeaveRequests",
+                    "handleCancelLeaveRequest",
+                    "handleGetDoctorProfile",
+                    "handleUpdateDoctorProfile",
+                    "handleGetDoctorPatients",
+                    "handleGetPatientRecords",
+                    "handleGetRecordDetails",
+                    "handleSaveDiagnosis",
+                    "handleGetDepartmentsList",
+                    "doctorsListReceived",
+                    "handleGetAvailableDoctors",
+                    "handleGetAllDoctors",
+                    "sendErrorResponse",
+                    "sendJsonResponse",
+                    "sendSuccessResponse",
+                    "QJsonObject",
+                    "Server",
+                    "onNewConnection",
+                    "processQueries",
+                    "addQueryToQueue"
+                ]
+            },
+            "D:\\QtWork\\DataBase_00\\widget.cpp": {
+                "classes": [
+                    "[自动填充]widget"
+                ],
+                "functions": [
+                    "Widget::Widget",
+                    "Widget::on_SelectButton_clicked"
+                ]
+            },
+            "D:\\QtWork\\DataBase_00\\widget.h": {
+                "classes": [
+                    "Widget",
+                    "Widget"
+                ],
+                "functions": [
+                    "Widget",
+                    "Widget",
+                    "on_SelectButton_clicked"
+                ]
+            },
+            "D:\\QtWork\\DataBase_00\\widget.ui": {
+                "classes": [
+                    "Widget"
+                ],
+                "functions": [
+                    "Widget",
+                    "nameAndPasswordButton",
+                    "basicInformationButton",
+                    "medicalHistoryButton",
+                    "reservationButton",
+                    "detailsButton",
+                    "adviceButton",
+                    "prescriptionButton",
+                    "SelectButton"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\allinformationwindow.cpp": {
+                "classes": [
+                    "[自动填充]allinformationwindow"
+                ],
+                "functions": [
+                    "AllInformationWindow::AllInformationWindow",
+                    "NetworkManager::instance",
+                    "AllInformationWindow::loadAppointmentsFromServer",
+                    "GlobalUserInformation::instance",
+                    "NetworkManager::instance",
+                    "GlobalUserInformation::instance",
+                    "AllInformationWindow::onAppointmentsReceived",
+                    "QString::number",
+                    "QString::number",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "AllInformationWindow::onAppointmentItemClicked",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "AllInformationWindow::on_refreshButton_clicked",
+                    "AllInformationWindow::on_backButton_clicked",
+                    "NetworkManager::instance"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\allinformationwindow.h": {
+                "classes": [
+                    "AllInformationWindow",
+                    "AllInformationWindow"
+                ],
+                "functions": [
+                    "AllInformationWindow",
+                    "AllInformationWindow",
+                    "back",
+                    "onAppointmentsReceived",
+                    "onAppointmentItemClicked",
+                    "on_refreshButton_clicked",
+                    "on_backButton_clicked",
+                    "loadAppointmentsFromServer"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\allinformationwindow.ui": {
+                "classes": [
+                    "AllInformationWindow"
+                ],
+                "functions": [
+                    "AllInformationWindow",
+                    "titleLabel",
+                    "appointmentsTable",
+                    "statusLabel",
+                    "refreshButton",
+                    "backButton"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\attendancewindow.cpp": {
+                "classes": [
+                    "[自动填充]attendancewindow"
+                ],
+                "functions": [
+                    "AttendanceWindow::AttendanceWindow",
+                    "AttendanceWindow::on_DailyCheckInButton_clicked",
+                    "AttendanceWindow::on_LeaveRequestButton_clicked",
+                    "AttendanceWindow::on_CancelLeaveButton_clicked",
+                    "AttendanceWindow::on_BackButton_clicked",
+                    "AttendanceWindow::DailyCheckInWindow_closed",
+                    "AttendanceWindow::LeaveRequestWindow_closed",
+                    "AttendanceWindow::CancelLeaveWindow_closed"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\attendancewindow.h": {
+                "classes": [
+                    "AttendanceWindow",
+                    "AttendanceWindow"
+                ],
+                "functions": [
+                    "AttendanceWindow",
+                    "AttendanceWindow",
+                    "back",
+                    "on_DailyCheckInButton_clicked",
+                    "on_LeaveRequestButton_clicked",
+                    "on_CancelLeaveButton_clicked",
+                    "on_BackButton_clicked",
+                    "DailyCheckInWindow_closed",
+                    "LeaveRequestWindow_closed",
+                    "CancelLeaveWindow_closed"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\attendancewindow.ui": {
+                "classes": [
+                    "AttendanceWindow"
+                ],
+                "functions": [
+                    "AttendanceWindow",
+                    "buttonContainer",
+                    "DailyCheckInButton",
+                    "LeaveRequestButton",
+                    "CancelLeaveButton",
+                    "BackButton"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\cancelleavewindow.cpp": {
+                "classes": [
+                    "[自动填充]cancelleavewindow"
+                ],
+                "functions": [
+                    "CancelLeaveWindow::CancelLeaveWindow",
+                    "NetworkManager::instance",
+                    "CancelLeaveWindow::setLeaveData",
+                    "CancelLeaveWindow::on_CancelButton_clicked",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "QMessageBox::question",
+                    "GlobalUserInformation::instance",
+                    "NetworkManager::instance",
+                    "CancelLeaveWindow::on_BackButton_clicked",
+                    "CancelLeaveWindow::on_RefreshButton_clicked",
+                    "GlobalUserInformation::instance",
+                    "NetworkManager::instance",
+                    "CancelLeaveWindow::on_LeaveRecordList_currentRowChanged",
+                    "CancelLeaveWindow::handleLeaveDataReceived",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "CancelLeaveWindow::handleCancelLeaveResponse",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "CancelLeaveWindow::updateLeaveDetails",
+                    "CancelLeaveWindow::clearLeaveDetails"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\cancelleavewindow.h": {
+                "classes": [
+                    "CancelLeaveWindow",
+                    "CancelLeaveWindow"
+                ],
+                "functions": [
+                    "CancelLeaveWindow",
+                    "CancelLeaveWindow",
+                    "setLeaveData",
+                    "back",
+                    "requestLeaveData",
+                    "cancelLeaveRequest",
+                    "on_CancelButton_clicked",
+                    "on_BackButton_clicked",
+                    "on_RefreshButton_clicked",
+                    "on_LeaveRecordList_currentRowChanged",
+                    "handleLeaveDataReceived",
+                    "handleCancelLeaveResponse",
+                    "updateLeaveDetails",
+                    "clearLeaveDetails"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\cancelleavewindow.ui": {
+                "classes": [
+                    "CancelLeaveWindow"
+                ],
+                "functions": [
+                    "CancelLeaveWindow",
+                    "label",
+                    "LeaveRecordList",
+                    "groupBox",
+                    "leaveTypeLabel",
+                    "lblLeaveType",
+                    "startDateLabel",
+                    "lblStartDate",
+                    "endDateLabel",
+                    "lblEndDate",
+                    "reasonLabel",
+                    "lblReason",
+                    "statusLabel",
+                    "lblStatus",
+                    "CancelButton",
+                    "RefreshButton",
+                    "BackButton"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\communicationwindow.cpp": {
+                "classes": [
+                    "[自动填充]communicationwindow"
+                ],
+                "functions": [
+                    "CommunicationWindow::CommunicationWindow",
+                    "QString::number",
+                    "QString::fromUtf8",
+                    "QMessageBox::warning",
+                    "CommunicationWindow::on_DoctorBox_currentIndexChanged",
+                    "QString::number",
+                    "QString::fromUtf8",
+                    "QMessageBox::warning",
+                    "CommunicationWindow::on_BackButton_clicked",
+                    "CommunicationWindow::on_SendButton_clicked",
+                    "QDateTime::currentDateTime",
+                    "QString::number",
+                    "QString::fromUtf8",
+                    "QMessageBox::warning",
+                    "QMessageBox::warning",
+                    "QMessageBox::information",
+                    "QDateTime::currentDateTime",
+                    "CommunicationWindow::DialogEdit_update",
+                    "QString::number",
+                    "QString::fromUtf8",
+                    "QMessageBox::warning"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\communicationwindow.h": {
+                "classes": [
+                    "CommunicationWindow",
+                    "CommunicationWindow"
+                ],
+                "functions": [
+                    "CommunicationWindow",
+                    "CommunicationWindow",
+                    "on_DoctorBox_currentIndexChanged",
+                    "on_BackButton_clicked",
+                    "on_SendButton_clicked",
+                    "DialogEdit_update",
+                    "back"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\communicationwindow.ui": {
+                "classes": [
+                    "CommunicationWindow"
+                ],
+                "functions": [
+                    "CommunicationWindow",
+                    "titleLabel",
+                    "selectionWidget",
+                    "label",
+                    "DoctorBox",
+                    "chatHistoryLabel",
+                    "DialogEdit",
+                    "inputLabel",
+                    "SendEdit",
+                    "SendButton",
+                    "BackButton"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\createaccoutwindow.cpp": {
+                "classes": [
+                    "[自动填充]createaccoutwindow"
+                ],
+                "functions": [
+                    "CreateAccoutWindow::CreateAccoutWindow",
+                    "NetworkManager::instance",
+                    "CreateAccoutWindow::on_PushButton_clicked",
+                    "CreateAccoutWindow::sendRegisterRequest",
+                    "QDateTime::currentDateTime",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "CreateAccoutWindow::onRegisterResponseReceived",
+                    "CreateAccoutWindow::onNetworkError",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "CreateAccoutWindow::processRegisterResponse",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "CreateAccoutWindow::on_BackButton_clicked"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\createaccoutwindow.h": {
+                "classes": [
+                    "CreateAccoutWindow",
+                    "CreateAccoutWindow"
+                ],
+                "functions": [
+                    "CreateAccoutWindow",
+                    "CreateAccoutWindow",
+                    "on_PushButton_clicked",
+                    "on_BackButton_clicked",
+                    "onRegisterResponseReceived",
+                    "onNetworkError",
+                    "back",
+                    "processRegisterResponse",
+                    "sendRegisterRequest"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\createaccoutwindow.ui": {
+                "classes": [
+                    "CreateAccoutWindow"
+                ],
+                "functions": [
+                    "CreateAccoutWindow",
+                    "registerCard",
+                    "titleLabel",
+                    "scrollArea",
+                    "scrollAreaWidgetContents",
+                    "label_3",
+                    "UserNameEdit",
+                    "label",
+                    "EmailEdit",
+                    "label_2",
+                    "PassWordEdit",
+                    "label_4",
+                    "UserTypeEdit",
+                    "label_8",
+                    "DepartmentIDEdit",
+                    "label_5",
+                    "TitleEdit",
+                    "label_6",
+                    "FeeEdit",
+                    "label_7",
+                    "MaxPatientsPerDayEdit",
+                    "PushButton",
+                    "BackButton"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\dailycheckinwindow.cpp": {
+                "classes": [
+                    "[自动填充]dailycheckinwindow"
+                ],
+                "functions": [
+                    "DailyCheckInWindow::DailyCheckInWindow",
+                    "NetworkManager::instance",
+                    "GlobalUserInformation::instance",
+                    "DailyCheckInWindow::loadAttendanceRecords",
+                    "DailyCheckInWindow::on_CheckInButton_clicked",
+                    "DailyCheckInWindow::on_CheckOutButton_clicked",
+                    "DailyCheckInWindow::onAttendanceRecordsReceived",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "DailyCheckInWindow::onCheckInResponseReceived",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "DailyCheckInWindow::onCheckOutResponseReceived",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "DailyCheckInWindow::onNetworkError",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "DailyCheckInWindow::updateUIAfterCheckIn",
+                    "DailyCheckInWindow::on_BackButton_clicked"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\dailycheckinwindow.h": {
+                "classes": [
+                    "DailyCheckInWindow",
+                    "DailyCheckInWindow"
+                ],
+                "functions": [
+                    "DailyCheckInWindow",
+                    "DailyCheckInWindow",
+                    "back",
+                    "on_CheckInButton_clicked",
+                    "on_CheckOutButton_clicked",
+                    "on_BackButton_clicked",
+                    "onAttendanceRecordsReceived",
+                    "onCheckInResponseReceived",
+                    "onCheckOutResponseReceived",
+                    "onNetworkError",
+                    "loadAttendanceRecords",
+                    "updateUIAfterCheckIn"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\dailycheckinwindow.ui": {
+                "classes": [
+                    "DailyCheckInWindow"
+                ],
+                "functions": [
+                    "DailyCheckInWindow",
+                    "buttonContainer",
+                    "CheckInButton",
+                    "CheckOutButton",
+                    "BackButton",
+                    "mainContainer",
+                    "statusLabel",
+                    "HistoryRecordEdit"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\doctor.pro": {
+                "classes": [],
+                "functions": []
+            },
+            "D:\\QtWork\\doctor1\\doctoreditprofile.cpp": {
+                "classes": [
+                    "[自动填充]doctoreditprofile"
+                ],
+                "functions": [
+                    "DoctorEditProfile::DoctorEditProfile",
+                    "GlobalUserInformation::instance",
+                    "NetworkManager::instance",
+                    "NetworkManager::instance",
+                    "DoctorEditProfile::loadDoctorProfile",
+                    "NetworkManager::instance",
+                    "DoctorEditProfile::on_btn_save_clicked",
+                    "NetworkManager::instance",
+                    "DoctorEditProfile::on_btn_cancel_clicked",
+                    "DoctorEditProfile::onDoctorProfileReceived",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "DoctorEditProfile::onDoctorProfileUpdated",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "MessageBoxUtils::showStyledMessageBox"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\doctoreditprofile.h": {
+                "classes": [
+                    "DoctorEditProfile",
+                    "DoctorEditProfile"
+                ],
+                "functions": [
+                    "DoctorEditProfile",
+                    "DoctorEditProfile",
+                    "loadDoctorProfile",
+                    "on_btn_save_clicked",
+                    "on_btn_cancel_clicked",
+                    "onDoctorProfileReceived",
+                    "onDoctorProfileUpdated",
+                    "profileUpdated",
+                    "cancelled"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\doctoreditprofile.ui": {
+                "classes": [
+                    "DoctorEditProfile"
+                ],
+                "functions": [
+                    "DoctorEditProfile",
+                    "scrollArea",
+                    "scrollAreaWidgetContents",
+                    "label_title",
+                    "label_name",
+                    "edit_full_name",
+                    "label_username",
+                    "label_username_value",
+                    "label_email",
+                    "edit_email",
+                    "label_phone",
+                    "edit_phone",
+                    "label_title",
+                    "edit_title",
+                    "label_fee",
+                    "spin_fee",
+                    "label_max_patients",
+                    "spin_max_patients",
+                    "label_specialty_title",
+                    "label_specialty",
+                    "edit_specialty",
+                    "label_specialty_detail",
+                    "edit_specialty_detail",
+                    "label_office",
+                    "edit_office",
+                    "label_intro_title",
+                    "edit_introduction",
+                    "btn_save",
+                    "btn_cancel"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\fixed_GlobalUserInformation.cpp": {
+                "classes": [
+                    "[自动填充]fixed_GlobalUserInformation"
+                ],
+                "functions": [
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::GlobalUserInformation"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\fixed_networkmanager.cpp": {
+                "classes": [
+                    "[自动填充]fixed_networkmanager"
+                ],
+                "functions": [
+                    "NetworkManager::instance",
+                    "NetworkManager::NetworkManager",
+                    "NetworkManager::connectToServer",
+                    "NetworkManager::sendRequest",
+                    "NetworkManager::isConnected",
+                    "NetworkManager::socket",
+                    "NetworkManager::onConnected",
+                    "NetworkManager::onDisconnected",
+                    "NetworkManager::onReadyRead",
+                    "NetworkManager::onErrorOccurred",
+                    "NetworkManager::processJsonResponse",
+                    "QJsonDocument::fromJson"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\GlobalUserInformation.cpp": {
+                "classes": [
+                    "[自动填充]GlobalUserInformation"
+                ],
+                "functions": [
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::GlobalUserInformation"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\GlobalUserInformation.h": {
+                "classes": [
+                    "GlobalUserInformation"
+                ],
+                "functions": [
+                    "instance",
+                    "getUserID",
+                    "getUserName",
+                    "getTrueName",
+                    "getUserType",
+                    "setUserID",
+                    "setUserName",
+                    "setTrueName",
+                    "setUserType",
+                    "GlobalUserInformation"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\leaverequestwindow.cpp": {
+                "classes": [
+                    "[自动填充]leaverequestwindow"
+                ],
+                "functions": [
+                    "LeaveRequestWindow::LeaveRequestWindow",
+                    "QDate::currentDate",
+                    "NetworkManager::instance",
+                    "GlobalUserInformation::instance",
+                    "NetworkManager::instance",
+                    "LeaveRequestWindow::on_SubmitButton_clicked",
+                    "LeaveRequestWindow::submitLeaveRequest",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "GlobalUserInformation::instance",
+                    "NetworkManager::instance",
+                    "LeaveRequestWindow::onLeaveRequestResponse",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "QDate::currentDate",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "LeaveRequestWindow::on_CancelButton_clicked",
+                    "QMessageBox::question",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "LeaveRequestWindow::on_BackButton_clicked"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\leaverequestwindow.h": {
+                "classes": [
+                    "LeaveRequestWindow",
+                    "LeaveRequestWindow"
+                ],
+                "functions": [
+                    "LeaveRequestWindow",
+                    "LeaveRequestWindow",
+                    "back",
+                    "on_SubmitButton_clicked",
+                    "on_CancelButton_clicked",
+                    "on_BackButton_clicked",
+                    "onLeaveRequestResponse",
+                    "submitLeaveRequest"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\leaverequestwindow.ui": {
+                "classes": [
+                    "LeaveRequestWindow"
+                ],
+                "functions": [
+                    "LeaveRequestWindow",
+                    "formContainer",
+                    "Label",
+                    "LineEdit",
+                    "label_leaveType",
+                    "WorkRadio",
+                    "PersonalRadio",
+                    "label_dateRange",
+                    "StartDateEdit",
+                    "label_to",
+                    "EndDateEdit",
+                    "Label_2",
+                    "ReasonEdit",
+                    "SubmitButton",
+                    "CancelButton",
+                    "BackButton"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\loginwindow.cpp": {
+                "classes": [
+                    "[自动填充]loginwindow"
+                ],
+                "functions": [
+                    "loginWindow::loginWindow",
+                    "NetworkManager::instance",
+                    "loginWindow::on_LoginButton_clicked",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "QDateTime::currentDateTime",
+                    "loginWindow::onLoginResponseReceived",
+                    "loginWindow::onNetworkError",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "loginWindow::processLoginResponse",
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::instance",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "loginWindow::on_createAccountButton_clicked",
+                    "loginWindow::CreateAccountWindow_close",
+                    "loginWindow::SelectWindow_close"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\loginwindow.h": {
+                "classes": [
+                    "loginWindow",
+                    "loginWindow"
+                ],
+                "functions": [
+                    "loginWindow",
+                    "loginWindow",
+                    "on_LoginButton_clicked",
+                    "on_createAccountButton_clicked",
+                    "CreateAccountWindow_close",
+                    "onLoginResponseReceived",
+                    "onNetworkError",
+                    "SelectWindow_close",
+                    "processLoginResponse"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\loginwindow.ui": {
+                "classes": [
+                    "loginWindow"
+                ],
+                "functions": [
+                    "loginWindow",
+                    "loginCard",
+                    "titleLabel",
+                    "doctorIcon",
+                    "inputLayoutWidget",
+                    "label",
+                    "UserNameEdit",
+                    "label_2",
+                    "PassWordEdit",
+                    "passwordToggle",
+                    "LoginButton",
+                    "createAccountButton"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\main.cpp": {
+                "classes": [
+                    "[自动填充]main"
+                ],
+                "functions": [
+                    "main",
+                    "a",
+                    "show",
+                    "exec"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\mainwindow.cpp": {
+                "classes": [
+                    "[自动填充]mainwindow"
+                ],
+                "functions": [
+                    "MainWindow::MainWindow"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\mainwindow.h": {
+                "classes": [
+                    "MainWindow",
+                    "MainWindow"
+                ],
+                "functions": [
+                    "MainWindow",
+                    "MainWindow"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\mainwindow.ui": {
+                "classes": [
+                    "MainWindow"
+                ],
+                "functions": [
+                    "MainWindow",
+                    "centralwidget",
+                    "menubar",
+                    "statusbar"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\messageboxutils.cpp": {
+                "classes": [
+                    "[自动填充]messageboxutils"
+                ],
+                "functions": [
+                    "MessageBoxUtils::showStyledMessageBox"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\messageboxutils.h": {
+                "classes": [
+                    "MessageBoxUtils"
+                ],
+                "functions": [
+                    "showStyledMessageBox"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\networkmanager.cpp": {
+                "classes": [
+                    "[自动填充]networkmanager"
+                ],
+                "functions": [
+                    "NetworkManager::instance",
+                    "NetworkManager::NetworkManager",
+                    "NetworkManager::connectToServer",
+                    "NetworkManager::sendRequest",
+                    "NetworkManager::isConnected",
+                    "NetworkManager::socket",
+                    "NetworkManager::onConnected",
+                    "NetworkManager::onDisconnected",
+                    "NetworkManager::onReadyRead",
+                    "NetworkManager::onErrorOccurred",
+                    "NetworkManager::processJsonResponse",
+                    "QJsonDocument::fromJson"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\networkmanager.h": {
+                "classes": [
+                    "NetworkManager"
+                ],
+                "functions": [
+                    "instance",
+                    "connectToServer",
+                    "sendRequest",
+                    "isConnected",
+                    "socket",
+                    "connected",
+                    "disconnected",
+                    "loginResponseReceived",
+                    "registerResponseReceived",
+                    "appointmentsReceived",
+                    "appointmentCreated",
+                    "doctorAppointmentsReceived",
+                    "appointmentStatusUpdated",
+                    "doctorsListReceived",
+                    "errorOccurred",
+                    "attendanceRecordsReceived",
+                    "checkInResponseReceived",
+                    "checkOutResponseReceived",
+                    "leaveRequestResponseReceived",
+                    "leaveRequestsReceived",
+                    "cancelLeaveResponseReceived",
+                    "doctorProfileReceived",
+                    "doctorProfileUpdated",
+                    "doctorPatientsReceived",
+                    "patientRecordsReceived",
+                    "recordDetailsReceived",
+                    "diagnosisSaved",
+                    "availableDoctorsReceived",
+                    "NetworkManager",
+                    "NetworkManager",
+                    "processJsonResponse",
+                    "onConnected",
+                    "onDisconnected",
+                    "onReadyRead",
+                    "onErrorOccurred"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\patientinformationwindow.cpp": {
+                "classes": [
+                    "[自动填充]patientinformationwindow"
+                ],
+                "functions": [
+                    "PatientInformationWindow::PatientInformationWindow",
+                    "QString::number",
+                    "QString::fromUtf8",
+                    "QMessageBox::warning",
+                    "PatientInformationWindow::on_BackButton_clicked"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\patientinformationwindow.h": {
+                "classes": [
+                    "PatientInformationWindow",
+                    "PatientInformationWindow"
+                ],
+                "functions": [
+                    "PatientInformationWindow",
+                    "PatientInformationWindow",
+                    "on_BackButton_clicked",
+                    "back"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\patientinformationwindow.ui": {
+                "classes": [
+                    "PatientInformationWindow"
+                ],
+                "functions": [
+                    "PatientInformationWindow",
+                    "label",
+                    "MedicalRecordsWidget",
+                    "BackButton"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\registerwindow.cpp": {
+                "classes": [
+                    "[自动填充]registerwindow"
+                ],
+                "functions": [
+                    "RegisterWindow::RegisterWindow",
+                    "RegisterWindow::setupConnections",
+                    "NetworkManager::instance",
+                    "RegisterWindow::loadDoctorPatients",
+                    "GlobalUserInformation::instance",
+                    "NetworkManager::instance",
+                    "RegisterWindow::onDoctorPatientsReceived",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "RegisterWindow::on_patientSelected",
+                    "RegisterWindow::loadPatientRecords",
+                    "GlobalUserInformation::instance",
+                    "NetworkManager::instance",
+                    "RegisterWindow::onPatientRecordsReceived",
+                    "QDateTime::fromString",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "RegisterWindow::on_recordSelected",
+                    "RegisterWindow::loadRecordDetails",
+                    "NetworkManager::instance",
+                    "RegisterWindow::onRecordDetailsReceived",
+                    "QDateTime::fromString",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "RegisterWindow::on_saveButton_clicked",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "RegisterWindow::saveDiagnosis",
+                    "GlobalUserInformation::instance",
+                    "NetworkManager::instance",
+                    "RegisterWindow::onDiagnosisSaved",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "RegisterWindow::on_BackButton_clicked"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\registerwindow.h": {
+                "classes": [
+                    "RegisterWindow",
+                    "RegisterWindow"
+                ],
+                "functions": [
+                    "RegisterWindow",
+                    "RegisterWindow",
+                    "on_saveButton_clicked",
+                    "on_BackButton_clicked",
+                    "on_patientSelected",
+                    "on_recordSelected",
+                    "onDoctorPatientsReceived",
+                    "onPatientRecordsReceived",
+                    "onRecordDetailsReceived",
+                    "onDiagnosisSaved",
+                    "back",
+                    "loadDoctorPatients",
+                    "loadPatientRecords",
+                    "loadRecordDetails",
+                    "saveDiagnosis",
+                    "setupConnections"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\registerwindow.ui": {
+                "classes": [
+                    "RegisterWindow"
+                ],
+                "functions": [
+                    "RegisterWindow",
+                    "label_2",
+                    "patientsComboBox",
+                    "label_6",
+                    "recordsComboBox",
+                    "groupBox",
+                    "recordDetailsTextEdit",
+                    "groupBox_2",
+                    "label_3",
+                    "diagnosisEdit",
+                    "label_4",
+                    "instructionsEdit",
+                    "label_5",
+                    "prescriptionEdit",
+                    "saveButton",
+                    "BackButton"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\resources.qrc": {
+                "classes": [],
+                "functions": []
+            },
+            "D:\\QtWork\\doctor1\\selectwindow.cpp": {
+                "classes": [
+                    "[自动填充]selectwindow"
+                ],
+                "functions": [
+                    "SelectWindow::SelectWindow",
+                    "MessageBoxUtils::showStyledMessageBox",
+                    "SelectWindow::resizeEvent",
+                    "QMainWindow::resizeEvent",
+                    "SelectWindow::updateImageLabel",
+                    "SelectWindow::on_InformationEditButton_clicked",
+                    "SelectWindow::on_RegisterButton_clicked",
+                    "SelectWindow::on_CheckInformationButton_clicked",
+                    "SelectWindow::on_CommunicationButton_clicked",
+                    "SelectWindow::on_AttendanceButton_clicked",
+                    "SelectWindow::on_LogoutButton_clicked",
+                    "SelectWindow::AttendanceWindow_closed",
+                    "SelectWindow::CommunicationWindow_closed",
+                    "SelectWindow::RegisterWindow_closed",
+                    "SelectWindow::AllInformationWindow_closed",
+                    "SelectWindow::InformationEditWindow_closed"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\selectwindow.h": {
+                "classes": [
+                    "SelectWindow",
+                    "SelectWindow"
+                ],
+                "functions": [
+                    "SelectWindow",
+                    "SelectWindow",
+                    "back",
+                    "on_InformationEditButton_clicked",
+                    "on_RegisterButton_clicked",
+                    "on_CheckInformationButton_clicked",
+                    "on_CommunicationButton_clicked",
+                    "CommunicationWindow_closed",
+                    "RegisterWindow_closed",
+                    "AllInformationWindow_closed",
+                    "InformationEditWindow_closed",
+                    "on_AttendanceButton_clicked",
+                    "AttendanceWindow_closed",
+                    "on_LogoutButton_clicked",
+                    "resizeEvent",
+                    "updateImageLabel"
+                ]
+            },
+            "D:\\QtWork\\doctor1\\selectwindow.ui": {
+                "classes": [
+                    "SelectWindow"
+                ],
+                "functions": [
+                    "SelectWindow",
+                    "centralwidget",
+                    "buttonContainer",
+                    "InformationEditButton",
+                    "CheckInformationButton",
+                    "RegisterButton",
+                    "CommunicationButton",
+                    "AttendanceButton",
+                    "LogoutButton",
+                    "imageContainer",
+                    "imageLabel",
+                    "menubar",
+                    "statusbar"
+                ]
+            },
+            "D:\\QtWork\\Patient\\bookwindow.cpp": {
+                "classes": [
+                    "[自动填充]bookwindow"
+                ],
+                "functions": [
+                    "BookWindow::BookWindow",
+                    "NetworkManager::instance",
+                    "BookWindow::initUI",
+                    "BookWindow::requestAllDoctors",
+                    "NetworkManager::instance",
+                    "QMessageBox::warning",
+                    "NetworkManager::instance",
+                    "BookWindow::onAllDoctorsReceived",
+                    "QMessageBox::warning",
+                    "BookWindow::onReturnButtonClicked",
+                    "BookWindow::initDepartmentButtons",
+                    "BookWindow::initFilterCheckBoxes",
+                    "BookWindow::initDateButtons",
+                    "BookWindow::initDoctorArea",
+                    "BookWindow::getDoctorData",
+                    "BookWindow::onDoctorBtnClicked",
+                    "QMessageBox::warning",
+                    "BookWindow::onRegisterAppointmentRequested",
+                    "NetworkManager::instance",
+                    "NetworkManager::instance",
+                    "BookWindow::onAppointmentResponseReceived",
+                    "QMessageBox::information",
+                    "QMessageBox::warning",
+                    "BookWindow::onDepartmentBtnClicked",
+                    "BookWindow::onDateBtnClicked",
+                    "BookWindow::onCheckBoxStateChanged",
+                    "BookWindow::updateDoctorDisplay",
+                    "BookWindow::onRegisterAppointment",
+                    "NetworkManager::instance",
+                    "QMessageBox::warning",
+                    "GlobalUserInformation::instance",
+                    "NetworkManager::instance",
+                    "QDate::currentDate",
+                    "NetworkManager::instance",
+                    "QMessageBox::information",
+                    "QMessageBox::warning",
+                    "NetworkManager::instance",
+                    "QMessageBox::warning",
+                    "QMessageBox::warning",
+                    "NetworkManager::instance",
+                    "BookWindow::onRegisterAppointment",
+                    "QDate::currentDate",
+                    "QJsonDocument::fromJson",
+                    "QMessageBox::information",
+                    "QMessageBox::warning",
+                    "QMessageBox::warning",
+                    "BookWindow::findDoctorIdByName",
+                    "BookWindow::findDepartmentId"
+                ]
+            },
+            "D:\\QtWork\\Patient\\bookwindow.h": {
+                "classes": [
+                    "DoctorDetail",
+                    "BookWindow",
+                    "information"
+                ],
+                "functions": [
+                    "BookWindow",
+                    "BookWindow",
+                    "backToMainPage",
+                    "onDepartmentBtnClicked",
+                    "onDateBtnClicked",
+                    "onCheckBoxStateChanged",
+                    "onDoctorBtnClicked",
+                    "onRegisterAppointment",
+                    "onReturnButtonClicked",
+                    "onAllDoctorsReceived",
+                    "onRegisterAppointmentRequested",
+                    "onAppointmentResponseReceived",
+                    "requestAllDoctors",
+                    "initUI",
+                    "initDepartmentButtons",
+                    "initDateButtons",
+                    "initFilterCheckBoxes",
+                    "initDoctorArea",
+                    "getDoctorData",
+                    "updateDoctorDisplay",
+                    "findDoctorIdByName",
+                    "findDepartmentId",
+                    "onViewCaseHistoryClicked"
+                ]
+            },
+            "D:\\QtWork\\Patient\\bookwindow.ui": {
+                "classes": [
+                    "bookwindow"
+                ],
+                "functions": [
+                    "bookwindow"
+                ]
+            },
+            "D:\\QtWork\\Patient\\casehistory.cpp": {
+                "classes": [
+                    "[自动填充]casehistory"
+                ],
+                "functions": [
+                    "CaseHistory::CaseHistory",
+                    "NetworkManager::instance",
+                    "CaseHistory::setPatientInfo",
+                    "QDate::currentDate",
+                    "CaseHistory::initUI",
+                    "QDate::currentDate",
+                    "CaseHistory::onVisitDateChanged",
+                    "CaseHistory::loadPatientRecord",
+                    "NetworkManager::instance",
+                    "CaseHistory::handlePatientRecordResponse",
+                    "CaseHistory::clearMedicalData",
+                    "CaseHistory::updateMedicalData",
+                    "CaseHistory::setStyle",
+                    "CaseHistory::onSaveButtonClicked",
+                    "QMessageBox::warning",
+                    "NetworkManager::instance",
+                    "QMessageBox::information",
+                    "CaseHistory::onPrintButtonClicked",
+                    "CaseHistory::onReturnButtonClicked"
+                ]
+            },
+            "D:\\QtWork\\Patient\\casehistory.h": {
+                "classes": [
+                    "CaseHistory"
+                ],
+                "functions": [
+                    "CaseHistory",
+                    "CaseHistory",
+                    "setPatientInfo",
+                    "backToMainPage",
+                    "onSaveButtonClicked",
+                    "onPrintButtonClicked",
+                    "onReturnButtonClicked",
+                    "onVisitDateChanged",
+                    "handlePatientRecordResponse",
+                    "initUI",
+                    "setStyle",
+                    "loadPatientRecord",
+                    "clearMedicalData",
+                    "updateMedicalData"
+                ]
+            },
+            "D:\\QtWork\\Patient\\casehistory.ui": {
+                "classes": [
+                    "casehistory"
+                ],
+                "functions": [
+                    "casehistory"
+                ]
+            },
+            "D:\\QtWork\\Patient\\doctordetail.cpp": {
+                "classes": [
+                    "[自动填充]doctordetail"
+                ],
+                "functions": [
+                    "DoctorDetail::DoctorDetail",
+                    "DoctorDetail::initUI",
+                    "DoctorDetail::setDoctorInfo",
+                    "QString::number",
+                    "QString::number",
+                    "QString::number",
+                    "DoctorDetail::onRegisterButtonClicked",
+                    "QMessageBox::warning",
+                    "QInputDialog::getText",
+                    "QMessageBox::warning",
+                    "GlobalUserInformation::instance",
+                    "QMessageBox::warning",
+                    "QDate::currentDate",
+                    "QTime::currentTime",
+                    "NetworkManager::instance",
+                    "NetworkManager::instance",
+                    "DoctorDetail::findDoctorIdByName",
+                    "DoctorDetail::handleAppointmentResponse",
+                    "QMessageBox::information",
+                    "QString::number",
+                    "QMessageBox::warning",
+                    "NetworkManager::instance",
+                    "DoctorDetail::requestDoctorFullInfo",
+                    "NetworkManager::instance",
+                    "QMessageBox::warning",
+                    "NetworkManager::instance",
+                    "NetworkManager::instance",
+                    "DoctorDetail::handleDoctorFullInfoResponse",
+                    "QMessageBox::warning",
+                    "NetworkManager::instance",
+                    "DoctorDetail::findDepartmentId"
+                ]
+            },
+            "D:\\QtWork\\Patient\\doctordetail.h": {
+                "classes": [
+                    "DoctorDetail"
+                ],
+                "functions": [
+                    "DoctorDetail",
+                    "DoctorDetail",
+                    "setDoctorInfo",
+                    "onAppointmentButtonClicked",
+                    "onRegisterButtonClicked",
+                    "handleAppointmentResponse",
+                    "handleDoctorFullInfoResponse",
+                    "appointmentCreated",
+                    "registerAppointment",
+                    "registerAppointmentRequested",
+                    "initUI",
+                    "findDoctorIdByName",
+                    "findDepartmentId",
+                    "requestDoctorFullInfo"
+                ]
+            },
+            "D:\\QtWork\\Patient\\doctordetail.ui": {
+                "classes": [
+                    "doctordetail"
+                ],
+                "functions": [
+                    "doctordetail"
+                ]
+            },
+            "D:\\QtWork\\Patient\\fixed_doctordetail.cpp": {
+                "classes": [
+                    "[自动填充]fixed_doctordetail"
+                ],
+                "functions": [
+                    "DoctorDetail::DoctorDetail",
+                    "DoctorDetail::initUI",
+                    "DoctorDetail::setDoctorInfo",
+                    "QString::number",
+                    "QString::number",
+                    "QString::number",
+                    "DoctorDetail::onRegisterButtonClicked",
+                    "QMessageBox::warning",
+                    "QInputDialog::getText",
+                    "QMessageBox::warning",
+                    "GlobalUserInformation::instance",
+                    "QMessageBox::warning",
+                    "QDate::currentDate",
+                    "QTime::currentTime",
+                    "NetworkManager::instance",
+                    "NetworkManager::instance",
+                    "DoctorDetail::findDoctorIdByName",
+                    "DoctorDetail::handleAppointmentResponse",
+                    "QMessageBox::information",
+                    "QString::number",
+                    "QMessageBox::warning",
+                    "NetworkManager::instance",
+                    "DoctorDetail::requestDoctorFullInfo",
+                    "NetworkManager::instance",
+                    "QMessageBox::warning",
+                    "NetworkManager::instance",
+                    "NetworkManager::instance",
+                    "DoctorDetail::handleDoctorFullInfoResponse",
+                    "QMessageBox::warning",
+                    "NetworkManager::instance",
+                    "DoctorDetail::findDepartmentId"
+                ]
+            },
+            "D:\\QtWork\\Patient\\fixed_globaluserinformation.cpp": {
+                "classes": [
+                    "[自动填充]fixed_globaluserinformation"
+                ],
+                "functions": [
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::GlobalUserInformation"
+                ]
+            },
+            "D:\\QtWork\\Patient\\fixed_networkmanager.cpp": {
+                "classes": [
+                    "[自动填充]fixed_networkmanager"
+                ],
+                "functions": [
+                    "NetworkManager::instance",
+                    "NetworkManager::NetworkManager",
+                    "NetworkManager::connectToServer",
+                    "NetworkManager::sendRequest",
+                    "NetworkManager::isConnected",
+                    "NetworkManager::socket",
+                    "NetworkManager::onConnected",
+                    "NetworkManager::onDisconnected",
+                    "NetworkManager::onReadyRead",
+                    "QJsonDocument::fromJson",
+                    "NetworkManager::onErrorOccurred",
+                    "NetworkManager::processJsonResponse"
+                ]
+            },
+            "D:\\QtWork\\Patient\\globaluserinformation.cpp": {
+                "classes": [
+                    "[自动填充]globaluserinformation"
+                ],
+                "functions": [
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::GlobalUserInformation"
+                ]
+            },
+            "D:\\QtWork\\Patient\\globaluserinformation.h": {
+                "classes": [
+                    "GlobalUserInformation"
+                ],
+                "functions": [
+                    "instance",
+                    "getUserID",
+                    "getUserName",
+                    "getTrueName",
+                    "getUserType",
+                    "setUserID",
+                    "setUserName",
+                    "setTrueName",
+                    "setUserType",
+                    "GlobalUserInformation"
+                ]
+            },
+            "D:\\QtWork\\Patient\\HealthAssessmentPage.cpp": {
+                "classes": [
+                    "[自动填充]HealthAssessmentPage"
+                ],
+                "functions": [
+                    "HealthAssessmentPage::HealthAssessmentPage",
+                    "HealthAssessmentPage::on_backBtn_clicked",
+                    "HealthAssessmentPage::getHeight",
+                    "QMessageBox::warning",
+                    "HealthAssessmentPage::getWeight",
+                    "QMessageBox::warning",
+                    "HealthAssessmentPage::getHeartBeat",
+                    "QMessageBox::warning",
+                    "HealthAssessmentPage::getBloodPressure",
+                    "QMessageBox::warning",
+                    "QMessageBox::warning",
+                    "HealthAssessmentPage::getVitalCapacity",
+                    "QMessageBox::warning",
+                    "HealthAssessmentPage::assessBMI",
+                    "HealthAssessmentPage::assessHeartBeat",
+                    "HealthAssessmentPage::assessBloodPressure",
+                    "HealthAssessmentPage::assessVitalCapacity",
+                    "HealthAssessmentPage::showAssessmentResult",
+                    "HealthAssessmentPage::on_sureBtn_clicked",
+                    "HealthAssessmentPage::on_chartBtn_clicked",
+                    "QMessageBox::warning",
+                    "HealthAssessmentPage::generateHealthChart"
+                ]
+            },
+            "D:\\QtWork\\Patient\\HealthAssessmentPage.h": {
+                "classes": [
+                    "HealthAssessmentPage",
+                    "HealthAssessmentPage"
+                ],
+                "functions": [
+                    "HealthAssessmentPage",
+                    "HealthAssessmentPage",
+                    "generateHealthChart",
+                    "getHeight",
+                    "身高",
+                    "getWeight",
+                    "体重",
+                    "getHeartBeat",
+                    "心率",
+                    "getBloodPressure",
+                    "血压",
+                    "getVitalCapacity",
+                    "肺活量",
+                    "assessBMI",
+                    "assessHeartBeat",
+                    "assessBloodPressure",
+                    "assessVitalCapacity",
+                    "showAssessmentResult",
+                    "generateHealthChart",
+                    "on_backBtn_clicked",
+                    "on_sureBtn_clicked",
+                    "on_chartBtn_clicked",
+                    "backToMainPage"
+                ]
+            },
+            "D:\\QtWork\\Patient\\HealthAssessmentPage.ui": {
+                "classes": [
+                    "HealthAssessmentPage"
+                ],
+                "functions": [
+                    "HealthAssessmentPage",
+                    "verticalLayoutWidget",
+                    "label",
+                    "height",
+                    "heightEdit",
+                    "weight",
+                    "weightEdit",
+                    "beat",
+                    "beatEdit",
+                    "pressure",
+                    "pressureEdit",
+                    "vitalCapacity",
+                    "vitalCapacityEdit",
+                    "chartBtn",
+                    "sureBtn",
+                    "backBtn",
+                    "verticalLayoutWidget_2",
+                    "resultTextEdit"
+                ]
+            },
+            "D:\\QtWork\\Patient\\information.cpp": {
+                "classes": [
+                    "[自动填充]information"
+                ],
+                "functions": [
+                    "information::information",
+                    "NetworkManager::instance",
+                    "information::showEvent",
+                    "QWidget::showEvent",
+                    "information::loadAppointments",
+                    "information::requestAppointments",
+                    "GlobalUserInformation::instance",
+                    "QMessageBox::warning",
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::instance",
+                    "NetworkManager::instance",
+                    "information::handleAppointmentsResponse",
+                    "QMessageBox::warning",
+                    "QDateTime::fromString",
+                    "QMessageBox::information",
+                    "information::handleCancelAppointmentResponse",
+                    "QMessageBox::information",
+                    "QMessageBox::warning",
+                    "information::updateAppointmentDisplay",
+                    "information::clearAppointmentDisplay",
+                    "information::cancelAppointment",
+                    "NetworkManager::instance",
+                    "information::onCancelButton1Clicked",
+                    "information::onCancelButton2Clicked",
+                    "information::on_backBtn_clicked",
+                    "information::formatAppointmentTime",
+                    "information::getStatusText",
+                    "information::getStatusStyleSheet"
+                ]
+            },
+            "D:\\QtWork\\Patient\\information.h": {
+                "classes": [
+                    "information",
+                    "information"
+                ],
+                "functions": [
+                    "information",
+                    "information",
+                    "loadAppointments",
+                    "backToMainPage",
+                    "onCancelButton1Clicked",
+                    "onCancelButton2Clicked",
+                    "on_backBtn_clicked",
+                    "handleAppointmentsResponse",
+                    "handleCancelAppointmentResponse",
+                    "showEvent",
+                    "updateAppointmentDisplay",
+                    "clearAppointmentDisplay",
+                    "requestAppointments",
+                    "cancelAppointment",
+                    "formatAppointmentTime",
+                    "getStatusText",
+                    "getStatusStyleSheet"
+                ]
+            },
+            "D:\\QtWork\\Patient\\information.ui": {
+                "classes": [
+                    "information"
+                ],
+                "functions": [
+                    "information",
+                    "appointmentWidget1",
+                    "doctorIconLabel1",
+                    "doctorNameLabel1",
+                    "departmentLabel1",
+                    "timeLabel1",
+                    "symptomsLabel1",
+                    "statusLabel1",
+                    "cancelBtn1",
+                    "backBtn",
+                    "appointmentWidget2",
+                    "doctorIconLabel2",
+                    "doctorNameLabel2",
+                    "departmentLabel2",
+                    "timeLabel2",
+                    "symptomsLabel2",
+                    "statusLabel2",
+                    "cancelBtn2",
+                    "label"
+                ]
+            },
+            "D:\\QtWork\\Patient\\LoginWindow.cpp": {
+                "classes": [
+                    "[自动填充]LoginWindow"
+                ],
+                "functions": [
+                    "LoginWindow::LoginWindow",
+                    "NetworkManager::instance",
+                    "NetworkManager::instance",
+                    "NetworkManager::instance",
+                    "QMessageBox::warning",
+                    "NetworkManager::instance",
+                    "NetworkManager::instance",
+                    "LoginWindow::moveToScreenCenter",
+                    "QGuiApplication::primaryScreen",
+                    "LoginWindow::on_registerBtn_clicked",
+                    "LoginWindow::on_loginBtn_clicked",
+                    "QMessageBox::warning",
+                    "NetworkManager::instance",
+                    "QMessageBox::warning",
+                    "NetworkManager::instance",
+                    "LoginWindow::handleLoginResponse",
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::instance",
+                    "GlobalUserInformation::instance",
+                    "QMessageBox::information",
+                    "GlobalUserInformation::instance",
+                    "QMessageBox::information",
+                    "QMessageBox::warning"
+                ]
+            },
+            "D:\\QtWork\\Patient\\LoginWindow.h": {
+                "classes": [
+                    "RegisterWindow",
+                    "PatientMainPage",
+                    "LoginWindow",
+                    "LoginWindow"
+                ],
+                "functions": [
+                    "LoginWindow",
+                    "LoginWindow",
+                    "on_registerBtn_clicked",
+                    "on_loginBtn_clicked",
+                    "handleLoginResponse",
+                    "moveToScreenCenter",
+                    "connectSignals"
+                ]
+            },
+            "D:\\QtWork\\Patient\\LoginWindow.ui": {
+                "classes": [
+                    "LoginWindow"
+                ],
+                "functions": [
+                    "LoginWindow",
+                    "centralwidget",
+                    "environment",
+                    "verticalLayoutWidget",
+                    "titleLabel",
+                    "user_nameEdit",
+                    "user_passwordEdit",
+                    "loginBtn",
+                    "registerBtn",
+                    "menubar",
+                    "statusbar"
+                ]
+            },
+            "D:\\QtWork\\Patient\\main.cpp": {
+                "classes": [
+                    "[自动填充]main"
+                ],
+                "functions": [
+                    "main",
+                    "a",
+                    "show",
+                    "exec"
+                ]
+            },
+            "D:\\QtWork\\Patient\\networkmanager.cpp": {
+                "classes": [
+                    "[自动填充]networkmanager"
+                ],
+                "functions": [
+                    "NetworkManager::instance",
+                    "NetworkManager::NetworkManager",
+                    "NetworkManager::connectToServer",
+                    "NetworkManager::sendRequest",
+                    "NetworkManager::isConnected",
+                    "NetworkManager::socket",
+                    "NetworkManager::onConnected",
+                    "NetworkManager::onDisconnected",
+                    "NetworkManager::onReadyRead",
+                    "QJsonDocument::fromJson",
+                    "NetworkManager::onErrorOccurred",
+                    "NetworkManager::processJsonResponse"
+                ]
+            },
+            "D:\\QtWork\\Patient\\networkmanager.h": {
+                "classes": [
+                    "NetworkManager"
+                ],
+                "functions": [
+                    "instance",
+                    "connectToServer",
+                    "sendRequest",
+                    "isConnected",
+                    "socket",
+                    "connected",
+                    "disconnected",
+                    "loginResponseReceived",
+                    "registerResponseReceived",
+                    "appointmentsReceived",
+                    "appointmentCreated",
+                    "doctorAppointmentsReceived",
+                    "appointmentStatusUpdated",
+                    "doctorsListReceived",
+                    "attendanceRecordsReceived",
+                    "checkInResponseReceived",
+                    "checkOutResponseReceived",
+                    "leaveRequestResponseReceived",
+                    "leaveRequestsReceived",
+                    "cancelLeaveResponseReceived",
+                    "doctorProfileReceived",
+                    "updateDoctorProfileResponseReceived",
+                    "doctorPatientsReceived",
+                    "patientRecordsReceived",
+                    "recordDetailsReceived",
+                    "saveDiagnosisResponseReceived",
+                    "errorOccurred",
+                    "departmentsListReceived",
+                    "availableDoctorsReceived",
+                    "allDoctorsReceived",
+                    "doctorIdReceived",
+                    "doctorFullInfoReceived",
+                    "patientRecordReceived",
+                    "updateSymptomsResponseReceived",
+                    "patientRecordByDateReceived",
+                    "patientProfileReceived",
+                    "updatePatientProfileResponseReceived",
+                    "patientAppointmentsReceived",
+                    "cancelAppointmentResponseReceived",
+                    "NetworkManager",
+                    "NetworkManager",
+                    "processJsonResponse",
+                    "onConnected",
+                    "onDisconnected",
+                    "onReadyRead",
+                    "onErrorOccurred"
+                ]
+            },
+            "D:\\QtWork\\Patient\\Patient08311515.pro": {
+                "classes": [],
+                "functions": []
+            },
+            "D:\\QtWork\\Patient\\PatientInfoPage.cpp": {
+                "classes": [
+                    "[自动填充]PatientInfoPage"
+                ],
+                "functions": [
+                    "PatientInfoPage::PatientInfoPage",
+                    "NetworkManager::instance",
+                    "NetworkManager::instance",
+                    "PatientInfoPage::initUI",
+                    "PatientInfoPage::loadPatientInfo",
+                    "GlobalUserInformation::instance",
+                    "NetworkManager::instance",
+                    "PatientInfoPage::onPatientProfileReceived",
+                    "QDate::fromString",
+                    "QMessageBox::warning",
+                    "PatientInfoPage::onUpdateProfileResponseReceived",
+                    "QMessageBox::information",
+                    "QMessageBox::warning",
+                    "PatientInfoPage::setEditMode",
+                    "PatientInfoPage::onEditButtonClicked",
+                    "PatientInfoPage::onSaveButtonClicked",
+                    "NetworkManager::instance",
+                    "PatientInfoPage::onCancelButtonClicked",
+                    "QDate::fromString",
+                    "PatientInfoPage::onBackButtonClicked"
+                ]
+            },
+            "D:\\QtWork\\Patient\\PatientInfoPage.h": {
+                "classes": [
+                    "PatientInfoPage",
+                    "PatientInfoPage"
+                ],
+                "functions": [
+                    "PatientInfoPage",
+                    "PatientInfoPage",
+                    "backToMainPage",
+                    "onPatientProfileReceived",
+                    "onUpdateProfileResponseReceived",
+                    "onEditButtonClicked",
+                    "onSaveButtonClicked",
+                    "onCancelButtonClicked",
+                    "onBackButtonClicked",
+                    "initUI",
+                    "loadPatientInfo",
+                    "setEditMode"
+                ]
+            },
+            "D:\\QtWork\\Patient\\PatientInfoPage.ui": {
+                "classes": [
+                    "PatientInfoPage"
+                ],
+                "functions": [
+                    "PatientInfoPage",
+                    "backButton",
+                    "editButton",
+                    "cancelButton",
+                    "saveButton"
+                ]
+            },
+            "D:\\QtWork\\Patient\\PatientlInfoPage.cpp": {
+                "classes": [
+                    "[自动填充]PatientlInfoPage"
+                ],
+                "functions": [
+                    "EditPersonalInfoPage::EditPersonalInfoPage"
+                ]
+            },
+            "D:\\QtWork\\Patient\\PatientMainPage.cpp": {
+                "classes": [
+                    "[自动填充]PatientMainPage"
+                ],
+                "functions": [
+                    "QGuiApplication::primaryScreen",
+                    "PatientMainPage::PatientMainPage",
+                    "PatientMainPage::on_bookBtn_clicked",
+                    "QMessageBox::information",
+                    "PatientMainPage::on_viewCaseBtn_clicked",
+                    "QMessageBox::information",
+                    "PatientMainPage::on_viewPrescriptionBtn_clicked",
+                    "QMessageBox::information",
+                    "PatientMainPage::on_editPersonalInfoBtn_clicked",
+                    "PatientMainPage::on_informationBtn_clicked",
+                    "PatientMainPage::handleBackFromInformation",
+                    "PatientMainPage::on_healthAssessmentBtn_clicked",
+                    "PatientMainPage::on_communicationBtn_clicked",
+                    "QMessageBox::information",
+                    "PatientMainPage::on_exitBtn_clicked"
+                ]
+            },
+            "D:\\QtWork\\Patient\\PatientMainPage.h": {
+                "classes": [
+                    "PatientMainPage",
+                    "PatientMainPage"
+                ],
+                "functions": [
+                    "PatientMainPage",
+                    "PatientMainPage",
+                    "backToLogin",
+                    "on_bookBtn_clicked",
+                    "on_viewCaseBtn_clicked",
+                    "on_viewPrescriptionBtn_clicked",
+                    "on_editPersonalInfoBtn_clicked",
+                    "on_healthAssessmentBtn_clicked",
+                    "on_communicationBtn_clicked",
+                    "on_exitBtn_clicked",
+                    "on_informationBtn_clicked",
+                    "handleBackFromInformation"
+                ]
+            },
+            "D:\\QtWork\\Patient\\PatientMainPage.ui": {
+                "classes": [
+                    "PatientMainPage"
+                ],
+                "functions": [
+                    "PatientMainPage",
+                    "horizontalLayoutWidget_2",
+                    "bookBtn",
+                    "viewCaseBtn",
+                    "editPersonalInfoBtn",
+                    "healthAssessmentBtn",
+                    "communicationBtn",
+                    "informationBtn",
+                    "exitBtn",
+                    "label"
+                ]
+            },
+            "D:\\QtWork\\Patient\\RegisterWindow.cpp": {
+                "classes": [
+                    "[自动填充]RegisterWindow"
+                ],
+                "functions": [
+                    "RegisterWindow::RegisterWindow",
+                    "NetworkManager::instance",
+                    "RegisterWindow::moveToScreenCenter",
+                    "QGuiApplication::primaryScreen",
+                    "RegisterWindow::clearInput",
+                    "RegisterWindow::on_backBtn_clicked",
+                    "RegisterWindow::on_cancel_btn_clicked",
+                    "RegisterWindow::on_sure_btn_clicked",
+                    "QString::number",
+                    "QString::number",
+                    "QString::number",
+                    "RegisterWindow::sendRegisterRequest",
+                    "RegisterWindow::onRegisterResponseReceived",
+                    "QMessageBox::information",
+                    "QMessageBox::warning",
+                    "RegisterWindow::onNetworkError",
+                    "QMessageBox::warning",
+                    "RegisterWindow::on_confirmInfo_clicked",
+                    "RegisterWindow::on_get_code_clicked",
+                    "QMessageBox::information",
+                    "RegisterWindow::updateCountdown",
+                    "RegisterWindow::validateRegisterInfo",
+                    "RegisterWindow::validatePersonalInfo",
+                    "RegisterWindow::showError"
+                ]
+            },
+            "D:\\QtWork\\Patient\\RegisterWindow.h": {
+                "classes": [
+                    "RegisterWindow",
+                    "RegisterWindow"
+                ],
+                "functions": [
+                    "RegisterWindow",
+                    "RegisterWindow",
+                    "clearInput",
+                    "backToLogin",
+                    "registerSuccess",
+                    "on_backBtn_clicked",
+                    "on_cancel_btn_clicked",
+                    "on_sure_btn_clicked",
+                    "on_confirmInfo_clicked",
+                    "on_get_code_clicked",
+                    "updateCountdown",
+                    "onRegisterResponseReceived",
+                    "onNetworkError",
+                    "validateRegisterInfo",
+                    "validatePersonalInfo",
+                    "showError",
+                    "moveToScreenCenter",
+                    "sendRegisterRequest"
+                ]
+            },
+            "D:\\QtWork\\Patient\\RegisterWindow.ui": {
+                "classes": [
+                    "RegisterWindow"
+                ],
+                "functions": [
+                    "RegisterWindow",
+                    "doctorInfoWidget",
+                    "departmentLabel_3",
+                    "departmentComboBox_3",
+                    "titleLabel_3",
+                    "titleEdit_3",
+                    "feeLabel_3",
+                    "feeSpinBox_3",
+                    "maxPatientsLabel_3",
+                    "maxPatientsSpinBox_3",
+                    "backButton",
+                    "errorLabel",
+                    "layoutWidget",
+                    "usernameLabel_3",
+                    "usernameEdit_3",
+                    "emailLabel_3",
+                    "emailEdit_3",
+                    "passwordLabel_3",
+                    "passwordEdit_3",
+                    "confirmPasswordLabel_3",
+                    "confirmPasswordEdit_3",
+                    "verificationCodeLabel_3",
+                    "verificationCodeEdit_3",
+                    "getCodeBtn_3",
+                    "userTypeLabel_3",
+                    "patientRadioBtn_3",
+                    "doctorRadioBtn_3",
+                    "sure_btn_3",
+                    "cancel_btn_3",
+                    "backBtn_3",
+                    "editButton",
+                    "titleLabel_4"
+                ]
+            },
+            "D:\\QtWork\\Patient\\resources.qrc": {
+                "classes": [],
+                "functions": []
+            }
+        }
+    },
+    "deepseek_analysis": {
+        "total_files": 115,
+        "project_type": "QT项目（C++/QML）",
+        "analysis_chunks": 23,
+        "chunk_results": [
+            "基于您提供的QT项目文件列表，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**chatwindow.ui ↔ chatwindow.h ↔ chatwindow.cpp**\n- **chatwindow.ui**：Qt Designer界面文件，定义GUI组件的布局和属性\n- **chatwindow.h**：对应的头文件，声明ChatWindow类及相关成员\n- **chatwindow.cpp**：实现文件，包含界面初始化、信号槽连接和业务逻辑\n\n**典型对应模式：**\n```cpp\n// chatwindow.h\nclass ChatWindow : public QMainWindow\n{\n    Q_OBJECT\nprivate:\n    Ui::ChatWindow *ui;  // UI对象指针\n};\n\n// chatwindow.cpp\nChatWindow::ChatWindow(QWidget *parent) \n    : QMainWindow(parent), ui(new Ui::ChatWindow)\n{\n    ui->setupUi(this);  // 加载.ui文件布局\n}\n```\n\n## 2. .qrc资源文件的使用方式\n\n**char.qrc** - 资源集合文件：\n```xml\n<RCC>\n    <qresource prefix=\"/images\">\n        <file>icons/app_icon.png</file>\n        <file>icons/send_button.png</file>\n    </qresource>\n</RCC>\n```\n\n**使用方式：**\n- **编译时嵌入**：资源在编译时打包到可执行文件中\n- **访问路径**：`:/images/app_icon.png` 或 `qrc:/images/app_icon.png`\n- **代码中使用**：\n  ```cpp\n  QPixmap pixmap(\":/images/app_icon.png\");\n  setWindowIcon(QIcon(pixmap));\n  ```\n\n## 3. QML与C++交互方式（当前项目分析）\n\n**基于现有文件判断：**\n- ❌ **未使用QML**：缺少`.qml`文件和QML相关配置\n- ✅ **纯Widgets架构**：使用传统的Qt Widgets模块\n- 交互主要通过**信号槽机制**在C++内部完成\n\n## 4. 程序启动流程和模块划分\n\n### 启动流程：\n```\nmain.cpp (推断存在) → QApplication初始化 → ChatWindow实例化 → ui->setupUi() → 显示窗口\n```\n\n### 模块划分分析：\n\n**界面模块 (ChatWindow)**\n- **职责**：主窗口管理、用户交互、界面更新\n- **文件**：`chatwindow.h/cpp/ui`\n- **功能推测**：\n  - 聊天消息显示区域\n  - 消息输入框和发送按钮\n  - 用户列表或联系人管理\n\n**资源配置模块**\n- **文件**：`char.qrc`\n- **内容**：图标、图片、样式表等界面资源\n\n**项目配置模块**\n- **文件**：`chat.pro`\n- **配置内容**：\n  ```pro\n  QT += core gui widgets\n  TARGET = chat\n  SOURCES += chatwindow.cpp main.cpp\n  HEADERS += chatwindow.h\n  RESOURCES += char.qrc\n  FORMS += chatwindow.ui\n  ```\n\n## 架构特点总结：\n1. **传统Widgets架构**，适合桌面端应用\n2. **MVC模式**：UI文件(View) + C++逻辑(Controller) + 数据模型(可能在其他文件)\n3. **资源内嵌**，便于部署\n4. **模块清晰**，界面与逻辑分离良好\n\n**建议补充分析**：如能提供`main.cpp`和更多实现文件，可进一步分析数据模型和网络通信模块。",
+            "基于您提供的QT项目文件列表，我来进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件对应关系分析\n\n**当前文件列表中未发现.ui文件**，但可以从命名推测可能的对应关系：\n\n- `fixed_chatwindow.cpp` - 可能对应 `chatwindow.ui`（缺失）\n- `fixed_server.cpp` - 可能对应 `server.ui`（缺失）\n\n**典型的QT UI文件对应模式：**\n```\nchatwindow.ui → fixed_chatwindow.h + fixed_chatwindow.cpp\nserver.ui → fixed_server.h + fixed_server.cpp\n```\n\n## 2. .qrc资源文件使用方式\n\n**当前文件列表中未发现.qrc文件**，但QT项目通常使用方式：\n\n```cpp\n// 在代码中通过资源路径引用\nQIcon icon(\":/images/chat_icon.png\");\nQFile styleFile(\":/styles/main.qss\");\n```\n\n**建议的资源组织结构：**\n```\nresources.qrc\n├── /images\n│   ├── chat_icon.png\n│   └── send_button.png\n├── /styles\n│   └── main.qss\n└── /sounds\n    └── notification.wav\n```\n\n## 3. QML与C++交互方式\n\n**当前项目未发现QML文件**，推测为传统的Widgets应用而非QML应用。\n\n如果后续引入QML，典型交互方式：\n```cpp\n// 在C++中暴露对象给QML\nQQuickView view;\nview.engine()->rootContext()->setContextProperty(\"clientHandler\", clientHandler);\n```\n\n## 4. 程序启动流程和模块划分\n\n### 启动流程分析：\n1. **入口点**：`fixed_main.cpp` - 程序主入口\n2. **服务初始化**：`fixed_server.cpp` - 服务器模块\n3. **客户端处理**：`ClientHandlerThread` - 客户端连接处理线程\n4. **界面显示**：`fixed_chatwindow.cpp` - 聊天窗口界面\n\n### 模块划分结构：\n\n```\n应用程序架构\n├── 主程序模块 (fixed_main.cpp)\n│   └── 负责程序初始化和启动\n├── 服务器模块 (fixed_server.cpp + fixed_server.h)\n│   └── 网络服务管理和监听\n├── 客户端处理模块 (ClientHandlerThread)\n│   └── 多线程客户端连接处理\n└── 界面模块 (fixed_chatwindow)\n    └── 用户界面和交互逻辑\n```\n\n### 线程模型分析：\n- `ClientHandlerThread` 表明项目采用多线程架构\n- 每个客户端连接可能运行在独立线程中\n- 主线程负责UI更新和事件处理\n\n## 项目完整性评估\n\n**缺失文件提醒：**\n- 缺少对应的 `.ui` 界面设计文件\n- 缺少 `.qrc` 资源文件\n- 缺少部分头文件（如 `fixed_chatwindow.h`）\n- 缺少项目配置文件（`.pro` 文件）\n\n这是一个基于传统QT Widgets的C/S架构聊天应用，采用多线程处理客户端连接，建议补充缺失的界面文件和资源文件以完善项目结构。",
+            "基于提供的QT项目文件列表，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**loginwindow.ui ↔ loginwindow.h/loginwindow.cpp**\n- `loginwindow.ui` 是Qt Designer界面文件，定义了登录窗口的GUI布局\n- `loginwindow.h` 声明了`LoginWindow`类，继承自`QWidget`或`QMainWindow`\n- `loginwindow.cpp` 实现登录窗口的业务逻辑和信号槽连接\n- 三者通过Qt的元对象系统（MOC）和uic工具自动关联\n\n## 2. .qrc资源文件的使用方式\n\n**当前文件列表未包含.qrc文件**，但基于项目结构推测：\n- 资源文件通常命名为`resources.qrc`或与模块同名\n- 在.pro文件中通过`RESOURCES += resources.qrc`声明\n- 在代码中通过`:/`前缀访问资源，如`QIcon(\":/icons/login.png\")`\n- 在.ui文件中可直接设置资源路径给控件属性\n\n## 3. QML与C++交互方式\n\n**当前项目未涉及QML文件**，属于传统的Widgets应用\n- 纯C++/Widgets架构，无QML界面\n- 如需添加QML支持，可通过：\n  - `QQmlApplicationEngine`加载QML文件\n  - 使用`QQuickWidget`在Widgets中嵌入QML\n  - 通过`qmlRegisterType`注册C++类到QML\n\n## 4. 程序启动流程和模块划分\n\n### 启动流程：\n1. **main.cpp** → 程序入口点\n   - 创建`QApplication`实例\n   - 实例化主窗口（可能是`LoginWindow`）\n   - 调用`app.exec()`进入事件循环\n\n### 模块划分：\n- **登录模块** (`loginwindow.*`)\n  - 用户身份验证界面\n  - 账号密码输入验证\n  - 登录状态管理\n\n- **服务模块** (`server.cpp`)\n  - 网络通信处理\n  - 消息收发逻辑\n  - 可能包含Socket连接管理\n\n- **主程序模块** (`main.cpp`)\n  - 应用程序初始化\n  - 全局配置加载\n  - 模块间协调\n\n### 架构特点：\n- **MVC模式**：.ui(视图)、.h/.cpp(控制器+模型)\n- **信号槽机制**：处理用户交互和模块间通信\n- **资源管理**：通过.qrc统一管理图标、翻译文件等\n- **模块化设计**：登录与服务分离，便于维护扩展\n\n这是一个典型的Qt Widgets桌面应用程序结构，采用传统的C++面向对象设计模式。",
+            "根据您提供的QT项目文件列表，我来进行专业的结构分析：\n\n## 1. .ui文件与.cpp/.h文件对应关系分析\n\n**当前文件列表中未发现.ui文件**，但基于QT项目惯例推测：\n- `server.h` 可能对应一个自定义服务器类\n- `SocketThread.h/cpp` 是线程套接字处理类\n- 界面文件可能在其他未列出的部分中\n\n## 2. .qrc资源文件使用方式\n\n**当前文件列表未包含.qrc文件**，但QT项目中.qrc通常：\n- 存储图片、图标、QML文件等资源\n- 通过`:前缀/资源路径`在代码中引用\n- 在.pro文件中通过`RESOURCES += resource.qrc`包含\n\n## 3. QML与C++交互方式\n\n基于当前文件分析：\n- **未发现QML相关文件**（.qml文件）\n- 项目主要采用**传统C++/QT Widgets架构**\n- 如果后续需要QML交互，可通过：\n  - `QQmlApplicationEngine` 加载QML\n  - `qmlRegisterType` 注册C++类到QML\n  - 使用`Q_PROPERTY`暴露属性\n\n## 4. 程序启动流程和模块划分\n\n### 模块划分分析：\n\n**网络通信模块：**\n- `SocketThread.h/cpp` - 套接字线程处理\n- `server.h` - 服务器主控类\n- `fixed_tcpserver.cpp` - TCP服务器实现\n\n**数据库模块：**\n- `DataBase.pro` - 数据库子项目配置文件\n- 表明存在独立的数据库处理模块\n\n### 启动流程推测：\n\n1. **主程序启动**（可能在未列出的main.cpp中）\n2. **服务器初始化** - 创建server实例\n3. **数据库连接** - 初始化DataBase模块\n4. **TCP服务器启动** - fixed_tcpserver开始监听\n5. **线程池准备** - SocketThread等待客户端连接\n6. **事件循环开始** - 进入QT主事件循环\n\n## 项目架构特点：\n\n- **多线程设计**：SocketThread表明采用线程处理客户端连接\n- **模块化分离**：数据库作为独立子项目(DataBase_00)\n- **网络服务导向**：专注于服务器端功能实现\n- **传统C++架构**：未使用QML，采用经典QT Widgets/C++模式\n\n**注意**：由于这是项目第4部分，完整分析需要结合其他部分的文件来获得完整的项目结构视图。",
+            "基于提供的QT项目文件列表，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系分析\n\n**当前文件结构分析：**\n- `widget.cpp` 对应 `widget.h` 和可能的 `widget.ui`\n- `fixed_widget.cpp` 对应 `fixed_widget.h` 和可能的 `fixed_widget.ui`\n- `main.cpp` - 程序入口文件\n- `tcpserver.cpp` 对应 `tcpserver.h` - TCP服务器功能模块\n\n**典型的QT UI文件对应关系：**\n```\nwidget.h + widget.cpp + widget.ui → 主窗口界面\nfixed_widget.h + fixed_widget.cpp + fixed_widget.ui → 固定部件界面\n```\n\n## 2. .qrc资源文件的使用方式\n\n**资源文件可能包含：**\n- 图标文件 (.ico, .png, .svg)\n- 样式表文件 (.qss)\n- 图片资源\n- 翻译文件 (.qm)\n\n**典型使用方式：**\n```cpp\n// 在代码中引用资源\nQPixmap pixmap(\":/images/icon.png\");\nQIcon icon(\":/icons/app_icon.ico\");\n```\n\n## 3. QML与C++交互方式\n\n**基于当前文件分析：**\n- 项目未显示QML文件，推测为传统的Widgets应用\n- 如需要QML集成，通常会包含：\n  - `.qml` 文件\n  - QML注册相关的C++类\n\n**典型的QML-C++交互模式：**\n```cpp\n// 在main.cpp中注册C++类型到QML\nqmlRegisterType<MyClass>(\"MyModule\", 1, 0, \"MyClass\");\n```\n\n## 4. 程序启动流程和模块划分\n\n### 程序启动流程：\n1. **main.cpp** → 程序入口\n   - 创建QApplication实例\n   - 初始化主窗口Widget\n   - 启动事件循环\n\n2. **模块划分分析：**\n   - **界面模块**：\n     - `widget` - 主界面\n     - `fixed_widget` - 特定功能部件\n   - **网络通信模块**：\n     - `tcpserver` - TCP服务器功能\n   - **数据模块**：\n     - 项目名称为`DataBase_00`，暗示数据库功能\n\n### 架构推测：\n```\nmain.cpp (入口)\n├── Widget (主界面)\n├── FixedWidget (固定部件)\n└── TcpServer (网络服务)\n    └── 数据库操作集成\n```\n\n## 补充建议\n\n1. **建议检查的文件**：\n   - 对应的`.h`头文件\n   - `.pro`项目配置文件\n   - `.qrc`资源文件\n   - `.ui`界面设计文件\n\n2. **可能的改进方向**：\n   - 确认是否使用数据库连接模块\n   - 检查信号槽连接关系\n   - 验证资源文件管理\n\n这个项目结构显示了一个典型的QT Widgets应用程序，包含界面组件和网络通信功能，适合桌面端数据库应用开发。",
+            "基于您提供的QT项目文件片段，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**明确的对应关系：**\n- `widget.ui` ↔ `widget.h` + 对应的`widget.cpp`（虽未列出但应存在）\n- `allinformationwindow.ui` ↔ `allinformationwindow.h` + `allinformationwindow.cpp`\n\n**QT设计模式：**\n- 每个`.ui`文件通过`uic`编译器生成对应的`ui_xxx.h`头文件\n- 在对应的`.h`文件中通过`Ui::ClassName`命名空间引用UI组件\n- 在`.cpp`文件中通过`setupUi(this)`初始化界面布局\n\n## 2. .qrc资源文件的使用方式\n\n**当前分析：**\n- 提供的文件列表中未包含`.qrc`文件\n- 但典型QT项目中，资源文件使用方式如下：\n\n**资源引用模式：**\n```cpp\n// 在代码中引用资源\nQPixmap pixmap(\":/images/icon.png\");\nQIcon icon(\":/icons/app_icon.ico\");\n```\n\n**qrc文件结构：**\n```xml\n<RCC>\n    <qresource prefix=\"/images\">\n        <file>icons/icon.png</file>\n    </qresource>\n</RCC>\n```\n\n## 3. QML与C++交互方式\n\n**当前状态分析：**\n- 提供的文件均为传统Widgets模块文件\n- 未发现`.qml`文件或QML相关头文件\n- 项目采用纯C++/Widgets架构，无QML交互需求\n\n**如需QML交互的扩展方案：**\n```cpp\n// 注册C++类型到QML\nqmlRegisterType<DataModel>(\"com.example\", 1, 0, \"DataModel\");\n```\n\n## 4. 程序启动流程和模块划分\n\n**程序启动流程：**\n```\nmain.cpp → QApplication初始化\n         → Widget主窗口实例化\n         → 各子窗口按需创建（如AllInformationWindow）\n         → 进入事件循环\n```\n\n**模块划分分析：**\n\n**主界面模块：**\n- `Widget` - 应用程序主窗口\n- 负责整体布局和导航控制\n\n**信息展示模块：**\n- `AllInformationWindow` - 详细信息展示窗口\n- 功能：显示医生或患者的完整信息\n- 角色：从属窗口，可能由主窗口触发显示\n\n**架构特点：**\n- 采用传统的MVC模式\n- UI与逻辑分离（.ui负责界面，.cpp/.h负责逻辑）\n- 模块化窗口设计，便于功能扩展\n\n**建议的改进方向：**\n1. 考虑添加数据模型层（如`DataModel`类）\n2. 实现窗口间的信号槽通信机制\n3. 添加资源文件管理界面元素\n4. 考虑国际化支持（.ts文件）\n\n这个项目结构体现了标准的QT Widgets应用程序架构，具有良好的可维护性和扩展性。",
+            "基于提供的QT项目文件列表，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**文件对应关系分析：**\n- `attendancewindow.ui` ↔ `attendancewindow.h` ↔ `attendancewindow.cpp`\n- `cancelleavewindow.h` ↔ `cancelleavewindow.cpp`\n\n**实现机制：**\n- **UI文件编译**：`.ui`文件通过uic工具编译生成`ui_attendancewindow.h`头文件\n- **类继承关系**：`AttendanceWindow`类继承自QWidget或QMainWindow，并通过`ui`成员访问UI组件\n- **典型代码结构**：\n```cpp\n// attendancewindow.h\nclass AttendanceWindow : public QWidget\n{\n    Q_OBJECT\nprivate:\n    Ui::AttendanceWindow *ui;\n};\n\n// attendancewindow.cpp\nAttendanceWindow::AttendanceWindow(QWidget *parent) \n    : QWidget(parent), ui(new Ui::AttendanceWindow)\n{\n    ui->setupUi(this);\n}\n```\n\n## 2. .qrc资源文件的使用方式\n\n**当前状态：** 提供的文件列表中未包含`.qrc`文件\n\n**典型使用方式：**\n```cpp\n// 在代码中使用资源\nQIcon icon(\":/images/attendance.png\");\nQPixmap pixmap(\":/icons/cancel.png\");\n\n// 在QSS样式表中使用\nsetStyleSheet(\"background-image: url(:/backgrounds/main_bg.png)\");\n```\n\n**资源管理建议：**\n- 创建`resources.qrc`文件管理图标、图片、翻译文件等\n- 使用资源前缀进行模块化组织\n\n## 3. QML与C++交互方式\n\n**当前状态：** 基于提供的文件，该项目采用传统的Widgets方式，未使用QML\n\n**如使用QML的交互方式：**\n```cpp\n// C++端注册类型\nqmlRegisterType<AttendanceWindow>(\"DoctorApp\", 1, 0, \"AttendanceWindow\");\n\n// QML端使用\nimport DoctorApp 1.0\nAttendanceWindow {\n    id: attendanceWin\n}\n```\n\n## 4. 程序启动流程和模块划分\n\n### 程序启动流程\n```\nmain.cpp \n    ↓\nQApplication 初始化\n    ↓\n主窗口创建 (MainWindow)\n    ↓\n模块窗口管理\n    ├── AttendanceWindow (考勤管理)\n    └── CancelLeaveWindow (请假取消)\n```\n\n### 模块划分分析\n\n**考勤管理模块 (Attendance)**\n- `attendancewindow.h/cpp/ui`：考勤界面实现\n- 功能职责：医生考勤记录、考勤统计、考勤查询\n\n**请假管理模块 (Cancel Leave)**\n- `cancelleavewindow.h/cpp`：请假取消功能\n- 功能职责：请假申请取消、审批状态管理\n\n### 架构特点\n1. **传统Widgets架构**：基于QWidget的桌面应用\n2. **模块化设计**：功能按窗口模块划分\n3. **UI与逻辑分离**：通过.ui文件实现界面设计分离\n4. **信号槽机制**：使用QT的信号槽进行组件通信\n\n### 建议改进\n1. 考虑添加资源文件(.qrc)统一管理静态资源\n2. 建立统一的窗口管理机制\n3. 添加数据模型层分离业务逻辑\n4. 考虑使用模型-视图架构提升可维护性\n\n这是一个典型的QT Widgets桌面应用程序结构，采用传统的面向对象设计模式，适合医疗行业的考勤管理系统需求。",
+            "基于提供的QT项目文件列表，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**UI文件与代码文件的映射：**\n- `cancelleavewindow.ui` ↔ 对应 `cancelleavewindow.h/cancelleavewindow.cpp`（推断存在）\n- `communicationwindow.ui` ↔ `communicationwindow.h` + `communicationwindow.cpp`\n- `createaccoutwindow.ui` ↔ `createaccoutwindow.cpp` + `createaccoutwindow.h`（推断存在）\n\n**QT Designer界面文件作用：**\n- `.ui`文件通过QT Designer创建，定义窗口布局、控件属性\n- 编译时通过uic工具生成`ui_xxx.h`头文件\n- 在对应`.cpp`文件中通过`ui->`指针访问界面元素\n\n## 2. .qrc资源文件的使用方式\n\n**资源文件管理：**\n- 项目未显示包含`.qrc`文件，但QT项目通常使用资源系统\n- 如果存在`.qrc`文件，用于管理：\n  - 图标、图片等静态资源\n  - QML文件（如使用QML界面）\n  - 翻译文件(.qm)\n  - 其他二进制资源\n\n**资源引用语法：**\n```cpp\n// 在代码中引用资源\nQPixmap pixmap(\":/images/icon.png\");\nQIcon icon(\":/icons/app_icon.ico\");\n```\n\n## 3. QML与C++交互方式\n\n**当前项目分析：**\n- 从文件列表看，项目主要使用传统Widgets方式\n- 未发现`.qml`文件，表明可能未使用QML技术\n- 如需要QML集成，可通过以下方式：\n\n**QML-C++交互机制：**\n```cpp\n// 注册C++类型到QML\nqmlRegisterType<MyClass>(\"MyModule\", 1, 0, \"MyClass\");\n\n// 设置QML上下文属性\nengine.rootContext()->setContextProperty(\"backend\", myObject);\n```\n\n## 4. 程序启动流程和模块划分\n\n**程序启动流程：**\n1. `main.cpp`（推断存在）初始化QApplication\n2. 加载主窗口（未在列表中显示）\n3. 各功能窗口按需创建：\n   - `CommunicationWindow` - 通信功能模块\n   - `CancelLeaveWindow` - 请假取消模块  \n   - `CreateAccountWindow` - 账户创建模块\n\n**模块化架构分析：**\n\n**通信模块** (`communicationwindow.*`)\n- 负责网络通信或设备通信功能\n- 可能包含信号槽机制处理数据收发\n\n**业务功能模块**\n- `cancelleavewindow` - 请假管理相关业务\n- `createaccoutwindow` - 用户账户管理业务\n\n**建议的项目结构优化：**\n```\ndoctor1/\n├── main.cpp\n├── mainwindow.*\n├── modules/\n│   ├── communication/\n│   │   ├── communicationwindow.*\n│   │   └── communicationwindow.ui\n│   ├── leave/\n│   │   ├── cancelleavewindow.*\n│   │   └── cancelleavewindow.ui\n│   └── account/\n│       ├── createaccoutwindow.*\n│       └── createaccoutwindow.ui\n└── resources/\n    └── images.qrc\n```\n\n**技术特点总结：**\n- 采用传统的QT Widgets架构\n- 基于.ui文件的界面设计模式\n- 模块化窗口设计，各功能独立封装\n- 符合MVC模式，界面与逻辑分离",
+            "基于您提供的QT项目文件片段，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**文件对应关系分析：**\n```\n┌─ createaccoutwindow.ui → createaccoutwindow.h + createaccoutwindow.cpp\n└─ dailycheckinwindow.ui → dailycheckinwindow.h + dailycheckinwindow.cpp\n```\n\n**QT机制说明：**\n- **.ui文件**：XML格式的界面描述文件，通过QT Designer设计\n- **.h文件**：声明对应的窗口类，继承自QWidget或QMainWindow\n- **.cpp文件**：实现窗口逻辑，通过`ui->`指针访问UI组件\n\n**典型代码结构：**\n```cpp\n// createaccoutwindow.h\nclass CreateAccountWindow : public QWidget\n{\n    Q_OBJECT\nprivate:\n    Ui::CreateAccountWindow *ui;\n};\n\n// createaccoutwindow.cpp\nCreateAccountWindow::CreateAccountWindow(QWidget *parent) \n    : QWidget(parent), ui(new Ui::CreateAccountWindow)\n{\n    ui->setupUi(this);\n}\n```\n\n## 2. .qrc资源文件的使用方式\n\n**虽然当前文件列表未包含.qrc文件，但典型使用方式：**\n\n**资源文件组织：**\n```xml\n<!-- doctor1.qrc -->\n<RCC>\n    <qresource prefix=\"/images\">\n        <file>icons/user.png</file>\n        <file>icons/doctor.png</file>\n    </qresource>\n    <qresource prefix=\"/qml\">\n        <file>views/MainView.qml</file>\n    </qresource>\n</RCC>\n```\n\n**在代码中使用：**\n```cpp\n// 在.cpp文件中使用资源\nQPixmap icon(\":/images/icons/user.png\");\nQIcon buttonIcon(\":/images/icons/doctor.png\");\n```\n\n## 3. QML与C++交互方式（如存在）\n\n**基于当前文件分析：**\n- 未发现.qml文件，表明项目可能采用传统的Widgets方式\n- 若后续包含QML，交互方式包括：\n\n**主要交互机制：**\n- **上下文属性**：`view->rootContext()->setContextProperty()`\n- **QML插件**：通过`qmlRegisterType()`注册C++类\n- **信号槽连接**：QML与C++对象间的信号槽通信\n\n## 4. 程序启动流程和模块划分\n\n**程序启动流程推测：**\n```\nmain.cpp \n    ↓\nQApplication初始化\n    ↓\n主窗口实例化 (可能为MainWindow)\n    ↓  \n显示主界面\n    ↓\n用户操作触发子窗口创建\n    ├─ CreateAccountWindow (账户创建模块)\n    └─ DailyCheckinWindow (日常签到模块)\n```\n\n**模块划分分析：**\n\n**账户管理模块：**\n- `createaccoutwindow.h/cpp/ui` - 账户创建功能\n- 职责：用户注册、账户信息录入、权限设置\n\n**日常业务模块：**\n- `dailycheckinwindow.h/cpp/ui` - 日常签到功能  \n- 职责：考勤记录、状态更新、数据提交\n\n**架构特点：**\n- **模块化设计**：每个功能对应独立的窗口类\n- **界面与逻辑分离**：.ui负责界面，.cpp负责业务逻辑\n- **标准QT模式**：采用MVC-like架构，符合QT开发规范\n\n**建议后续关注：**\n- 查找main.cpp和主窗口文件以确认完整启动流程\n- 检查.pro项目文件了解构建配置\n- 确认是否存在数据模型层文件",
+            "基于提供的QT项目文件列表，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**doctoreditprofile模块：**\n- `doctoreditprofile.ui` ↔ `doctoreditprofile.h` ↔ `doctoreditprofile.cpp`\n- 这是典型的QT Designer UI文件与C++类的对应关系\n- ui文件通过uic工具编译生成ui_doctoreditprofile.h头文件\n- 在doctoreditprofile.h中通过Ui命名空间声明界面类\n- doctoreditprofile.cpp实现业务逻辑并与界面交互\n\n## 2. .qrc资源文件的使用方式\n\n**当前文件列表未包含.qrc文件**，但基于项目结构推测：\n- 资源文件通常命名为`resources.qrc`或与模块同名\n- 在.pro文件中通过`RESOURCES += resources.qrc`声明\n- 资源访问方式：\n  ```cpp\n  QPixmap pixmap(\":/images/icon.png\");\n  QFile file(\":/data/config.xml\");\n  ```\n\n## 3. QML与C++交互方式\n\n**当前项目未发现QML文件**，表明：\n- 这是一个基于Widgets的传统QT应用\n- 使用.ui文件进行界面设计而非QML\n- 如需QML集成，可通过QQmlApplicationEngine加载.qml文件\n- C++与QML交互需注册C++类型到QML上下文\n\n## 4. 程序启动流程和模块划分\n\n### 程序启动流程：\n```\nmain.cpp → QApplication实例化 → 主窗口创建 → 显示界面 → 事件循环\n```\n\n### 模块划分分析：\n\n**界面模块：**\n- `doctoreditprofile`：医生资料编辑功能\n  - 包含完整的MVC结构（Model-View-Controller）\n  - .ui负责视图层，.h/.cpp负责控制逻辑\n\n**数据模块：**\n- `fixed_GlobalUserInformation`：全局用户信息管理\n  - 可能实现为单例模式或全局静态类\n  - 负责用户状态、权限等全局数据管理\n\n**项目配置：**\n- `doctor.pro`：QT项目配置文件\n  - 定义编译选项、依赖库、源文件包含\n  - 配置uic、moc、rcc等QT构建工具\n\n## 架构特点：\n\n1. **传统Widgets架构**：基于QWidget而非QML\n2. **模块化设计**：功能模块分离清晰\n3. **界面与逻辑分离**：遵循QT的MVC设计模式\n4. **全局数据管理**：通过专门类管理共享数据\n\n此结构适合中等复杂度的桌面医疗应用，具有良好的可维护性和扩展性。",
+            "基于您提供的QT项目文件片段，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件对应关系分析\n\n**当前文件集中未发现.ui文件**，但可以从命名推断可能的对应关系：\n\n- `leaverequestwindow.cpp/.h` - 可能对应 `leaverequestwindow.ui`\n  - 实现请假申请窗口界面\n  - 使用Qt Designer设计的UI布局\n  - 通过`ui->`指针访问界面元素\n\n- 其他窗口类可能也有对应的.ui文件，但当前文件列表中未包含\n\n## 2. .qrc资源文件使用方式\n\n**当前文件集中未发现.qrc文件**，但典型使用方式包括：\n\n```cpp\n// 在代码中引用资源\nQPixmap pixmap(\":/images/icon.png\");\nQIcon icon(\":/icons/app_icon.ico\");\n```\n\n资源文件通常包含：\n- 图像资源（PNG、ICO等）\n- QML文件\n- 样式表(QSS)\n- 翻译文件(QM)\n\n## 3. QML与C++交互方式\n\n**当前文件集中未发现QML相关文件**，但Qt中常见的交互方式：\n\n- **属性绑定**：使用`Q_PROPERTY`暴露C++属性给QML\n- **信号槽连接**：QML中连接C++对象的信号\n- **上下文属性**：通过`setContextProperty()`注册C++对象\n- **模型集成**：使用`QAbstractListModel`等为QML提供数据\n\n## 4. 程序启动流程和模块划分\n\n### 程序启动流程推测：\n```\nmain.cpp \n  → QApplication初始化\n  → 主窗口创建\n  → GlobalUserInformation单例初始化\n  → 网络管理器(fixed_networkmanager)初始化\n  → 显示主界面\n```\n\n### 模块划分分析：\n\n#### **用户信息管理模块**\n- `GlobalUserInformation.h/cpp`\n- 职责：全局用户数据管理\n- 特征：可能采用单例模式\n- 功能：用户登录状态、个人信息存储\n\n#### **网络通信模块**\n- `fixed_networkmanager.cpp`\n- 职责：网络请求管理\n- 可能继承自`QNetworkAccessManager`\n- 功能：API调用、数据上传下载\n\n#### **业务界面模块**\n- `leaverequestwindow.h/cpp`\n- 职责：请假申请功能界面\n- 继承自`QWidget`或`QDialog`\n- 功能：请假信息填写、提交\n\n### 架构特点分析：\n\n1. **传统Widgets架构**：基于C++和QWidget，非QML\n2. **模块化设计**：功能模块分离清晰\n3. **全局状态管理**：通过GlobalUserInformation集中管理用户状态\n4. **网络层封装**：专门的网络管理类处理通信逻辑\n\n### 建议改进方向：\n\n1. 补充缺失的.ui文件以完善界面设计\n2. 考虑添加资源文件(.qrc)管理静态资源\n3. 如需要现代化界面，可引入QML替换部分Widgets\n4. 确保网络模块的错误处理和重试机制\n\n此分析基于提供的文件命名和Qt开发惯例，具体实现细节需要查看完整代码文件。",
+            "基于您提供的QT项目文件列表，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**UI文件与代码文件的映射：**\n```\nleaverequestwindow.ui ↔ leaverequestwindow.h/.cpp (推测存在)\nloginwindow.ui ↔ loginwindow.h/loginwindow.cpp\n```\n\n**具体分析：**\n- **loginwindow.ui** ↔ **loginwindow.h/loginwindow.cpp**\n  - UI文件定义登录窗口的界面布局和控件\n  - .h文件声明LoginWindow类、槽函数和成员变量\n  - .cpp文件实现具体的业务逻辑和信号槽连接\n\n- **leaverequestwindow.ui** ↔ (推测存在对应的.h/.cpp文件)\n  - 请假申请窗口的界面定义\n  - 需要对应的C++类来实现业务逻辑\n\n## 2. .qrc资源文件的使用方式\n\n**当前项目未见.qrc文件，但典型使用方式：**\n\n```xml\n<!-- 示例：resources.qrc -->\n<RCC>\n    <qresource prefix=\"/images\">\n        <file>icons/login.png</file>\n        <file>icons/logo.svg</file>\n    </qresource>\n    <qresource prefix=\"/qml\">\n        <file>main.qml</file>\n    </qresource>\n</RCC>\n```\n\n**在代码中的引用方式：**\n```cpp\n// 在C++中使用\nQPixmap pixmap(\":/images/icons/login.png\");\n\n// 在QML中使用\nImage { source: \"qrc:/images/icons/logo.svg\" }\n```\n\n## 3. QML与C++交互方式\n\n**基于当前文件结构分析：**\n- 项目主要使用传统的**Widgets模块**，未发现QML文件\n- 如需要QML集成，典型交互方式包括：\n  - 使用`QQmlApplicationEngine`加载QML\n  - 通过`qmlRegisterType`注册C++类到QML\n  - 使用`Q_PROPERTY`暴露属性\n  - 信号槽机制实现双向通信\n\n## 4. 程序启动流程和模块划分\n\n**程序启动流程：**\n```\nmain.cpp → 创建QApplication → 实例化主窗口 → 进入事件循环\n```\n\n**模块划分分析：**\n\n**核心模块：**\n1. **应用程序入口模块** (main.cpp)\n   - 初始化QApplication\n   - 设置应用程序属性\n   - 启动主窗口\n\n2. **登录认证模块** (loginwindow)\n   - 用户身份验证\n   - 权限管理\n   - 会话管理\n\n3. **业务功能模块** (leaverequestwindow)\n   - 请假申请功能\n   - 数据提交与验证\n   - 界面交互处理\n\n**架构特点：**\n- 采用**MVC模式**：.ui文件(View) + .h/.cpp文件(Controller/Model)\n- 模块化设计：每个功能窗口独立封装\n- 基于传统QT Widgets框架，适合桌面应用开发\n\n**建议改进方向：**\n- 考虑添加资源文件(.qrc)管理图标、翻译文件等\n- 如需要现代化界面，可引入QML进行混合开发\n- 建议添加统一的业务逻辑层和数据模型层",
+            "基于您提供的QT项目文件列表，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**mainwindow.ui ↔ mainwindow.h/.cpp**\n- **设计模式**：采用Model-View模式，.ui文件定义界面布局和组件\n- **代码生成**：ui_mainwindow.h文件由uic工具自动从mainwindow.ui生成\n- **继承关系**：\n  ```cpp\n  // mainwindow.h中通常包含\n  class MainWindow : public QMainWindow\n  {\n      Q_OBJECT\n  private:\n      Ui::MainWindow *ui;  // 指向UI组件的指针\n  };\n  ```\n- **初始化**：在mainwindow.cpp构造函数中通过`ui->setupUi(this)`建立关联\n\n## 2. .qrc资源文件的使用方式\n\n**虽然当前文件列表未包含.qrc文件，但典型使用方式如下：**\n\n```cpp\n// 在代码中引用资源\nQPixmap pixmap(\":/images/icon.png\");\nQIcon icon(\":/icons/app_icon.ico\");\n\n// 在.qss样式表中使用\nQString style = \"QPushButton { background-image: url(:/images/button_bg.png); }\";\n```\n\n**资源文件结构示例：**\n```xml\n<RCC>\n    <qresource prefix=\"/images\">\n        <file>icons/app_icon.png</file>\n        <file>backgrounds/main_bg.jpg</file>\n    </qresource>\n</RCC>\n```\n\n## 3. QML与C++交互方式（当前项目分析）\n\n**基于文件结构判断：**\n- ❌ **未使用QML**：文件列表中缺少.qml文件和QML相关注册代码\n- ✅ **纯Widgets应用**：使用传统的Qt Widgets模块构建界面\n- **替代方案**：通过信号槽机制实现业务逻辑与界面分离\n\n## 4. 程序启动流程和模块划分\n\n### 程序启动流程\n```\nmain.cpp → QApplication初始化 → MainWindow实例化 → 显示主窗口 → 事件循环\n```\n\n### 模块划分分析\n\n**① 主窗口模块 (MainWindow)**\n- **职责**：应用程序主界面、菜单栏、工具栏、状态栏\n- **文件**：mainwindow.h/.cpp/.ui\n- **功能**：协调各个子模块，处理用户主界面交互\n\n**② 工具类模块 (MessageBoxUtils)**\n- **职责**：提供消息对话框的封装和统一接口\n- **文件**：messageboxutils.h/.cpp\n- **典型功能**：\n  ```cpp\n  class MessageBoxUtils {\n  public:\n      static void showInfo(const QString& title, const QString& message);\n      static bool showConfirm(const QString& title, const QString& message);\n      static void showError(const QString& title, const QString& message);\n  };\n  ```\n\n### 架构特点\n1. **分层清晰**：工具类与主界面分离，便于复用\n2. **传统架构**：采用经典的MVC模式，通过信号槽通信\n3. **资源管理**：预计通过.qrc文件管理图标、翻译等资源\n4. **扩展性**：工具类模块设计为静态方法，便于全局调用\n\n### 建议改进点\n- 考虑添加QML支持以实现更现代化的界面\n- 完善资源文件管理\n- 可考虑添加数据模型层分离业务逻辑",
+            "基于您提供的QT项目文件片段，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**patientinformationwindow.ui ↔ patientinformationwindow.h/cpp**\n- **UI文件作用**：`patientinformationwindow.ui` 是Qt Designer创建的界面文件，定义了窗口的GUI布局、控件和属性\n- **头文件作用**：`patientinformationwindow.h` 声明了`PatientInformationWindow`类，继承自`QWidget`或`QMainWindow`，包含：\n  - UI指针成员（`Ui::PatientInformationWindow *ui`）\n  - 信号槽声明\n  - 成员函数原型\n- **实现文件作用**：`patientinformationwindow.cpp` 中通过`ui->setupUi(this)`加载UI文件，实现业务逻辑\n\n## 2. .qrc资源文件的使用方式\n\n**当前文件列表未包含.qrc文件，但分析其使用模式：**\n- 资源引用：在`.ui`文件中可能通过`qrc:/`路径引用图标、图片等资源\n- 编译集成：`.qrc`文件在编译时会将资源嵌入到可执行文件中\n- 使用语法：`QIcon(\":/images/icon.png\")` 或CSS中`url(qrc:/styles/style.css)`\n\n## 3. QML与C++交互方式\n\n**当前项目分析：**\n- 从文件结构看，这是传统的**Widgets-based**应用，未使用QML\n- 如需要QML交互，典型方式包括：\n  - `QQmlApplicationEngine` 加载QML文件\n  - `qmlRegisterType()` 注册C++类到QML\n  - 上下文属性设置：`engine.rootContext()->setContextProperty()`\n\n## 4. 程序启动流程和模块划分\n\n### 模块划分：\n- **网络管理模块**：`networkmanager.h/cpp`\n  - 负责HTTP请求、WebSocket通信等网络操作\n  - 可能包含`QNetworkAccessManager`相关功能\n  \n- **患者信息界面模块**：`patientinformationwindow.h/cpp/ui`\n  - 负责患者信息的显示和编辑界面\n  - 包含表单控件、数据验证等GUI功能\n\n### 程序启动流程推测：\n```\nmain.cpp \n  ↓\nQApplication初始化\n  ↓  \n创建主窗口（可能在其他文件中）\n  ↓\nNetworkManager实例化（单例模式）\n  ↓  \nPatientInformationWindow实例化\n  ↓  \n显示主界面，进入事件循环\n```\n\n## 架构特点分析：\n\n1. **MVC模式**：UI文件(View) + 头文件(Controller接口) + 实现文件(Controller实现)\n2. **模块化设计**：网络功能与界面功能分离，便于维护和测试\n3. **信号槽机制**：各模块间通过Qt信号槽进行松耦合通信\n4. **资源管理**：通过Qt资源系统管理界面资源\n\n**建议**：如需完整分析，请提供main.cpp和项目配置文件(.pro)以获得更准确的启动流程分析。",
+            "我将从QT开发角度分析这些文件，提供结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**RegisterWindow模块：**\n- `registerwindow.ui` ↔ `registerwindow.h` ↔ `registerwindow.cpp`\n- 这是典型的QT UI类三件套模式：\n  - `.ui`：XML格式的界面布局文件，通过QT Designer设计\n  - `.h`：类声明文件，继承自QWidget或QDialog\n  - `.cpp`：类实现文件，包含业务逻辑\n\n**SelectWindow模块：**\n- `selectwindow.cpp`（推测应有对应的`.h`和`.ui`文件）\n- 可能采用纯代码布局或头文件未在列表中\n\n## 2. .qrc资源文件的使用方式\n\n**resources.qrc功能：**\n- 存储应用程序资源（图片、图标、QML文件、翻译文件等）\n- 编译时资源嵌入，运行时通过`:/`前缀访问\n- 典型使用方式：\n```cpp\n// 在代码中使用资源\nQPixmap pixmap(\":/images/icon.png\");\nQIcon icon(\":/icons/app_icon.ico\");\n```\n\n## 3. QML与C++交互方式（基于当前文件分析）\n\n**当前项目分析：**\n- 从文件列表看，这主要是传统的Widgets应用\n- **未发现明显的QML文件**（如`.qml`文件）\n- 推测为纯C++/Widgets架构，无QML交互\n\n**如存在QML交互的典型方式：**\n- QQmlApplicationEngine加载QML文件\n- QQuickView显示QML界面\n- 通过Q_PROPERTY、Q_INVOKABLE暴露C++接口\n\n## 4. 程序启动流程和模块划分\n\n### 程序启动流程：\n```\nmain.cpp \n    ↓\nQApplication初始化\n    ↓\n主窗口实例化（可能为SelectWindow或MainWindow）\n    ↓\nRegisterWindow作为注册功能子窗口\n    ↓\n窗口显示和事件循环\n```\n\n### 模块划分：\n\n**界面模块：**\n- `RegisterWindow`：用户注册界面\n  - 处理用户注册逻辑\n  - 包含表单验证、数据提交\n- `SelectWindow`：选择功能界面\n  - 可能作为主界面或功能入口\n\n**资源管理：**\n- `resources.qrc`：统一资源管理\n  - 图标资源\n  - 样式表资源\n  - 其他静态资源\n\n### 架构特点：\n1. **传统Widgets架构**：基于C++和QT Designer\n2. **模块化设计**：功能窗口独立封装\n3. **资源集中管理**：通过.qrc文件统一管理\n4. **MVC模式**：界面(.ui)、控制(.cpp)、数据分离\n\n**推测项目性质：** 医疗相关的桌面应用，包含用户注册和功能选择模块。",
+            "基于提供的QT项目文件列表，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**UI文件与代码文件的配对关系：**\n- `selectwindow.ui` ↔ `selectwindow.h` (缺少对应的.cpp文件)\n- `bookwindow.ui` ↔ `bookwindow.h` ↔ `bookwindow.cpp` (完整配对)\n\n**设计模式分析：**\n- 采用QT经典的MVC模式，.ui文件负责界面布局和控件定义\n- .h文件声明类、信号槽和成员变量\n- .cpp文件实现业务逻辑和信号槽连接\n\n**潜在问题：**\n- `selectwindow.h`缺少对应的.cpp实现文件，可能导致编译错误\n- 文件路径显示项目可能分为`doctor1`和`Patient`两个子项目或模块\n\n## 2. .qrc资源文件的使用方式\n\n**资源文件使用模式：**\n虽然当前文件列表未包含.qrc文件，但基于QT项目惯例：\n\n```cpp\n// 典型资源引用方式\nQPixmap pixmap(\":/images/icon.png\");\nQIcon icon(\":/icons/app_icon.ico\");\n```\n\n**资源组织建议：**\n- 图片资源：`:/images/`\n- 样式表：`:/qss/`\n- 翻译文件：`:/translations/`\n\n## 3. QML与C++交互方式\n\n**当前状态：**\n- 提供的文件均为传统Widgets组件，未发现QML文件\n- 项目采用纯C++/Widgets架构，无QML交互需求\n\n**如需添加QML支持：**\n```cpp\n// 注册C++类到QML\nqmlRegisterType<BookWindow>(\"Patient\", 1, 0, \"BookWindow\");\n```\n\n## 4. 程序启动流程和模块划分\n\n**模块划分分析：**\n```\n项目结构：\n├── doctor1模块\n│   ├── SelectWindow (选择窗口)\n│   └── 可能的主应用入口\n└── Patient模块\n    └── BookWindow (预约窗口)\n```\n\n**典型启动流程：**\n```cpp\nint main(int argc, char *argv[])\n{\n    QApplication app(argc, argv);\n    \n    // 主窗口初始化\n    SelectWindow selectWindow;\n    selectWindow.show();\n    \n    return app.exec();\n}\n```\n\n**窗口间交互模式：**\n```cpp\n// SelectWindow中可能包含打开BookWindow的代码\nvoid SelectWindow::on_bookButton_clicked()\n{\n    BookWindow *bookWindow = new BookWindow(this);\n    bookWindow->show();\n}\n```\n\n## 架构建议\n\n1. **完善文件结构：** 为`selectwindow.h`添加对应的.cpp实现文件\n2. **模块化设计：** 考虑将公共功能提取到共享库中\n3. **资源管理：** 建议添加.qrc文件统一管理界面资源\n4. **信号槽设计：** 合理设计窗口间的通信机制\n\n这种结构表明项目可能是一个医疗相关的预约系统，包含医生端和患者端的不同功能模块。",
+            "基于您提供的QT项目文件片段，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**casehistory模块：**\n- `casehistory.ui` ↔ `casehistory.h` + `casehistory.cpp`\n- 典型的QT Designer UI文件与业务逻辑分离架构\n- 通过`ui_casehistory.h`自动生成界面代码\n- 在`casehistory.h`中声明`Ui::casehistory`类成员\n\n**doctordetail模块：**\n- 只有`doctordetail.h` + `doctordetail.cpp`\n- 可能是纯C++类或手动创建的QT组件\n- 不依赖UI文件，采用代码方式构建界面\n\n## 2. .qrc资源文件的使用方式\n\n**当前文件列表未包含.qrc文件**，但基于项目结构推测：\n- 资源文件通常命名为`resources.qrc`或与模块同名\n- 使用方式：\n```xml\n<RCC>\n    <qresource prefix=\"/icons\">\n        <file>images/patient_icon.png</file>\n    </qresource>\n</RCC>\n```\n- 在代码中通过`:/icons/images/patient_icon.png`路径访问\n\n## 3. QML与C++交互方式\n\n**当前项目未发现QML文件**，表明：\n- 采用传统的Widgets架构而非QML\n- 如果需要QML集成，会存在：\n  - `.qml`文件定义界面\n  - C++类通过`QQmlApplicationEngine`加载\n  - 使用`Q_PROPERTY`暴露属性\n  - 通过`qmlRegisterType`注册C++类型\n\n## 4. 程序启动流程和模块划分\n\n### 模块划分：\n- **病历管理模块** (casehistory)\n  - 界面：casehistory.ui\n  - 逻辑：casehistory.cpp/.h\n- **医生详情模块** (doctordetail)\n  - 纯逻辑类：doctordetail.cpp/.h\n\n### 典型启动流程：\n```cpp\n// main.cpp (推测存在)\nint main(int argc, char *argv[])\n{\n    QApplication app(argc, argv);\n    \n    // 主窗口初始化\n    MainWindow window;\n    \n    // 模块实例化\n    CaseHistory caseHistory;\n    DoctorDetail doctorDetail;\n    \n    window.show();\n    return app.exec();\n}\n```\n\n### 架构特点：\n- **MVC模式**：UI文件负责视图，.h/.cpp处理控制器和模型\n- **模块化设计**：病历和医生管理功能分离\n- **传统QT架构**：基于Widgets而非QML\n- **资源管理**：推测通过.qrc管理图标、翻译文件等\n\n**建议补充文件**：完整的分析需要查看`main.cpp`、`CMakeLists.txt`/`.pro`文件、资源文件和主窗口定义。",
+            "基于您提供的QT项目文件片段，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件对应关系分析\n\n**明确的对应关系：**\n- `doctordetail.ui` ↔ `fixed_doctordetail.cpp`\n  - UI文件定义了医生详情界面布局\n  - 对应的C++文件包含界面逻辑实现\n\n**独立功能模块：**\n- `fixed_globaluserinformation.cpp` - 全局用户信息管理\n- `fixed_networkmanager.cpp` - 网络通信管理\n- `globaluserinformation.cpp` - 用户信息处理逻辑\n\n## 2. .qrc资源文件使用方式\n\n**推测的资源组织模式：**\n```\n资源文件可能包含：\n- 界面图标（医生头像、功能图标等）\n- QSS样式表文件\n- 翻译文件(.ts/.qm)\n- 图片资源\n```\n\n**典型使用方式：**\n```cpp\n// 在代码中通过资源路径访问\nQPixmap icon(\":/icons/doctor.png\");\nQFile styleFile(\":/qss/main.qss\");\n```\n\n## 3. QML与C++交互方式\n\n**当前项目特征：**\n- 从文件名判断，该项目主要使用**传统Widgets方式**\n- 未发现明显的QML文件(.qml)\n- 采用.ui文件 + C++的业务逻辑架构\n\n**可能的混合架构：**\n- 如果存在QML，交互方式可能包括：\n  - QML调用C++槽函数\n  - C++设置QML上下文属性\n  - 使用QQmlApplicationEngine加载QML\n\n## 4. 程序启动流程和模块划分\n\n### 程序启动流程推测：\n```\n1. main.cpp → 创建QApplication\n2. 初始化全局管理器：\n   - fixed_networkmanager (网络模块)\n   - globaluserinformation (用户信息)\n3. 加载主界面和相关子界面\n4. 显示医生详情界面(doctordetail)\n```\n\n### 模块划分架构：\n\n**界面层 (UI Layer)**\n- `doctordetail.ui` - 医生详情展示界面\n- 对应的C++类处理界面交互\n\n**业务逻辑层 (Business Logic)**\n- `fixed_globaluserinformation.cpp` - 用户信息固定逻辑\n- `globaluserinformation.cpp` - 用户信息核心逻辑\n\n**基础设施层 (Infrastructure)**\n- `fixed_networkmanager.cpp` - 网络通信管理\n  - HTTP请求处理\n  - 数据收发\n  - 连接状态管理\n\n### 设计模式推测：\n- **MVC模式**：界面与逻辑分离\n- **单例模式**：NetworkManager和GlobalUserInformation可能为单例\n- **观察者模式**：网络状态变化通知界面更新\n\n### 项目特点：\n1. **模块化设计** - 各功能职责清晰分离\n2. **界面与逻辑解耦** - .ui文件独立管理布局\n3. **网络通信集中管理** - 专门的网络管理器\n4. **用户状态全局管理** - 统一用户信息处理\n\n这个架构体现了QT项目的典型分层设计，具有良好的可维护性和扩展性。",
+            "基于提供的QT项目文件列表，我来进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**明确的对应关系：**\n- `HealthAssessmentPage.ui` ↔ `HealthAssessmentPage.h` ↔ `HealthAssessmentPage.cpp`\n  - 这是标准的QT UI类文件组\n  - .ui文件通过uic工具生成ui_HealthAssessmentPage.h\n  - .h文件声明类HealthAssessmentPage继承自QWidget/QDialog\n  - .cpp文件实现界面逻辑和槽函数\n\n**可能的对应关系：**\n- `globaluserinformation.h` 可能对应未列出的实现文件\n- `information.cpp` 可能对应未列出的头文件\n\n## 2. .qrc资源文件的使用方式\n\n**当前分析：**\n- 提供的文件列表中未包含.qrc文件\n- 但基于项目结构推测资源使用方式：\n\n**典型.qrc使用模式：**\n```xml\n<RCC>\n    <qresource prefix=\"/icons\">\n        <file>images/patient_icon.png</file>\n    </qresource>\n    <qresource prefix=\"/qml\">\n        <file>pages/HealthAssessment.qml</file>\n    </qresource>\n</RCC>\n```\n\n**资源访问方式：**\n```cpp\n// 在代码中访问资源\nQPixmap icon(\":/icons/images/patient_icon.png\");\n```\n\n## 3. QML与C++交互方式\n\n**基于文件分析：**\n- 当前文件列表主要显示传统Widgets架构\n- 未发现明显的QML文件(.qml)\n- 可能采用纯C++/Widgets方案而非QML\n\n**如果存在QML交互的可能模式：**\n```cpp\n// 在HealthAssessmentPage.cpp中可能的QML集成\nQQmlApplicationEngine engine;\nengine.load(QUrl(\"qrc:/qml/HealthAssessment.qml\"));\n```\n\n## 4. 程序启动流程和模块划分\n\n### 程序启动流程推测：\n```\nmain.cpp \n  → 创建QApplication\n  → 初始化GlobalUserInformation（全局用户信息）\n  → 显示主窗口/登录界面\n  → 导航到HealthAssessmentPage（健康评估页面）\n  → 处理用户信息相关操作\n```\n\n### 模块划分分析：\n\n**1. 全局信息模块**\n- `globaluserinformation.h` - 全局用户信息管理\n- 可能包含：用户登录状态、个人信息、权限管理等\n\n**2. 健康评估界面模块**\n- `HealthAssessmentPage.h/cpp/ui` - 完整的界面类\n- 功能：健康数据录入、评估计算、结果显示\n- 包含UI设计、业务逻辑、数据验证\n\n**3. 信息处理模块**\n- `information.cpp` - 通用信息处理工具类\n- 可能包含：数据格式化、验证、转换等功能\n\n### 架构特点：\n- **传统Widgets架构**：基于QWidget的桌面应用\n- **模块化设计**：功能分离清晰\n- **MVC模式**：.ui(视图)、.h(控制器接口)、.cpp(控制器实现)\n- **数据驱动**：GlobalUserInformation提供数据支撑\n\n### 建议的改进方向：\n1. 补充main.cpp和.pro项目文件分析\n2. 确认是否存在QML混合开发\n3. 检查资源文件管理策略\n4. 验证模块间通信机制\n\n这是一个典型的医疗健康类QT桌面应用，采用传统的Widgets架构，模块划分清晰，适合处理复杂的医疗数据录入和评估需求。",
+            "基于提供的QT项目文件列表，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**明确的文件对应关系：**\n- `information.ui` ↔ `information.h` - 信息管理界面\n- `LoginWindow.ui` ↔ `LoginWindow.h` + `LoginWindow.cpp` - 登录窗口\n\n**QT Designer界面文件集成方式：**\n- 每个`.ui`文件通过`uic`工具在编译时自动生成对应的UI类\n- 在头文件中通过`Ui::ClassName`命名空间引用生成的UI类\n- 在实现文件中通过`ui->setupUi(this)`进行界面初始化\n\n## 2. .qrc资源文件的使用方式\n\n**当前项目状态：**\n- 文件列表中未包含`.qrc`资源文件\n- 建议添加资源文件管理图标、图片、样式表等静态资源\n\n**推荐资源文件结构：**\n```qrc\n<RCC>\n    <qresource prefix=\"/icons\">\n        <file>images/login.png</file>\n        <file>images/user.png</file>\n    </qresource>\n    <qresource prefix=\"/styles\">\n        <file>styles/main.qss</file>\n    </qresource>\n</RCC>\n```\n\n## 3. QML与C++交互方式\n\n**当前项目状态：**\n- 基于提供的文件列表，项目采用传统的Widgets方式\n- 未发现QML文件(.qml)存在\n- 如需添加QML支持，需要创建QML文件并通过QQmlApplicationEngine加载\n\n## 4. 程序启动流程和模块划分\n\n### 程序启动流程：\n```\nmain.cpp → 创建QApplication → 实例化LoginWindow → 用户认证 → 打开information界面\n```\n\n### 模块划分分析：\n\n**登录模块 (LoginWindow)**\n- 职责：用户身份验证、会话管理\n- 文件：`LoginWindow.h/cpp/ui`\n- 预期功能：用户名/密码输入、验证逻辑、登录状态管理\n\n**信息管理模块 (information)**\n- 职责：患者信息展示和编辑\n- 文件：`information.h/ui`\n- 注意：缺少对应的`.cpp`实现文件\n- 预期功能：数据展示、表单处理、信息存储\n\n### 架构建议：\n\n1. **补充缺失文件**：为`information`类创建对应的`.cpp`实现文件\n2. **添加资源管理**：创建`.qrc`文件统一管理界面资源\n3. **考虑数据层**：建议添加数据库操作类或数据模型类\n4. **模块通信**：通过信号槽机制实现登录成功后的界面切换\n\n### 项目结构优化建议：\n```\nPatient/\n├── main.cpp\n├── LoginWindow/          # 登录模块\n│   ├── LoginWindow.h\n│   ├── LoginWindow.cpp\n│   └── LoginWindow.ui\n├── Information/          # 信息管理模块  \n│   ├── information.h\n│   ├── information.cpp   # 需要创建\n│   └── information.ui\n├── Resources/           # 资源文件\n│   └── resources.qrc\n└── Common/             # 公共组件\n    ├── DatabaseManager.h\n    └── Settings.h\n```\n\n这是一个典型的QT Widgets应用程序结构，采用MVC模式，界面与逻辑分离清晰。",
+            "基于您提供的QT项目文件列表，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件对应关系分析\n\n**当前文件列表中未发现.ui文件**，但根据命名模式可以推断：\n\n- `PatientInfoPage.cpp` 很可能对应 `PatientInfoPage.ui` 文件\n- 典型的QT模式：`.ui`（界面设计文件） + `.h`（头文件） + `.cpp`（实现文件）\n- 使用uic工具在编译时将`.ui`文件转换为`ui_xxx.h`头文件\n- 在对应的`.cpp`文件中通过`ui->`指针访问界面组件\n\n## 2. .qrc资源文件使用方式\n\n**当前文件列表中未发现.qrc文件**，但QT项目通常使用方式：\n\n```cpp\n// 在代码中通过资源路径访问\nQIcon icon(\":/images/patient.png\");\nQPixmap pixmap(\":/icons/medical.png\");\n\n// 在QML中通过qrc:前缀访问\nImage { source: \"qrc:/images/background.jpg\" }\n```\n\n## 3. QML与C++交互方式\n\n**当前文件列表中未发现QML文件**，表明这可能是一个传统的Widgets应用而非QML应用。如果存在QML交互，常见方式包括：\n\n- QQmlApplicationEngine加载QML文件\n- Q_PROPERTY暴露C++属性给QML\n- Q_INVOKABLE标记可在QML调用的方法\n- 使用Context Properties注册C++对象\n\n## 4. 程序启动流程和模块划分\n\n### 程序启动流程：\n```\nmain.cpp → 创建QApplication → 初始化各模块 → 显示主界面 → 进入事件循环\n```\n\n### 模块划分分析：\n\n#### 核心模块：\n- **应用程序入口**：`main.cpp`\n- **网络通信模块**：`networkmanager.h/cpp`\n  - 负责HTTP请求、WebSocket通信等\n  - 可能继承自QNetworkAccessManager\n- **患者信息页面**：`PatientInfoPage.cpp`\n  - 患者信息展示和编辑界面\n  - 可能继承自QWidget或QMainWindow\n\n#### 项目配置：\n- **项目构建**：`Patient08311515.pro`\n  - 定义QT模块依赖（core, gui, network等）\n  - 配置源文件、头文件、资源文件\n  - 设置编译选项和链接库\n\n## 项目架构特点\n\n1. **传统Widgets架构**：基于C++ Widgets而非QML\n2. **网络功能核心**：专门的NetworkManager模块\n3. **患者信息管理**：PatientInfoPage作为主要功能页面\n4. **模块化设计**：网络、界面分离，便于维护扩展\n\n## 建议补充分析的文件\n\n要完整分析项目结构，建议检查：\n- 主窗口类文件（MainWindow.h/cpp）\n- 其他功能页面文件\n- 数据模型类文件\n- 资源文件(.qrc)和界面文件(.ui)\n- QML文件（如使用混合架构）",
+            "基于您提供的QT项目文件列表，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**文件对应关系分析：**\n- `PatientInfoPage.ui` ↔ `PatientInfoPage.h` + `PatientInfoPage.cpp`\n  - 典型的QT窗体类三件套结构\n  - .ui文件定义界面布局和控件\n  - .h文件声明类成员和槽函数\n  - .cpp文件实现业务逻辑\n\n**命名不一致问题：**\n- 发现文件名拼写不一致：`PatientInfoPage` vs `PatientlInfoPage`\n- 建议统一为：`PatientInfoPage.cpp`（当前为`PatientlInfoPage.cpp`）\n\n## 2. .qrc资源文件的使用方式\n\n**当前状态：**\n- 提供的文件列表中未包含.qrc资源文件\n- 但基于项目结构推测资源使用方式：\n\n**典型.qrc资源配置：**\n```xml\n<RCC>\n    <qresource prefix=\"/images\">\n        <file>icons/patient.png</file>\n        <file>icons/info.png</file>\n    </qresource>\n</RCC>\n```\n\n**资源引用方式：**\n- 在代码中：`QPixmap(\":/images/patient.png\")`\n- 在.ui文件中通过资源浏览器设置\n\n## 3. QML与C++交互方式\n\n**当前架构分析：**\n- 从文件名判断，该项目主要采用**传统Widgets架构**\n- 未发现.qml文件，表明可能未使用QML界面\n- 如需QML集成，建议添加：\n  - `PatientQmlPage.qml`\n  - 对应的C++桥接类\n\n## 4. 程序启动流程和模块划分\n\n### 程序启动流程：\n```\nmain.cpp \n    ↓\nQApplication初始化\n    ↓\nPatientMainPage实例化（主窗口）\n    ↓\nPatientInfoPage实例化（信息页面）\n    ↓\n窗口显示和事件循环启动\n```\n\n### 模块划分分析：\n\n**PatientMainPage模块：**\n- 功能：主窗口容器，管理页面导航\n- 文件：`PatientMainPage.h/cpp`\n- 职责：应用程序主框架、菜单管理\n\n**PatientInfoPage模块：**\n- 功能：患者信息展示和编辑页面\n- 文件：`PatientInfoPage.h/cpp/ui`\n- 职责：患者数据管理、表单验证、信息展示\n\n### 架构建议：\n1. **添加主程序文件**：建议补充`main.cpp`文件\n2. **统一命名规范**：修正文件名拼写不一致问题\n3. **考虑资源管理**：添加.qrc文件管理图标和图片资源\n4. **模块扩展性**：为未来功能扩展预留接口\n\n这是一个典型的QT Widgets应用程序结构，采用传统的MVC模式，适合桌面端医疗信息管理系统开发。",
+            "基于您提供的QT项目文件列表，我将从QT开发角度进行结构化分析：\n\n## 1. .ui文件与.cpp/.h文件的对应关系\n\n**RegisterWindow模块：**\n- `RegisterWindow.ui` ↔ `RegisterWindow.h` ↔ `RegisterWindow.cpp`\n  - 这是标准的QT窗体类三件套\n  - .ui文件定义界面布局和控件\n  - .h文件声明类、信号槽和成员变量\n  - .cpp文件实现业务逻辑和槽函数\n\n**PatientMainPage模块：**\n- `PatientMainPage.ui`（缺少对应的.h/.cpp文件）\n  - 这表明可能采用**UI文件直接加载**的方式\n  - 或者对应的类文件不在当前目录\n\n## 2. .qrc资源文件的使用方式\n\n**resources.qrc功能分析：**\n- 用于管理应用程序的静态资源\n- 典型包含内容：\n  - 图标文件(.ico, .png)\n  - 样式表(.qss)\n  - 图片资源\n  - 翻译文件(.qm)\n  - QML文件（如使用）\n\n**在代码中的使用方式：**\n```cpp\n// 在代码中通过资源路径访问\nQPixmap pixmap(\":/images/icon.png\");\nQFile styleFile(\":/styles/main.qss\");\n```\n\n## 3. QML与C++交互方式\n\n**当前项目分析：**\n- 从文件结构看，**本项目未使用QML**\n- 完全基于传统的**Widgets**架构\n- 使用.ui文件进行可视化界面设计\n- 采用信号槽机制进行事件处理\n\n## 4. 程序启动流程和模块划分\n\n### 程序启动流程：\n```\nmain.cpp → 创建QApplication → 加载主窗口 → 进入事件循环\n```\n\n### 模块划分分析：\n\n**界面层模块：**\n- **PatientMainPage** - 患者主页面\n  - 可能是应用程序的主窗口\n  - 负责主要功能导航和显示\n\n- **RegisterWindow** - 注册窗口\n  - 独立的对话框或子窗口\n  - 处理用户注册相关功能\n\n**资源管理模块：**\n- **resources.qrc** - 统一资源管理\n  - 集中管理所有静态资源\n  - 便于部署和跨平台兼容\n\n### 架构特点：\n1. **传统Widgets架构** - 基于.ui文件的桌面应用\n2. **模块化设计** - 功能窗口独立封装\n3. **资源集中管理** - 通过.qrc文件统一管理\n4. **信号槽通信** - 采用QT的事件驱动模型\n\n### 建议改进点：\n- 检查PatientMainPage是否缺少对应的.h/.cpp文件\n- 考虑添加应用程序主类(如MainApplication)统一管理窗口生命周期\n- 如需要动态界面，可考虑引入QML增强界面表现力"
+        ],
+        "summary": "基于以上分块分析结果，以下是该QT项目的整体总结：\n\n## 1. 项目整体功能与架构设计\n\n**项目性质**：医疗健康领域的桌面应用程序，采用客户端-服务器架构，包含医生端和患者端功能模块。\n\n**核心功能模块**：\n- **用户认证系统**：LoginWindow（登录）、RegisterWindow（注册）\n- **医生工作台**：考勤管理、请假审批、病历管理、患者信息查看\n- **患者服务端**：预约挂号、健康评估、个人信息管理\n- **系统管理**：账户创建、权限管理、全局用户信息\n\n**技术架构**：\n- **传统Widgets架构**：基于QWidget的桌面应用，未使用QML\n- **MVC模式**：.ui文件(View) + .h/.cpp文件(Controller/Model)\n- **模块化设计**：功能按窗口独立封装，职责分离清晰\n- **多线程支持**：ClientHandlerThread处理并发连接\n\n## 2. 类与模块依赖关系\n\n**核心依赖链**：\n```\nmain.cpp (程序入口)\n├── 全局管理类\n│   ├── GlobalUserInformation (用户状态管理)\n│   └── NetworkManager (网络通信管理)\n├── 主界面层\n│   ├── PatientMainPage (患者主界面)\n│   └── MainWindow (医生主界面)\n└── 功能模块层\n    ├── 认证模块: LoginWindow, RegisterWindow\n    ├── 医生模块: AttendanceWindow, CancelLeaveWindow, CaseHistory\n    ├── 患者模块: PatientInfoPage, HealthAssessmentPage, BookWindow\n    └── 通信模块: CommunicationWindow, SocketThread\n```\n\n**关键依赖关系**：\n- 所有界面模块依赖全局管理类获取用户状态\n- 网络模块为各业务模块提供数据通信支持\n- 主窗口协调各子窗口的显示和导航\n\n## 3. 主要逻辑流程\n\n**程序启动流程**：\n```cpp\nmain.cpp \n    → QApplication初始化\n    → 全局管理器创建(NetworkManager, GlobalUserInformation)\n    → 登录窗口显示(LoginWindow)\n    → 用户认证成功\n    → 根据用户角色加载对应主界面\n        ├── 医生角色: MainWindow + 医生功能模块\n        └── 患者角色: PatientMainPage + 患者功能模块\n    → 进入QT事件循环\n```\n\n**典型业务流**：\n1. **用户登录流程**：LoginWindow → 身份验证 → 加载对应主界面\n2. **患者预约流程**：BookWindow → 选择医生 → 提交预约 → 网络请求\n3. **医生工作流程**：考勤签到 → 病历管理 → 请假审批 → 患者沟通\n\n## 4. 架构优势与改进建议\n\n### 当前架构优势：\n1. **模块化程度高**：功能分离清晰，便于团队协作开发\n2. **技术栈成熟**：传统Widgets架构稳定可靠，开发效率高\n3. **资源管理规范**：通过.qrc文件统一管理静态资源\n4. **网络架构合理**：多线程处理，支持并发客户端连接\n\n### 主要问题与改进建议：\n\n**1. 文件结构不一致**\n- **问题**：文件名拼写不一致(PatientInfoPage vs PatientlInfoPage)，部分模块缺少对应文件\n- **建议**：统一命名规范，补充缺失的.h/.cpp文件\n\n**2. 资源管理待完善**\n- **问题**：部分分析显示缺少.qrc资源文件\n- **建议**：创建统一的resources.qrc管理所有图标、样式表、翻译文件\n\n**3. 数据层缺失**\n- **问题**：缺乏明确的数据模型层，业务逻辑与界面耦合较紧\n- **建议**：添加DataModel层，分离业务逻辑和数据操作\n\n**4. 架构现代化**\n- **问题**：纯Widgets架构界面相对传统\n- **建议**：考虑QML+Widgets混合架构，关键业务界面保持Widgets，复杂展示界面使用QML\n\n**5. 错误处理机制**\n- **建议**：增强网络异常处理、数据验证和用户反馈机制\n\n### 潜在架构优化：\n```\n建议的项目结构：\nMedicalSystem/\n├── Core/           # 核心模块\n│   ├── Models/     # 数据模型\n│   ├── Services/   # 业务服务\n│   └── Utils/      # 工具类\n├── UI/             # 界面层\n│   ├── Widgets/    # 传统Widgets\n│   └── QML/        # QML界面(可选)\n├── Network/        # 网络层\n└── Resources/      # 资源管理\n```\n\n**总结**：这是一个结构清晰、功能完整的医疗桌面应用，采用成熟的QT Widgets技术栈，具有良好的可维护性。通过补充数据层、统一资源管理和优化错误处理，可以进一步提升项目质量。"
+    }
+}

@@ -1,0 +1,5179 @@
+{
+  "files": [
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\docs\\conf.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'app'",
+          "line_number": 161,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'sphinx_automodapi'",
+          "line_number": 165,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'sphinx_automodapi.utils'",
+          "line_number": 166,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'app'",
+          "line_number": 175,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\noxfile.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'nox'",
+          "line_number": 23,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'session'",
+          "line_number": 77,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'dir'",
+          "line_number": 79,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\basic_patching.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 19,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused variable 'response'",
+          "line_number": 19,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Call to requests without timeout",
+          "line_number": 19,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 23,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Call to requests without timeout",
+          "line_number": 23,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 27,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Call to requests without timeout",
+          "line_number": 27,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\basic_sessions.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 8,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused variable 'response'",
+          "line_number": 16,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\convert_cache.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.backends.base'",
+          "line_number": 8,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _Store of a client class",
+          "line_number": 17,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _RawStore of a client class",
+          "line_number": 18,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\benchmark.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'print'",
+          "line_number": 16,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 19,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 21,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'session' from outer scope (line 99)",
+          "line_number": 36,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'session' from outer scope (line 99)",
+          "line_number": 55,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content of a client class",
+          "line_number": 79,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\custom_request_matcher.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 24,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.cache_keys'",
+          "line_number": 25,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\expiration.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 7,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 19,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 21,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 22,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 35,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 40,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 44,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\external_config.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 14,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Using open without explicitly specifying an encoding",
+          "line_number": 21,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\generate_test_db.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 导入的time模块被重命名为perf_counter，但代码中仍使用time作为变量名，可能导致混淆",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 15,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.models.response'",
+          "line_number": 16,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 17,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] No name 'conftest' in module 'tests'",
+          "line_number": 17,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 26,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Implicit string concatenation found in list",
+          "line_number": 29,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[llm] 字符串列表中的元素缺少逗号分隔，导致字符串连接",
+          "line_number": 32,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "performance",
+          "message": "[llm] 在循环内重复创建相同的session对象，应该移到循环外部",
+          "line_number": 56,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content of a client class",
+          "line_number": 84,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 当n_removed为0时会导致除零错误",
+          "line_number": 89,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 98,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 113,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 116,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\log_requests.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 11,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.session'",
+          "line_number": 12,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 23,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Call to requests without timeout",
+          "line_number": 23,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 33,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 34,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 42,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\pygithub.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'github'",
+          "line_number": 30,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 32,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 81,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 82,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 95,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\threads.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\rps_graph.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 16,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'session' from outer scope (line 122)",
+          "line_number": 102,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\time_machine_backtesting.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'time_machine'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 11,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 在BacktestCachedSession.request方法中，使用datetime.now(UTC)获取当前时间，但在time_machine.travel上下文管理器内，这不会返回模拟的时间，而是真实的当前时间。应该使用datetime.now(UTC)替换为datetime.now(UTC)以正确获取模拟时间",
+          "line_number": 18,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.request' can cause your program to hang indefinitely",
+          "line_number": 20,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] BacktestCachedSession类中request方法的else分支可以省略，直接返回response",
+          "line_number": 22,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "security",
+          "message": "[llm] 代码中使用了硬编码的URL 'https://httpbin.org/get'，建议将其作为配置参数或环境变量",
+          "line_number": 26,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 30,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 35,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\url_patterns.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 8,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\examples\\vcr.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 15,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.serializers.preconf'",
+          "line_number": 16,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Using open without explicitly specifying an encoding",
+          "line_number": 90,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\cache_keys.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'url_normalize'",
+          "line_number": 30,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 183,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\patcher.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 125,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\session.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _settings of a client class",
+          "line_number": 113,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _settings of a client class",
+          "line_number": 117,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（174行），可能影响性能和可维护性",
+          "line_number": 125,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 240,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 269,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Catching too general exception Exception",
+          "line_number": 297,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 312,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] The raise statement is not inside an except clause",
+          "line_number": 318,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Method '__getstate__' is abstract in class 'CacheMixin' but is not overridden in child class 'CachedSession'",
+          "line_number": 359,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unexpected keyword argument 'url' in constructor call",
+          "line_number": 397,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unexpected keyword argument 'status_code' in constructor call",
+          "line_number": 397,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unexpected keyword argument 'reason' in constructor call",
+          "line_number": 397,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unexpected keyword argument 'request' in constructor call",
+          "line_number": 397,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\_utils.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'args'",
+          "line_number": 57,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'kwargs'",
+          "line_number": 57,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'args'",
+          "line_number": 60,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'kwargs'",
+          "line_number": 60,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'args'",
+          "line_number": 63,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'kwargs'",
+          "line_number": 63,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\base.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] Unused imports: Iterable, Iterator, List, MutableMapping, TypeVar, warn, Request",
+          "line_number": 10,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'kwargs'",
+          "line_number": 52,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "logic",
+          "message": "[llm] Potential KeyError in get_response method when accessing self.redirects[key] if key doesn't exist in redirects",
+          "line_number": 75,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] Function save_response has multiple responsibilities: saving response, handling redirects, and revalidation logic",
+          "line_number": 84,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（89行），可能影响性能和可维护性",
+          "line_number": 105,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "syntax",
+          "message": "[llm] Incomplete type annotation for 'AnyRequest' in create_key method parameter",
+          "line_number": 125,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 184,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unexpected keyword argument 'status_code' in constructor call",
+          "line_number": 223,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 266,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 273,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'kwargs'",
+          "line_number": 313,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 319,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 362,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\dynamodb.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'boto3'",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'boto3.dynamodb.types'",
+          "line_number": 11,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'boto3.resources.base'",
+          "line_number": 12,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'botocore.exceptions'",
+          "line_number": 13,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] TODO: Support pagination",
+          "line_number": 177,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\filesystem.py",
+      "defects": [
+        {
+          "type": "security",
+          "message": "[bandit] Consider possible security implications associated with PickleError module.",
+          "line_number": 11,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（110行），可能影响性能和可维护性",
+          "line_number": 160,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（87行），可能影响性能和可维护性",
+          "line_number": 277,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\gridfs.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'gridfs'",
+          "line_number": 12,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'gridfs.errors'",
+          "line_number": 13,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'pymongo'",
+          "line_number": 14,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _lock of a client class",
+          "line_number": 53,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'collection_name'",
+          "line_number": 70,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] GridFSDict.__init__ has unused parameter 'collection_name' which is documented as ignored but still present in signature",
+          "line_number": 77,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] GridFSDict.__setitem__ method catches FileExists exception but does not handle the case where the file already exists, potentially leading to data inconsistency",
+          "line_number": 108,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "performance",
+          "message": "[llm] GridFSDict.__len__ uses estimated_document_count() which may return inaccurate results for collections with heavy write operations",
+          "line_number": 118,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\mongodb.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'pymongo'",
+          "line_number": 12,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'pymongo.errors'",
+          "line_number": 13,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 116,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\redis.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'redis'",
+          "line_number": 11,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'collection_name'",
+          "line_number": 63,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\sqlite.py",
+      "defects": [
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（51行），可能影响性能和可维护性",
+          "line_number": 74,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Catching too general exception Exception",
+          "line_number": 80,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _lock of a client class",
+          "line_number": 117,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _lock of a client class",
+          "line_number": 128,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 130,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 140,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（56行），可能影响性能和可维护性",
+          "line_number": 171,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'reversed'",
+          "line_number": 178,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 252,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 324,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 332,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] The context used in function '__iter__' will not be exited.",
+          "line_number": 354,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 355,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 373,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 390,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（53行），可能影响性能和可维护性",
+          "line_number": 395,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'reversed'",
+          "line_number": 418,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] The context used in function 'sorted' will not be exited.",
+          "line_number": 438,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible SQL injection vector through string-based query construction.",
+          "line_number": 440,
+          "severity": "CRITICAL",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（60行），可能影响性能和可维护性",
+          "line_number": 449,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'timeout'",
+          "line_number": 499,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'detect_types'",
+          "line_number": 500,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'isolation_level'",
+          "line_number": 501,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'check_same_thread'",
+          "line_number": 502,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'factory'",
+          "line_number": 503,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'cached_statements'",
+          "line_number": 504,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'uri'",
+          "line_number": 505,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\backends\\__init__.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 67,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\models\\base.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'attrs'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\models\\raw_response.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'attrs'",
+          "line_number": 5,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Instance of 'CachedHTTPResponse' has no '__attrs_init__' member",
+          "line_number": 46,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _request_url of a client class",
+          "line_number": 58,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content of a client class",
+          "line_number": 71,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Number of parameters was 4 in 'HTTPResponse.read' and is now 4 in overriding 'CachedHTTPResponse.read' method",
+          "line_number": 86,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'kwargs'",
+          "line_number": 86,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Number of parameters was 3 in 'HTTPResponse.stream' and is now 3 in overriding 'CachedHTTPResponse.stream' method",
+          "line_number": 110,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _fp of a client class",
+          "line_number": 125,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _body of a client class",
+          "line_number": 144,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _fp_bytes_read of a client class",
+          "line_number": 145,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _fp of a client class",
+          "line_number": 146,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\models\\request.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'attrs'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\models\\response.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'attr'",
+          "line_number": 7,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'attrs'",
+          "line_number": 8,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] __init__ method from base class 'BaseResponse' is not called",
+          "line_number": 52,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] __init__ method from a non direct base class 'Response' is called",
+          "line_number": 53,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Instance of 'OriginalResponse' has no '__attrs_init__' member",
+          "line_number": 54,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _convert_redirects of a client class",
+          "line_number": 99,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\policy\\actions.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'attrs'",
+          "line_number": 5,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 104,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（67行），可能影响性能和可维护性",
+          "line_number": 154,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 220,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（59行），可能影响性能和可维护性",
+          "line_number": 222,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 260,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 284,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（73行），可能影响性能和可维护性",
+          "line_number": 297,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 368,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 379,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\policy\\directives.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'attrs'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\policy\\expiration.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] Function 'get_expiration_datetime' is too long and complex",
+          "line_number": 28,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] Potential division by zero risk if 'expires' equals 'utcnow()' in get_expiration_seconds",
+          "line_number": 65,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 74,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 100,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] Function '_url_match' is incomplete and contains placeholder text",
+          "line_number": 108,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\policy\\settings.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'attrs'",
+          "line_number": 3,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\serializers\\cattrs.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'cattrs'",
+          "line_number": 24,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] __init__ method from base class 'Stage' is not called",
+          "line_number": 59,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] An attribute defined in requests_cache.serializers.pipeline line 30 hides this method",
+          "line_number": 74,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] An attribute defined in requests_cache.serializers.pipeline line 31 hides this method",
+          "line_number": 83,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（54行），可能影响性能和可维护性",
+          "line_number": 83,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（76行），可能影响性能和可维护性",
+          "line_number": 138,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _evaluate of a client class",
+          "line_number": 141,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _decoded_content of a client class",
+          "line_number": 195,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _decoded_content of a client class",
+          "line_number": 200,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _decoded_content of a client class",
+          "line_number": 203,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content of a client class",
+          "line_number": 204,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _decoded_content of a client class",
+          "line_number": 204,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _decoded_content of a client class",
+          "line_number": 205,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content of a client class",
+          "line_number": 210,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'cls'",
+          "line_number": 235,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'cls'",
+          "line_number": 241,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\requests_cache\\serializers\\preconf.py",
+      "defects": [
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（159行），可能影响性能和可维护性",
+          "line_number": 19,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'itsdangerous'",
+          "line_number": 70,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'kwargs'",
+          "line_number": 79,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused import itsdangerous",
+          "line_number": 91,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\benchmark_serializers.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused import json",
+          "line_number": 24,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Consider possible security implications associated with pickle module.",
+          "line_number": 26,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused abspath imported from os.path",
+          "line_number": 28,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused dirname imported from os.path",
+          "line_number": 28,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused join imported from os.path",
+          "line_number": 28,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 导入的模块 'ujson' 和 'cattrs.preconf.json' 在代码中未使用",
+          "line_number": 28,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'ujson'",
+          "line_number": 31,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused import ujson",
+          "line_number": 31,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'cattrs.preconf.json'",
+          "line_number": 32,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'print'",
+          "line_number": 37,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "logic",
+          "message": "[llm] run_cattrs_ujson() 函数中使用了错误的参数名 'factory'，应该使用 'converter_factory'",
+          "line_number": 78,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 函数 run_serialize_deserialize 中定义了未使用的变量 'i'",
+          "line_number": 94,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[llm] 函数调用缺少参数，serializer.dumps() 和 serializer.loads() 需要传递要序列化/反序列化的对象作为参数",
+          "line_number": 95,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused variable 'deserialized'",
+          "line_number": 98,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 函数 run_serialize_deserialize 中定义了未使用的变量 'deserialized'",
+          "line_number": 98,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\conftest.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_mock'",
+          "line_number": 28,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_mock'",
+          "line_number": 29,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused travel imported from time_machine as time_travel",
+          "line_number": 36,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'pytest_httpbin'",
+          "line_number": 112,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused import pytest_httpbin",
+          "line_number": 112,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'httpbin' from outer scope (line 104)",
+          "line_number": 116,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（174行），可能影响性能和可维护性",
+          "line_number": 116,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'tempfile_session' from outer scope (line 144)",
+          "line_number": 128,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'tempfile_path' from outer scope (line 154)",
+          "line_number": 144,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'tempfile_path' from outer scope (line 154)",
+          "line_number": 160,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Catching too general exception Exception",
+          "line_number": 312,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Catching too general exception Exception",
+          "line_number": 345,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] TODO: Debug OperationalErrors with pypy",
+          "line_number": 380,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\__init__.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 检测服务暂时不可用：文件内容为空，建议手动检查代码",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.3
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\generate_test_db.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'format'",
+          "line_number": 20,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\compat\\test_requests_mock_combine_cache.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_mock'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 6,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'mock_session' from outer scope (line 12)",
+          "line_number": 29,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\compat\\test_requests_mock_disable_cache.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 6,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'requests_cache_mock' from outer scope (line 10)",
+          "line_number": 15,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 21,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Call to requests without timeout",
+          "line_number": 21,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 22,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 25,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Call to requests without timeout",
+          "line_number": 25,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 26,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\compat\\test_requests_mock_load_cache.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_mock'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 11,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'mock_session' from outer scope (line 23)",
+          "line_number": 45,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_http_adapter'",
+          "line_number": 45,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 49,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\compat\\test_responses_load_cache.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'ConnectionError'",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'responses'",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 12,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_http_adapter'",
+          "line_number": 51,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 56,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 60,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 65,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\base_cache_test.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'ConnectionError'",
+          "line_number": 16,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] self.backend_class is not callable",
+          "line_number": 56,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 202,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _fp of a client class",
+          "line_number": 273,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] TODO: The following JSON-specific tests use requests-mock instead of httpbin. To make these",
+          "line_number": 279,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'iteration'",
+          "line_number": 411,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 433,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\base_storage_test.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'attrs'",
+          "line_number": 8,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] self.storage_class is not callable",
+          "line_number": 24,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Method 'teardown_class' should have \"self\" as first argument",
+          "line_number": 29,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] cls is not callable",
+          "line_number": 31,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Statement seems to have no effect",
+          "line_number": 117,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\test_dynamodb.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'boto3'",
+          "line_number": 24,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'botocore.exceptions'",
+          "line_number": 55,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _enable_ttl of a client class",
+          "line_number": 61,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'botocore.exceptions'",
+          "line_number": 65,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _create_table of a client class",
+          "line_number": 71,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _table of a client class",
+          "line_number": 84,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\test_filesystem.py",
+      "defects": [
+        {
+          "type": "security",
+          "message": "[bandit] Possible hardcoded password: 'hunter2'",
+          "line_number": 28,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'maximum_cache_bytes' from outer scope (line 38)",
+          "line_number": 45,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'maximum_cache_bytes' from outer scope (line 38)",
+          "line_number": 55,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'maximum_cache_bytes' from outer scope (line 38)",
+          "line_number": 75,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 85,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Number of parameters was 1 in 'BaseStorageTest.teardown_class' and is now 1 in overriding 'TestFileDict.teardown_class' method",
+          "line_number": 112,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Number of parameters was 5 in 'BaseStorageTest.init_cache' and is now 4 in overriding 'TestFileDict.init_cache' method",
+          "line_number": 115,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 124,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 125,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 130,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 131,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _key2path of a client class",
+          "line_number": 136,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 136,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 150,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 151,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Signature differs from overridden 'test_all_methods' method",
+          "line_number": 161,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Signature differs from overridden 'test_all_response_formats' method",
+          "line_number": 169,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 198,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 200,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 201,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 204,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 217,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 220,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 222,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 223,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 233,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 242,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 245,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 247,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 248,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 249,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 252,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 255,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 257,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 266,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 273,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 277,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 281,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 284,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'maximum_cache_bytes' from outer scope (line 38)",
+          "line_number": 289,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 289,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 293,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'maximum_cache_bytes' from outer scope (line 38)",
+          "line_number": 297,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 297,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 305,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 310,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 312,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 313,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 317,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 320,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 323,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 327,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 344,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 345,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 348,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd2' from outer scope (line 74)",
+          "line_number": 348,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 351,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 352,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 355,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd2' from outer scope (line 74)",
+          "line_number": 355,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 359,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 360,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 365,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd2' from outer scope (line 74)",
+          "line_number": 365,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 372,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 373,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 378,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'maximum_cache_bytes' from outer scope (line 38)",
+          "line_number": 378,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 385,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 386,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 389,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'maximum_cache_bytes' from outer scope (line 38)",
+          "line_number": 389,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 394,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'broken_lfd' from outer scope (line 85)",
+          "line_number": 397,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'broken_key' from outer scope (line 96)",
+          "line_number": 397,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 400,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 401,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'broken_lfd' from outer scope (line 85)",
+          "line_number": 404,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'broken_key' from outer scope (line 96)",
+          "line_number": 404,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 406,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 407,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'broken_lfd' from outer scope (line 85)",
+          "line_number": 412,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'broken_key' from outer scope (line 96)",
+          "line_number": 412,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Statement seems to have no effect",
+          "line_number": 415,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'broken_lfd' from outer scope (line 85)",
+          "line_number": 418,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 423,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 426,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd2' from outer scope (line 74)",
+          "line_number": 426,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 430,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 432,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 435,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd2' from outer scope (line 74)",
+          "line_number": 435,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 440,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 443,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 445,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 446,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 449,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd2' from outer scope (line 74)",
+          "line_number": 449,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 452,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 453,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 456,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd2' from outer scope (line 74)",
+          "line_number": 456,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 460,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 461,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 464,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd2' from outer scope (line 74)",
+          "line_number": 464,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 469,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 470,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 473,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd2' from outer scope (line 74)",
+          "line_number": 473,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 477,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 478,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 481,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd2' from outer scope (line 74)",
+          "line_number": 481,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 486,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 487,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 490,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 492,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 493,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 510,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 511,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 541,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 544,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'block_lfd' from outer scope (line 102)",
+          "line_number": 547,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 550,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 551,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'block_lfd' from outer scope (line 102)",
+          "line_number": 554,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 557,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 559,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 560,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'block_lfd' from outer scope (line 102)",
+          "line_number": 563,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 569,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 570,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 573,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 574,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 576,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'maximum_cache_bytes' from outer scope (line 38)",
+          "line_number": 580,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'lfd' from outer scope (line 44)",
+          "line_number": 581,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 590,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 592,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 593,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\test_memory.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Number of parameters was 5 in 'BaseStorageTest.init_cache' and is now 3 in overriding 'TestMemoryDict.init_cache' method",
+          "line_number": 13,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] TODO: Remove when fixed",
+          "line_number": 26,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\test_mongodb.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tenacity'",
+          "line_number": 7,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'pymongo'",
+          "line_number": 27,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 70,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'gridfs'",
+          "line_number": 131,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'gridfs.errors'",
+          "line_number": 132,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Statement seems to have no effect",
+          "line_number": 137,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'gridfs'",
+          "line_number": 140,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'gridfs.errors'",
+          "line_number": 141,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\test_redis.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'redis'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'redis'",
+          "line_number": 16,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible hardcoded password: 'pass'",
+          "line_number": 32,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Possible hardcoded password: 'pass'",
+          "line_number": 33,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 51,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 58,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\test_sqlite.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Number of parameters was 1 in 'BaseStorageTest.teardown_class' and is now 1 in overriding 'TestSQLiteDict.teardown_class' method",
+          "line_number": 27,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Catching too general exception Exception",
+          "line_number": 30,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _acquire_sqlite_lock of a client class",
+          "line_number": 177,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unexpected keyword argument 'expires' in constructor call",
+          "line_number": 240,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unexpected keyword argument 'status_code' in constructor call",
+          "line_number": 262,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unexpected keyword argument 'expires' in constructor call",
+          "line_number": 262,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unexpected keyword argument 'status_code' in constructor call",
+          "line_number": 291,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Catching too general exception Exception",
+          "line_number": 322,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_clear'",
+          "line_number": 327,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_clear'",
+          "line_number": 337,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unexpected keyword argument 'expires' in constructor call",
+          "line_number": 356,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unexpected keyword argument 'expires' in constructor call",
+          "line_number": 357,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unexpected keyword argument 'status_code' in constructor call",
+          "line_number": 403,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unexpected keyword argument 'expires' in constructor call",
+          "line_number": 403,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\__init__.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 检测服务暂时不可用：文件内容为空，建议手动检查代码",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.3
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\integration\\test_upgrade.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 测试函数缺少对异常情况的测试，如缓存文件损坏或版本升级失败的情况",
+          "line_number": 11,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 测试函数中缺少对不兼容情况的测试，没有验证当序列化格式不兼容时缓存项是否被正确失效",
+          "line_number": 18,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 测试中进行了两次相同的GET请求，但第一次请求的结果未被使用，可能是逻辑错误或冗余代码",
+          "line_number": 20,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 23,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\test_base_cache.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.backends'",
+          "line_number": 12,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.cache_keys'",
+          "line_number": 13,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.models'",
+          "line_number": 14,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.policy'",
+          "line_number": 15,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.session'",
+          "line_number": 16,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 17,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] No name 'conftest' in module 'tests'",
+          "line_number": 17,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_normalize_url'",
+          "line_number": 85,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Use lazy % formatting in logging functions",
+          "line_number": 133,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_normalize_url'",
+          "line_number": 337,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\test_cache_keys.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.cache_keys'",
+          "line_number": 13,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _request_url of a client class",
+          "line_number": 107,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'data'",
+          "line_number": 129,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\test_normalize.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.cache_keys'",
+          "line_number": 2,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\test_patcher.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 6,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 7,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.backends'",
+          "line_number": 8,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] No name 'conftest' in module 'tests'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Instance of 'Session' has no 'cache' member",
+          "line_number": 32,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Instance of 'Session' has no 'settings' member",
+          "line_number": 33,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Instance of 'Session' has no 'settings' member",
+          "line_number": 34,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Instance of 'Session' has no 'settings' member",
+          "line_number": 35,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Instance of 'Session' has no 'settings' member",
+          "line_number": 36,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'installed_session'",
+          "line_number": 41,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'installed_session'",
+          "line_number": 48,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'installed_session'",
+          "line_number": 63,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'installed_session'",
+          "line_number": 77,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 80,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 90,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\test_serializers.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'cattrs'",
+          "line_number": 11,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 13,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 24,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] No name 'conftest' in module 'tests'",
+          "line_number": 24,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'json_serializer' from outer scope (line 13)",
+          "line_number": 38,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.serializers.preconf'",
+          "line_number": 38,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Reimport 'json_serializer' (imported line 13)",
+          "line_number": 38,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.serializers.preconf'",
+          "line_number": 50,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining name 'safe_pickle_serializer' from outer scope (line 13)",
+          "line_number": 58,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.serializers.preconf'",
+          "line_number": 58,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Reimport 'safe_pickle_serializer' (imported line 13)",
+          "line_number": 58,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'itsdangerous'",
+          "line_number": 81,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'itsdangerous.exc'",
+          "line_number": 82,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Statement seems to have no effect",
+          "line_number": 97,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\test_session.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache'",
+          "line_number": 19,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache._utils'",
+          "line_number": 20,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.backends'",
+          "line_number": 21,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.backends.base'",
+          "line_number": 22,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.models'",
+          "line_number": 23,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.policy'",
+          "line_number": 24,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.policy.actions'",
+          "line_number": 31,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.session'",
+          "line_number": 32,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 33,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] No name 'conftest' in module 'tests'",
+          "line_number": 33,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_normalize_url'",
+          "line_number": 661,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_normalize_url'",
+          "line_number": 676,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'kwargs'",
+          "line_number": 685,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'args'",
+          "line_number": 701,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'kwargs'",
+          "line_number": 701,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Cell variable hook defined in loop",
+          "line_number": 702,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _send_and_cache of a client class",
+          "line_number": 820,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _send_and_cache of a client class",
+          "line_number": 1101,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\models\\test_base.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'attrs'",
+          "line_number": 3,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.models'",
+          "line_number": 5,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 测试用例不完整：未测试私有属性 _private_attr 是否被正确排除在 __rich_repr__ 之外",
+          "line_number": 20,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 测试用例不完整：未测试当字段值为 None 时 __rich_repr__ 的行为",
+          "line_number": 20,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 22,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 31,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "syntax",
+          "message": "[llm] 缺少右括号：repr(DemoModel() 应该为 repr(DemoModel())",
+          "line_number": 31,
+          "severity": "CRITICAL",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 32,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "syntax",
+          "message": "[llm] 缺少右括号：repr(DemoModel(str_attr='str') 应该为 repr(DemoModel(str_attr='str'))",
+          "line_number": 32,
+          "severity": "CRITICAL",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\models\\test_raw_response.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 测试覆盖不完整：缺少对CachedHTTPResponse异常情况的测试，如空body、无效headers、边界条件等",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.models'",
+          "line_number": 3,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] No name 'conftest' in module 'tests'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _fp of a client class",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _request_url of a client class",
+          "line_number": 10,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 测试不完整：test_from_response函数中缺少对response.raw._request_url属性存在性的完整测试，当前只在属性存在时断言，但未测试属性不存在时的情况",
+          "line_number": 10,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 13,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 14,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 15,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 16,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _request_url of a client class",
+          "line_number": 18,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 18,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 19,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 20,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 25,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 26,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 27,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _fp of a client class",
+          "line_number": 28,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 28,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 测试不完整：test_read__always_decode函数缺少对decode_content=False行为的正确性验证，函数名暗示应该测试解码行为但实际测试的是不解码情况",
+          "line_number": 28,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 34,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _fp of a client class",
+          "line_number": 40,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 40,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 逻辑错误：test_reset函数中在调用reset()之前文件指针已关闭，reset()可能无法正常工作，需要验证reset()在文件关闭后的行为",
+          "line_number": 42,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 46,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _fp of a client class",
+          "line_number": 47,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 47,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 50,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 58,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _fp of a client class",
+          "line_number": 59,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 59,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\models\\test_request.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.models.response'",
+          "line_number": 3,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] No name 'conftest' in module 'tests'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 12,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 13,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 14,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 15,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 16,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _cookies of a client class",
+          "line_number": 17,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 17,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\models\\test_response.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.models.response'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.policy'",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 11,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] No name 'conftest' in module 'tests'",
+          "line_number": 11,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content of a client class",
+          "line_number": 39,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content_consumed of a client class",
+          "line_number": 40,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content of a client class",
+          "line_number": 137,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content of a client class",
+          "line_number": 139,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _content of a client class",
+          "line_number": 148,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\policy\\test_actions.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.cache_keys'",
+          "line_number": 7,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.models'",
+          "line_number": 8,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.policy'",
+          "line_number": 9,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] No name 'conftest' in module 'tests'",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _validation_headers of a client class",
+          "line_number": 181,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _validation_headers of a client class",
+          "line_number": 208,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _validation_headers of a client class",
+          "line_number": 211,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Access to a protected member _validation_headers of a client class",
+          "line_number": 223,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（72行），可能影响性能和可维护性",
+          "line_number": 240,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\requests-cache-main\\tests\\unit\\policy\\test_expiration.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.policy.expiration'",
+          "line_number": 7,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'requests_cache.policy.directives'",
+          "line_number": 14,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'tests.conftest'",
+          "line_number": 15,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] No name 'conftest' in module 'tests'",
+          "line_number": 15,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused argument 'mock_session'",
+          "line_number": 75,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "CRITICAL": 10,
+    "HIGH": 158,
+    "MEDIUM": 37,
+    "LOW": 398
+  }
+}

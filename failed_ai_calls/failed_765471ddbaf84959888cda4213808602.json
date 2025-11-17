@@ -1,0 +1,7 @@
+{
+  "problem_code": "package edu.washington.cs.mut.testrunner.junit3;\n\nimport org.junit.Assert;\nimport junit.framework.TestCase;\n\npublic class InitError extends TestCase {\n\n\tpublic InitError() {\n\t    throw new RuntimeException(\"Constructor failed\");\t\n\t}\n\t\n\tpublic void test1() {\n\t\tAssert.assertTrue(true);\n\t}\n\tpublic void test2() {\n\t\tAssert.assertTrue(\"because it should be true\", false);\n\t}\n\tpublic void test3() {\n\t\tAssert.assertTrue(\"because it should be true\", false);\n\t}\n}\n",
+  "error_info": "[checkstyle] “METHOD_DEF”之前应该有一个空白行。",
+  "language": "java",
+  "last_ai_response": "```java\npackage edu.washington.cs.mut.testrunner.junit3;\n\nimport junit.framework.TestCase;\nimport junit.framework.Assert;\n\npublic class InitError extends TestCase {\n\n    public InitError() {\n        throw new RuntimeException(\"Constructor failed\");\n    }\n\n    public void test1() {\n        Assert.assertTrue(true);\n    }\n\n    public void test2() {\n        Assert.assertTrue(\"because it should be true\", false);\n    }\n\n    public void test3() {\n        Assert.assertTrue(\"because it should be true\", false);\n    }\n}\n```",
+  "timestamp": 1763355341.3055027
+}

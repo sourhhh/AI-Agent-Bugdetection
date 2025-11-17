@@ -1,0 +1,2221 @@
+{
+  "project_name": "devign",
+  "project_root": "D:\\PY\\devign",
+  "generated_at": 1763043990,
+  "reports": {
+    "python": {
+      "files": [
+        {
+          "file_path": "D:\\PY\\devign\\configs.py",
+          "defects": [
+            {
+              "type": "code_smell",
+              "message": "[pylint] Using open without explicitly specifying an encoding",
+              "line_number": 7,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Module 'torch' has no 'device' member",
+              "line_number": 10,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\main.py",
+          "defects": [
+            {
+              "type": "syntax",
+              "message": "[pylint] Unable to import 'gensim.models.word2vec'",
+              "line_number": 16,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Redefining built-in 'slice'",
+              "line_number": 52,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\__init__.py",
+          "defects": [
+            {
+              "type": "code_smell",
+              "message": "[llm] 检测服务暂时不可用：文件内容为空，建议手动检查代码",
+              "line_number": 1,
+              "severity": "LOW",
+              "tool": "llm",
+              "confidence": 0.3
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\prepare\\cpg_client_wrapper.py",
+          "defects": [
+            {
+              "type": "code_smell",
+              "message": "[llm] 未使用的导入：requests模块被导入但在代码中没有被使用",
+              "line_number": 2,
+              "severity": "LOW",
+              "tool": "llm",
+              "confidence": 0.8
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Unable to import 'cpgclient.CpgClient'",
+              "line_number": 5,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[llm] 硬编码路径：在__init__方法中硬编码了joern/graph-for-funcs.sc路径，这可能导致可移植性问题",
+              "line_number": 9,
+              "severity": "MEDIUM",
+              "tool": "llm",
+              "confidence": 0.8
+            },
+            {
+              "type": "performance",
+              "message": "[llm] 字符串拼接效率低：在__call__方法中使用字符串拼接来构建路径，应该使用os.path.join来提高可读性和跨平台兼容性",
+              "line_number": 13,
+              "severity": "LOW",
+              "tool": "llm",
+              "confidence": 0.8
+            },
+            {
+              "type": "logic",
+              "message": "[llm] 潜在无限循环：_poll_for_query_result方法中的while True循环没有退出条件，如果查询永远不会完成将导致无限循环",
+              "line_number": 21,
+              "severity": "HIGH",
+              "tool": "llm",
+              "confidence": 0.8
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+              "line_number": 24,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "security",
+              "message": "[bandit] Requests call without timeout",
+              "line_number": 24,
+              "severity": "MEDIUM",
+              "tool": "bandit",
+              "confidence": 0.95
+            },
+            {
+              "type": "syntax",
+              "message": "[llm] 缩进错误：第25行的time.sleep(.1)语句缩进不正确，应该与上面的if语句保持相同的缩进级别",
+              "line_number": 25,
+              "severity": "CRITICAL",
+              "tool": "llm",
+              "confidence": 0.8
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\data\\datamanager.py",
+          "defects": [
+            {
+              "type": "code_smell",
+              "message": "[llm] 检测服务暂时不可用：LLM服务调用失败，建议手动检查代码",
+              "line_number": 1,
+              "severity": "LOW",
+              "tool": "llm",
+              "confidence": 0.3
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Unable to import 'pandas'",
+              "line_number": 3,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Unable to import 'sklearn.model_selection'",
+              "line_number": 11,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "security",
+              "message": "[bandit] Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+              "line_number": 29,
+              "severity": "MEDIUM",
+              "tool": "bandit",
+              "confidence": 0.95
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Using open without explicitly specifying an encoding",
+              "line_number": 63,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\prepare\\cpg_generator.py",
+          "defects": [
+            {
+              "type": "security",
+              "message": "[bandit] Consider possible security implications associated with the subprocess module.",
+              "line_number": 3,
+              "severity": "LOW",
+              "tool": "bandit",
+              "confidence": 0.95
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Unused import time",
+              "line_number": 6,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Using an f-string that does not have any interpolated variables",
+              "line_number": 14,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "security",
+              "message": "[bandit] subprocess call - check for execution of untrusted input.",
+              "line_number": 31,
+              "severity": "LOW",
+              "tool": "bandit",
+              "confidence": 0.95
+            },
+            {
+              "type": "security",
+              "message": "[bandit] subprocess call - check for execution of untrusted input.",
+              "line_number": 38,
+              "severity": "LOW",
+              "tool": "bandit",
+              "confidence": 0.95
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Using open without explicitly specifying an encoding",
+              "line_number": 70,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] String statement has no effect",
+              "line_number": 89,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] String statement has no effect",
+              "line_number": 100,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\prepare\\embeddings.py",
+          "defects": [
+            {
+              "type": "syntax",
+              "message": "[pylint] Unable to import 'torch_geometric.data'",
+              "line_number": 3,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Unable to import 'gensim.models.keyedvectors'",
+              "line_number": 6,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+              "line_number": 15,
+              "severity": "LOW",
+              "tool": "bandit",
+              "confidence": 0.95
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Module 'torch' has no 'zeros' member",
+              "line_number": 18,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Module 'torch' has no 'from_numpy' member",
+              "line_number": 22,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Unused variable 'n_id'",
+              "line_number": 31,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Module 'torch' has no 'tensor' member; maybe 'Tensor'?",
+              "line_number": 76,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Raising too general exception: Exception",
+              "line_number": 85,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Unused variable 'e_id'",
+              "line_number": 87,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Module 'torch' has no 'tensor' member; maybe 'Tensor'?",
+              "line_number": 105,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\process\\loader_step.py",
+          "defects": [
+            {
+              "type": "code_smell",
+              "message": "[pylint] Attribute 'stats' defined outside __init__",
+              "line_number": 12,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\process\\model.py",
+          "defects": [
+            {
+              "type": "code_smell",
+              "message": "[llm] 检测服务暂时不可用：LLM服务调用失败，建议手动检查代码",
+              "line_number": 1,
+              "severity": "LOW",
+              "tool": "llm",
+              "confidence": 0.3
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Unable to import 'torch_geometric.nn.conv'",
+              "line_number": 5,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Module 'torch' has no 'cat' member",
+              "line_number": 48,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Module 'torch' has no 'sigmoid' member",
+              "line_number": 69,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Module 'torch' has no 'flatten' member",
+              "line_number": 69,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] self.conv is not callable",
+              "line_number": 86,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\process\\modeling.py",
+          "defects": [
+            {
+              "type": "code_smell",
+              "message": "[pylint] Using an f-string that does not have any interpolated variables",
+              "line_number": 41,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\process\\step.py",
+          "defects": [
+            {
+              "type": "code_smell",
+              "message": "[llm] 检测服务暂时不可用：LLM服务调用失败，建议手动检查代码",
+              "line_number": 1,
+              "severity": "LOW",
+              "tool": "llm",
+              "confidence": 0.3
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Module 'torch' has no 'argmax' member",
+              "line_number": 6,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Module 'torch' has no 'div' member",
+              "line_number": 7,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\process\\__init__.py",
+          "defects": [
+            {
+              "type": "code_smell",
+              "message": "[pylint] Reimport '*' (imported line 2)",
+              "line_number": 5,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\utils\\log.py",
+          "defects": [
+            {
+              "type": "code_smell",
+              "message": "[llm] 导入了logging.config但未使用",
+              "line_number": 1,
+              "severity": "LOW",
+              "tool": "llm",
+              "confidence": 0.8
+            },
+            {
+              "type": "code_smell",
+              "message": "[llm] 重复代码：log_info和log_warning函数有相同的代码结构，可以重构为通用函数",
+              "line_number": 13,
+              "severity": "MEDIUM",
+              "tool": "llm",
+              "confidence": 0.8
+            },
+            {
+              "type": "logic",
+              "message": "[llm] 每次调用日志函数都会重新设置日志级别，这可能导致性能问题和意外的日志级别覆盖",
+              "line_number": 14,
+              "severity": "MEDIUM",
+              "tool": "llm",
+              "confidence": 0.8
+            },
+            {
+              "type": "code_smell",
+              "message": "[llm] 重复代码：log_info和log_warning函数有相同的代码结构，可以重构为通用函数",
+              "line_number": 19,
+              "severity": "MEDIUM",
+              "tool": "llm",
+              "confidence": 0.8
+            },
+            {
+              "type": "logic",
+              "message": "[llm] 每次调用日志函数都会重新设置日志级别，这可能导致性能问题和意外的日志级别覆盖",
+              "line_number": 20,
+              "severity": "MEDIUM",
+              "tool": "llm",
+              "confidence": 0.8
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\utils\\functions\\digraph.py",
+          "defects": [
+            {
+              "type": "security",
+              "message": "[bandit] Consider possible security implications associated with the subprocess module.",
+              "line_number": 1,
+              "severity": "LOW",
+              "tool": "bandit",
+              "confidence": 0.95
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Using open without explicitly specifying an encoding",
+              "line_number": 5,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Unused variable 'n_id'",
+              "line_number": 9,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Unused variable 'e_id'",
+              "line_number": 12,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] String statement has no effect",
+              "line_number": 24,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] 'subprocess.run' used without explicitly defining the value for 'check'.",
+              "line_number": 27,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "security",
+              "message": "[bandit] Starting a process with a partial executable path",
+              "line_number": 27,
+              "severity": "LOW",
+              "tool": "bandit",
+              "confidence": 0.95
+            },
+            {
+              "type": "security",
+              "message": "[bandit] subprocess call - check for execution of untrusted input.",
+              "line_number": 27,
+              "severity": "LOW",
+              "tool": "bandit",
+              "confidence": 0.95
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] String statement has no effect",
+              "line_number": 42,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\utils\\functions\\parse.py",
+          "defects": [
+            {
+              "type": "performance",
+              "message": "[performance] 函数过长（62行），可能影响性能和可维护性",
+              "line_number": 55,
+              "severity": "MEDIUM",
+              "tool": "detector",
+              "confidence": 0.7
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\utils\\objects\\input_dataset.py",
+          "defects": [
+            {
+              "type": "syntax",
+              "message": "[pylint] Unable to import 'torch_geometric.data'",
+              "line_number": 2,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\utils\\objects\\metrics.py",
+          "defects": [
+            {
+              "type": "syntax",
+              "message": "[pylint] Unable to import 'pandas'",
+              "line_number": 1,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Unable to import 'sklearn.metrics'",
+              "line_number": 4,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Unable to import 'sklearn'",
+              "line_number": 5,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Using an f-string that does not have any interpolated variables",
+              "line_number": 23,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\utils\\objects\\stats.py",
+          "defects": [
+            {
+              "type": "code_smell",
+              "message": "[llm] 检测服务暂时不可用：LLM服务调用失败，建议手动检查代码",
+              "line_number": 1,
+              "severity": "LOW",
+              "tool": "llm",
+              "confidence": 0.3
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\utils\\objects\\cpg\\edge.py",
+          "defects": [
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+              "line_number": 2,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 3,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 4,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 5,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 6,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 7,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+              "line_number": 9,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 10,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 11,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\utils\\objects\\cpg\\node.py",
+          "defects": [
+            {
+              "type": "code_smell",
+              "message": "[pylint] Unused variable 'e_id'",
+              "line_number": 49,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\PY\\devign\\src\\utils\\objects\\cpg\\properties.py",
+          "defects": [
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+              "line_number": 2,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 3,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 4,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 5,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+              "line_number": 7,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 8,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 9,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "performance",
+              "message": "[llm] __str__方法中使用字符串拼接在循环中，对于大量属性性能较差",
+              "line_number": 9,
+              "severity": "LOW",
+              "tool": "llm",
+              "confidence": 0.8
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 11,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 3 spaces, expected 12",
+              "line_number": 12,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 14,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[llm] code方法中的条件逻辑可以简化，存在多层嵌套if语句",
+              "line_number": 15,
+              "severity": "LOW",
+              "tool": "llm",
+              "confidence": 0.8
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+              "line_number": 16,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 17,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 3 spaces, expected 12",
+              "line_number": 18,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 3 spaces, expected 12",
+              "line_number": 19,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 4 spaces, expected 16",
+              "line_number": 20,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 3 spaces, expected 12",
+              "line_number": 21,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 22,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+              "line_number": 24,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 25,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "logic",
+              "message": "[llm] 在line_number方法中，如果LINE_NUMBER存在但值为0，会返回0而不是None，这可能与预期行为不符",
+              "line_number": 26,
+              "severity": "MEDIUM",
+              "tool": "llm",
+              "confidence": 0.8
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+              "line_number": 27,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 28,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+              "line_number": 30,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "logic",
+              "message": "[llm] 在column_number方法中，如果COLUMN_NUMBER存在但值为0，会返回0而不是None，这可能与预期行为不符",
+              "line_number": 30,
+              "severity": "MEDIUM",
+              "tool": "llm",
+              "confidence": 0.8
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 31,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+              "line_number": 33,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 34,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+              "line_number": 36,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[llm] 类中方法定义顺序不一致，存在不一致的缩进格式",
+              "line_number": 36,
+              "severity": "LOW",
+              "tool": "llm",
+              "confidence": 0.8
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 37,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+              "line_number": 39,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 40,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+              "line_number": 42,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 43,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+              "line_number": 45,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 46,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+              "line_number": 48,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 49,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 50,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 3 spaces, expected 12",
+              "line_number": 51,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 52,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 3 spaces, expected 12",
+              "line_number": 53,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+              "line_number": 54,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "CRITICAL": 1,
+        "HIGH": 23,
+        "MEDIUM": 10,
+        "LOW": 90
+      }
+    },
+    "java": null,
+    "qt": null
+  },
+  "files": [
+    {
+      "file_path": "D:\\PY\\devign\\configs.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Using open without explicitly specifying an encoding",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Module 'torch' has no 'device' member",
+          "line_number": 10,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\main.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'gensim.models.word2vec'",
+          "line_number": 16,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Redefining built-in 'slice'",
+          "line_number": 52,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\__init__.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 检测服务暂时不可用：文件内容为空，建议手动检查代码",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.3
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\prepare\\cpg_client_wrapper.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 未使用的导入：requests模块被导入但在代码中没有被使用",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'cpgclient.CpgClient'",
+          "line_number": 5,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 硬编码路径：在__init__方法中硬编码了joern/graph-for-funcs.sc路径，这可能导致可移植性问题",
+          "line_number": 9,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "performance",
+          "message": "[llm] 字符串拼接效率低：在__call__方法中使用字符串拼接来构建路径，应该使用os.path.join来提高可读性和跨平台兼容性",
+          "line_number": 13,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 潜在无限循环：_poll_for_query_result方法中的while True循环没有退出条件，如果查询永远不会完成将导致无限循环",
+          "line_number": 21,
+          "severity": "HIGH",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely",
+          "line_number": 24,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Requests call without timeout",
+          "line_number": 24,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "syntax",
+          "message": "[llm] 缩进错误：第25行的time.sleep(.1)语句缩进不正确，应该与上面的if语句保持相同的缩进级别",
+          "line_number": 25,
+          "severity": "CRITICAL",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\data\\datamanager.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 检测服务暂时不可用：LLM服务调用失败，建议手动检查代码",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.3
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'pandas'",
+          "line_number": 3,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'sklearn.model_selection'",
+          "line_number": 11,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+          "line_number": 29,
+          "severity": "MEDIUM",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Using open without explicitly specifying an encoding",
+          "line_number": 63,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\prepare\\cpg_generator.py",
+      "defects": [
+        {
+          "type": "security",
+          "message": "[bandit] Consider possible security implications associated with the subprocess module.",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused import time",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Using an f-string that does not have any interpolated variables",
+          "line_number": 14,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] subprocess call - check for execution of untrusted input.",
+          "line_number": 31,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] subprocess call - check for execution of untrusted input.",
+          "line_number": 38,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Using open without explicitly specifying an encoding",
+          "line_number": 70,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] String statement has no effect",
+          "line_number": 89,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] String statement has no effect",
+          "line_number": 100,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\prepare\\embeddings.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'torch_geometric.data'",
+          "line_number": 3,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'gensim.models.keyedvectors'",
+          "line_number": 6,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[bandit] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+          "line_number": 15,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Module 'torch' has no 'zeros' member",
+          "line_number": 18,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Module 'torch' has no 'from_numpy' member",
+          "line_number": 22,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused variable 'n_id'",
+          "line_number": 31,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Module 'torch' has no 'tensor' member; maybe 'Tensor'?",
+          "line_number": 76,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Raising too general exception: Exception",
+          "line_number": 85,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused variable 'e_id'",
+          "line_number": 87,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Module 'torch' has no 'tensor' member; maybe 'Tensor'?",
+          "line_number": 105,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\process\\loader_step.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Attribute 'stats' defined outside __init__",
+          "line_number": 12,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\process\\model.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 检测服务暂时不可用：LLM服务调用失败，建议手动检查代码",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.3
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'torch_geometric.nn.conv'",
+          "line_number": 5,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Module 'torch' has no 'cat' member",
+          "line_number": 48,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Module 'torch' has no 'sigmoid' member",
+          "line_number": 69,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Module 'torch' has no 'flatten' member",
+          "line_number": 69,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] self.conv is not callable",
+          "line_number": 86,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\process\\modeling.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Using an f-string that does not have any interpolated variables",
+          "line_number": 41,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\process\\step.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 检测服务暂时不可用：LLM服务调用失败，建议手动检查代码",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.3
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Module 'torch' has no 'argmax' member",
+          "line_number": 6,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Module 'torch' has no 'div' member",
+          "line_number": 7,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\process\\__init__.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Reimport '*' (imported line 2)",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\log.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 导入了logging.config但未使用",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 重复代码：log_info和log_warning函数有相同的代码结构，可以重构为通用函数",
+          "line_number": 13,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 每次调用日志函数都会重新设置日志级别，这可能导致性能问题和意外的日志级别覆盖",
+          "line_number": 14,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 重复代码：log_info和log_warning函数有相同的代码结构，可以重构为通用函数",
+          "line_number": 19,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 每次调用日志函数都会重新设置日志级别，这可能导致性能问题和意外的日志级别覆盖",
+          "line_number": 20,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\functions\\digraph.py",
+      "defects": [
+        {
+          "type": "security",
+          "message": "[bandit] Consider possible security implications associated with the subprocess module.",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Using open without explicitly specifying an encoding",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused variable 'n_id'",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused variable 'e_id'",
+          "line_number": 12,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] String statement has no effect",
+          "line_number": 24,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] 'subprocess.run' used without explicitly defining the value for 'check'.",
+          "line_number": 27,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "security",
+          "message": "[bandit] Starting a process with a partial executable path",
+          "line_number": 27,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "security",
+          "message": "[bandit] subprocess call - check for execution of untrusted input.",
+          "line_number": 27,
+          "severity": "LOW",
+          "tool": "bandit",
+          "confidence": 0.95
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] String statement has no effect",
+          "line_number": 42,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\functions\\parse.py",
+      "defects": [
+        {
+          "type": "performance",
+          "message": "[performance] 函数过长（62行），可能影响性能和可维护性",
+          "line_number": 55,
+          "severity": "MEDIUM",
+          "tool": "detector",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\objects\\input_dataset.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'torch_geometric.data'",
+          "line_number": 2,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\objects\\metrics.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'pandas'",
+          "line_number": 1,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'sklearn.metrics'",
+          "line_number": 4,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'sklearn'",
+          "line_number": 5,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Using an f-string that does not have any interpolated variables",
+          "line_number": 23,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\objects\\stats.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[llm] 检测服务暂时不可用：LLM服务调用失败，建议手动检查代码",
+          "line_number": 1,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.3
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\objects\\cpg\\edge.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 6,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 10,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 11,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\objects\\cpg\\node.py",
+      "defects": [
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused variable 'e_id'",
+          "line_number": 49,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\objects\\cpg\\properties.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+          "line_number": 2,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 3,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 4,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 5,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+          "line_number": 7,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 8,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "performance",
+          "message": "[llm] __str__方法中使用字符串拼接在循环中，对于大量属性性能较差",
+          "line_number": 9,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 11,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 3 spaces, expected 12",
+          "line_number": 12,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 14,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] code方法中的条件逻辑可以简化，存在多层嵌套if语句",
+          "line_number": 15,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+          "line_number": 16,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 17,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 3 spaces, expected 12",
+          "line_number": 18,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 3 spaces, expected 12",
+          "line_number": 19,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 4 spaces, expected 16",
+          "line_number": 20,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 3 spaces, expected 12",
+          "line_number": 21,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 22,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+          "line_number": 24,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 25,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 在line_number方法中，如果LINE_NUMBER存在但值为0，会返回0而不是None，这可能与预期行为不符",
+          "line_number": 26,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+          "line_number": 27,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 28,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+          "line_number": 30,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "logic",
+          "message": "[llm] 在column_number方法中，如果COLUMN_NUMBER存在但值为0，会返回0而不是None，这可能与预期行为不符",
+          "line_number": 30,
+          "severity": "MEDIUM",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 31,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+          "line_number": 33,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 34,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+          "line_number": 36,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[llm] 类中方法定义顺序不一致，存在不一致的缩进格式",
+          "line_number": 36,
+          "severity": "LOW",
+          "tool": "llm",
+          "confidence": 0.8
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 37,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+          "line_number": 39,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 40,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+          "line_number": 42,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 43,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+          "line_number": 45,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 46,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 1 spaces, expected 4",
+          "line_number": 48,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 49,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 50,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 3 spaces, expected 12",
+          "line_number": 51,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 52,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 3 spaces, expected 12",
+          "line_number": 53,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Bad indentation. Found 2 spaces, expected 8",
+          "line_number": 54,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "CRITICAL": 1,
+    "HIGH": 23,
+    "MEDIUM": 10,
+    "LOW": 90
+  }
+}

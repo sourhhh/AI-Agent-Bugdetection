@@ -1,0 +1,7 @@
+{
+  "problem_code": "package foo.bar;\n\nimport non.existing.classtoimport;\nimport org.junit.Test;\n\npublic class InvalidImport {\n\n  @Test\n  public void dummy() {\n    // empty\n  }\n}\n",
+  "error_info": "[llm] 导入的类 'non.existing.classtoimport' 不存在，会导致编译错误",
+  "language": "java",
+  "last_ai_response": "```java\npackage foo.bar;\n\npublic class InvalidImport {\n\n  public void dummy() {\n    // empty\n  }\n}\n```",
+  "timestamp": 1763354918.3946502
+}

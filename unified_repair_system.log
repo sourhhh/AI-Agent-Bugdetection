@@ -1,0 +1,698 @@
+2025-11-03 14:28:50,218 - __main__ - ERROR - 缺陷报告文件不存在: requests_cache_defect_report
+2025-11-03 14:28:50,218 - __main__ - INFO - 请确保缺陷检测Agent已运行并生成了缺陷报告
+2025-11-03 14:35:27,457 - __main__ - ERROR - 缺陷报告文件不存在: ./defect_report
+2025-11-03 14:35:27,458 - __main__ - INFO - 请确保缺陷检测Agent已运行并生成了缺陷报告
+2025-11-03 15:59:11,566 - __main__ - INFO - 统一代码修复系统配置:
+2025-11-03 15:59:11,566 - __main__ - INFO -   - 项目路径: ./target_project
+2025-11-03 15:59:11,566 - __main__ - INFO -   - 缺陷报告: defect_report.json
+2025-11-03 15:59:11,566 - __main__ - INFO -   - 目标语言: auto
+2025-11-03 15:59:11,567 - __main__ - INFO -   - 最小严重程度: MEDIUM
+2025-11-03 15:59:11,567 - __main__ - INFO -   - 最大任务数: 30
+2025-11-03 15:59:11,567 - __main__ - INFO -   - 并行线程数: 2
+2025-11-03 15:59:11,567 - agents.decision_manager - INFO - 初始化DecisionManagerAgent...
+2025-11-03 15:59:11,567 - __main__ - INFO - 统一代码修复系统初始化完成，最大工作线程: 2
+2025-11-03 15:59:11,567 - __main__ - INFO - 🚀 开始统一代码修复系统工作流程
+2025-11-03 15:59:11,567 - __main__ - INFO - 项目路径: ./target_project
+2025-11-03 15:59:11,567 - __main__ - INFO - 缺陷报告: defect_report.json
+2025-11-03 15:59:11,567 - __main__ - INFO - 目标语言: auto
+2025-11-03 15:59:11,567 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-03 15:59:11,567 - __main__ - INFO - 最大任务数: 30
+2025-11-03 15:59:11,567 - agents.code_fixer - INFO - 已清空修复结果
+2025-11-03 15:59:11,567 - __main__ - INFO - 检测项目语言: ./target_project
+2025-11-03 15:59:11,568 - __main__ - INFO - 项目语言检测结果: python
+2025-11-03 15:59:11,568 - __main__ - INFO - Python文件: 5, C++文件: 0, 其他文件: 1
+2025-11-03 15:59:11,568 - __main__ - INFO - 自动检测到项目语言: python
+2025-11-03 15:59:11,568 - __main__ - INFO - 加载缺陷报告: defect_report.json
+2025-11-03 15:59:11,568 - __main__ - INFO - 缺陷报告加载完成: 0个文件
+2025-11-03 15:59:11,568 - __main__ - INFO - 缺陷过滤统计: 原始缺陷 0 -> 过滤后 0
+2025-11-03 15:59:11,568 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-03 15:59:11,568 - __main__ - INFO - 🎉 没有需要修复的缺陷，工作完成！
+2025-11-03 19:43:00,625 - __main__ - INFO - 统一代码修复系统配置:
+2025-11-03 19:43:00,626 - __main__ - INFO -   - 项目路径: ./target_project
+2025-11-03 19:43:00,626 - __main__ - INFO -   - 缺陷报告: defect_report.json
+2025-11-03 19:43:00,626 - __main__ - INFO -   - 目标语言: auto
+2025-11-03 19:43:00,626 - __main__ - INFO -   - 最小严重程度: MEDIUM
+2025-11-03 19:43:00,626 - __main__ - INFO -   - 最大任务数: 30
+2025-11-03 19:43:00,626 - __main__ - INFO -   - 并行线程数: 2
+2025-11-03 19:43:00,626 - agents.decision_manager - INFO - 初始化DecisionManagerAgent...
+2025-11-03 19:43:00,626 - __main__ - INFO - 统一代码修复系统初始化完成，最大工作线程: 2
+2025-11-03 19:43:00,626 - __main__ - INFO - 🚀 开始统一代码修复系统工作流程
+2025-11-03 19:43:00,626 - __main__ - INFO - 项目路径: ./target_project
+2025-11-03 19:43:00,626 - __main__ - INFO - 缺陷报告: defect_report.json
+2025-11-03 19:43:00,626 - __main__ - INFO - 目标语言: auto
+2025-11-03 19:43:00,626 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-03 19:43:00,626 - __main__ - INFO - 最大任务数: 30
+2025-11-03 19:43:00,626 - agents.code_fixer - INFO - 已清空修复结果
+2025-11-03 19:43:00,626 - __main__ - INFO - 检测项目语言: ./target_project
+2025-11-03 19:43:00,626 - __main__ - INFO - 项目语言检测结果: python
+2025-11-03 19:43:00,626 - __main__ - INFO - Python文件: 5, C++文件: 0, 其他文件: 1
+2025-11-03 19:43:00,626 - __main__ - INFO - 自动检测到项目语言: python
+2025-11-03 19:43:00,626 - __main__ - INFO - 加载缺陷报告: defect_report.json
+2025-11-03 19:43:00,626 - __main__ - INFO - 缺陷报告加载完成: 0个文件
+2025-11-03 19:43:00,626 - __main__ - INFO - 缺陷过滤统计: 原始缺陷 0 -> 过滤后 0
+2025-11-03 19:43:00,626 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-03 19:43:00,626 - __main__ - INFO - 🎉 没有需要修复的缺陷，工作完成！
+2025-11-03 19:47:09,863 - __main__ - INFO - 统一代码修复系统配置:
+2025-11-03 19:47:09,863 - __main__ - INFO -   - 项目路径: ./target_project
+2025-11-03 19:47:09,863 - __main__ - INFO -   - 缺陷报告: defect_report.json
+2025-11-03 19:47:09,863 - __main__ - INFO -   - 目标语言: auto
+2025-11-03 19:47:09,864 - __main__ - INFO -   - 最小严重程度: MEDIUM
+2025-11-03 19:47:09,864 - __main__ - INFO -   - 最大任务数: 30
+2025-11-03 19:47:09,864 - __main__ - INFO -   - 并行线程数: 2
+2025-11-03 19:47:09,864 - agents.decision_manager - INFO - 初始化DecisionManagerAgent...
+2025-11-03 19:47:09,864 - __main__ - INFO - 统一代码修复系统初始化完成，最大工作线程: 2
+2025-11-03 19:47:09,864 - __main__ - INFO - 🚀 开始统一代码修复系统工作流程
+2025-11-03 19:47:09,864 - __main__ - INFO - 项目路径: ./target_project
+2025-11-03 19:47:09,864 - __main__ - INFO - 缺陷报告: defect_report.json
+2025-11-03 19:47:09,864 - __main__ - INFO - 目标语言: auto
+2025-11-03 19:47:09,864 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-03 19:47:09,864 - __main__ - INFO - 最大任务数: 30
+2025-11-03 19:47:09,864 - agents.code_fixer - INFO - 已清空修复结果
+2025-11-03 19:47:09,864 - __main__ - INFO - 检测项目语言: ./target_project
+2025-11-03 19:47:09,864 - __main__ - INFO - 项目语言检测结果: python
+2025-11-03 19:47:09,864 - __main__ - INFO - Python文件: 5, C++文件: 0, 其他文件: 1
+2025-11-03 19:47:09,864 - __main__ - INFO - 自动检测到项目语言: python
+2025-11-03 19:47:09,864 - __main__ - INFO - 加载缺陷报告: defect_report.json
+2025-11-03 19:47:09,864 - __main__ - INFO - 缺陷报告加载完成: 0个文件
+2025-11-03 19:47:09,864 - __main__ - INFO - 缺陷过滤统计: 原始缺陷 0 -> 过滤后 0
+2025-11-03 19:47:09,864 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-03 19:47:09,864 - __main__ - INFO - 🎉 没有需要修复的缺陷，工作完成！
+2025-11-05 13:31:11,374 - __main__ - INFO - 统一代码修复系统配置:
+2025-11-05 13:31:11,376 - __main__ - INFO -   - 项目路径: ./target_project
+2025-11-05 13:31:11,376 - __main__ - INFO -   - 缺陷报告: defect_report.json
+2025-11-05 13:31:11,376 - __main__ - INFO -   - 目标语言: auto
+2025-11-05 13:31:11,376 - __main__ - INFO -   - 最小严重程度: MEDIUM
+2025-11-05 13:31:11,376 - __main__ - INFO -   - 最大任务数: 30
+2025-11-05 13:31:11,376 - __main__ - INFO -   - 并行线程数: 2
+2025-11-05 13:31:11,376 - agents.decision_manager - INFO - 初始化DecisionManagerAgent...
+2025-11-05 13:31:11,376 - __main__ - INFO - 统一代码修复系统初始化完成，最大工作线程: 2
+2025-11-05 13:31:11,376 - __main__ - INFO - 🚀 开始统一代码修复系统工作流程
+2025-11-05 13:31:11,376 - __main__ - INFO - 项目路径: ./target_project
+2025-11-05 13:31:11,376 - __main__ - INFO - 缺陷报告: defect_report.json
+2025-11-05 13:31:11,376 - __main__ - INFO - 目标语言: auto
+2025-11-05 13:31:11,376 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-05 13:31:11,376 - __main__ - INFO - 最大任务数: 30
+2025-11-05 13:31:11,376 - agents.code_fixer - INFO - 已清空修复结果
+2025-11-05 13:31:11,376 - __main__ - INFO - 检测项目语言: ./target_project
+2025-11-05 13:31:11,378 - __main__ - INFO - 项目语言检测结果: python
+2025-11-05 13:31:11,378 - __main__ - INFO - Python文件: 5, C++文件: 0, 其他文件: 1
+2025-11-05 13:31:11,378 - __main__ - INFO - 自动检测到项目语言: python
+2025-11-05 13:31:11,378 - __main__ - INFO - 加载缺陷报告: defect_report.json
+2025-11-05 13:31:11,388 - __main__ - INFO - 缺陷报告加载完成: 0个文件
+2025-11-05 13:31:11,388 - __main__ - INFO - 缺陷过滤统计: 原始缺陷 0 -> 过滤后 0
+2025-11-05 13:31:11,388 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-05 13:31:11,388 - __main__ - INFO - 🎉 没有需要修复的缺陷，工作完成！
+2025-11-05 16:27:19,378 - __main__ - INFO - 统一代码修复系统配置:
+2025-11-05 16:27:19,378 - __main__ - INFO -   - 项目路径: D:\\QtWork
+2025-11-05 16:27:19,378 - __main__ - INFO -   - 缺陷报告: D:\pycharm\homework\backend\output\qt_project_defect_report.json
+2025-11-05 16:27:19,378 - __main__ - INFO -   - 目标语言: cpp
+2025-11-05 16:27:19,378 - __main__ - INFO -   - 最小严重程度: MEDIUM
+2025-11-05 16:27:19,378 - __main__ - INFO -   - 最大任务数: 20
+2025-11-05 16:27:19,378 - __main__ - INFO -   - 并行线程数: 1
+2025-11-05 16:27:19,378 - agents.decision_manager - INFO - 初始化DecisionManagerAgent...
+2025-11-05 16:27:19,378 - __main__ - INFO - 统一代码修复系统初始化完成，最大工作线程: 1
+2025-11-05 16:27:19,378 - __main__ - INFO - 🚀 开始统一代码修复系统工作流程
+2025-11-05 16:27:19,379 - __main__ - INFO - 项目路径: D:\\QtWork
+2025-11-05 16:27:19,379 - __main__ - INFO - 缺陷报告: D:\pycharm\homework\backend\output\qt_project_defect_report.json
+2025-11-05 16:27:19,379 - __main__ - INFO - 目标语言: cpp
+2025-11-05 16:27:19,379 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-05 16:27:19,379 - __main__ - INFO - 最大任务数: 20
+2025-11-05 16:27:19,379 - agents.code_fixer - INFO - 已清空修复结果
+2025-11-05 16:27:19,379 - __main__ - INFO - 加载缺陷报告: D:\pycharm\homework\backend\output\qt_project_defect_report.json
+2025-11-05 16:27:19,380 - __main__ - INFO - 缺陷报告加载完成: 11个文件
+2025-11-05 16:27:19,381 - __main__ - INFO - 缺陷过滤统计: 原始缺陷 164 -> 过滤后 17
+2025-11-05 16:27:19,381 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-05 16:27:19,381 - __main__ - INFO - 开始生成修复计划... (语言: cpp)
+2025-11-05 16:27:19,382 - agents.decision_manager - INFO - 开始分析缺陷报告...
+2025-11-05 16:27:19,382 - agents.decision_manager - INFO - 解析成功，共发现 11 个文件有缺陷
+2025-11-05 16:27:19,382 - agents.decision_manager - INFO - 共收集到 17 个缺陷，开始批量处理...
+2025-11-05 16:27:33,725 - agents.decision_manager - INFO - 修复任务排序完成，最高优先级: HIGH
+2025-11-05 16:27:33,726 - agents.decision_manager - INFO - 分析完成，生成 17 个修复任务
+2025-11-05 16:27:33,726 - __main__ - INFO - 修复计划生成完成: 17个修复任务 (耗时: 14.34s)
+2025-11-05 16:27:33,726 - __main__ - INFO - 修复策略分布:
+2025-11-05 16:27:33,726 - __main__ - INFO -   fix_cpp_memory_leak: 7个任务
+2025-11-05 16:27:33,726 - __main__ - INFO -   ai_automatic_fix: 4个任务
+2025-11-05 16:27:33,726 - __main__ - INFO -   fix_cpp_code_smell: 4个任务
+2025-11-05 16:27:33,726 - __main__ - INFO -   fix_cpp_performance: 2个任务
+2025-11-05 16:27:33,726 - __main__ - INFO - 将处理 17 个修复任务
+2025-11-05 16:27:33,726 - __main__ - INFO - 开始执行修复任务 (线程数: 1)...
+2025-11-05 16:27:33,727 - agents.code_fixer - INFO - 已清空修复结果
+2025-11-05 16:27:33,778 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\chatPart\main.cpp
+2025-11-05 16:27:33,778 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\chatPart\main.cpp, 行号=91, 策略=fix_cpp_memory_leak, 语言=cpp, 缺陷类型=memory
+2025-11-05 16:27:33,779 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: cpp, 变更数量: 1
+2025-11-05 16:27:33,781 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\chatPart\main.cpp
+2025-11-05 16:27:33,782 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\chatPart\main.cpp, 行号=92, 策略=fix_cpp_memory_leak, 语言=cpp, 缺陷类型=memory
+2025-11-05 16:27:33,782 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: cpp, 变更数量: 1
+2025-11-05 16:27:33,783 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\chatPart\server.cpp
+2025-11-05 16:27:33,783 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\chatPart\server.cpp, 行号=24, 策略=fix_cpp_memory_leak, 语言=cpp, 缺陷类型=memory
+2025-11-05 16:27:33,783 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: cpp, 变更数量: 1
+2025-11-05 16:27:33,785 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\doctor1\GlobalUserInformation.cpp
+2025-11-05 16:27:33,785 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\doctor1\GlobalUserInformation.cpp, 行号=9, 策略=fix_cpp_memory_leak, 语言=cpp, 缺陷类型=memory
+2025-11-05 16:27:33,785 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: cpp, 变更数量: 1
+2025-11-05 16:27:33,787 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\doctor1\networkmanager.cpp
+2025-11-05 16:27:33,787 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\doctor1\networkmanager.cpp, 行号=10, 策略=fix_cpp_memory_leak, 语言=cpp, 缺陷类型=memory
+2025-11-05 16:27:33,787 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: cpp, 变更数量: 1
+2025-11-05 16:27:33,790 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\doctor1\networkmanager.cpp
+2025-11-05 16:27:33,790 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\doctor1\networkmanager.cpp, 行号=85, 策略=ai_automatic_fix, 语言=cpp, 缺陷类型=logic
+2025-11-05 16:27:33,790 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [llm] JSON解析逻辑存在缺陷，当多个JSON对象连续传输时，解析算法可能无法正确处理嵌套的JSON结构, 语言: cpp
+2025-11-05 16:27:33,790 - utils.ai_fixer - INFO - 开始AI修复，问题: [llm] JSON解析逻辑存在缺陷，当多个JSON对象连续传输时，解析算法可能无法正确处理嵌套的JSON结构...，语言: cpp
+2025-11-05 16:27:33,790 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: cpp
+2025-11-05 16:28:04,341 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-11-05 16:28:07,343 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 语言: cpp
+2025-11-05 16:28:37,989 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-11-05 16:28:37,989 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-05 16:28:37,989 - agents.code_fixer - WARNING - AI修复失败: 所有重试尝试均失败
+2025-11-05 16:28:37,989 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: cpp, 变更数量: 1
+2025-11-05 16:28:37,990 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\doctor1\networkmanager.cpp
+2025-11-05 16:28:37,990 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\doctor1\networkmanager.cpp, 行号=95, 策略=ai_automatic_fix, 语言=cpp, 缺陷类型=logic
+2025-11-05 16:28:37,990 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [llm] 在onReadyRead方法中，当没有找到JSON对象开始标记时，直接清空整个缓冲区，可能导致数据丢失。应该保留缓冲区内容等待更多数据, 语言: cpp
+2025-11-05 16:28:37,990 - utils.ai_fixer - INFO - 开始AI修复，问题: [llm] 在onReadyRead方法中，当没有找到JSON对象开始标记时，直接清空整个缓冲区，可能导致数据丢失。应该保留缓冲区内容等待更多数据...，语言: cpp
+2025-11-05 16:28:37,990 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: cpp
+2025-11-05 16:29:08,593 - utils.ai_fixer - WARNING - 连接错误 (尝试 1)
+2025-11-05 16:29:11,594 - utils.ai_fixer - INFO - AI修复尝试 2/2 - 语言: cpp
+2025-11-05 16:29:42,320 - utils.ai_fixer - WARNING - 连接错误 (尝试 2)
+2025-11-05 16:29:42,321 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-05 16:29:42,321 - agents.code_fixer - WARNING - AI修复失败: 所有重试尝试均失败
+2025-11-05 16:29:42,321 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: cpp, 变更数量: 1
+2025-11-05 16:29:42,330 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\Patient\globaluserinformation.cpp
+2025-11-05 16:29:42,330 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\Patient\globaluserinformation.cpp, 行号=8, 策略=fix_cpp_memory_leak, 语言=cpp, 缺陷类型=memory
+2025-11-05 16:29:42,330 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: cpp, 变更数量: 1
+2025-11-05 16:29:42,332 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\Patient\networkmanager.cpp
+2025-11-05 16:29:42,332 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\Patient\networkmanager.cpp, 行号=10, 策略=fix_cpp_memory_leak, 语言=cpp, 缺陷类型=memory
+2025-11-05 16:29:42,333 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: cpp, 变更数量: 1
+2025-11-05 16:29:42,335 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\chatPart\chatwindow.cpp
+2025-11-05 16:29:42,337 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\chatPart\chatwindow.cpp, 行号=282, 策略=fix_cpp_code_smell, 语言=cpp, 缺陷类型=code_smell
+2025-11-05 16:29:42,338 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: cpp, 变更数量: 1
+2025-11-05 16:29:42,369 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\DataBase_00\tcpserver.cpp
+2025-11-05 16:29:42,369 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\DataBase_00\tcpserver.cpp, 行号=119, 策略=fix_cpp_code_smell, 语言=cpp, 缺陷类型=code_smell
+2025-11-05 16:29:42,369 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: cpp, 变更数量: 1
+2025-11-05 16:29:42,373 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\DataBase_00\tcpserver.cpp
+2025-11-05 16:29:42,374 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\DataBase_00\tcpserver.cpp, 行号=283, 策略=fix_cpp_code_smell, 语言=cpp, 缺陷类型=code_smell
+2025-11-05 16:29:42,374 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: cpp, 变更数量: 1
+2025-11-05 16:29:42,378 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\DataBase_00\widget.cpp
+2025-11-05 16:29:42,378 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\DataBase_00\widget.cpp, 行号=32, 策略=ai_automatic_fix, 语言=cpp, 缺陷类型=logic
+2025-11-05 16:29:42,378 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [llm] 重复的条件判断：medicalHistoryButton 被检查了三次，这可能是复制粘贴错误, 语言: cpp
+2025-11-05 16:29:42,378 - utils.ai_fixer - INFO - 开始AI修复，问题: [llm] 重复的条件判断：medicalHistoryButton 被检查了三次，这可能是复制粘贴错误...，语言: cpp
+2025-11-05 16:29:42,378 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: cpp
+2025-11-05 16:29:55,132 - utils.ai_fixer - INFO - AI修复成功
+2025-11-05 16:29:55,132 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1148
+2025-11-05 16:29:55,134 - agents.code_fixer - INFO - AI修复成功: C++修复质量良好
+2025-11-05 16:29:55,134 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: cpp, 变更数量: 1
+2025-11-05 16:29:55,136 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\DataBase_00\widget.cpp
+2025-11-05 16:29:55,136 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\DataBase_00\widget.cpp, 行号=38, 策略=ai_automatic_fix, 语言=cpp, 缺陷类型=logic
+2025-11-05 16:29:55,137 - agents.code_fixer - INFO - 使用AI自动修复策略处理缺陷: [llm] 重复的条件判断：medicalHistoryButton 被检查了三次，这可能是复制粘贴错误, 语言: cpp
+2025-11-05 16:29:55,137 - utils.ai_fixer - INFO - 开始AI修复，问题: [llm] 重复的条件判断：medicalHistoryButton 被检查了三次，这可能是复制粘贴错误...，语言: cpp
+2025-11-05 16:29:55,137 - utils.ai_fixer - INFO - AI修复尝试 1/2 - 语言: cpp
+2025-11-05 16:30:08,083 - utils.ai_fixer - INFO - AI修复成功
+2025-11-05 16:30:08,083 - utils.ai_fixer - INFO - AI修复成功，返回代码长度: 1148
+2025-11-05 16:30:08,086 - agents.code_fixer - INFO - AI修复成功: C++修复质量良好
+2025-11-05 16:30:08,086 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: cpp, 变更数量: 1
+2025-11-05 16:30:08,090 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\Patient\bookwindow.cpp
+2025-11-05 16:30:08,090 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\Patient\bookwindow.cpp, 行号=376, 策略=fix_cpp_performance, 语言=cpp, 缺陷类型=performance
+2025-11-05 16:30:08,091 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: cpp, 变更数量: 0
+2025-11-05 16:30:08,093 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\Patient\bookwindow.cpp
+2025-11-05 16:30:08,093 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\Patient\bookwindow.cpp, 行号=395, 策略=fix_cpp_performance, 语言=cpp, 缺陷类型=performance
+2025-11-05 16:30:08,093 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: cpp, 变更数量: 0
+2025-11-05 16:30:08,093 - agents.code_fixer - INFO - 检测到语言: cpp, 文件: D:\QtWork\Patient\doctordetail.cpp
+2025-11-05 16:30:08,094 - agents.code_fixer - INFO - 执行修复任务: 文件=D:\QtWork\Patient\doctordetail.cpp, 行号=350, 策略=fix_cpp_code_smell, 语言=cpp, 缺陷类型=code_smell
+2025-11-05 16:30:08,094 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: cpp, 变更数量: 1
+2025-11-05 16:30:08,096 - __main__ - INFO - ======================================================================
+2025-11-05 16:30:08,096 - __main__ - INFO - 🚀 统一代码修复系统详细报告
+2025-11-05 16:30:08,096 - __main__ - INFO - ======================================================================
+2025-11-05 16:30:08,096 - __main__ - INFO - 项目路径: D:\\QtWork
+2025-11-05 16:30:08,096 - __main__ - INFO - 缺陷报告: D:\pycharm\homework\backend\output\qt_project_defect_report.json
+2025-11-05 16:30:08,096 - __main__ - INFO - 目标语言: cpp
+2025-11-05 16:30:08,096 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-05 16:30:08,097 - __main__ - INFO - 配置参数:
+2025-11-05 16:30:08,097 - __main__ - INFO -   - 最大并行线程数: 1
+2025-11-05 16:30:08,097 - __main__ - INFO -   - 总执行时间: 168.72秒
+2025-11-05 16:30:08,097 - __main__ - INFO - 修复统计:
+2025-11-05 16:30:08,097 - __main__ - INFO -   - 总修复任务: 17
+2025-11-05 16:30:08,097 - __main__ - INFO -   - 成功修复: 13
+2025-11-05 16:30:08,097 - __main__ - INFO -   - 修复失败: 4
+2025-11-05 16:30:08,097 - __main__ - INFO -   - 修复成功率: 76.47%
+2025-11-05 16:30:08,099 - __main__ - INFO - 📄 详细修复报告已保存: unified_repair_report_20251105_163008.txt
+2025-11-05 16:30:08,099 - __main__ - INFO - 
+🔧 按语言统计:
+2025-11-05 16:30:08,099 - __main__ - INFO -   cpp: 13/17 (76.5%)
+2025-11-05 16:30:08,099 - __main__ - INFO - 
+🔧 修复策略统计:
+2025-11-05 16:30:08,099 - __main__ - INFO -   fix_cpp_memory_leak: 7/7 (100.0%)
+2025-11-05 16:30:08,099 - __main__ - INFO -   ai_automatic_fix: 2/4 (50.0%)
+2025-11-05 16:30:08,099 - __main__ - INFO -   fix_cpp_code_smell: 4/4 (100.0%)
+2025-11-05 16:30:08,099 - __main__ - INFO -   fix_cpp_performance: 0/2 (0.0%)
+2025-11-05 16:30:08,101 - __main__ - INFO - 📄 统一JSON报告已保存: unified_repair_report_20251105_163008.json
+2025-11-05 16:30:08,101 - __main__ - INFO - 🎉 统一代码修复工作流程完成！
+2025-11-17 11:07:46,444 - __main__ - INFO - 统一代码修复系统配置:
+2025-11-17 11:07:46,446 - __main__ - INFO -   - 项目路径: D:\PY\devign
+2025-11-17 11:07:46,446 - __main__ - INFO -   - 缺陷报告: D:\PycharmProjects\AI Agent\backend\output\devign_defect_report.json
+2025-11-17 11:07:46,446 - __main__ - INFO -   - 目标语言: auto
+2025-11-17 11:07:46,446 - __main__ - INFO -   - 最小严重程度: MEDIUM
+2025-11-17 11:07:46,446 - __main__ - INFO -   - 最大任务数: 30
+2025-11-17 11:07:46,446 - __main__ - INFO -   - 并行线程数: 1
+2025-11-17 11:07:46,446 - agents.decision_manager - INFO - 初始化DecisionManagerAgent...
+2025-11-17 11:07:46,446 - __main__ - INFO - 统一代码修复系统初始化完成，最大工作线程: 1
+2025-11-17 11:07:46,446 - __main__ - INFO - 🚀 开始统一代码修复系统工作流程
+2025-11-17 11:07:46,446 - __main__ - INFO - 项目路径: D:\PY\devign
+2025-11-17 11:07:46,448 - __main__ - INFO - 缺陷报告: D:\PycharmProjects\AI Agent\backend\output\devign_defect_report.json
+2025-11-17 11:07:46,448 - __main__ - INFO - 目标语言: auto
+2025-11-17 11:07:46,448 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-17 11:07:46,448 - __main__ - INFO - 最大任务数: 30
+2025-11-17 11:07:46,450 - agents.code_fixer - INFO - 已清空修复结果
+2025-11-17 11:07:46,450 - __main__ - INFO - 使用缺陷报告中的文件逐个检测语言并自动修复（支持混合语言项目）
+2025-11-17 11:07:46,450 - __main__ - INFO - 加载缺陷报告: D:\PycharmProjects\AI Agent\backend\output\devign_defect_report.json
+2025-11-17 11:07:46,450 - __main__ - INFO - 缺陷报告加载完成: 12个文件
+2025-11-17 11:07:46,450 - __main__ - INFO - 缺陷过滤统计: 原始缺陷 124 -> 过滤后 34
+2025-11-17 11:07:46,450 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-17 11:07:46,455 - __main__ - INFO - 开始生成修复计划... (语言: all)
+2025-11-17 11:07:46,458 - agents.decision_manager - INFO - 开始分析缺陷报告...
+2025-11-17 11:07:46,458 - agents.decision_manager - INFO - 解析成功，共发现 12 个文件有缺陷
+2025-11-17 11:07:46,458 - agents.decision_manager - INFO - 共收集到 34 个缺陷，开始批量处理...
+2025-11-17 11:08:54,584 - agents.decision_manager - INFO - 修复任务排序完成，最高优先级: HIGH
+2025-11-17 11:08:54,585 - agents.decision_manager - INFO - 分析完成，生成 34 个修复任务
+2025-11-17 11:08:54,585 - __main__ - INFO - 修复计划生成完成: 34个修复任务 (耗时: 68.13s)
+2025-11-17 11:08:54,585 - __main__ - INFO - 修复策略分布:
+2025-11-17 11:08:54,585 - __main__ - INFO -   fix_syntax_error: 23个任务
+2025-11-17 11:08:54,585 - __main__ - INFO -   add_null_check: 5个任务
+2025-11-17 11:08:54,585 - __main__ - INFO -   fix_pickle_security: 1个任务
+2025-11-17 11:08:54,585 - __main__ - INFO -   ai_automatic_fix: 5个任务
+2025-11-17 11:08:54,585 - __main__ - WARNING - 任务数量过多 (34)，限制为前30个高优先级任务
+2025-11-17 11:08:54,588 - __main__ - INFO - 将处理 30 个修复任务
+2025-11-17 11:08:54,588 - __main__ - INFO - 开始执行修复任务 (线程数: 1)...
+2025-11-17 11:08:54,590 - agents.code_fixer - INFO - 已清空修复结果
+2025-11-17 11:08:54,629 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\configs.py
+2025-11-17 11:09:09,077 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:09:09,079 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:09:09,084 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\main.py
+2025-11-17 11:09:53,874 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:09:53,877 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:09:53,906 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\prepare\cpg_client_wrapper.py
+2025-11-17 11:10:11,081 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:10:11,082 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:10:11,085 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\prepare\cpg_client_wrapper.py
+2025-11-17 11:10:11,085 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:10:11,090 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\prepare\cpg_client_wrapper.py
+2025-11-17 11:10:22,133 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:10:22,134 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:10:22,165 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\data\datamanager.py
+2025-11-17 11:11:07,732 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:11:07,738 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:11:07,740 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\data\datamanager.py
+2025-11-17 11:11:24,604 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:11:24,607 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:11:24,610 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\data\datamanager.py
+2025-11-17 11:11:43,745 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:11:43,748 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:11:43,753 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\prepare\embeddings.py
+2025-11-17 11:12:05,352 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:12:05,354 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:12:05,358 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\prepare\embeddings.py
+2025-11-17 11:12:27,375 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:12:27,378 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:12:27,378 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\prepare\embeddings.py
+2025-11-17 11:12:51,025 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:12:51,028 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:12:51,032 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\prepare\embeddings.py
+2025-11-17 11:13:11,605 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:13:11,607 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:13:11,607 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\prepare\embeddings.py
+2025-11-17 11:13:32,600 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:13:32,601 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:13:32,603 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\prepare\embeddings.py
+2025-11-17 11:13:53,793 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:13:53,795 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:13:53,826 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\process\model.py
+2025-11-17 11:14:21,034 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:14:21,038 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:14:21,042 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\process\model.py
+2025-11-17 11:15:03,422 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:15:03,425 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:15:03,425 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\process\model.py
+2025-11-17 11:15:44,217 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:15:44,221 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:15:44,225 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\process\model.py
+2025-11-17 11:16:50,957 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:16:50,962 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:16:50,965 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\process\model.py
+2025-11-17 11:17:30,369 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:17:30,375 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:17:30,404 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\process\step.py
+2025-11-17 11:17:43,990 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:17:43,992 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:17:43,993 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\process\step.py
+2025-11-17 11:17:58,964 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:17:58,966 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:17:58,970 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\utils\objects\input_dataset.py
+2025-11-17 11:18:06,536 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:18:06,539 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:18:06,542 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\utils\objects\metrics.py
+2025-11-17 11:18:24,028 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:18:24,030 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:18:24,030 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\utils\objects\metrics.py
+2025-11-17 11:18:41,773 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:18:41,775 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:18:41,778 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\utils\objects\metrics.py
+2025-11-17 11:18:59,406 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:18:59,407 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:18:59,407 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\prepare\cpg_client_wrapper.py
+2025-11-17 11:19:14,615 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:19:14,616 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:19:14,621 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\prepare\cpg_client_wrapper.py
+2025-11-17 11:19:27,171 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:19:27,175 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:19:27,175 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\utils\log.py
+2025-11-17 11:19:35,812 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:19:35,814 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:19:35,816 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\utils\log.py
+2025-11-17 11:19:35,821 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:19:35,824 - agents.code_fixer - INFO - 检测到语言: python, 文件: D:\PY\devign\src\utils\log.py
+2025-11-17 11:19:44,978 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 11:19:44,979 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: python, 变更数量: 1
+2025-11-17 11:19:44,982 - __main__ - INFO - ======================================================================
+2025-11-17 11:19:44,984 - __main__ - INFO - 🚀 统一代码修复系统详细报告
+2025-11-17 11:19:44,984 - __main__ - INFO - ======================================================================
+2025-11-17 11:19:44,984 - __main__ - INFO - 项目路径: D:\PY\devign
+2025-11-17 11:19:44,984 - __main__ - INFO - 缺陷报告: D:\PycharmProjects\AI Agent\backend\output\devign_defect_report.json
+2025-11-17 11:19:44,984 - __main__ - INFO - 目标语言: all
+2025-11-17 11:19:44,984 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-17 11:19:44,984 - __main__ - INFO - 配置参数:
+2025-11-17 11:19:44,984 - __main__ - INFO -   - 最大并行线程数: 1
+2025-11-17 11:19:44,987 - __main__ - INFO -   - 总执行时间: 718.53秒
+2025-11-17 11:19:44,987 - __main__ - INFO - 修复统计:
+2025-11-17 11:19:44,987 - __main__ - INFO -   - 总修复任务: 30
+2025-11-17 11:19:44,987 - __main__ - INFO -   - 成功修复: 30
+2025-11-17 11:19:44,989 - __main__ - INFO -   - 修复失败: 0
+2025-11-17 11:19:44,989 - __main__ - INFO -   - 修复成功率: 100.00%
+2025-11-17 11:19:44,989 - __main__ - INFO - 📄 详细修复报告已保存: devign_defect_report_repair_report_20251117_111944.txt
+2025-11-17 11:19:44,989 - __main__ - INFO - 
+🔧 按语言统计:
+2025-11-17 11:19:44,989 - __main__ - INFO -   python: 30/30 (100.0%)
+2025-11-17 11:19:44,989 - __main__ - INFO - 
+🔧 修复策略统计:
+2025-11-17 11:19:44,992 - __main__ - INFO -   fix_syntax_error: 23/23 (100.0%)
+2025-11-17 11:19:44,992 - __main__ - INFO -   add_null_check: 2/2 (100.0%)
+2025-11-17 11:19:44,992 - __main__ - INFO -   fix_pickle_security: 1/1 (100.0%)
+2025-11-17 11:19:44,992 - __main__ - INFO -   ai_automatic_fix: 4/4 (100.0%)
+2025-11-17 11:19:44,995 - __main__ - INFO - 📄 统一JSON报告已保存: devign_defect_report_repair_report_20251117_111944.json
+2025-11-17 11:19:44,995 - __main__ - INFO - 📄 统一JSON报告已保存: devign_defect_report_repair_report_20251117_111944.json
+2025-11-17 11:19:47,569 - __main__ - INFO - 🔍 代码质量评估报告已生成: devign_defect_report_repair_report_20251117_111944_quality_report.html
+2025-11-17 11:19:48,272 - __main__ - INFO - 质量评估报告已在默认浏览器中打开: devign_defect_report_repair_report_20251117_111944_quality_report.html
+2025-11-17 11:19:48,272 - __main__ - INFO - 🎉 统一代码修复工作流程完成！
+2025-11-17 12:48:04,965 - __main__ - INFO - 统一代码修复系统配置:
+2025-11-17 12:48:04,966 - __main__ - INFO -   - 项目路径: D:\PY\defects4j\framework
+2025-11-17 12:48:04,967 - __main__ - INFO -   - 缺陷报告: D:\PycharmProjects\AI Agent\backend\output\defects4j_defect_report.json
+2025-11-17 12:48:04,967 - __main__ - INFO -   - 目标语言: auto
+2025-11-17 12:48:04,967 - __main__ - INFO -   - 最小严重程度: MEDIUM
+2025-11-17 12:48:04,967 - __main__ - INFO -   - 最大任务数: 30
+2025-11-17 12:48:04,967 - __main__ - INFO -   - 并行线程数: 1
+2025-11-17 12:48:04,968 - agents.decision_manager - INFO - 初始化DecisionManagerAgent...
+2025-11-17 12:48:04,968 - __main__ - INFO - 统一代码修复系统初始化完成，最大工作线程: 1
+2025-11-17 12:48:04,968 - __main__ - INFO - 🚀 开始统一代码修复系统工作流程
+2025-11-17 12:48:04,968 - __main__ - INFO - 项目路径: D:\PY\defects4j\framework
+2025-11-17 12:48:04,968 - __main__ - INFO - 缺陷报告: D:\PycharmProjects\AI Agent\backend\output\defects4j_defect_report.json
+2025-11-17 12:48:04,968 - __main__ - INFO - 目标语言: auto
+2025-11-17 12:48:04,968 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-17 12:48:04,968 - __main__ - INFO - 最大任务数: 30
+2025-11-17 12:48:04,969 - agents.code_fixer - INFO - 已清空修复结果
+2025-11-17 12:48:04,969 - __main__ - INFO - 使用缺陷报告中的文件逐个检测语言并自动修复（支持混合语言项目）
+2025-11-17 12:48:04,969 - __main__ - INFO - 加载缺陷报告: D:\PycharmProjects\AI Agent\backend\output\defects4j_defect_report.json
+2025-11-17 12:48:04,981 - __main__ - INFO - 缺陷报告加载完成: 107个文件
+2025-11-17 12:48:04,981 - __main__ - INFO - 缺陷过滤统计: 原始缺陷 1489 -> 过滤后 144
+2025-11-17 12:48:04,982 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-17 12:48:04,982 - __main__ - INFO - 开始生成修复计划... (语言: all)
+2025-11-17 12:48:04,986 - agents.decision_manager - INFO - 开始分析缺陷报告...
+2025-11-17 12:48:04,987 - agents.decision_manager - INFO - 解析成功，共发现 107 个文件有缺陷
+2025-11-17 12:48:04,988 - agents.decision_manager - INFO - 共收集到 144 个缺陷，开始批量处理...
+2025-11-17 12:48:29,269 - agents.decision_manager - INFO - 修复任务排序完成，最高优先级: HIGH
+2025-11-17 12:48:29,273 - agents.decision_manager - INFO - 分析完成，生成 144 个修复任务
+2025-11-17 12:48:29,276 - __main__ - INFO - 修复计划生成完成: 144个修复任务 (耗时: 24.29s)
+2025-11-17 12:48:29,276 - __main__ - INFO - 修复策略分布:
+2025-11-17 12:48:29,276 - __main__ - INFO -   ai_automatic_fix: 144个任务
+2025-11-17 12:48:29,276 - __main__ - WARNING - 任务数量过多 (144)，限制为前30个高优先级任务
+2025-11-17 12:48:29,276 - __main__ - INFO - 将处理 30 个修复任务
+2025-11-17 12:48:29,277 - __main__ - INFO - 开始执行修复任务 (线程数: 1)...
+2025-11-17 12:48:29,280 - agents.code_fixer - INFO - 已清空修复结果
+2025-11-17 12:48:29,331 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\test\resources\input\foo\bar\InvalidImport.java
+2025-11-17 12:48:33,644 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_htw3s8nk\tmp_46ec9f464bf1451796747240e4122c32.java:5: 错误: 类 InvalidImport 是公共的, 应在名为 InvalidImport.java 的文件中声明
+public class InvalidImport {
+       ^
+C:\Users\
+2025-11-17 12:48:38,394 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_fe8usn_d\tmp_df4483342bc54fb4a8cb7966a7cbbb88.java:3: 错误: 类 InvalidImport 是公共的, 应在名为 InvalidImport.java 的文件中声明
+public class InvalidImport {
+       ^
+1 个错误
+
+2025-11-17 12:48:38,394 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:48:38,395 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:48:38,398 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:48:38,426 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\test\resources\input\foo\bar\UnitTestsWithCompilationIssues.java
+2025-11-17 12:48:44,176 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_rg617nig\tmp_8fa3781006954041bde58487bd2f36d2.java:6: 错误: 类 UnitTestsWithCompilationIssues 是公共的, 应在名为 UnitTestsWithCompilationIssues.java 的文件中声明
+public class 
+2025-11-17 12:48:50,794 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_k8ht3xva\tmp_d073667ab07f4047a56510dfb2936761.java:3: 错误: 类 UnitTestsWithCompilationIssues 是公共的, 应在名为 UnitTestsWithCompilationIssues.java 的文件中声明
+public class 
+2025-11-17 12:48:50,794 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:48:50,824 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:48:50,826 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:48:50,828 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\test\resources\input\foo\bar\UnitTestsWithCompilationIssues.java
+2025-11-17 12:48:56,531 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_e612xqp7\tmp_610fc12ba8cc44c28540eda3a6339937.java:6: 错误: 类 UnitTestsWithCompilationIssues 是公共的, 应在名为 UnitTestsWithCompilationIssues.java 的文件中声明
+public class 
+2025-11-17 12:49:03,205 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_xu8bt99z\tmp_6157a155cf8748aca7673cdaeb0121aa.java:3: 错误: 类 UnitTestsWithCompilationIssues 是公共的, 应在名为 UnitTestsWithCompilationIssues.java 的文件中声明
+public class 
+2025-11-17 12:49:03,206 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:49:03,207 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:49:03,209 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:49:03,210 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\test\resources\input\foo\bar\UnitTestsWithCompilationIssues.java
+2025-11-17 12:49:08,394 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_x7v8hxwo\tmp_c43e856b2df44b519fe5170c65940c48.java:6: 错误: 类 UnitTestsWithCompilationIssues 是公共的, 应在名为 UnitTestsWithCompilationIssues.java 的文件中声明
+public class 
+2025-11-17 12:49:16,868 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_769lie5u\tmp_7a5e17c0a9c048a7a5fe70d03e75d053.java:6: 错误: 类 UnitTestsWithCompilationIssues 是公共的, 应在名为 UnitTestsWithCompilationIssues.java 的文件中声明
+public class 
+2025-11-17 12:49:16,868 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:49:16,879 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:49:16,883 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:49:16,884 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\lib\formatter\src\edu\washington\cs\mut\testrunner\fixed_SingleTestRunner.java
+2025-11-17 12:49:38,643 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 12:49:38,651 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: java, 变更数量: 1
+2025-11-17 12:49:38,654 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\lib\formatter\src\edu\washington\cs\mut\testrunner\fixed_SingleTestRunner.java
+2025-11-17 12:49:58,360 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 12:49:58,367 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: java, 变更数量: 1
+2025-11-17 12:49:58,371 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\lib\formatter\src\edu\washington\cs\mut\testrunner\fixed_SingleTestRunner.java
+2025-11-17 12:50:17,698 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 12:50:17,705 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: java, 变更数量: 1
+2025-11-17 12:50:17,709 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\lib\formatter\src\edu\washington\cs\mut\testrunner\SingleTestRunner.java
+2025-11-17 12:50:46,897 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_hyk657wn\tmp_985e7e578e674c7aab0de97432a642c8.java:24: 错误: 类 SingleTestRunner 是公共的, 应在名为 SingleTestRunner.java 的文件中声明
+public class SingleTestRunner {
+       ^
+2025-11-17 12:51:27,362 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 12:51:27,371 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: java, 变更数量: 1
+2025-11-17 12:51:27,375 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\lib\formatter\src\edu\washington\cs\mut\testrunner\SingleTestRunner.java
+2025-11-17 12:51:56,146 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_c97u9ok3\tmp_5ac342299aba4151800ce3e940d606ad.java:24: 错误: 类 SingleTestRunner 是公共的, 应在名为 SingleTestRunner.java 的文件中声明
+public class SingleTestRunner {
+       ^
+2025-11-17 12:52:30,111 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_nych6f0p\tmp_718e8741539b4bfda00670e9b8a666b3.java:7: 错误: 程序包org.junit.runner不存在
+import org.junit.runner.JUnitCore;
+                       ^
+C:\Users\16925\Ap
+2025-11-17 12:52:30,111 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:52:30,140 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:52:30,143 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:52:30,145 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\lib\formatter\src\edu\washington\cs\mut\testrunner\SingleTestRunner.java
+2025-11-17 12:53:09,846 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_5ht_hdqc\tmp_d0a98b93452b4a0899fd64893e185daf.java:24: 错误: 类 SingleTestRunner 是公共的, 应在名为 SingleTestRunner.java 的文件中声明
+public class SingleTestRunner {
+       ^
+2025-11-17 12:53:32,505 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 12:53:32,512 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: java, 变更数量: 1
+2025-11-17 12:53:32,516 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\lib\formatter\src\edu\washington\cs\mut\testrunner\SingleTestRunner.java
+2025-11-17 12:54:03,905 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_9eaqplq6\tmp_9775e906f946460f9139f49f88b82fb3.java:24: 错误: 类 SingleTestRunner 是公共的, 应在名为 SingleTestRunner.java 的文件中声明
+public class SingleTestRunner {
+       ^
+2025-11-17 12:54:44,582 - utils.ai_fixer - INFO - AI修复成功
+2025-11-17 12:54:44,591 - agents.code_fixer - INFO - 修复完成，成功: True, 语言: java, 变更数量: 1
+2025-11-17 12:54:44,594 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\lib\formatter\src\edu\washington\cs\mut\testrunner\Formatter.java
+2025-11-17 12:55:06,400 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_30jsng29\tmp_9539b8227f194fdbbb76d8656b557986.java:20: 错误: 类 Formatter 是公共的, 应在名为 Formatter.java 的文件中声明
+public class Formatter implements JUnitResultFormatter
+2025-11-17 12:55:27,941 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_iviz4o87\tmp_a60357a016a9478aba8503ec32dedc3f.java:12: 错误: 程序包junit.framework不存在
+import junit.framework.AssertionFailedError;
+                      ^
+C:\Users
+2025-11-17 12:55:27,942 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:55:27,943 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:55:27,946 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:55:27,948 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\lib\formatter\test\edu\washington\cs\mut\testrunner\junit3\InitError.java
+2025-11-17 12:55:33,890 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_ux_bqezf\tmp_371733d23e974eaf8b26a58c390f53e8.java:6: 错误: 类 InitError 是公共的, 应在名为 InitError.java 的文件中声明
+public class InitError extends TestCase {
+       ^
+C:\U
+2025-11-17 12:55:41,304 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_5y6n5wy5\tmp_a35bde9458ae43ef9db9fc4f78a445cf.java:6: 错误: 类 InitError 是公共的, 应在名为 InitError.java 的文件中声明
+public class InitError extends TestCase {
+       ^
+C:\U
+2025-11-17 12:55:41,304 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:55:41,306 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:55:41,307 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:55:41,310 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\lib\formatter\test\edu\washington\cs\mut\testrunner\junit4\MethodTimeout.java
+2025-11-17 12:55:47,789 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_o0zxp1z7\tmp_72cc3559534b4f19832bc463712947b4.java:5: 错误: 类 MethodTimeout 是公共的, 应在名为 MethodTimeout.java 的文件中声明
+public class MethodTimeout {
+       ^
+C:\Users\
+2025-11-17 12:55:55,422 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_bzg7fwju\tmp_1e23d2e65c5f441fa13a5bf99f23abc7.java:5: 错误: 类 MethodTimeout 是公共的, 应在名为 MethodTimeout.java 的文件中声明
+public class MethodTimeout {
+       ^
+C:\Users\
+2025-11-17 12:55:55,423 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:55:55,424 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:55:55,426 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:55:55,428 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.10.0\PackageVersion.java
+2025-11-17 12:56:05,420 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_7fl33px8\tmp_dcf0fd4ad7f149bc9e16effe59bb703e.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:56:14,111 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_i9zol1uk\tmp_9ad9908a4d774d81b6ca8ca274fb4bb3.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:56:14,111 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:56:14,141 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:56:14,143 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:56:14,144 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.4.1\PackageVersion.java
+2025-11-17 12:56:21,234 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_o_nkic3d\tmp_56cd69e44e0e494aa156bfcc144eaf4d.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:56:30,021 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_bw5a0c4e\tmp_7b4cb8b9be6b4f4a9612737b04a66c3b.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:56:30,023 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:56:30,024 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:56:30,026 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:56:30,028 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.4.5\PackageVersion.java
+2025-11-17 12:56:37,078 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_naxcy_s0\tmp_90988fc93d934bb58742b44503f3278e.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:56:45,816 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_limyn9zm\tmp_5bc972b246a84442b7c4a1d27001c89e.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:56:45,818 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:56:45,819 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:56:45,821 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:56:45,822 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.5.0\PackageVersion.java
+2025-11-17 12:56:52,892 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer__l_clmld\tmp_7f8ef236100e4ce6a64fc47831562e7a.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:57:01,789 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_vnw_nffa\tmp_c10414af82794934806fcabc9450fa46.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:57:01,789 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:57:01,818 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:57:01,820 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:57:01,822 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.5.1\PackageVersion.java
+2025-11-17 12:57:08,952 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_bcgt1tpj\tmp_4f0e2163304c45f0916bd236d37fad39.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:57:17,572 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_ddkxqhgu\tmp_4ed5d1e3c3374a43bc4e388ae20c2d74.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:57:17,572 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:57:17,574 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:57:17,576 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:57:17,579 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.5.5\PackageVersion.java
+2025-11-17 12:57:26,676 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_kmalmst9\tmp_d82f26020dd1419995818d30a94016cb.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:57:34,915 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_h68yzr0p\tmp_9af3ee2ede9d4567b8ea32a8928a330c.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:57:34,916 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:57:34,916 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:57:34,919 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:57:34,922 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.6.0\PackageVersion.java
+2025-11-17 12:57:42,075 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer__55u4yu7\tmp_7c5d5187badf4868971abaa0bb3a2e5c.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:57:50,309 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_otw_iwv8\tmp_657bf40786214152b5c8a0d7c17b3bd9.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:57:50,311 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:57:50,311 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:57:50,313 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:57:50,316 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.6.1\PackageVersion.java
+2025-11-17 12:57:57,270 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_msldcp06\tmp_b512705a46e94b74b3b3fb1dff671aa9.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:58:05,671 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_tabbr3w3\tmp_54e7134adfac45c682ce249b416d854b.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:58:05,671 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:58:05,700 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:58:05,702 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:58:05,704 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.6.2\PackageVersion.java
+2025-11-17 12:58:12,674 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_8c0kmmur\tmp_4f585edc79e246118cf4eab876aa21cf.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:58:21,355 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_ao5ydyg7\tmp_07eaf4f04caf48818a9b61bc1393dff2.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:58:21,355 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:58:21,357 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:58:21,365 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:58:21,368 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.6.3\PackageVersion.java
+2025-11-17 12:58:28,597 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_wtsqevk8\tmp_cb1c5b4f50ee4f5db957f7c5bfff7437.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:58:37,538 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_d5har8uv\tmp_d61c593361354c8b8467e55c9fe68caa.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:58:37,538 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:58:37,540 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:58:37,542 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:58:37,545 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.7.0\PackageVersion.java
+2025-11-17 12:58:46,609 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_hiqbq8k1\tmp_7c0ee31119ed4083a6c77fe22dd60350.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:58:55,138 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_woo__tr1\tmp_bede2041171c46bca2d956575b67e0e1.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:58:55,138 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:58:55,139 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:58:55,142 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:58:55,143 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.7.2\PackageVersion.java
+2025-11-17 12:59:02,224 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_xgvep215\tmp_0b0863e19135455dba8e6ea2204fda76.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:59:10,974 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_xk3018o0\tmp_dc3d65e039df43c3890e7a2448d5c903.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:59:10,974 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:59:11,004 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:59:11,006 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:59:11,008 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.7.4\PackageVersion.java
+2025-11-17 12:59:17,857 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_jj40c0dw\tmp_c2a9cb5abf9d47fbbbdb1ec093ce8e13.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:59:26,184 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_mpwp04b7\tmp_bce10cf4b7254a43b4a8af871cfff989.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:59:26,185 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:59:26,186 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:59:26,187 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:59:26,190 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.7.7\PackageVersion.java
+2025-11-17 12:59:33,224 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_g48usymu\tmp_b41ce5085e9b432ebe4351f4260763d3.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:59:42,025 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_0f5uv0wf\tmp_c778aaa9aa6640c0ae8cb4391d1734ea.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:59:42,025 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:59:42,028 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:59:42,029 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:59:42,032 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.7.8\PackageVersion.java
+2025-11-17 12:59:48,860 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_bvz_rk00\tmp_5ec53c0e3ec743418648c63891152029.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:59:57,202 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_nxjmxrt2\tmp_4efec8a780634057a0cc6137c131fce9.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 12:59:57,202 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 12:59:57,214 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 12:59:57,216 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 12:59:57,219 - agents.code_fixer - INFO - 检测到语言: java, 文件: D:\PY\defects4j\framework\projects\JacksonCore\generated_sources\2.8.0\PackageVersion.java
+2025-11-17 13:00:06,170 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer_b5lu3o23\tmp_b6d4aa30b35e4fd7918e259f89cdc4af.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 13:00:15,620 - utils.ai_fixer - WARNING - 本地验证失败: C:\Users\16925\AppData\Local\Temp\aifixer__fkn0ysj\tmp_ac77adf8b2994298b8bbca0f32846011.java:12: 错误: 类 PackageVersion 是公共的, 应在名为 PackageVersion.java 的文件中声明
+public final class PackageVersion implements
+2025-11-17 13:00:15,621 - utils.ai_fixer - ERROR - 达到最大重试次数，放弃本地验证失败的修复
+2025-11-17 13:00:15,649 - utils.ai_fixer - ERROR - 所有AI修复尝试均失败
+2025-11-17 13:00:15,651 - agents.code_fixer - INFO - 修复完成，成功: False, 语言: java, 变更数量: 1
+2025-11-17 13:00:15,653 - __main__ - INFO - ======================================================================
+2025-11-17 13:00:15,653 - __main__ - INFO - 🚀 统一代码修复系统详细报告
+2025-11-17 13:00:15,653 - __main__ - INFO - ======================================================================
+2025-11-17 13:00:15,653 - __main__ - INFO - 项目路径: D:\PY\defects4j\framework
+2025-11-17 13:00:15,654 - __main__ - INFO - 缺陷报告: D:\PycharmProjects\AI Agent\backend\output\defects4j_defect_report.json
+2025-11-17 13:00:15,654 - __main__ - INFO - 目标语言: all
+2025-11-17 13:00:15,654 - __main__ - INFO - 最小严重程度: MEDIUM
+2025-11-17 13:00:15,654 - __main__ - INFO - 配置参数:
+2025-11-17 13:00:15,654 - __main__ - INFO -   - 最大并行线程数: 1
+2025-11-17 13:00:15,654 - __main__ - INFO -   - 总执行时间: 730.68秒
+2025-11-17 13:00:15,654 - __main__ - INFO - 修复统计:
+2025-11-17 13:00:15,655 - __main__ - INFO -   - 总修复任务: 30
+2025-11-17 13:00:15,655 - __main__ - INFO -   - 成功修复: 6
+2025-11-17 13:00:15,655 - __main__ - INFO -   - 修复失败: 24
+2025-11-17 13:00:15,655 - __main__ - INFO -   - 修复成功率: 20.00%
+2025-11-17 13:00:15,656 - __main__ - INFO - 📄 详细修复报告已保存: defects4j_defect_report_repair_report_20251117_130015.txt
+2025-11-17 13:00:15,657 - __main__ - INFO - 
+🔧 按语言统计:
+2025-11-17 13:00:15,657 - __main__ - INFO -   java: 6/30 (20.0%)
+2025-11-17 13:00:15,657 - __main__ - INFO - 
+🔧 修复策略统计:
+2025-11-17 13:00:15,657 - __main__ - INFO -   ai_automatic_fix: 6/30 (20.0%)
+2025-11-17 13:00:15,660 - __main__ - INFO - 📄 统一JSON报告已保存: defects4j_defect_report_repair_report_20251117_130015.json
+2025-11-17 13:00:15,660 - __main__ - INFO - 📄 统一JSON报告已保存: defects4j_defect_report_repair_report_20251117_130015.json
+2025-11-17 13:00:16,086 - __main__ - INFO - 🔍 代码质量评估报告已生成: defects4j_defect_report_repair_report_20251117_130015_quality_report.html
+2025-11-17 13:00:16,478 - __main__ - INFO - 质量评估报告已在默认浏览器中打开: defects4j_defect_report_repair_report_20251117_130015_quality_report.html
+2025-11-17 13:00:16,479 - __main__ - INFO - 🎉 统一代码修复工作流程完成！

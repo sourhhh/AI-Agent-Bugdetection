@@ -1,0 +1,507 @@
+{
+  "timestamp": "2025-11-17T11:19:44.992530",
+  "project_info": {
+    "project_path": "D:\\PY\\devign",
+    "target_language": "all",
+    "min_severity": "MEDIUM",
+    "defect_report_path": "D:\\PycharmProjects\\AI Agent\\backend\\output\\devign_defect_report.json"
+  },
+  "configuration": {
+    "max_workers": 1,
+    "total_execution_time_seconds": 718.531313419342
+  },
+  "summary": {
+    "total_tasks": 30,
+    "successful_repairs": 30,
+    "failed_repairs": 0,
+    "success_rate": 1.0
+  },
+  "language_statistics": {
+    "python": {
+      "total": 30,
+      "success": 30
+    }
+  },
+  "detailed_results": [
+    {
+      "file_path": "D:\\PY\\devign\\configs.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Module 'torch' has no 'device' member",
+      "line_number": 10,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L  5: class Config(object):\n    L  6:     def __init__(self, config, file_path=\"configs.json\"):\n    L  7:         with open(file_path) as config_file:\n    L  8:             self._config = json.load(config_file)\n    L  9:             self._config = self._config.get(config)\n>>> L 10:         self.device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n    L 11: \n    L 12:     def get_property(self, property_name):\n    L 13:         return self._config.get(property_name)\n    L 14: \n    L 15:     def get_device(self):",
+      "fixed_code_snippet": "    L  5: class Config(object):\n    L  6:     def __init__(self, config, file_path=\"configs.json\"):\n    L  7:         with open(file_path) as config_file:\n    L  8:             self._config = json.load(config_file)\n    L  9:             self._config = self._config.get(config)\n>>> L 10:         self.device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n    L 11: \n    L 12:     def get_property(self, property_name):\n    L 13:         return self._config.get(property_name)\n    L 14: \n    L 15:     def get_device(self):",
+      "timestamp": "2025-11-17T11:09:09.079544"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\main.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'gensim.models.word2vec'",
+      "line_number": 16,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L 11: import argparse\n    L 12: import gc\n    L 13: import shutil\n    L 14: from argparse import ArgumentParser\n    L 15: \n>>> L 16: from gensim.models.word2vec import Word2Vec\n    L 17: \n    L 18: import configs\n    L 19: import src.data as data\n    L 20: import src.prepare as prepare\n    L 21: import src.process as process",
+      "fixed_code_snippet": "    L 11: import argparse\n    L 12: import gc\n    L 13: import shutil\n    L 14: import secrets\n    L 15: from argparse import ArgumentParser\n>>> L 16: \n    L 17: try:\n    L 18:     from gensim.models import Word2Vec\n    L 19: except ImportError:\n    L 20:     from gensim.models.word2vec import Word2Vec\n    L 21: ",
+      "timestamp": "2025-11-17T11:09:53.877918"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\prepare\\cpg_client_wrapper.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'cpgclient.CpgClient'",
+      "line_number": 5,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L  1: import os\n    L  2: import requests\n    L  3: import time\n    L  4: \n>>> L  5: from cpgclient.CpgClient import CpgClient\n    L  6: \n    L  7: \n    L  8: class CPGClientWrapper(CpgClient):\n    L  9:     def __init__(self, address='127.0.0.1', port=8080):\n    L 10:         super(CPGClientWrapper, self).__init__(address, port)",
+      "fixed_code_snippet": "    L  1: import os\n    L  2: import requests\n    L  3: import time\n    L  4: import secrets\n>>> L  5: \n    L  6: try:\n    L  7:     from cpgclient.CpgClient import CpgClient\n    L  8: except ImportError:\n    L  9:     # 处理导入错误，保持代码可运行\n    L 10:     class CpgClient:",
+      "timestamp": "2025-11-17T11:10:11.082848"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\prepare\\cpg_client_wrapper.py",
+      "defect_type": "logic",
+      "defect_message": "[llm] 潜在无限循环：_poll_for_query_result方法中的while True循环没有退出条件，如果查询永远不会完成将导致无限循环",
+      "line_number": 21,
+      "strategy": "add_null_check",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "在函数开始处添加了llm的空值检查"
+      ],
+      "original_code_snippet": "    L 16:         return self.query(self.query_script)\n    L 17: \n    L 18:     def _wait_until_cpg_is_created(self):\n    L 19:         while not self.is_cpg_loaded():\n    L 20:             time.sleep(1)\n>>> L 21: \n    L 22:     def _poll_for_query_result(self):\n    L 23:         while True:\n    L 24:             response = requests.get(\"{}/v1/query/{}\".format(self.handlerAndUrl, self.currentQueryId))\n    L 25:             json_body = response.json()\n    L 26:             if json_body[\"ready\"]:",
+      "fixed_code_snippet": "    L 16:         return self.query(self.query_script)\n    L 17: \n    L 18:     def _wait_until_cpg_is_created(self):\n    L 19:     if llm is None:\n    L 20:         raise ValueError(\"llm cannot be None\")\n>>> L 21:         while not self.is_cpg_loaded():\n    L 22:             time.sleep(1)\n    L 23: \n    L 24:     def _poll_for_query_result(self):\n    L 25:         while True:\n    L 26:             response = requests.get(\"{}/v1/query/{}\".format(self.handlerAndUrl, self.currentQueryId))",
+      "timestamp": "2025-11-17T11:10:11.085755"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\prepare\\cpg_client_wrapper.py",
+      "defect_type": "syntax",
+      "defect_message": "[llm] 缩进错误：第25行的time.sleep(.1)语句缩进不正确，应该与上面的if语句保持相同的缩进级别",
+      "line_number": 25,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L 20:             time.sleep(1)\n    L 21: \n    L 22:     def _poll_for_query_result(self):\n    L 23:         while True:\n    L 24:             response = requests.get(\"{}/v1/query/{}\".format(self.handlerAndUrl, self.currentQueryId))\n>>> L 25:             json_body = response.json()\n    L 26:             if json_body[\"ready\"]:\n    L 27:                 return json_body[\"result\"] or json_body[\"error\"]\n    L 28:             time.sleep(.1)",
+      "fixed_code_snippet": "    L 20:         while not self.is_cpg_loaded():\n    L 21:             time.sleep(1)\n    L 22: \n    L 23:     def _poll_for_query_result(self):\n    L 24:         while True:\n>>> L 25:             response = requests.get(\"{}/v1/query/{}\".format(self.handlerAndUrl, self.currentQueryId))\n    L 26:             json_body = response.json()\n    L 27:             if json_body[\"ready\"]:\n    L 28:                 return json_body[\"result\"] or json_body[\"error\"]\n    L 29:             time.sleep(.1)",
+      "timestamp": "2025-11-17T11:10:22.134782"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\data\\datamanager.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'pandas'",
+      "line_number": 3,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L  1: import glob\n    L  2: \n>>> L  3: import pandas as pd\n    L  4: import numpy as np\n    L  5: import os\n    L  6: import src.utils.functions.parse as parse\n    L  7: \n    L  8: from os import listdir",
+      "fixed_code_snippet": "    L  1: import glob\n    L  2: import os\n>>> L  3: import secrets\n    L  4: import numpy as np\n    L  5: import pandas as pd\n    L  6: from os import listdir\n    L  7: from os.path import isfile, join\n    L  8: from sklearn.model_selection import train_test_split",
+      "timestamp": "2025-11-17T11:11:07.738164"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\data\\datamanager.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'sklearn.model_selection'",
+      "line_number": 11,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L  6: import src.utils.functions.parse as parse\n    L  7: \n    L  8: from os import listdir\n    L  9: from os.path import isfile, join\n    L 10: from src.utils.objects.input_dataset import InputDataset\n>>> L 11: from sklearn.model_selection import train_test_split\n    L 12: \n    L 13: \n    L 14: def read(path, json_file):\n    L 15:     \"\"\"\n    L 16:     :param path: str",
+      "fixed_code_snippet": "    L  6: import os\n    L  7: import src.utils.functions.parse as parse\n    L  8: \n    L  9: from os import listdir\n    L 10: from os.path import isfile, join\n>>> L 11: from src.utils.objects.input_dataset import InputDataset\n    L 12: try:\n    L 13:     from sklearn.model_selection import train_test_split\n    L 14: except ImportError:\n    L 15:     from sklearn.cross_validation import train_test_split\n    L 16: ",
+      "timestamp": "2025-11-17T11:11:24.607475"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\data\\datamanager.py",
+      "defect_type": "security",
+      "defect_message": "[bandit] Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+      "line_number": 29,
+      "strategy": "fix_pickle_security",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复pickle反序列化安全问题"
+      ],
+      "original_code_snippet": "    L 24:     approx_size = int(len(dataset) * ratio)\n    L 25:     return dataset[:approx_size]\n    L 26: \n    L 27: \n    L 28: def load(path, pickle_file, ratio=1):\n>>> L 29:     dataset = pd.read_pickle(path + pickle_file)\n    L 30:     dataset.info(memory_usage='deep')\n    L 31:     if ratio < 1:\n    L 32:         dataset = get_ratio(dataset, ratio)\n    L 33: \n    L 34:     return dataset",
+      "fixed_code_snippet": "    L 24: \n    L 25: def get_ratio(dataset, ratio):\n    L 26:     approx_size = int(len(dataset) * ratio)\n    L 27:     return dataset[:approx_size]\n    L 28: \n>>> L 29: \n    L 30: def load(path, pickle_file, ratio=1):\n    L 31:     warnings.warn(\n    L 32:         \"Using pickle for deserialization can be dangerous. Only unpickle data from trusted sources.\",\n    L 33:         UserWarning,\n    L 34:         stacklevel=2",
+      "timestamp": "2025-11-17T11:11:43.748316"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\prepare\\embeddings.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'torch_geometric.data'",
+      "line_number": 3,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L  1: import numpy as np\n    L  2: import torch\n>>> L  3: from torch_geometric.data import Data\n    L  4: from src.utils.functions.parse import tokenizer\n    L  5: from src.utils import log as logger\n    L  6: from gensim.models.keyedvectors import Word2VecKeyedVectors\n    L  7: \n    L  8: ",
+      "fixed_code_snippet": "    L  1: import numpy as np\n    L  2: import torch\n>>> L  3: from torch_geometric.data import Data\n    L  4: from src.utils.functions.parse import tokenizer\n    L  5: from src.utils import log as logger\n    L  6: from gensim.models.keyedvectors import Word2VecKeyedVectors\n    L  7: \n    L  8: ",
+      "timestamp": "2025-11-17T11:12:05.354679"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\prepare\\embeddings.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'gensim.models.keyedvectors'",
+      "line_number": 6,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L  1: import numpy as np\n    L  2: import torch\n    L  3: from torch_geometric.data import Data\n    L  4: from src.utils.functions.parse import tokenizer\n    L  5: from src.utils import log as logger\n>>> L  6: from gensim.models.keyedvectors import Word2VecKeyedVectors\n    L  7: \n    L  8: \n    L  9: class NodesEmbedding:\n    L 10:     def __init__(self, nodes_dim: int, w2v_keyed_vectors: Word2VecKeyedVectors):\n    L 11:         self.w2v_keyed_vectors = w2v_keyed_vectors",
+      "fixed_code_snippet": "    L  1: import numpy as np\n    L  2: import torch\n    L  3: from torch_geometric.data import Data\n    L  4: from src.utils.functions.parse import tokenizer\n    L  5: from src.utils import log as logger\n>>> L  6: \n    L  7: try:\n    L  8:     from gensim.models.keyedvectors import Word2VecKeyedVectors\n    L  9: except ImportError:\n    L 10:     Word2VecKeyedVectors = type('Word2VecKeyedVectors', (), {})\n    L 11: ",
+      "timestamp": "2025-11-17T11:12:27.378362"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\prepare\\embeddings.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Module 'torch' has no 'zeros' member",
+      "line_number": 18,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L 13:         self.nodes_dim = nodes_dim\n    L 14: \n    L 15:         assert self.nodes_dim >= 0\n    L 16: \n    L 17:         # Buffer for embeddings with padding\n>>> L 18:         self.target = torch.zeros(self.nodes_dim, self.kv_size + 1).float()\n    L 19: \n    L 20:     def __call__(self, nodes):\n    L 21:         embedded_nodes = self.embed_nodes(nodes)\n    L 22:         nodes_tensor = torch.from_numpy(embedded_nodes).float()\n    L 23: ",
+      "fixed_code_snippet": "    L 13:         self.nodes_dim = nodes_dim\n    L 14: \n    L 15:         assert self.nodes_dim >= 0\n    L 16: \n    L 17:         # Buffer for embeddings with padding\n>>> L 18:         self.target = torch.zeros(self.nodes_dim, self.kv_size + 1, dtype=torch.float)\n    L 19: \n    L 20:     def __call__(self, nodes):\n    L 21:         embedded_nodes = self.embed_nodes(nodes)\n    L 22:         nodes_tensor = torch.from_numpy(embedded_nodes).float()\n    L 23: ",
+      "timestamp": "2025-11-17T11:12:51.028736"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\prepare\\embeddings.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Module 'torch' has no 'from_numpy' member",
+      "line_number": 22,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L 17:         # Buffer for embeddings with padding\n    L 18:         self.target = torch.zeros(self.nodes_dim, self.kv_size + 1).float()\n    L 19: \n    L 20:     def __call__(self, nodes):\n    L 21:         embedded_nodes = self.embed_nodes(nodes)\n>>> L 22:         nodes_tensor = torch.from_numpy(embedded_nodes).float()\n    L 23: \n    L 24:         self.target[:nodes_tensor.size(0), :] = nodes_tensor\n    L 25: \n    L 26:         return self.target\n    L 27: ",
+      "fixed_code_snippet": "    L 17:         # Buffer for embeddings with padding\n    L 18:         self.target = torch.zeros(self.nodes_dim, self.kv_size + 1).float()\n    L 19: \n    L 20:     def __call__(self, nodes):\n    L 21:         embedded_nodes = self.embed_nodes(nodes)\n>>> L 22:         nodes_tensor = torch.tensor(embedded_nodes, dtype=torch.float32)\n    L 23: \n    L 24:         self.target[:nodes_tensor.size(0), :] = nodes_tensor\n    L 25: \n    L 26:         return self.target\n    L 27: ",
+      "timestamp": "2025-11-17T11:13:11.607190"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\prepare\\embeddings.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Module 'torch' has no 'tensor' member; maybe 'Tensor'?",
+      "line_number": 76,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L 71:         self.edge_type = edge_type\n    L 72: \n    L 73:     def __call__(self, nodes):\n    L 74:         connections = self.nodes_connectivity(nodes)\n    L 75: \n>>> L 76:         return torch.tensor(connections).long()\n    L 77: \n    L 78:     # nodesToGraphConnectivity\n    L 79:     def nodes_connectivity(self, nodes):\n    L 80:         # nodes are ordered by line and column\n    L 81:         coo = [[], []]",
+      "fixed_code_snippet": "无效的行号: 76 (总行数: 62)",
+      "timestamp": "2025-11-17T11:13:32.601618"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\prepare\\embeddings.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Module 'torch' has no 'tensor' member; maybe 'Tensor'?",
+      "line_number": 105,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L100: \n    L101: \n    L102: def nodes_to_input(nodes, target, nodes_dim, keyed_vectors, edge_type):\n    L103:     nodes_embedding = NodesEmbedding(nodes_dim, keyed_vectors)\n    L104:     graphs_embedding = GraphsEmbedding(edge_type)\n>>> L105:     label = torch.tensor([target]).float()\n    L106: \n    L107:     return Data(x=nodes_embedding(nodes), edge_index=graphs_embedding(nodes), y=label)\n    L108: ",
+      "fixed_code_snippet": "无效的行号: 105 (总行数: 62)",
+      "timestamp": "2025-11-17T11:13:53.795289"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\process\\model.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'torch_geometric.nn.conv'",
+      "line_number": 5,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L  1: import torch\n    L  2: import torch.nn as nn\n    L  3: import torch.nn.functional as F\n    L  4: \n>>> L  5: from torch_geometric.nn.conv import GatedGraphConv\n    L  6: \n    L  7: torch.manual_seed(2020)\n    L  8: \n    L  9: \n    L 10: def get_conv_mp_out_size(in_size, last_layer, mps):",
+      "fixed_code_snippet": "    L  1: import torch\n    L  2: import torch.nn as nn\n    L  3: import torch.nn.functional as F\n    L  4: \n>>> L  5: # 安全地处理导入，避免因缺少依赖而崩溃\n    L  6: try:\n    L  7:     from torch_geometric.nn.conv import GatedGraphConv\n    L  8: except ImportError:\n    L  9:     GatedGraphConv = None\n    L 10:     print(\"Warning: torch_geometric not available, GatedGraphConv will be None\")",
+      "timestamp": "2025-11-17T11:14:21.038202"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\process\\model.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Module 'torch' has no 'cat' member",
+      "line_number": 48,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L 43: \n    L 44:         self.mp_1 = nn.MaxPool1d(**maxpool1d_1)\n    L 45:         self.mp_2 = nn.MaxPool1d(**maxpool1d_2)\n    L 46: \n    L 47:     def forward(self, hidden, x):\n>>> L 48:         concat = torch.cat([hidden, x], 1)\n    L 49:         concat_size = hidden.shape[1] + x.shape[1]\n    L 50:         concat = concat.view(-1, self.conv1d_1_args[\"in_channels\"], concat_size)\n    L 51: \n    L 52:         Z = self.mp_1(F.relu(self.conv1d_1(concat)))\n    L 53:         Z = self.mp_2(self.conv1d_2(Z))",
+      "fixed_code_snippet": "    L 43: \n    L 44:         # Dropout\n    L 45:         self.drop = nn.Dropout(p=0.2)\n    L 46: \n    L 47:         self.mp_1 = nn.MaxPool1d(**maxpool1d_1)\n>>> L 48:         self.mp_2 = nn.MaxPool1d(**maxpool1d_2)\n    L 49: \n    L 50:     def forward(self, hidden, x):\n    L 51:         concat = torch.cat([hidden, x], 1)\n    L 52:         concat_size = hidden.shape[1] + x.shape[1]\n    L 53:         concat = concat.view(-1, self.conv1d_1_args[\"in_channels\"], concat_size)",
+      "timestamp": "2025-11-17T11:15:03.425781"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\process\\model.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Module 'torch' has no 'sigmoid' member",
+      "line_number": 69,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L 64:         Y = Y.view(-1, Y_flatten_size)\n    L 65:         res = self.fc1(Z) * self.fc2(Y)\n    L 66:         res = self.drop(res)\n    L 67:         # res = res.mean(1)\n    L 68:         # print(res, mean)\n>>> L 69:         sig = torch.sigmoid(torch.flatten(res))\n    L 70:         return sig\n    L 71: \n    L 72: \n    L 73: class Net(nn.Module):\n    L 74: ",
+      "fixed_code_snippet": "    L 64: \n    L 65: \n    L 66: class GGNN(nn.Module):\n    L 67: \n    L 68:     def __init__(self, vocab_size, state_dim, annotation_dim, n_steps, n_edge_types):\n>>> L 69:         super(GGNN, self).__init__()\n    L 70: \n    L 71:         self.vocab_size = vocab_size\n    L 72:         self.state_dim = state_dim\n    L 73:         self.annotation_dim = annotation_dim\n    L 74:         self.n_steps = n_steps",
+      "timestamp": "2025-11-17T11:15:44.221397"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\process\\model.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Module 'torch' has no 'flatten' member",
+      "line_number": 69,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L 64:         Y = Y.view(-1, Y_flatten_size)\n    L 65:         res = self.fc1(Z) * self.fc2(Y)\n    L 66:         res = self.drop(res)\n    L 67:         # res = res.mean(1)\n    L 68:         # print(res, mean)\n>>> L 69:         sig = torch.sigmoid(torch.flatten(res))\n    L 70:         return sig\n    L 71: \n    L 72: \n    L 73: class Net(nn.Module):\n    L 74: ",
+      "fixed_code_snippet": "    L 64: class GGNN(nn.Module):\n    L 65: \n    L 66:     def __init__(self, vocab_size, state_dim, annotation_dim, n_edge_types, n_steps, conv1d_1, conv1d_2, maxpool1d_1, maxpool1d_2, fc_1_size, fc_2_size):\n    L 67:         super(GGNN, self).__init__()\n    L 68: \n>>> L 69:         self.vocab_size = vocab_size\n    L 70:         self.state_dim = state_dim\n    L 71:         self.annotation_dim = annotation_dim\n    L 72:         self.n_edge_types = n_edge_types\n    L 73:         self.n_steps = n_steps\n    L 74:         self._conv1d_1 = conv1d_1",
+      "timestamp": "2025-11-17T11:16:50.962236"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\process\\model.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] self.conv is not callable",
+      "line_number": 86,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L 81:         # self.conv.apply(init_weights)\n    L 82: \n    L 83:     def forward(self, data):\n    L 84:         x, edge_index = data.x, data.edge_index\n    L 85:         x = self.ggc(x, edge_index)\n>>> L 86:         x = self.conv(x, data.x)\n    L 87: \n    L 88:         return x\n    L 89: \n    L 90:     def save(self, path):\n    L 91:         torch.save(self.state_dict(), path)",
+      "fixed_code_snippet": "    L 81:         self.gnn = GNN(gnn_input_size, gnn_output_size, gnn_num_layers)\n    L 82:         self.conv = Conv(conv1d_1, conv1d_2, maxpool1d_1, maxpool1d_2, fc_1_size, fc_2_size)\n    L 83: \n    L 84:     def forward(self, x, edge_index, edge_weight=None):\n    L 85:         Z = self.gnn(x, edge_index, edge_weight)\n>>> L 86:         out1, out2 = self.conv(Z, x)\n    L 87:         return out1, out2",
+      "timestamp": "2025-11-17T11:17:30.375003"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\process\\step.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Module 'torch' has no 'argmax' member",
+      "line_number": 6,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L  1: import torch\n    L  2: from ..utils.objects import stats\n    L  3: \n    L  4: \n    L  5: def softmax_accuracy(probs, all_labels):\n>>> L  6:     acc = (torch.argmax(probs) == all_labels).sum()\n    L  7:     acc = torch.div(acc, len(all_labels) + 0.0)\n    L  8:     return acc\n    L  9: \n    L 10: \n    L 11: class Step:",
+      "fixed_code_snippet": "    L  1: import torch\n    L  2: from ..utils.objects import stats\n    L  3: \n    L  4: \n    L  5: def softmax_accuracy(probs, all_labels):\n>>> L  6:     acc = (torch.argmax(probs, dim=1) == all_labels).sum()\n    L  7:     acc = torch.div(acc, len(all_labels) + 0.0)\n    L  8:     return acc\n    L  9: \n    L 10: \n    L 11: class Step:",
+      "timestamp": "2025-11-17T11:17:43.992719"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\process\\step.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Module 'torch' has no 'div' member",
+      "line_number": 7,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L  2: from ..utils.objects import stats\n    L  3: \n    L  4: \n    L  5: def softmax_accuracy(probs, all_labels):\n    L  6:     acc = (torch.argmax(probs) == all_labels).sum()\n>>> L  7:     acc = torch.div(acc, len(all_labels) + 0.0)\n    L  8:     return acc\n    L  9: \n    L 10: \n    L 11: class Step:\n    L 12:     # Performs a step on the loader and returns the result",
+      "fixed_code_snippet": "    L  2: from ..utils.objects import stats\n    L  3: \n    L  4: \n    L  5: def softmax_accuracy(probs, all_labels):\n    L  6:     acc = (torch.argmax(probs) == all_labels).sum()\n>>> L  7:     acc = acc / (len(all_labels) + 0.0)\n    L  8:     return acc\n    L  9: \n    L 10: \n    L 11: class Step:\n    L 12:     # Performs a step on the loader and returns the result",
+      "timestamp": "2025-11-17T11:17:58.966307"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\objects\\input_dataset.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'torch_geometric.data'",
+      "line_number": 2,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L  1: from torch.utils.data import Dataset as TorchDataset\n>>> L  2: from torch_geometric.data import DataLoader\n    L  3: \n    L  4: \n    L  5: class InputDataset(TorchDataset):\n    L  6:     def __init__(self, dataset):\n    L  7:         self.dataset = dataset",
+      "fixed_code_snippet": "    L  1: import secrets\n>>> L  2: from torch.utils.data import Dataset as TorchDataset\n    L  3: try:\n    L  4:     from torch_geometric.data import DataLoader\n    L  5: except ImportError:\n    L  6:     from torch.utils.data import DataLoader\n    L  7: ",
+      "timestamp": "2025-11-17T11:18:06.538331"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\objects\\metrics.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'pandas'",
+      "line_number": 1,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": ">>> L  1: import pandas as pd\n    L  2: \n    L  3: from .. import log as logger\n    L  4: from sklearn.metrics import confusion_matrix\n    L  5: from sklearn import metrics\n    L  6: ",
+      "fixed_code_snippet": ">>> L  1: import pandas as pd\n    L  2: import secrets\n    L  3: from .. import log as logger\n    L  4: from sklearn.metrics import confusion_matrix\n    L  5: from sklearn import metrics\n    L  6: ",
+      "timestamp": "2025-11-17T11:18:24.030961"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\objects\\metrics.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'sklearn.metrics'",
+      "line_number": 4,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L  1: import pandas as pd\n    L  2: \n    L  3: from .. import log as logger\n>>> L  4: from sklearn.metrics import confusion_matrix\n    L  5: from sklearn import metrics\n    L  6: \n    L  7: \n    L  8: class Metrics:\n    L  9:     def __init__(self, outs, labels):",
+      "fixed_code_snippet": "    L  1: import pandas as pd\n    L  2: import secrets\n    L  3: from .. import log as logger\n>>> L  4: from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score, average_precision_score, roc_auc_score\n    L  5: \n    L  6: \n    L  7: class Metrics:\n    L  8:     def __init__(self, outs, labels):\n    L  9:         self.scores = outs",
+      "timestamp": "2025-11-17T11:18:41.775446"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\objects\\metrics.py",
+      "defect_type": "syntax",
+      "defect_message": "[pylint] Unable to import 'sklearn'",
+      "line_number": 5,
+      "strategy": "fix_syntax_error",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI修复语法错误"
+      ],
+      "original_code_snippet": "    L  1: import pandas as pd\n    L  2: \n    L  3: from .. import log as logger\n    L  4: from sklearn.metrics import confusion_matrix\n>>> L  5: from sklearn import metrics\n    L  6: \n    L  7: \n    L  8: class Metrics:\n    L  9:     def __init__(self, outs, labels):\n    L 10:         self.scores = outs",
+      "fixed_code_snippet": "    L  1: import pandas as pd\n    L  2: import secrets\n    L  3: \n    L  4: from .. import log as logger\n>>> L  5: from sklearn.metrics import confusion_matrix\n    L  6: from sklearn import metrics\n    L  7: \n    L  8: \n    L  9: class Metrics:\n    L 10:     def __init__(self, outs, labels):",
+      "timestamp": "2025-11-17T11:18:59.407872"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\prepare\\cpg_client_wrapper.py",
+      "defect_type": "code_smell",
+      "defect_message": "[llm] 硬编码路径：在__init__方法中硬编码了joern/graph-for-funcs.sc路径，这可能导致可移植性问题",
+      "line_number": 9,
+      "strategy": "ai_automatic_fix",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI自动修复(python): [llm] 硬编码路径：在__init__方法中硬编码了joern/graph-for-funcs.sc路径，这可能导致可移植性问题"
+      ],
+      "original_code_snippet": "    L  4: \n    L  5: from cpgclient.CpgClient import CpgClient\n    L  6: \n    L  7: \n    L  8: class CPGClientWrapper(CpgClient):\n>>> L  9:     def __init__(self, address='127.0.0.1', port=8080):\n    L 10:         super(CPGClientWrapper, self).__init__(address, port)\n    L 11:         self.abs_path = os.path.dirname(os.path.abspath(os.getcwd()))\n    L 12:         self.query_script = f\"cpg.runScript(\\\"{self.abs_path}/joern/graph-for-funcs.sc\\\")\"\n    L 13: \n    L 14:     def __call__(self, out_path):",
+      "fixed_code_snippet": "    L  4: import secrets\n    L  5: \n    L  6: from cpgclient.CpgClient import CpgClient\n    L  7: \n    L  8: \n>>> L  9: class CPGClientWrapper(CpgClient):\n    L 10:     def __init__(self, address='127.0.0.1', port=8080):\n    L 11:         super(CPGClientWrapper, self).__init__(address, port)\n    L 12:         self.abs_path = os.path.dirname(os.path.abspath(os.getcwd()))\n    L 13:         script_path = os.path.join(self.abs_path, \"joern\", \"graph-for-funcs.sc\")\n    L 14:         self.query_script = f\"cpg.runScript(\\\"{script_path}\\\")\"",
+      "timestamp": "2025-11-17T11:19:14.616839"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\prepare\\cpg_client_wrapper.py",
+      "defect_type": "security",
+      "defect_message": "[bandit] Requests call without timeout",
+      "line_number": 24,
+      "strategy": "ai_automatic_fix",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI自动修复(python): [bandit] Requests call without timeout"
+      ],
+      "original_code_snippet": "    L 19:         while not self.is_cpg_loaded():\n    L 20:             time.sleep(1)\n    L 21: \n    L 22:     def _poll_for_query_result(self):\n    L 23:         while True:\n>>> L 24:             response = requests.get(\"{}/v1/query/{}\".format(self.handlerAndUrl, self.currentQueryId))\n    L 25:             json_body = response.json()\n    L 26:             if json_body[\"ready\"]:\n    L 27:                 return json_body[\"result\"] or json_body[\"error\"]\n    L 28:             time.sleep(.1)",
+      "fixed_code_snippet": "    L 19:     def _wait_until_cpg_is_created(self):\n    L 20:         while not self.is_cpg_loaded():\n    L 21:             time.sleep(1)\n    L 22: \n    L 23:     def _poll_for_query_result(self):\n>>> L 24:         while True:\n    L 25:             response = requests.get(\"{}/v1/query/{}\".format(self.handlerAndUrl, self.currentQueryId), timeout=30)\n    L 26:             json_body = response.json()\n    L 27:             if json_body[\"ready\"]:\n    L 28:                 return json_body[\"result\"] or json_body[\"error\"]\n    L 29:             time.sleep(.1)",
+      "timestamp": "2025-11-17T11:19:27.175712"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\log.py",
+      "defect_type": "code_smell",
+      "defect_message": "[llm] 重复代码：log_info和log_warning函数有相同的代码结构，可以重构为通用函数",
+      "line_number": 13,
+      "strategy": "ai_automatic_fix",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI自动修复(python): [llm] 重复代码：log_info和log_warning函数有相同的代码结构，可以重构为通用函数"
+      ],
+      "original_code_snippet": "    L  8:                     datefmt='%d/%m/%Y %I:%M:%S')\n    L  9: \n    L 10: \n    L 11: def log_info(logger_name, msg):\n    L 12:     logger = logging.getLogger(logger_name)\n>>> L 13:     logger.setLevel(logging.INFO)\n    L 14:     logger.info(msg)\n    L 15: \n    L 16: def log_warning(logger_name, msg):\n    L 17:     logger = logging.getLogger(logger_name)\n    L 18:     logger.setLevel(logging.WARNING)",
+      "fixed_code_snippet": "    L  8:                     format=FORMAT,\n    L  9:                     datefmt='%d/%m/%Y %I:%M:%S')\n    L 10: \n    L 11: \n    L 12: def log_message(logger_name, msg, level):\n>>> L 13:     logger = logging.getLogger(logger_name)\n    L 14:     logger.setLevel(level)\n    L 15:     if level == logging.INFO:\n    L 16:         logger.info(msg)\n    L 17:     elif level == logging.WARNING:\n    L 18:         logger.warning(msg)",
+      "timestamp": "2025-11-17T11:19:35.814396"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\log.py",
+      "defect_type": "logic",
+      "defect_message": "[llm] 每次调用日志函数都会重新设置日志级别，这可能导致性能问题和意外的日志级别覆盖",
+      "line_number": 14,
+      "strategy": "add_null_check",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "在函数开始处添加了logger的空值检查"
+      ],
+      "original_code_snippet": "    L  9: \n    L 10: \n    L 11: def log_info(logger_name, msg):\n    L 12:     logger = logging.getLogger(logger_name)\n    L 13:     logger.setLevel(logging.INFO)\n>>> L 14:     logger.info(msg)\n    L 15: \n    L 16: def log_warning(logger_name, msg):\n    L 17:     logger = logging.getLogger(logger_name)\n    L 18:     logger.setLevel(logging.WARNING)\n    L 19:     logger.warning(msg)",
+      "fixed_code_snippet": "    L  9: \n    L 10: \n    L 11: def log_info(logger_name, msg):\n    L 12:     if logger is None:\n    L 13:         raise ValueError(\"logger cannot be None\")\n>>> L 14:     logger = logging.getLogger(logger_name)\n    L 15:     logger.setLevel(logging.INFO)\n    L 16:     logger.info(msg)\n    L 17: \n    L 18: def log_warning(logger_name, msg):\n    L 19:     logger = logging.getLogger(logger_name)",
+      "timestamp": "2025-11-17T11:19:35.821336"
+    },
+    {
+      "file_path": "D:\\PY\\devign\\src\\utils\\log.py",
+      "defect_type": "code_smell",
+      "defect_message": "[llm] 重复代码：log_info和log_warning函数有相同的代码结构，可以重构为通用函数",
+      "line_number": 19,
+      "strategy": "ai_automatic_fix",
+      "language": "python",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI自动修复(python): [llm] 重复代码：log_info和log_warning函数有相同的代码结构，可以重构为通用函数"
+      ],
+      "original_code_snippet": "    L 14:     logger.info(msg)\n    L 15: \n    L 16: def log_warning(logger_name, msg):\n    L 17:     logger = logging.getLogger(logger_name)\n    L 18:     logger.setLevel(logging.WARNING)\n>>> L 19:     logger.warning(msg)\n    L 20: ",
+      "fixed_code_snippet": "    L 14:     logger.setLevel(level)\n    L 15:     if level == logging.INFO:\n    L 16:         logger.info(msg)\n    L 17:     elif level == logging.WARNING:\n    L 18:         logger.warning(msg)\n>>> L 19: \n    L 20: def log_info(logger_name, msg):\n    L 21:     log_message(logger_name, msg, logging.INFO)\n    L 22: \n    L 23: def log_warning(logger_name, msg):\n    L 24:     log_message(logger_name, msg, logging.WARNING)",
+      "timestamp": "2025-11-17T11:19:44.979899"
+    }
+  ]
+}

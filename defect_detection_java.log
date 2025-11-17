@@ -1,0 +1,1731 @@
+2025-11-13 20:23:38,907 - agents.defect_detector_java - INFO - 开始解析Java项目上下文
+2025-11-13 20:23:38,910 - agents.defect_detector_java - INFO - 开始检测Java项目，共132个Java文件
+2025-11-13 20:23:38,911 - agents.defect_detector_java - INFO - 开始检测Java文件：Formatter.java
+2025-11-13 20:23:38,915 - agents.defect_detector_java - INFO - 开始检测Java文件：SingleTestRunner.java
+2025-11-13 20:23:40,420 - agents.defect_detector_java - INFO - [checkstyle结果] Formatter.java检测到202个缺陷
+2025-11-13 20:23:40,433 - agents.defect_detector_java - INFO - [checkstyle结果] SingleTestRunner.java检测到52个缺陷
+2025-11-13 20:23:41,439 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:23:41,439 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:23:41,439 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:23:41,439 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:23:41,439 - agents.defect_detector_java - INFO - [pmd结果] SingleTestRunner.java检测到4个缺陷
+2025-11-13 20:23:41,441 - agents.defect_detector_java - INFO - [pmd结果] Formatter.java检测到0个缺陷
+2025-11-13 20:23:41,441 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：SingleTestRunner.java（重试次数：0）
+2025-11-13 20:23:41,441 - agents.defect_detector_java - INFO - 文件Formatter.java过长，截断至4000字符进行LLM检测
+2025-11-13 20:23:41,444 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:23:41,592 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:23:42,481 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:23:42,481 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in SingleTestRunner.java
+2025-11-13 20:23:42,481 - agents.defect_detector_java - INFO - [LLM结果] SingleTestRunner.java检测到0个缺陷
+2025-11-13 20:23:42,481 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：Formatter.java（重试次数：0）
+2025-11-13 20:23:42,483 - agents.defect_detector_java - INFO - [性能检测结果] SingleTestRunner.java检测到0个潜在问题
+2025-11-13 20:23:42,484 - agents.defect_detector_java - INFO - 检测进度：1/132 (0.8%) - SingleTestRunner.java
+2025-11-13 20:23:42,484 - agents.defect_detector_java - INFO - 开始检测Java文件：AbstractTestClass.java
+2025-11-13 20:23:42,484 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:23:42,590 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:23:43,527 - agents.defect_detector_java - INFO - [checkstyle结果] AbstractTestClass.java检测到23个缺陷
+2025-11-13 20:23:43,575 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:23:43,575 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in Formatter.java
+2025-11-13 20:23:43,576 - agents.defect_detector_java - INFO - [LLM结果] Formatter.java检测到0个缺陷
+2025-11-13 20:23:43,576 - agents.defect_detector_java - INFO - [性能检测结果] Formatter.java检测到0个潜在问题
+2025-11-13 20:23:43,576 - agents.defect_detector_java - INFO - 检测进度：2/132 (1.5%) - Formatter.java
+2025-11-13 20:23:43,576 - agents.defect_detector_java - INFO - 开始检测Java文件：EmptyTestClass.java
+2025-11-13 20:23:44,481 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:23:44,481 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:23:44,481 - agents.defect_detector_java - INFO - [pmd结果] AbstractTestClass.java检测到0个缺陷
+2025-11-13 20:23:44,482 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：AbstractTestClass.java（重试次数：0）
+2025-11-13 20:23:44,483 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:23:44,570 - agents.defect_detector_java - INFO - [checkstyle结果] EmptyTestClass.java检测到1个缺陷
+2025-11-13 20:23:44,579 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:23:45,508 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:23:45,508 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:23:45,509 - agents.defect_detector_java - INFO - [pmd结果] EmptyTestClass.java检测到0个缺陷
+2025-11-13 20:23:45,632 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:23:45,633 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in AbstractTestClass.java
+2025-11-13 20:23:45,633 - agents.defect_detector_java - INFO - [LLM结果] AbstractTestClass.java检测到0个缺陷
+2025-11-13 20:23:45,633 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：EmptyTestClass.java（重试次数：0）
+2025-11-13 20:23:45,634 - agents.defect_detector_java - INFO - [性能检测结果] AbstractTestClass.java检测到0个潜在问题
+2025-11-13 20:23:45,635 - agents.defect_detector_java - INFO - 检测进度：3/132 (2.3%) - AbstractTestClass.java
+2025-11-13 20:23:45,635 - agents.defect_detector_java - INFO - 开始检测Java文件：InitError.java
+2025-11-13 20:23:45,636 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:23:45,895 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:23:46,671 - agents.defect_detector_java - INFO - [checkstyle结果] InitError.java检测到33个缺陷
+2025-11-13 20:23:47,110 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:23:47,110 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in EmptyTestClass.java
+2025-11-13 20:23:47,110 - agents.defect_detector_java - INFO - [LLM结果] EmptyTestClass.java检测到0个缺陷
+2025-11-13 20:23:47,111 - agents.defect_detector_java - INFO - [性能检测结果] EmptyTestClass.java检测到0个潜在问题
+2025-11-13 20:23:47,111 - agents.defect_detector_java - INFO - 检测进度：4/132 (3.0%) - EmptyTestClass.java
+2025-11-13 20:23:47,111 - agents.defect_detector_java - INFO - 开始检测Java文件：NonJUnitTest.java
+2025-11-13 20:23:47,589 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:23:47,589 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:23:47,590 - agents.defect_detector_java - INFO - [pmd结果] InitError.java检测到0个缺陷
+2025-11-13 20:23:47,590 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：InitError.java（重试次数：0）
+2025-11-13 20:23:47,593 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:23:47,714 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:23:48,101 - agents.defect_detector_java - INFO - [checkstyle结果] NonJUnitTest.java检测到8个缺陷
+2025-11-13 20:23:48,650 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:23:48,650 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in InitError.java
+2025-11-13 20:23:48,650 - agents.defect_detector_java - INFO - [LLM结果] InitError.java检测到0个缺陷
+2025-11-13 20:23:48,650 - agents.defect_detector_java - INFO - [性能检测结果] InitError.java检测到0个潜在问题
+2025-11-13 20:23:48,652 - agents.defect_detector_java - INFO - 检测进度：5/132 (3.8%) - InitError.java
+2025-11-13 20:23:48,652 - agents.defect_detector_java - INFO - 开始检测Java文件：NotPublicSuite.java
+2025-11-13 20:23:49,053 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:23:49,053 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:23:49,053 - agents.defect_detector_java - INFO - [pmd结果] NonJUnitTest.java检测到0个缺陷
+2025-11-13 20:23:49,054 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：NonJUnitTest.java（重试次数：0）
+2025-11-13 20:23:49,055 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:23:49,160 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:23:49,693 - agents.defect_detector_java - INFO - [checkstyle结果] NotPublicSuite.java检测到25个缺陷
+2025-11-13 20:23:50,004 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:23:50,004 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in NonJUnitTest.java
+2025-11-13 20:23:50,004 - agents.defect_detector_java - INFO - [LLM结果] NonJUnitTest.java检测到0个缺陷
+2025-11-13 20:23:50,004 - agents.defect_detector_java - INFO - [性能检测结果] NonJUnitTest.java检测到0个潜在问题
+2025-11-13 20:23:50,006 - agents.defect_detector_java - INFO - 检测进度：6/132 (4.5%) - NonJUnitTest.java
+2025-11-13 20:23:50,006 - agents.defect_detector_java - INFO - 开始检测Java文件：SimpleTest.java
+2025-11-13 20:23:50,612 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:23:50,612 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:23:50,613 - agents.defect_detector_java - INFO - [pmd结果] NotPublicSuite.java检测到0个缺陷
+2025-11-13 20:23:50,613 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：NotPublicSuite.java（重试次数：0）
+2025-11-13 20:23:50,615 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:23:50,721 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:23:51,112 - agents.defect_detector_java - INFO - [checkstyle结果] SimpleTest.java检测到23个缺陷
+2025-11-13 20:23:51,484 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:23:51,484 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in NotPublicSuite.java
+2025-11-13 20:23:51,485 - agents.defect_detector_java - INFO - [LLM结果] NotPublicSuite.java检测到0个缺陷
+2025-11-13 20:23:51,485 - agents.defect_detector_java - INFO - [性能检测结果] NotPublicSuite.java检测到0个潜在问题
+2025-11-13 20:23:51,486 - agents.defect_detector_java - INFO - 检测进度：7/132 (5.3%) - NotPublicSuite.java
+2025-11-13 20:23:51,486 - agents.defect_detector_java - INFO - 开始检测Java文件：Timeout.java
+2025-11-13 20:23:52,036 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:23:52,036 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:23:52,037 - agents.defect_detector_java - INFO - [pmd结果] SimpleTest.java检测到0个缺陷
+2025-11-13 20:23:52,037 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：SimpleTest.java（重试次数：0）
+2025-11-13 20:23:52,039 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:23:52,132 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:23:52,581 - agents.defect_detector_java - INFO - [checkstyle结果] Timeout.java检测到25个缺陷
+2025-11-13 20:23:53,295 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:23:53,295 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in SimpleTest.java
+2025-11-13 20:23:53,295 - agents.defect_detector_java - INFO - [LLM结果] SimpleTest.java检测到0个缺陷
+2025-11-13 20:23:53,297 - agents.defect_detector_java - INFO - [性能检测结果] SimpleTest.java检测到0个潜在问题
+2025-11-13 20:23:53,297 - agents.defect_detector_java - INFO - 检测进度：8/132 (6.1%) - SimpleTest.java
+2025-11-13 20:23:53,297 - agents.defect_detector_java - INFO - 开始检测Java文件：AbstractTestClass.java
+2025-11-13 20:23:53,502 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:23:53,502 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:23:53,502 - agents.defect_detector_java - INFO - [pmd结果] Timeout.java检测到0个缺陷
+2025-11-13 20:23:53,503 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：Timeout.java（重试次数：0）
+2025-11-13 20:23:53,504 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:23:53,623 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:23:54,362 - agents.defect_detector_java - INFO - [checkstyle结果] AbstractTestClass.java检测到19个缺陷
+2025-11-13 20:23:54,792 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:23:54,793 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in Timeout.java
+2025-11-13 20:23:54,793 - agents.defect_detector_java - INFO - [LLM结果] Timeout.java检测到0个缺陷
+2025-11-13 20:23:54,794 - agents.defect_detector_java - INFO - [性能检测结果] Timeout.java检测到0个潜在问题
+2025-11-13 20:23:54,795 - agents.defect_detector_java - INFO - 检测进度：9/132 (6.8%) - Timeout.java
+2025-11-13 20:23:54,795 - agents.defect_detector_java - INFO - 开始检测Java文件：EmptyTestClass.java
+2025-11-13 20:23:55,325 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:23:55,325 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:23:55,325 - agents.defect_detector_java - INFO - [pmd结果] AbstractTestClass.java检测到0个缺陷
+2025-11-13 20:23:55,326 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：AbstractTestClass.java（重试次数：0）
+2025-11-13 20:23:55,327 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:23:55,412 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:23:55,762 - agents.defect_detector_java - INFO - [checkstyle结果] EmptyTestClass.java检测到1个缺陷
+2025-11-13 20:23:56,481 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:23:56,483 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in AbstractTestClass.java
+2025-11-13 20:23:56,483 - agents.defect_detector_java - INFO - [LLM结果] AbstractTestClass.java检测到0个缺陷
+2025-11-13 20:23:56,483 - agents.defect_detector_java - INFO - [性能检测结果] AbstractTestClass.java检测到0个潜在问题
+2025-11-13 20:23:56,483 - agents.defect_detector_java - INFO - 检测进度：10/132 (7.6%) - AbstractTestClass.java
+2025-11-13 20:23:56,483 - agents.defect_detector_java - INFO - 开始检测Java文件：InitError.java
+2025-11-13 20:23:56,694 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:23:56,694 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:23:56,694 - agents.defect_detector_java - INFO - [pmd结果] EmptyTestClass.java检测到0个缺陷
+2025-11-13 20:23:56,694 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：EmptyTestClass.java（重试次数：0）
+2025-11-13 20:23:56,696 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:23:56,799 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:23:57,552 - agents.defect_detector_java - INFO - [checkstyle结果] InitError.java检测到27个缺陷
+2025-11-13 20:23:58,010 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:23:58,010 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in EmptyTestClass.java
+2025-11-13 20:23:58,010 - agents.defect_detector_java - INFO - [LLM结果] EmptyTestClass.java检测到0个缺陷
+2025-11-13 20:23:58,011 - agents.defect_detector_java - INFO - [性能检测结果] EmptyTestClass.java检测到0个潜在问题
+2025-11-13 20:23:58,011 - agents.defect_detector_java - INFO - 检测进度：11/132 (8.3%) - EmptyTestClass.java
+2025-11-13 20:23:58,011 - agents.defect_detector_java - INFO - 开始检测Java文件：MethodTimeout.java
+2025-11-13 20:23:58,482 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:23:58,483 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:23:58,483 - agents.defect_detector_java - INFO - [pmd结果] InitError.java检测到0个缺陷
+2025-11-13 20:23:58,483 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：InitError.java（重试次数：0）
+2025-11-13 20:23:58,486 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:23:58,591 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:23:59,103 - agents.defect_detector_java - INFO - [checkstyle结果] MethodTimeout.java检测到20个缺陷
+2025-11-13 20:23:59,782 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:23:59,782 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in InitError.java
+2025-11-13 20:23:59,783 - agents.defect_detector_java - INFO - [LLM结果] InitError.java检测到0个缺陷
+2025-11-13 20:23:59,783 - agents.defect_detector_java - INFO - [性能检测结果] InitError.java检测到0个潜在问题
+2025-11-13 20:23:59,784 - agents.defect_detector_java - INFO - 检测进度：12/132 (9.1%) - InitError.java
+2025-11-13 20:23:59,784 - agents.defect_detector_java - INFO - 开始检测Java文件：NonJUnitTest.java
+2025-11-13 20:23:59,987 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:23:59,987 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:23:59,988 - agents.defect_detector_java - INFO - [pmd结果] MethodTimeout.java检测到1个缺陷
+2025-11-13 20:23:59,988 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：MethodTimeout.java（重试次数：0）
+2025-11-13 20:23:59,990 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:00,156 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:00,763 - agents.defect_detector_java - INFO - [checkstyle结果] NonJUnitTest.java检测到8个缺陷
+2025-11-13 20:24:00,932 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:00,932 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in MethodTimeout.java
+2025-11-13 20:24:00,932 - agents.defect_detector_java - INFO - [LLM结果] MethodTimeout.java检测到0个缺陷
+2025-11-13 20:24:00,933 - agents.defect_detector_java - INFO - [性能检测结果] MethodTimeout.java检测到0个潜在问题
+2025-11-13 20:24:00,933 - agents.defect_detector_java - INFO - 检测进度：13/132 (9.8%) - MethodTimeout.java
+2025-11-13 20:24:00,933 - agents.defect_detector_java - INFO - 开始检测Java文件：NotPublicSuite.java
+2025-11-13 20:24:01,713 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:01,714 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:01,714 - agents.defect_detector_java - INFO - [pmd结果] NonJUnitTest.java检测到0个缺陷
+2025-11-13 20:24:01,714 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：NonJUnitTest.java（重试次数：0）
+2025-11-13 20:24:01,716 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:01,890 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:02,053 - agents.defect_detector_java - INFO - [checkstyle结果] NotPublicSuite.java检测到24个缺陷
+2025-11-13 20:24:02,748 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:02,748 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in NonJUnitTest.java
+2025-11-13 20:24:02,749 - agents.defect_detector_java - INFO - [LLM结果] NonJUnitTest.java检测到0个缺陷
+2025-11-13 20:24:02,749 - agents.defect_detector_java - INFO - [性能检测结果] NonJUnitTest.java检测到0个潜在问题
+2025-11-13 20:24:02,749 - agents.defect_detector_java - INFO - 检测进度：14/132 (10.6%) - NonJUnitTest.java
+2025-11-13 20:24:02,749 - agents.defect_detector_java - INFO - 开始检测Java文件：ParamTest.java
+2025-11-13 20:24:02,986 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:02,986 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:02,986 - agents.defect_detector_java - INFO - [pmd结果] NotPublicSuite.java检测到0个缺陷
+2025-11-13 20:24:02,987 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：NotPublicSuite.java（重试次数：0）
+2025-11-13 20:24:02,988 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:03,143 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:03,891 - agents.defect_detector_java - INFO - [checkstyle结果] ParamTest.java检测到21个缺陷
+2025-11-13 20:24:03,929 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:03,929 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in NotPublicSuite.java
+2025-11-13 20:24:03,929 - agents.defect_detector_java - INFO - [LLM结果] NotPublicSuite.java检测到0个缺陷
+2025-11-13 20:24:03,931 - agents.defect_detector_java - INFO - [性能检测结果] NotPublicSuite.java检测到0个潜在问题
+2025-11-13 20:24:03,931 - agents.defect_detector_java - INFO - 检测进度：15/132 (11.4%) - NotPublicSuite.java
+2025-11-13 20:24:03,931 - agents.defect_detector_java - INFO - 开始检测Java文件：SimpleTest.java
+2025-11-13 20:24:04,837 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:04,837 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:04,838 - agents.defect_detector_java - INFO - [pmd结果] ParamTest.java检测到0个缺陷
+2025-11-13 20:24:04,838 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：ParamTest.java（重试次数：0）
+2025-11-13 20:24:04,840 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:04,945 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:05,008 - agents.defect_detector_java - INFO - [checkstyle结果] SimpleTest.java检测到18个缺陷
+2025-11-13 20:24:05,908 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:05,909 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:05,909 - agents.defect_detector_java - INFO - [pmd结果] SimpleTest.java检测到0个缺陷
+2025-11-13 20:24:06,010 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:06,010 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in ParamTest.java
+2025-11-13 20:24:06,011 - agents.defect_detector_java - INFO - [LLM结果] ParamTest.java检测到0个缺陷
+2025-11-13 20:24:06,011 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：SimpleTest.java（重试次数：0）
+2025-11-13 20:24:06,012 - agents.defect_detector_java - INFO - [性能检测结果] ParamTest.java检测到0个潜在问题
+2025-11-13 20:24:06,013 - agents.defect_detector_java - INFO - 检测进度：16/132 (12.1%) - ParamTest.java
+2025-11-13 20:24:06,013 - agents.defect_detector_java - INFO - 开始检测Java文件：Timeout.java
+2025-11-13 20:24:06,014 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:06,104 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:07,090 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:07,091 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in SimpleTest.java
+2025-11-13 20:24:07,091 - agents.defect_detector_java - INFO - [LLM结果] SimpleTest.java检测到0个缺陷
+2025-11-13 20:24:07,091 - agents.defect_detector_java - INFO - [性能检测结果] SimpleTest.java检测到0个潜在问题
+2025-11-13 20:24:07,092 - agents.defect_detector_java - INFO - 检测进度：17/132 (12.9%) - SimpleTest.java
+2025-11-13 20:24:07,092 - agents.defect_detector_java - INFO - 开始检测Java文件：FailingTests.java
+2025-11-13 20:24:07,094 - agents.defect_detector_java - INFO - [checkstyle结果] Timeout.java检测到21个缺陷
+2025-11-13 20:24:08,044 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:08,044 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:08,045 - agents.defect_detector_java - INFO - [pmd结果] Timeout.java检测到0个缺陷
+2025-11-13 20:24:08,045 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：Timeout.java（重试次数：0）
+2025-11-13 20:24:08,047 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:08,123 - agents.defect_detector_java - INFO - [checkstyle结果] FailingTests.java检测到1个缺陷
+2025-11-13 20:24:08,182 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:09,061 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:09,062 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:09,064 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:09,064 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in Timeout.java
+2025-11-13 20:24:09,064 - agents.defect_detector_java - INFO - [LLM结果] Timeout.java检测到0个缺陷
+2025-11-13 20:24:09,064 - agents.defect_detector_java - INFO - [pmd结果] FailingTests.java检测到0个缺陷
+2025-11-13 20:24:09,064 - agents.defect_detector_java - INFO - [性能检测结果] Timeout.java检测到0个潜在问题
+2025-11-13 20:24:09,065 - agents.defect_detector_java - INFO - 检测进度：18/132 (13.6%) - Timeout.java
+2025-11-13 20:24:09,065 - agents.defect_detector_java - INFO - 开始检测Java文件：InvalidCharacters.java
+2025-11-13 20:24:09,065 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：FailingTests.java（重试次数：0）
+2025-11-13 20:24:09,067 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:09,167 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:09,945 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:09,946 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in FailingTests.java
+2025-11-13 20:24:09,946 - agents.defect_detector_java - INFO - [LLM结果] FailingTests.java检测到0个缺陷
+2025-11-13 20:24:09,947 - agents.defect_detector_java - INFO - [性能检测结果] FailingTests.java检测到0个潜在问题
+2025-11-13 20:24:09,947 - agents.defect_detector_java - INFO - 检测进度：19/132 (14.4%) - FailingTests.java
+2025-11-13 20:24:09,947 - agents.defect_detector_java - INFO - 开始检测Java文件：InvalidImport.java
+2025-11-13 20:24:10,078 - agents.defect_detector_java - INFO - [checkstyle结果] InvalidCharacters.java检测到3个缺陷
+2025-11-13 20:24:10,947 - agents.defect_detector_java - INFO - [checkstyle结果] InvalidImport.java检测到1个缺陷
+2025-11-13 20:24:11,056 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:11,057 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:11,057 - agents.defect_detector_java - INFO - [pmd结果] InvalidCharacters.java检测到0个缺陷
+2025-11-13 20:24:11,057 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：InvalidCharacters.java（重试次数：0）
+2025-11-13 20:24:11,059 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:11,161 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:11,874 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:11,874 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:11,875 - agents.defect_detector_java - INFO - [pmd结果] InvalidImport.java检测到0个缺陷
+2025-11-13 20:24:12,048 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:12,049 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in InvalidCharacters.java
+2025-11-13 20:24:12,049 - agents.defect_detector_java - INFO - [LLM结果] InvalidCharacters.java检测到0个缺陷
+2025-11-13 20:24:12,049 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：InvalidImport.java（重试次数：0）
+2025-11-13 20:24:12,051 - agents.defect_detector_java - INFO - [性能检测结果] InvalidCharacters.java检测到0个潜在问题
+2025-11-13 20:24:12,051 - agents.defect_detector_java - INFO - 检测进度：20/132 (15.2%) - InvalidCharacters.java
+2025-11-13 20:24:12,051 - agents.defect_detector_java - INFO - 开始检测Java文件：LineCommentsWithWhitespaces.java
+2025-11-13 20:24:12,052 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:12,176 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:13,074 - agents.defect_detector_java - INFO - [checkstyle结果] LineCommentsWithWhitespaces.java检测到3个缺陷
+2025-11-13 20:24:14,018 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:14,019 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:14,019 - agents.defect_detector_java - INFO - [pmd结果] LineCommentsWithWhitespaces.java检测到0个缺陷
+2025-11-13 20:24:15,188 - agents.defect_detector_java - DEBUG - LLM原始响应: [{"type": "syntax", "message": "导入的类 'non.existing.classtoimport' 不存在，会导致编译错误", "line_number": 3, "severity": "CRITICAL", "tool": "llm", "confidence": 0.8}]
+2025-11-13 20:24:15,189 - agents.defect_detector_java - DEBUG - LLM成功检测到1个缺陷 in InvalidImport.java
+2025-11-13 20:24:15,189 - agents.defect_detector_java - INFO - [LLM结果] InvalidImport.java检测到1个缺陷
+2025-11-13 20:24:15,189 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：LineCommentsWithWhitespaces.java（重试次数：0）
+2025-11-13 20:24:15,190 - agents.defect_detector_java - INFO - [性能检测结果] InvalidImport.java检测到0个潜在问题
+2025-11-13 20:24:15,191 - agents.defect_detector_java - INFO - 检测进度：21/132 (15.9%) - InvalidImport.java
+2025-11-13 20:24:15,191 - agents.defect_detector_java - INFO - 开始检测Java文件：Regex.java
+2025-11-13 20:24:15,191 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:15,287 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:16,155 - agents.defect_detector_java - WARNING - 未在Checkstyle输出中找到XML内容
+2025-11-13 20:24:16,156 - agents.defect_detector_java - WARNING - Checkstyle 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:16,156 - agents.defect_detector_java - INFO - [checkstyle结果] Regex.java检测到0个缺陷
+2025-11-13 20:24:16,325 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:16,325 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in LineCommentsWithWhitespaces.java
+2025-11-13 20:24:16,325 - agents.defect_detector_java - INFO - [LLM结果] LineCommentsWithWhitespaces.java检测到0个缺陷
+2025-11-13 20:24:16,326 - agents.defect_detector_java - INFO - [性能检测结果] LineCommentsWithWhitespaces.java检测到0个潜在问题
+2025-11-13 20:24:16,326 - agents.defect_detector_java - INFO - 检测进度：22/132 (16.7%) - LineCommentsWithWhitespaces.java
+2025-11-13 20:24:16,326 - agents.defect_detector_java - INFO - 开始检测Java文件：UnitTestsWithCompilationIssues.java
+2025-11-13 20:24:17,102 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:17,103 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:17,103 - agents.defect_detector_java - INFO - [pmd结果] Regex.java检测到0个缺陷
+2025-11-13 20:24:17,104 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：Regex.java（重试次数：0）
+2025-11-13 20:24:17,105 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:17,222 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:17,318 - agents.defect_detector_java - WARNING - 未在Checkstyle输出中找到XML内容
+2025-11-13 20:24:17,318 - agents.defect_detector_java - WARNING - Checkstyle 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:17,319 - agents.defect_detector_java - INFO - [checkstyle结果] UnitTestsWithCompilationIssues.java检测到0个缺陷
+2025-11-13 20:24:18,256 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:18,256 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:18,257 - agents.defect_detector_java - INFO - [pmd结果] UnitTestsWithCompilationIssues.java检测到0个缺陷
+2025-11-13 20:24:18,404 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:18,405 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in Regex.java
+2025-11-13 20:24:18,405 - agents.defect_detector_java - INFO - [LLM结果] Regex.java检测到0个缺陷
+2025-11-13 20:24:18,405 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：UnitTestsWithCompilationIssues.java（重试次数：0）
+2025-11-13 20:24:18,406 - agents.defect_detector_java - INFO - [性能检测结果] Regex.java检测到0个潜在问题
+2025-11-13 20:24:18,406 - agents.defect_detector_java - INFO - 检测进度：23/132 (17.4%) - Regex.java
+2025-11-13 20:24:18,407 - agents.defect_detector_java - INFO - 开始检测Java文件：ValidTestClass.java
+2025-11-13 20:24:18,408 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:18,517 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:19,429 - agents.defect_detector_java - INFO - [checkstyle结果] ValidTestClass.java检测到1个缺陷
+2025-11-13 20:24:20,343 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:20,343 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:20,344 - agents.defect_detector_java - INFO - [pmd结果] ValidTestClass.java检测到0个缺陷
+2025-11-13 20:24:24,840 - agents.defect_detector_java - DEBUG - LLM原始响应: [{"type": "syntax", "message": "类型不匹配：无法将int类型赋值给String类型变量", "line_number": 9, "severity": "CRITICAL", "tool": "llm", "confidence": 0.8}, {"type": "syntax", "message": "方法调用缺少分号", "line_number": 14, "severity": "CRITICAL", "tool": "llm", "confidence": 0.8}, {"type": "syntax", "message": "未找到assertTrue方法，可能缺少静态导入import static org.junit.Assert.assertTrue;", "line_number": 14, "severity": "HIGH", "tool": "llm", "confidence": 0.8}]
+2025-11-13 20:24:24,841 - agents.defect_detector_java - DEBUG - LLM成功检测到3个缺陷 in UnitTestsWithCompilationIssues.java
+2025-11-13 20:24:24,841 - agents.defect_detector_java - INFO - [LLM结果] UnitTestsWithCompilationIssues.java检测到3个缺陷
+2025-11-13 20:24:24,841 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：ValidTestClass.java（重试次数：0）
+2025-11-13 20:24:24,842 - agents.defect_detector_java - INFO - [性能检测结果] UnitTestsWithCompilationIssues.java检测到0个潜在问题
+2025-11-13 20:24:24,843 - agents.defect_detector_java - INFO - 检测进度：24/132 (18.2%) - UnitTestsWithCompilationIssues.java
+2025-11-13 20:24:24,843 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:24,844 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:25,004 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:25,935 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:26,256 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:26,257 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in ValidTestClass.java
+2025-11-13 20:24:26,257 - agents.defect_detector_java - INFO - [LLM结果] ValidTestClass.java检测到0个缺陷
+2025-11-13 20:24:26,257 - agents.defect_detector_java - INFO - [性能检测结果] ValidTestClass.java检测到0个潜在问题
+2025-11-13 20:24:26,258 - agents.defect_detector_java - INFO - 检测进度：25/132 (18.9%) - ValidTestClass.java
+2025-11-13 20:24:26,258 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:26,873 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:26,873 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:26,873 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:26,874 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:26,876 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:26,972 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:27,388 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:27,760 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:27,760 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:27,760 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:27,760 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:27,762 - agents.defect_detector_java - INFO - 检测进度：26/132 (19.7%) - PackageVersion.java
+2025-11-13 20:24:27,762 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:28,349 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:28,349 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:28,351 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:28,351 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:28,353 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:28,457 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:28,907 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:29,353 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:29,354 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:29,354 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:29,354 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:29,354 - agents.defect_detector_java - INFO - 检测进度：27/132 (20.5%) - PackageVersion.java
+2025-11-13 20:24:29,356 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:29,871 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:29,871 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:29,871 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:29,872 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:29,874 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:30,012 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:30,492 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:30,874 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:30,874 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:30,874 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:30,875 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:30,875 - agents.defect_detector_java - INFO - 检测进度：28/132 (21.2%) - PackageVersion.java
+2025-11-13 20:24:30,875 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:31,441 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:31,441 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:31,442 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:31,442 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:31,443 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:31,568 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:31,999 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:32,910 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:32,910 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:32,910 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:33,134 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:33,135 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:33,135 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:33,135 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:33,136 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:33,137 - agents.defect_detector_java - INFO - 检测进度：29/132 (22.0%) - PackageVersion.java
+2025-11-13 20:24:33,137 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:33,138 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:33,902 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:34,262 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:34,788 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:34,788 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:34,788 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:34,788 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:34,789 - agents.defect_detector_java - INFO - 检测进度：30/132 (22.7%) - PackageVersion.java
+2025-11-13 20:24:34,789 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:35,208 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:35,208 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:35,208 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:35,208 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:35,210 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:35,303 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:35,906 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:36,415 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:36,415 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:36,415 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:36,415 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:36,415 - agents.defect_detector_java - INFO - 检测进度：31/132 (23.5%) - PackageVersion.java
+2025-11-13 20:24:36,416 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:36,856 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:36,856 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:36,856 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:36,857 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:36,859 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:36,961 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:37,535 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:38,045 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:38,045 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:38,045 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:38,046 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:38,046 - agents.defect_detector_java - INFO - 检测进度：32/132 (24.2%) - PackageVersion.java
+2025-11-13 20:24:38,046 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:38,485 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:38,485 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:38,485 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:38,487 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:38,489 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:38,606 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:39,220 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:39,358 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:39,359 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:39,359 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:39,359 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:39,360 - agents.defect_detector_java - INFO - 检测进度：33/132 (25.0%) - PackageVersion.java
+2025-11-13 20:24:39,360 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:40,217 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:40,218 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:40,218 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:40,219 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:40,220 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:40,339 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:40,525 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:41,289 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:41,290 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:41,290 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:41,290 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:41,290 - agents.defect_detector_java - INFO - 检测进度：34/132 (25.8%) - PackageVersion.java
+2025-11-13 20:24:41,290 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:41,426 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:41,428 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:41,428 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:41,428 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:41,430 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:41,549 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:42,422 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:42,526 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:42,526 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:42,526 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:42,527 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:42,527 - agents.defect_detector_java - INFO - 检测进度：35/132 (26.5%) - PackageVersion.java
+2025-11-13 20:24:42,527 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:43,398 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:43,398 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:43,398 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:43,399 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:43,400 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:43,599 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:43,693 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:44,624 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:44,624 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:44,625 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:44,683 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:44,683 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:44,683 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:44,683 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:44,684 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:44,686 - agents.defect_detector_java - INFO - 检测进度：36/132 (27.3%) - PackageVersion.java
+2025-11-13 20:24:44,686 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:44,686 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:44,803 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:45,801 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:45,847 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:45,848 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:45,848 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:45,848 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:45,849 - agents.defect_detector_java - INFO - 检测进度：37/132 (28.0%) - PackageVersion.java
+2025-11-13 20:24:45,849 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:46,817 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:46,817 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:46,817 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:46,817 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:46,819 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:46,948 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:47,028 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:47,975 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:47,975 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:47,976 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:48,031 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:48,031 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:48,031 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:48,032 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:48,032 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:48,033 - agents.defect_detector_java - INFO - 检测进度：38/132 (28.8%) - PackageVersion.java
+2025-11-13 20:24:48,033 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:48,034 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:48,136 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:49,187 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:49,198 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:49,199 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:49,199 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:49,199 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:49,199 - agents.defect_detector_java - INFO - 检测进度：39/132 (29.5%) - PackageVersion.java
+2025-11-13 20:24:49,199 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:50,152 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:50,154 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:50,154 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:50,155 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:50,156 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:50,255 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:50,352 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:51,239 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:51,239 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:51,239 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:51,328 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:51,328 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:51,328 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:51,328 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:51,329 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:51,330 - agents.defect_detector_java - INFO - 检测进度：40/132 (30.3%) - PackageVersion.java
+2025-11-13 20:24:51,330 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:51,331 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:51,442 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:52,411 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:52,740 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:52,740 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:52,740 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:52,740 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:52,741 - agents.defect_detector_java - INFO - 检测进度：41/132 (31.1%) - PackageVersion.java
+2025-11-13 20:24:52,741 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:53,393 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:53,393 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:53,394 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:53,394 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:53,396 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:53,504 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:53,880 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:54,496 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:54,496 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:54,496 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:54,497 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:54,497 - agents.defect_detector_java - INFO - 检测进度：42/132 (31.8%) - PackageVersion.java
+2025-11-13 20:24:54,497 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:54,771 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:54,771 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:54,771 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:54,772 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:54,773 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:54,867 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:55,595 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:55,795 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:55,796 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:55,796 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:55,796 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:55,797 - agents.defect_detector_java - INFO - 检测进度：43/132 (32.6%) - PackageVersion.java
+2025-11-13 20:24:55,797 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:56,550 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:56,550 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:56,551 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:56,551 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:56,554 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:56,665 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:56,891 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:57,696 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:57,696 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:57,696 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:57,697 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:57,697 - agents.defect_detector_java - INFO - 检测进度：44/132 (33.3%) - PackageVersion.java
+2025-11-13 20:24:57,697 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:57,796 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:57,796 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:57,797 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:57,797 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:57,798 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:57,911 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:24:58,782 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:24:59,045 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:24:59,046 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:24:59,046 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:59,046 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:24:59,046 - agents.defect_detector_java - INFO - 检测进度：45/132 (34.1%) - PackageVersion.java
+2025-11-13 20:24:59,047 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:24:59,713 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:24:59,713 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:24:59,713 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:24:59,715 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:24:59,717 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:24:59,920 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:00,145 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:00,720 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:00,721 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:00,721 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:00,721 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:00,721 - agents.defect_detector_java - INFO - 检测进度：46/132 (34.8%) - PackageVersion.java
+2025-11-13 20:25:00,721 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:01,061 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:01,061 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:01,062 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:01,062 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:01,065 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:01,196 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:01,852 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:02,080 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:02,081 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:02,081 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:02,082 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:02,082 - agents.defect_detector_java - INFO - 检测进度：47/132 (35.6%) - PackageVersion.java
+2025-11-13 20:25:02,082 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:02,834 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:02,834 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:02,835 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:02,835 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:02,837 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:03,036 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:03,250 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:04,139 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:04,139 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:04,139 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:04,233 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:04,233 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:04,233 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:04,233 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:04,235 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:04,235 - agents.defect_detector_java - INFO - 检测进度：48/132 (36.4%) - PackageVersion.java
+2025-11-13 20:25:04,235 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:04,236 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:04,358 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:05,337 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:05,515 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:05,515 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:05,516 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:05,516 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:05,516 - agents.defect_detector_java - INFO - 检测进度：49/132 (37.1%) - PackageVersion.java
+2025-11-13 20:25:05,517 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:06,285 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:06,285 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:06,285 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:06,286 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:06,288 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:06,397 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:06,653 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:07,492 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:07,492 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:07,492 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:07,492 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:07,493 - agents.defect_detector_java - INFO - 检测进度：50/132 (37.9%) - PackageVersion.java
+2025-11-13 20:25:07,493 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:07,586 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:07,586 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:07,587 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:07,587 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:07,589 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:07,686 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:08,470 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:08,470 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:08,470 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:08,470 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:08,472 - agents.defect_detector_java - INFO - 检测进度：51/132 (38.6%) - PackageVersion.java
+2025-11-13 20:25:08,472 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:08,540 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:09,495 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:09,495 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:09,495 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:09,496 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:09,498 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:09,589 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:09,602 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:10,405 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:10,406 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:10,406 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:10,406 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:10,406 - agents.defect_detector_java - INFO - 检测进度：52/132 (39.4%) - PackageVersion.java
+2025-11-13 20:25:10,406 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:10,520 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:10,520 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:10,520 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:10,521 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:10,523 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:10,614 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:11,485 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:11,793 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:11,794 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:11,794 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:11,794 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:11,795 - agents.defect_detector_java - INFO - 检测进度：53/132 (40.2%) - PackageVersion.java
+2025-11-13 20:25:11,795 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:12,419 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:12,419 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:12,420 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:12,420 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:12,423 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:12,542 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:12,902 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:13,473 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:13,473 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:13,473 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:13,473 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:13,474 - agents.defect_detector_java - INFO - 检测进度：54/132 (40.9%) - PackageVersion.java
+2025-11-13 20:25:13,474 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:13,796 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:13,796 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:13,796 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:13,796 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:13,798 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:13,915 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:14,561 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:15,161 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:15,162 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:15,162 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:15,162 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:15,163 - agents.defect_detector_java - INFO - 检测进度：55/132 (41.7%) - PackageVersion.java
+2025-11-13 20:25:15,163 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:15,431 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:15,432 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:15,432 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:15,432 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:15,434 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:15,531 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:16,240 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:16,610 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:16,610 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:16,611 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:16,612 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:16,612 - agents.defect_detector_java - INFO - 检测进度：56/132 (42.4%) - PackageVersion.java
+2025-11-13 20:25:16,612 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:17,142 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:17,142 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:17,142 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:17,143 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:17,145 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:17,415 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:17,717 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:18,434 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:18,434 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:18,434 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:18,435 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:18,435 - agents.defect_detector_java - INFO - 检测进度：57/132 (43.2%) - PackageVersion.java
+2025-11-13 20:25:18,435 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:18,586 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:18,587 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:18,587 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:18,588 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:18,591 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:19,289 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:19,512 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:20,399 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:20,399 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:20,400 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:20,445 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:20,445 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:20,447 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:20,447 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:20,447 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:20,448 - agents.defect_detector_java - INFO - 检测进度：58/132 (43.9%) - PackageVersion.java
+2025-11-13 20:25:20,448 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:20,449 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:20,534 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:21,531 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:21,558 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:21,558 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:21,558 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:21,559 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:21,559 - agents.defect_detector_java - INFO - 检测进度：59/132 (44.7%) - PackageVersion.java
+2025-11-13 20:25:21,560 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:22,497 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:22,497 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:22,497 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:22,497 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:22,500 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:22,601 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:22,712 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:23,571 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:23,571 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:23,572 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:23,716 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:23,716 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:23,718 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:23,718 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:23,718 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:23,719 - agents.defect_detector_java - INFO - 检测进度：60/132 (45.5%) - PackageVersion.java
+2025-11-13 20:25:23,719 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:23,720 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:23,827 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:24,803 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:24,917 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:24,917 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:24,917 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:24,918 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:24,918 - agents.defect_detector_java - INFO - 检测进度：61/132 (46.2%) - PackageVersion.java
+2025-11-13 20:25:24,918 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:25,807 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:25,807 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:25,810 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:25,811 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:25,812 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:25,916 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:26,084 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:26,958 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:26,959 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:26,959 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:26,959 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:26,960 - agents.defect_detector_java - INFO - 检测进度：62/132 (47.0%) - PackageVersion.java
+2025-11-13 20:25:26,960 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:26,966 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:26,966 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:26,966 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:26,967 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:26,971 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:27,087 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:28,038 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:28,111 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:28,111 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:28,111 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:28,112 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:28,112 - agents.defect_detector_java - INFO - 检测进度：63/132 (47.7%) - PackageVersion.java
+2025-11-13 20:25:28,112 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:29,002 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:29,003 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:29,003 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:29,004 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:29,006 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:29,103 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:29,252 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:29,895 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:29,895 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:29,895 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:29,896 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:29,896 - agents.defect_detector_java - INFO - 检测进度：64/132 (48.5%) - PackageVersion.java
+2025-11-13 20:25:29,896 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:30,155 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:30,155 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:30,156 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:30,156 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:30,158 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:30,246 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:30,996 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:31,453 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:31,453 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:31,453 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:31,454 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:31,454 - agents.defect_detector_java - INFO - 检测进度：65/132 (49.2%) - PackageVersion.java
+2025-11-13 20:25:31,454 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:31,937 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:31,937 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:31,938 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:31,938 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:31,940 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:32,044 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:32,576 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:32,727 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:32,727 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:32,727 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:32,727 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:32,728 - agents.defect_detector_java - INFO - 检测进度：66/132 (50.0%) - PackageVersion.java
+2025-11-13 20:25:32,728 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:33,560 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:33,561 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:33,561 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:33,562 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:33,563 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:33,672 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:33,840 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:34,746 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:34,746 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:34,747 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:35,382 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:35,383 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:35,383 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:35,383 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:35,384 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:35,386 - agents.defect_detector_java - INFO - 检测进度：67/132 (50.8%) - PackageVersion.java
+2025-11-13 20:25:35,386 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:35,386 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:35,592 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:36,445 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:36,609 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:36,609 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:36,609 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:36,610 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:36,610 - agents.defect_detector_java - INFO - 检测进度：68/132 (51.5%) - PackageVersion.java
+2025-11-13 20:25:36,610 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:37,425 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:37,425 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:37,425 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:37,426 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:37,428 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:37,532 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:37,770 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:38,662 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:38,662 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:38,662 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:38,663 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:38,663 - agents.defect_detector_java - INFO - 检测进度：69/132 (52.3%) - PackageVersion.java
+2025-11-13 20:25:38,663 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:38,671 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:38,671 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:38,672 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:38,672 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:38,673 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:38,781 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:39,735 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:39,781 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:39,783 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:39,783 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:39,783 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:39,784 - agents.defect_detector_java - INFO - 检测进度：70/132 (53.0%) - PackageVersion.java
+2025-11-13 20:25:39,784 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:40,716 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:40,716 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:40,716 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:40,717 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:40,719 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:40,821 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:40,928 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:41,803 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:41,803 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:41,804 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:42,083 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:42,083 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:42,084 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:42,084 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:42,084 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:42,085 - agents.defect_detector_java - INFO - 检测进度：71/132 (53.8%) - PackageVersion.java
+2025-11-13 20:25:42,085 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:42,086 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:42,329 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:43,144 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:43,699 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:43,699 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:43,699 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:43,701 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:43,701 - agents.defect_detector_java - INFO - 检测进度：72/132 (54.5%) - PackageVersion.java
+2025-11-13 20:25:43,701 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:44,061 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:44,061 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:44,063 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:44,063 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:44,065 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:44,207 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:44,794 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:45,096 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:45,096 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:45,096 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:45,096 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:45,097 - agents.defect_detector_java - INFO - 检测进度：73/132 (55.3%) - PackageVersion.java
+2025-11-13 20:25:45,097 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:45,727 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:45,727 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:45,728 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:45,728 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:45,730 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:45,889 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:46,205 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:47,040 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:47,041 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:47,041 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:47,041 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:47,042 - agents.defect_detector_java - INFO - 检测进度：74/132 (56.1%) - PackageVersion.java
+2025-11-13 20:25:47,042 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:47,065 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:47,065 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:47,065 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:47,065 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:47,068 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:47,487 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:48,123 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:48,450 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:48,450 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:48,451 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:48,451 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:48,451 - agents.defect_detector_java - INFO - 检测进度：75/132 (56.8%) - PackageVersion.java
+2025-11-13 20:25:48,451 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:49,044 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:49,044 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:49,044 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:49,046 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:49,047 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:49,161 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:49,572 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:50,129 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:50,129 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:50,129 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:50,130 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:50,130 - agents.defect_detector_java - INFO - 检测进度：76/132 (57.6%) - PackageVersion.java
+2025-11-13 20:25:50,130 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:50,492 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:50,492 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:50,492 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:50,494 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:50,496 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:50,604 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:51,255 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:51,701 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:51,702 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:51,702 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:51,702 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:51,703 - agents.defect_detector_java - INFO - 检测进度：77/132 (58.3%) - PackageVersion.java
+2025-11-13 20:25:51,703 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:52,195 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:52,195 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:52,195 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:52,195 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:52,198 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:52,296 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:52,844 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:53,377 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:53,377 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:53,377 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:53,377 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:53,377 - agents.defect_detector_java - INFO - 检测进度：78/132 (59.1%) - PackageVersion.java
+2025-11-13 20:25:53,377 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:53,749 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:53,749 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:53,751 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:53,751 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:53,752 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:54,002 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:54,485 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:54,957 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:54,957 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:54,957 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:54,957 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:54,958 - agents.defect_detector_java - INFO - 检测进度：79/132 (59.8%) - PackageVersion.java
+2025-11-13 20:25:54,958 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:55,392 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:55,393 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:55,393 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:55,394 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:55,395 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:55,493 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:56,080 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:56,561 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:56,561 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:56,561 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:56,562 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:56,562 - agents.defect_detector_java - INFO - 检测进度：80/132 (60.6%) - PackageVersion.java
+2025-11-13 20:25:56,562 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:57,142 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:57,143 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:57,143 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:57,143 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:57,147 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:57,247 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:57,936 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:25:58,102 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:25:58,102 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:25:58,102 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:58,103 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:25:58,103 - agents.defect_detector_java - INFO - 检测进度：81/132 (61.4%) - PackageVersion.java
+2025-11-13 20:25:58,103 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:25:59,059 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:25:59,059 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:25:59,059 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:25:59,060 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:25:59,062 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:25:59,162 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:25:59,466 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:00,203 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:00,204 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:00,204 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:00,204 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:00,205 - agents.defect_detector_java - INFO - 检测进度：82/132 (62.1%) - PackageVersion.java
+2025-11-13 20:26:00,205 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:00,540 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:00,540 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:00,541 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:00,541 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:00,544 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:00,642 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:01,428 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:01,461 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:01,461 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:01,461 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:01,462 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:01,462 - agents.defect_detector_java - INFO - 检测进度：83/132 (62.9%) - PackageVersion.java
+2025-11-13 20:26:01,462 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:02,397 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:02,397 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:02,397 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:02,399 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:02,401 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:02,528 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:02,566 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:03,471 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:03,472 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:03,472 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:03,523 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:03,524 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:03,524 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:03,524 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:03,525 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:03,527 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:03,527 - agents.defect_detector_java - INFO - 检测进度：84/132 (63.6%) - PackageVersion.java
+2025-11-13 20:26:03,528 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:03,643 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:04,594 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:04,953 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:04,954 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:04,954 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:04,955 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:04,955 - agents.defect_detector_java - INFO - 检测进度：85/132 (64.4%) - PackageVersion.java
+2025-11-13 20:26:04,955 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:05,524 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:05,525 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:05,525 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:05,525 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:05,528 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:06,036 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:06,090 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:06,912 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:06,912 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:06,912 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:07,345 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:07,345 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:07,346 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:07,346 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:07,347 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:07,348 - agents.defect_detector_java - INFO - 检测进度：86/132 (65.2%) - PackageVersion.java
+2025-11-13 20:26:07,348 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:07,349 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:07,457 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:08,246 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:08,246 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:08,246 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:08,247 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:08,247 - agents.defect_detector_java - INFO - 检测进度：87/132 (65.9%) - PackageVersion.java
+2025-11-13 20:26:08,247 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:08,439 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:09,375 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:09,422 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:09,422 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:09,422 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:09,422 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:09,424 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:09,515 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:10,300 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:10,301 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:10,301 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:10,455 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:10,455 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:10,455 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:10,455 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:10,457 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:10,458 - agents.defect_detector_java - INFO - 检测进度：88/132 (66.7%) - PackageVersion.java
+2025-11-13 20:26:10,458 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:10,458 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:10,559 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:11,461 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:11,461 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:11,461 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:11,462 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:11,462 - agents.defect_detector_java - INFO - 检测进度：89/132 (67.4%) - PackageVersion.java
+2025-11-13 20:26:11,462 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:11,526 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:12,464 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:12,464 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:12,464 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:12,465 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:12,466 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:12,559 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:12,590 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:13,469 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:13,470 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:13,470 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:13,613 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:13,614 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:13,614 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:13,614 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:13,614 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:13,616 - agents.defect_detector_java - INFO - 检测进度：90/132 (68.2%) - PackageVersion.java
+2025-11-13 20:26:13,616 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:13,616 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:13,715 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:14,541 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:14,541 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:14,541 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:14,541 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:14,542 - agents.defect_detector_java - INFO - 检测进度：91/132 (68.9%) - PackageVersion.java
+2025-11-13 20:26:14,542 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:14,713 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:15,679 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:15,680 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:15,681 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:15,681 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:15,681 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:15,683 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:15,783 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:16,575 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:16,575 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:16,576 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:16,584 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:16,584 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:16,584 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:16,584 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:16,586 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:16,586 - agents.defect_detector_java - INFO - 检测进度：92/132 (69.7%) - PackageVersion.java
+2025-11-13 20:26:16,586 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:16,587 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:16,706 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:17,635 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:17,759 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:17,760 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:17,760 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:17,760 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:17,761 - agents.defect_detector_java - INFO - 检测进度：93/132 (70.5%) - PackageVersion.java
+2025-11-13 20:26:17,761 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:18,585 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:18,585 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:18,586 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:18,587 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:18,589 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:18,880 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:19,025 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:19,753 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:19,753 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:19,754 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:20,000 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:20,000 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:20,000 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:20,000 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:20,001 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:20,002 - agents.defect_detector_java - INFO - 检测进度：94/132 (71.2%) - PackageVersion.java
+2025-11-13 20:26:20,002 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:20,002 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:20,119 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:21,055 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:21,055 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:21,055 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:21,056 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:21,056 - agents.defect_detector_java - INFO - 检测进度：95/132 (72.0%) - PackageVersion.java
+2025-11-13 20:26:21,056 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:21,080 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:22,015 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:22,015 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:22,016 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:22,016 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:22,018 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:22,112 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:22,156 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:23,046 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:23,046 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:23,046 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:23,319 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:23,320 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:23,320 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:23,320 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:23,321 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:23,322 - agents.defect_detector_java - INFO - 检测进度：96/132 (72.7%) - PackageVersion.java
+2025-11-13 20:26:23,322 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:23,323 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:23,545 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:24,372 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:24,372 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:24,372 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:24,373 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:24,373 - agents.defect_detector_java - INFO - 检测进度：97/132 (73.5%) - PackageVersion.java
+2025-11-13 20:26:24,373 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:24,411 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:25,343 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:25,344 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:25,344 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:25,345 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:25,346 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:25,464 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:25,558 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:26,328 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:26,328 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:26,329 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:26,651 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:26,651 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:26,651 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:26,651 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:26,652 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:26,652 - agents.defect_detector_java - INFO - 检测进度：98/132 (74.2%) - PackageVersion.java
+2025-11-13 20:26:26,653 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:26,654 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:26,751 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:27,648 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:27,648 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:27,648 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:27,649 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:27,649 - agents.defect_detector_java - INFO - 检测进度：99/132 (75.0%) - PackageVersion.java
+2025-11-13 20:26:27,649 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:27,699 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:28,626 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:28,626 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:28,627 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:28,627 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:28,629 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:28,745 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:28,749 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:29,648 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:29,649 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:29,649 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:29,785 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:29,785 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:29,786 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:29,786 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:29,786 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:29,787 - agents.defect_detector_java - INFO - 检测进度：100/132 (75.8%) - PackageVersion.java
+2025-11-13 20:26:29,787 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:29,787 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:29,886 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:30,817 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:30,817 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:30,817 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:30,818 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:30,818 - agents.defect_detector_java - INFO - 检测进度：101/132 (76.5%) - PackageVersion.java
+2025-11-13 20:26:30,818 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:30,869 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:31,818 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:31,818 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:31,819 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:31,819 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:31,820 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:31,931 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:31,950 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:32,835 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:32,836 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:32,836 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:33,717 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:33,718 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:33,718 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:33,718 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:33,719 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:33,720 - agents.defect_detector_java - INFO - 检测进度：102/132 (77.3%) - PackageVersion.java
+2025-11-13 20:26:33,720 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:33,721 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:33,831 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:34,816 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:34,935 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:34,936 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:34,936 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:34,936 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:34,936 - agents.defect_detector_java - INFO - 检测进度：103/132 (78.0%) - PackageVersion.java
+2025-11-13 20:26:34,936 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:35,765 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:35,765 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:35,766 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:35,766 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:35,770 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:35,868 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:36,061 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:36,662 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:36,663 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:36,663 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:36,663 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:36,664 - agents.defect_detector_java - INFO - 检测进度：104/132 (78.8%) - PackageVersion.java
+2025-11-13 20:26:36,664 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:36,936 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:36,936 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:36,936 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:36,937 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:36,938 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:37,042 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:37,780 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:37,794 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:37,794 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:37,794 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:37,796 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:37,796 - agents.defect_detector_java - INFO - 检测进度：105/132 (79.5%) - PackageVersion.java
+2025-11-13 20:26:37,796 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:38,697 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:38,697 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:38,698 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:38,698 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:38,700 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:38,798 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:38,867 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:39,746 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:39,746 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:39,747 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:39,916 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:39,917 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:39,917 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:39,917 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:39,918 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:39,919 - agents.defect_detector_java - INFO - 检测进度：106/132 (80.3%) - PackageVersion.java
+2025-11-13 20:26:39,919 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:39,920 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:40,025 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:40,908 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:40,908 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:40,908 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:40,909 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:40,909 - agents.defect_detector_java - INFO - 检测进度：107/132 (81.1%) - PackageVersion.java
+2025-11-13 20:26:40,909 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:41,023 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:41,955 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:41,955 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:41,956 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:41,956 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:41,958 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:42,035 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:42,061 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:42,918 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:42,918 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:42,918 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:43,189 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:43,189 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:43,189 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:43,190 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:43,190 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:43,191 - agents.defect_detector_java - INFO - 检测进度：108/132 (81.8%) - PackageVersion.java
+2025-11-13 20:26:43,191 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:43,192 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:43,293 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:44,240 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:44,241 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:44,241 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:44,241 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:44,242 - agents.defect_detector_java - INFO - 检测进度：109/132 (82.6%) - PackageVersion.java
+2025-11-13 20:26:44,242 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:44,287 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:45,255 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:45,255 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:45,256 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:45,256 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:45,258 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:45,363 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:45,373 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:46,224 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:46,224 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:46,225 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:46,445 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:46,445 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:46,446 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:46,446 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:46,446 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:46,447 - agents.defect_detector_java - INFO - 检测进度：110/132 (83.3%) - PackageVersion.java
+2025-11-13 20:26:46,447 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:46,448 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:46,545 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:47,471 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:47,581 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:47,581 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:47,581 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:47,582 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:47,582 - agents.defect_detector_java - INFO - 检测进度：111/132 (84.1%) - PackageVersion.java
+2025-11-13 20:26:47,582 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:48,411 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:48,411 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:48,411 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:48,411 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:48,413 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:48,555 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:48,674 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:49,560 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:49,562 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:49,563 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:49,578 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:49,578 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:49,578 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:49,578 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:49,579 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:49,580 - agents.defect_detector_java - INFO - 检测进度：112/132 (84.8%) - PackageVersion.java
+2025-11-13 20:26:49,580 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:49,581 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:49,666 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:50,639 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:50,836 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:50,837 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:50,837 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:50,838 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:50,838 - agents.defect_detector_java - INFO - 检测进度：113/132 (85.6%) - PackageVersion.java
+2025-11-13 20:26:50,838 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:51,576 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:51,576 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:51,578 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:51,578 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:51,580 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:51,684 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:51,932 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:52,748 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:52,748 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:52,748 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:52,748 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:52,748 - agents.defect_detector_java - INFO - 检测进度：114/132 (86.4%) - PackageVersion.java
+2025-11-13 20:26:52,748 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:52,820 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:52,820 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:52,820 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:52,821 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:52,823 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:52,947 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:53,818 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:54,181 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:54,181 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:54,182 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:54,182 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:54,182 - agents.defect_detector_java - INFO - 检测进度：115/132 (87.1%) - PackageVersion.java
+2025-11-13 20:26:54,183 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:54,737 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:54,738 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:54,738 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:54,738 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:54,742 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:54,827 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:55,304 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:55,898 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:55,899 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:55,899 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:55,900 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:55,900 - agents.defect_detector_java - INFO - 检测进度：116/132 (87.9%) - PackageVersion.java
+2025-11-13 20:26:55,900 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:56,195 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:56,195 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:56,196 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:56,196 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:56,198 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:56,294 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:57,004 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:57,181 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:57,181 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:57,181 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:57,182 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:57,182 - agents.defect_detector_java - INFO - 检测进度：117/132 (88.6%) - PackageVersion.java
+2025-11-13 20:26:57,182 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:57,940 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:57,940 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:57,940 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:57,941 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:57,943 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:58,042 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:26:58,311 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:26:59,183 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:26:59,183 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:26:59,183 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:59,183 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:26:59,184 - agents.defect_detector_java - INFO - 检测进度：118/132 (89.4%) - PackageVersion.java
+2025-11-13 20:26:59,184 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:26:59,188 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:26:59,188 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:26:59,189 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:26:59,189 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:26:59,191 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:26:59,296 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:27:00,245 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:27:00,445 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:27:00,446 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:27:00,446 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:27:00,447 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:27:00,447 - agents.defect_detector_java - INFO - 检测进度：119/132 (90.2%) - PackageVersion.java
+2025-11-13 20:27:00,447 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:27:01,209 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:27:01,209 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:27:01,210 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:27:01,210 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:27:01,212 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:27:01,326 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:27:01,597 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:27:02,451 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:27:02,451 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:27:02,452 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:27:02,576 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:27:02,576 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:27:02,577 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:27:02,577 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:27:02,577 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:27:02,578 - agents.defect_detector_java - INFO - 检测进度：120/132 (90.9%) - PackageVersion.java
+2025-11-13 20:27:02,578 - agents.defect_detector_java - INFO - 开始检测Java文件：PackageVersion.java
+2025-11-13 20:27:02,579 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:27:02,689 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:27:03,640 - agents.defect_detector_java - INFO - [checkstyle结果] PackageVersion.java检测到5个缺陷
+2025-11-13 20:27:04,513 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:27:04,513 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:27:04,513 - agents.defect_detector_java - INFO - [pmd结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:27:04,921 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:27:04,921 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:27:04,922 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:27:04,922 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：PackageVersion.java（重试次数：0）
+2025-11-13 20:27:04,923 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:27:04,924 - agents.defect_detector_java - INFO - 检测进度：121/132 (91.7%) - PackageVersion.java
+2025-11-13 20:27:04,924 - agents.defect_detector_java - INFO - 开始检测Java文件：$Gson$Types_ESTest.java
+2025-11-13 20:27:04,924 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:27:05,039 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:27:05,899 - agents.defect_detector_java - WARNING - 未在Checkstyle输出中找到XML内容
+2025-11-13 20:27:05,899 - agents.defect_detector_java - WARNING - Checkstyle 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:27:05,900 - agents.defect_detector_java - INFO - [checkstyle结果] $Gson$Types_ESTest.java检测到92个缺陷
+2025-11-13 20:27:06,213 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:27:06,213 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in PackageVersion.java
+2025-11-13 20:27:06,213 - agents.defect_detector_java - INFO - [LLM结果] PackageVersion.java检测到0个缺陷
+2025-11-13 20:27:06,214 - agents.defect_detector_java - INFO - [性能检测结果] PackageVersion.java检测到0个潜在问题
+2025-11-13 20:27:06,214 - agents.defect_detector_java - INFO - 检测进度：122/132 (92.4%) - PackageVersion.java
+2025-11-13 20:27:06,214 - agents.defect_detector_java - INFO - 开始检测Java文件：$Gson$Types_ESTest_scaffolding.java
+2025-11-13 20:27:06,804 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:27:06,804 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:27:06,806 - agents.defect_detector_java - INFO - [pmd结果] $Gson$Types_ESTest.java检测到0个缺陷
+2025-11-13 20:27:06,807 - agents.defect_detector_java - INFO - 文件$Gson$Types_ESTest.java过长，截断至4000字符进行LLM检测
+2025-11-13 20:27:06,807 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：$Gson$Types_ESTest.java（重试次数：0）
+2025-11-13 20:27:06,809 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:27:06,916 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:27:07,571 - agents.defect_detector_java - INFO - [checkstyle结果] $Gson$Types_ESTest_scaffolding.java检测到46个缺陷
+2025-11-13 20:27:08,079 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:27:08,079 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in $Gson$Types_ESTest.java
+2025-11-13 20:27:08,081 - agents.defect_detector_java - INFO - [LLM结果] $Gson$Types_ESTest.java检测到0个缺陷
+2025-11-13 20:27:08,082 - agents.defect_detector_java - INFO - [性能检测结果] $Gson$Types_ESTest.java检测到0个潜在问题
+2025-11-13 20:27:08,082 - agents.defect_detector_java - INFO - 检测进度：123/132 (93.2%) - $Gson$Types_ESTest.java
+2025-11-13 20:27:08,082 - agents.defect_detector_java - INFO - 开始检测Java文件：$Gson$Types_ESTest.java
+2025-11-13 20:27:08,474 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:27:08,474 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:27:08,474 - agents.defect_detector_java - INFO - [pmd结果] $Gson$Types_ESTest_scaffolding.java检测到0个缺陷
+2025-11-13 20:27:08,474 - agents.defect_detector_java - INFO - 文件$Gson$Types_ESTest_scaffolding.java过长，截断至4000字符进行LLM检测
+2025-11-13 20:27:08,475 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：$Gson$Types_ESTest_scaffolding.java（重试次数：0）
+2025-11-13 20:27:08,476 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:27:08,593 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:27:09,346 - agents.defect_detector_java - INFO - [checkstyle结果] $Gson$Types_ESTest.java检测到73个缺陷
+2025-11-13 20:27:09,601 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:27:09,602 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in $Gson$Types_ESTest_scaffolding.java
+2025-11-13 20:27:09,602 - agents.defect_detector_java - INFO - [LLM结果] $Gson$Types_ESTest_scaffolding.java检测到0个缺陷
+2025-11-13 20:27:09,603 - agents.defect_detector_java - INFO - [性能检测结果] $Gson$Types_ESTest_scaffolding.java检测到0个潜在问题
+2025-11-13 20:27:09,603 - agents.defect_detector_java - INFO - 检测进度：124/132 (93.9%) - $Gson$Types_ESTest_scaffolding.java
+2025-11-13 20:27:09,603 - agents.defect_detector_java - INFO - 开始检测Java文件：$Gson$Types_ESTest_scaffolding.java
+2025-11-13 20:27:10,281 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:27:10,281 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:27:10,284 - agents.defect_detector_java - INFO - [pmd结果] $Gson$Types_ESTest.java检测到0个缺陷
+2025-11-13 20:27:10,286 - agents.defect_detector_java - INFO - 文件$Gson$Types_ESTest.java过长，截断至4000字符进行LLM检测
+2025-11-13 20:27:10,286 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：$Gson$Types_ESTest.java（重试次数：0）
+2025-11-13 20:27:10,288 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:27:10,432 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:27:10,956 - agents.defect_detector_java - INFO - [checkstyle结果] $Gson$Types_ESTest_scaffolding.java检测到46个缺陷
+2025-11-13 20:27:11,742 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:27:11,743 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in $Gson$Types_ESTest.java
+2025-11-13 20:27:11,743 - agents.defect_detector_java - INFO - [LLM结果] $Gson$Types_ESTest.java检测到0个缺陷
+2025-11-13 20:27:11,746 - agents.defect_detector_java - INFO - [性能检测结果] $Gson$Types_ESTest.java检测到1个潜在问题
+2025-11-13 20:27:11,746 - agents.defect_detector_java - INFO - 检测进度：125/132 (94.7%) - $Gson$Types_ESTest.java
+2025-11-13 20:27:11,746 - agents.defect_detector_java - INFO - 开始检测Java文件：FailingTests.java
+2025-11-13 20:27:11,845 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:27:11,845 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:27:11,846 - agents.defect_detector_java - INFO - [pmd结果] $Gson$Types_ESTest_scaffolding.java检测到0个缺陷
+2025-11-13 20:27:11,846 - agents.defect_detector_java - INFO - 文件$Gson$Types_ESTest_scaffolding.java过长，截断至4000字符进行LLM检测
+2025-11-13 20:27:11,847 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：$Gson$Types_ESTest_scaffolding.java（重试次数：0）
+2025-11-13 20:27:11,848 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:27:12,075 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:27:12,744 - agents.defect_detector_java - INFO - [checkstyle结果] FailingTests.java检测到4个缺陷
+2025-11-13 20:27:13,204 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:27:13,205 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in $Gson$Types_ESTest_scaffolding.java
+2025-11-13 20:27:13,205 - agents.defect_detector_java - INFO - [LLM结果] $Gson$Types_ESTest_scaffolding.java检测到0个缺陷
+2025-11-13 20:27:13,206 - agents.defect_detector_java - INFO - [性能检测结果] $Gson$Types_ESTest_scaffolding.java检测到0个潜在问题
+2025-11-13 20:27:13,206 - agents.defect_detector_java - INFO - 检测进度：126/132 (95.5%) - $Gson$Types_ESTest_scaffolding.java
+2025-11-13 20:27:13,206 - agents.defect_detector_java - INFO - 开始检测Java文件：InvalidCharacters.java
+2025-11-13 20:27:13,651 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:27:13,652 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:27:13,652 - agents.defect_detector_java - INFO - [pmd结果] FailingTests.java检测到0个缺陷
+2025-11-13 20:27:13,653 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：FailingTests.java（重试次数：0）
+2025-11-13 20:27:13,655 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:27:13,762 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:27:14,214 - agents.defect_detector_java - INFO - [checkstyle结果] InvalidCharacters.java检测到4个缺陷
+2025-11-13 20:27:14,638 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:27:14,638 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in FailingTests.java
+2025-11-13 20:27:14,638 - agents.defect_detector_java - INFO - [LLM结果] FailingTests.java检测到0个缺陷
+2025-11-13 20:27:14,639 - agents.defect_detector_java - INFO - [性能检测结果] FailingTests.java检测到0个潜在问题
+2025-11-13 20:27:14,639 - agents.defect_detector_java - INFO - 检测进度：127/132 (96.2%) - FailingTests.java
+2025-11-13 20:27:14,639 - agents.defect_detector_java - INFO - 开始检测Java文件：LineCommentsWithWhitespaces.java
+2025-11-13 20:27:15,101 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:27:15,101 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:27:15,101 - agents.defect_detector_java - INFO - [pmd结果] InvalidCharacters.java检测到0个缺陷
+2025-11-13 20:27:15,102 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：InvalidCharacters.java（重试次数：0）
+2025-11-13 20:27:15,103 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:27:15,218 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:27:15,632 - agents.defect_detector_java - INFO - [checkstyle结果] LineCommentsWithWhitespaces.java检测到4个缺陷
+2025-11-13 20:27:15,974 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:27:15,974 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in InvalidCharacters.java
+2025-11-13 20:27:15,975 - agents.defect_detector_java - INFO - [LLM结果] InvalidCharacters.java检测到0个缺陷
+2025-11-13 20:27:15,975 - agents.defect_detector_java - INFO - [性能检测结果] InvalidCharacters.java检测到0个潜在问题
+2025-11-13 20:27:15,975 - agents.defect_detector_java - INFO - 检测进度：128/132 (97.0%) - InvalidCharacters.java
+2025-11-13 20:27:15,976 - agents.defect_detector_java - INFO - 开始检测Java文件：Regex.java
+2025-11-13 20:27:16,518 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:27:16,518 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:27:16,519 - agents.defect_detector_java - INFO - [pmd结果] LineCommentsWithWhitespaces.java检测到0个缺陷
+2025-11-13 20:27:16,519 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：LineCommentsWithWhitespaces.java（重试次数：0）
+2025-11-13 20:27:16,521 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:27:16,638 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:27:16,985 - agents.defect_detector_java - INFO - [checkstyle结果] Regex.java检测到3个缺陷
+2025-11-13 20:27:17,602 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:27:17,602 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in LineCommentsWithWhitespaces.java
+2025-11-13 20:27:17,602 - agents.defect_detector_java - INFO - [LLM结果] LineCommentsWithWhitespaces.java检测到0个缺陷
+2025-11-13 20:27:17,604 - agents.defect_detector_java - INFO - [性能检测结果] LineCommentsWithWhitespaces.java检测到0个潜在问题
+2025-11-13 20:27:17,604 - agents.defect_detector_java - INFO - 检测进度：129/132 (97.7%) - LineCommentsWithWhitespaces.java
+2025-11-13 20:27:17,604 - agents.defect_detector_java - INFO - 开始检测Java文件：UnitTestsWithCompilationIssues.java
+2025-11-13 20:27:17,874 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:27:17,874 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:27:17,874 - agents.defect_detector_java - INFO - [pmd结果] Regex.java检测到0个缺陷
+2025-11-13 20:27:17,875 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：Regex.java（重试次数：0）
+2025-11-13 20:27:17,876 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:27:18,092 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:27:18,621 - agents.defect_detector_java - INFO - [checkstyle结果] UnitTestsWithCompilationIssues.java检测到3个缺陷
+2025-11-13 20:27:18,883 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:27:18,883 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in Regex.java
+2025-11-13 20:27:18,883 - agents.defect_detector_java - INFO - [LLM结果] Regex.java检测到0个缺陷
+2025-11-13 20:27:18,883 - agents.defect_detector_java - INFO - [性能检测结果] Regex.java检测到0个潜在问题
+2025-11-13 20:27:18,883 - agents.defect_detector_java - INFO - 检测进度：130/132 (98.5%) - Regex.java
+2025-11-13 20:27:18,883 - agents.defect_detector_java - INFO - 开始检测Java文件：ValidTestClass.java
+2025-11-13 20:27:19,522 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:27:19,522 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:27:19,523 - agents.defect_detector_java - INFO - [pmd结果] UnitTestsWithCompilationIssues.java检测到0个缺陷
+2025-11-13 20:27:19,523 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：UnitTestsWithCompilationIssues.java（重试次数：0）
+2025-11-13 20:27:19,524 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:27:19,619 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:27:19,893 - agents.defect_detector_java - INFO - [checkstyle结果] ValidTestClass.java检测到1个缺陷
+2025-11-13 20:27:20,450 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:27:20,450 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in UnitTestsWithCompilationIssues.java
+2025-11-13 20:27:20,451 - agents.defect_detector_java - INFO - [LLM结果] UnitTestsWithCompilationIssues.java检测到0个缺陷
+2025-11-13 20:27:20,451 - agents.defect_detector_java - INFO - [性能检测结果] UnitTestsWithCompilationIssues.java检测到0个潜在问题
+2025-11-13 20:27:20,451 - agents.defect_detector_java - INFO - 检测进度：131/132 (99.2%) - UnitTestsWithCompilationIssues.java
+2025-11-13 20:27:20,775 - agents.defect_detector_java - WARNING - 未在PMD输出中找到XML内容
+2025-11-13 20:27:20,775 - agents.defect_detector_java - WARNING - PMD 未可用或未返回可解析结果，使用启发式规则代替
+2025-11-13 20:27:20,776 - agents.defect_detector_java - INFO - [pmd结果] ValidTestClass.java检测到0个缺陷
+2025-11-13 20:27:20,776 - agents.defect_detector_java - DEBUG - 向LLM发送请求检测Java文件：ValidTestClass.java（重试次数：0）
+2025-11-13 20:27:20,778 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.deepseek.com:443
+2025-11-13 20:27:20,878 - urllib3.connectionpool - DEBUG - https://api.deepseek.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2025-11-13 20:27:21,698 - agents.defect_detector_java - DEBUG - LLM原始响应: []
+2025-11-13 20:27:21,698 - agents.defect_detector_java - DEBUG - LLM成功检测到0个缺陷 in ValidTestClass.java
+2025-11-13 20:27:21,698 - agents.defect_detector_java - INFO - [LLM结果] ValidTestClass.java检测到0个缺陷
+2025-11-13 20:27:21,698 - agents.defect_detector_java - INFO - [性能检测结果] ValidTestClass.java检测到0个潜在问题
+2025-11-13 20:27:21,700 - agents.defect_detector_java - INFO - 检测进度：132/132 (100.0%) - ValidTestClass.java
+2025-11-13 20:27:21,701 - agents.defect_detector_java - INFO - 【类型统计】{'syntax': 4, 'security': 0, 'logic': 0, 'code_smell': 1325, 'performance': 1, 'concurrency': 1}
+2025-11-13 20:27:21,701 - agents.defect_detector_java - INFO - 【严重程度汇总】{'CRITICAL': 3, 'HIGH': 1, 'MEDIUM': 1235, 'LOW': 92}

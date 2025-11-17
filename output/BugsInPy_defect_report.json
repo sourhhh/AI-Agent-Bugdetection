@@ -1,0 +1,133 @@
+{
+  "project_name": "BugsInPy",
+  "project_root": "D:\\PY\\BugsInPy",
+  "generated_at": 1763049180,
+  "reports": {
+    "python": {
+      "files": [
+        {
+          "file_path": "D:\\PY\\BugsInPy\\projects\\black\\bugs\\4\\fuzz_target.py",
+          "defects": [
+            {
+              "type": "syntax",
+              "message": "[pylint] Unable to import 'pythonfuzz.main'",
+              "line_number": 1,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] Unable to import 'black'",
+              "line_number": 3,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Catching too general exception Exception",
+              "line_number": 10,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Unused variable 'before'",
+              "line_number": 24,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "code_smell",
+              "message": "[pylint] Unused variable 'after'",
+              "line_number": 24,
+              "severity": "LOW",
+              "tool": "pylint",
+              "confidence": 0.9
+            },
+            {
+              "type": "syntax",
+              "message": "[pylint] No value for argument 'buf' in function call",
+              "line_number": 28,
+              "severity": "HIGH",
+              "tool": "pylint",
+              "confidence": 0.9
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "CRITICAL": 0,
+        "HIGH": 3,
+        "MEDIUM": 0,
+        "LOW": 3
+      }
+    },
+    "java": null,
+    "qt": null
+  },
+  "files": [
+    {
+      "file_path": "D:\\PY\\BugsInPy\\projects\\black\\bugs\\4\\fuzz_target.py",
+      "defects": [
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'pythonfuzz.main'",
+          "line_number": 1,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] Unable to import 'black'",
+          "line_number": 3,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Catching too general exception Exception",
+          "line_number": 10,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused variable 'before'",
+          "line_number": 24,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "code_smell",
+          "message": "[pylint] Unused variable 'after'",
+          "line_number": 24,
+          "severity": "LOW",
+          "tool": "pylint",
+          "confidence": 0.9
+        },
+        {
+          "type": "syntax",
+          "message": "[pylint] No value for argument 'buf' in function call",
+          "line_number": 28,
+          "severity": "HIGH",
+          "tool": "pylint",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "CRITICAL": 0,
+    "HIGH": 3,
+    "MEDIUM": 0,
+    "LOW": 3
+  }
+}

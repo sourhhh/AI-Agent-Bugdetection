@@ -1,0 +1,295 @@
+{
+  "timestamp": "2025-11-05T16:30:08.099239",
+  "project_info": {
+    "project_path": "D:\\\\QtWork",
+    "target_language": "cpp",
+    "min_severity": "MEDIUM",
+    "defect_report_path": "D:\\pycharm\\homework\\backend\\output\\qt_project_defect_report.json"
+  },
+  "configuration": {
+    "max_workers": 1,
+    "total_execution_time_seconds": 168.7163541316986
+  },
+  "summary": {
+    "total_tasks": 17,
+    "successful_repairs": 13,
+    "failed_repairs": 4,
+    "success_rate": 0.7647058823529411
+  },
+  "language_statistics": {
+    "cpp": {
+      "total": 17,
+      "success": 13
+    }
+  },
+  "detailed_results": [
+    {
+      "file_path": "D:\\QtWork\\chatPart\\main.cpp",
+      "defect_type": "memory",
+      "defect_message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+      "line_number": 91,
+      "strategy": "fix_cpp_memory_leak",
+      "language": "cpp",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "添加智能指针使用建议"
+      ],
+      "original_code_snippet": "    L 86:     initializeDatabase();\n    L 87: \n    L 88:     Server server1;\n    L 89:     server1.start();\n    L 90: \n>>> L 91:     LoginWindow *loginWindow = new LoginWindow();\n    L 92:     chatwindow *chatWindow = new chatwindow();\n    L 93: \n    L 94:     // 连接登录成功信号与槽\n    L 95:     QObject::connect(loginWindow, &LoginWindow::loginSuccessful, chatWindow, [chatWindow](const QString &username){\n    L 96:         chatWindow->setCurrentUsername(username);",
+      "fixed_code_snippet": "    L 86:     initializeDatabase();\n    L 87: \n    L 88:     Server server1;\n    L 89:     server1.start();\n    L 90: \n>>> L 91:     LoginWindow *loginWindow = new LoginWindow();\n    L 92:     // TODO: 考虑使用智能指针(std::unique_ptr或QPointer)管理内存\n    L 93:     chatwindow *chatWindow = new chatwindow();\n    L 94: \n    L 95:     // 连接登录成功信号与槽\n    L 96:     QObject::connect(loginWindow, &LoginWindow::loginSuccessful, chatWindow, [chatWindow](const QString &username){",
+      "timestamp": "2025-11-05T16:27:33.779529"
+    },
+    {
+      "file_path": "D:\\QtWork\\chatPart\\main.cpp",
+      "defect_type": "memory",
+      "defect_message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+      "line_number": 92,
+      "strategy": "fix_cpp_memory_leak",
+      "language": "cpp",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "添加智能指针使用建议"
+      ],
+      "original_code_snippet": "    L 87: \n    L 88:     Server server1;\n    L 89:     server1.start();\n    L 90: \n    L 91:     LoginWindow *loginWindow = new LoginWindow();\n>>> L 92:     chatwindow *chatWindow = new chatwindow();\n    L 93: \n    L 94:     // 连接登录成功信号与槽\n    L 95:     QObject::connect(loginWindow, &LoginWindow::loginSuccessful, chatWindow, [chatWindow](const QString &username){\n    L 96:         chatWindow->setCurrentUsername(username);\n    L 97:         qDebug() << username;",
+      "fixed_code_snippet": "    L 87: \n    L 88:     Server server1;\n    L 89:     server1.start();\n    L 90: \n    L 91:     LoginWindow *loginWindow = new LoginWindow();\n>>> L 92:     chatwindow *chatWindow = new chatwindow();\n    L 93:     // TODO: 考虑使用智能指针(std::unique_ptr或QPointer)管理内存\n    L 94: \n    L 95:     // 连接登录成功信号与槽\n    L 96:     QObject::connect(loginWindow, &LoginWindow::loginSuccessful, chatWindow, [chatWindow](const QString &username){\n    L 97:         chatWindow->setCurrentUsername(username);",
+      "timestamp": "2025-11-05T16:27:33.782530"
+    },
+    {
+      "file_path": "D:\\QtWork\\chatPart\\server.cpp",
+      "defect_type": "memory",
+      "defect_message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+      "line_number": 24,
+      "strategy": "fix_cpp_memory_leak",
+      "language": "cpp",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "添加智能指针使用建议"
+      ],
+      "original_code_snippet": "    L 19:     // 将该信号链接到自定义槽函数中，处理相关逻辑\n    L 20:     connect(m_Server, &QTcpServer::newConnection, this, [=]()\n    L 21:             {\n    L 22:                 // 得到用于通信的套接字对象\n    L 23:                 QTcpSocket * m_tcp = m_Server->nextPendingConnection();\n>>> L 24:                 ClientHandlerThread * sub = new ClientHandlerThread(m_tcp);\n    L 25:                 sub->start();\n    L 26:             });\n    L 27: }\n    L 28: ",
+      "fixed_code_snippet": "    L 19:     // 将该信号链接到自定义槽函数中，处理相关逻辑\n    L 20:     connect(m_Server, &QTcpServer::newConnection, this, [=]()\n    L 21:             {\n    L 22:                 // 得到用于通信的套接字对象\n    L 23:                 QTcpSocket * m_tcp = m_Server->nextPendingConnection();\n>>> L 24:                 ClientHandlerThread * sub = new ClientHandlerThread(m_tcp);\n    L 25:     // TODO: 考虑使用智能指针(std::unique_ptr或QPointer)管理内存\n    L 26:                 sub->start();\n    L 27:             });\n    L 28: }\n    L 29: ",
+      "timestamp": "2025-11-05T16:27:33.783529"
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\GlobalUserInformation.cpp",
+      "defect_type": "memory",
+      "defect_message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+      "line_number": 9,
+      "strategy": "fix_cpp_memory_leak",
+      "language": "cpp",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "添加智能指针使用建议"
+      ],
+      "original_code_snippet": "    L  4: GlobalUserInformation* GlobalUserInformation::m_instance = nullptr;\n    L  5: \n    L  6: GlobalUserInformation* GlobalUserInformation::instance()\n    L  7: {\n    L  8:     if (!m_instance) {\n>>> L  9:         m_instance = new GlobalUserInformation();\n    L 10:     }\n    L 11:     return m_instance;\n    L 12: }\n    L 13: \n    L 14: GlobalUserInformation::GlobalUserInformation(QObject *parent)",
+      "fixed_code_snippet": "    L  4: GlobalUserInformation* GlobalUserInformation::m_instance = nullptr;\n    L  5: \n    L  6: GlobalUserInformation* GlobalUserInformation::instance()\n    L  7: {\n    L  8:     if (!m_instance) {\n>>> L  9:         m_instance = new GlobalUserInformation();\n    L 10:     // TODO: 考虑使用智能指针(std::unique_ptr或QPointer)管理内存\n    L 11:     }\n    L 12:     return m_instance;\n    L 13: }\n    L 14: ",
+      "timestamp": "2025-11-05T16:27:33.785533"
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\networkmanager.cpp",
+      "defect_type": "memory",
+      "defect_message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+      "line_number": 10,
+      "strategy": "fix_cpp_memory_leak",
+      "language": "cpp",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "添加智能指针使用建议"
+      ],
+      "original_code_snippet": "    L  5: NetworkManager* NetworkManager::m_instance = nullptr;\n    L  6: \n    L  7: NetworkManager* NetworkManager::instance()\n    L  8: {\n    L  9:     if (!m_instance) {\n>>> L 10:         m_instance = new NetworkManager();\n    L 11:     }\n    L 12:     return m_instance;\n    L 13: }\n    L 14: \n    L 15: NetworkManager::NetworkManager(QObject *parent) : QObject(parent)",
+      "fixed_code_snippet": "    L  5: NetworkManager* NetworkManager::m_instance = nullptr;\n    L  6: \n    L  7: NetworkManager* NetworkManager::instance()\n    L  8: {\n    L  9:     if (!m_instance) {\n>>> L 10:         m_instance = new NetworkManager();\n    L 11:     // TODO: 考虑使用智能指针(std::unique_ptr或QPointer)管理内存\n    L 12:     }\n    L 13:     return m_instance;\n    L 14: }\n    L 15: ",
+      "timestamp": "2025-11-05T16:27:33.787530"
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\networkmanager.cpp",
+      "defect_type": "logic",
+      "defect_message": "[llm] JSON解析逻辑存在缺陷，当多个JSON对象连续传输时，解析算法可能无法正确处理嵌套的JSON结构",
+      "line_number": 85,
+      "strategy": "ai_automatic_fix",
+      "language": "cpp",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "AI修复失败: 所有重试尝试均失败"
+      ],
+      "original_code_snippet": "    L 80: \n    L 81:     // 尝试解析所有完整的JSON对象\n    L 82:     while (true) {\n    L 83:         // 查找第一个 '{'\n    L 84:         int startIndex = m_buffer.indexOf('{');\n>>> L 85:         if (startIndex == -1) {\n    L 86:             // 没有JSON对象开始标记，清空缓冲区\n    L 87:             m_buffer.clear();\n    L 88:             break;\n    L 89:         }\n    L 90: ",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-11-05T16:28:37.989712"
+    },
+    {
+      "file_path": "D:\\QtWork\\doctor1\\networkmanager.cpp",
+      "defect_type": "logic",
+      "defect_message": "[llm] 在onReadyRead方法中，当没有找到JSON对象开始标记时，直接清空整个缓冲区，可能导致数据丢失。应该保留缓冲区内容等待更多数据",
+      "line_number": 95,
+      "strategy": "ai_automatic_fix",
+      "language": "cpp",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [
+        "AI修复失败: 所有重试尝试均失败"
+      ],
+      "original_code_snippet": "    L 90: \n    L 91:         // 从开始位置查找匹配的 '}'\n    L 92:         int braceCount = 0;\n    L 93:         bool inString = false;\n    L 94:         int endIndex = -1;\n>>> L 95: \n    L 96:         for (int i = startIndex; i < m_buffer.length(); ++i) {\n    L 97:             QChar ch = m_buffer.at(i);\n    L 98: \n    L 99:             // 处理转义字符\n    L100:             if (ch == '\\\"' && (i == 0 || m_buffer.at(i-1) != '\\\\')) {",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-11-05T16:29:42.321353"
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\globaluserinformation.cpp",
+      "defect_type": "memory",
+      "defect_message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+      "line_number": 8,
+      "strategy": "fix_cpp_memory_leak",
+      "language": "cpp",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "添加智能指针使用建议"
+      ],
+      "original_code_snippet": "    L  3: GlobalUserInformation* GlobalUserInformation::m_instance = nullptr;\n    L  4: \n    L  5: GlobalUserInformation* GlobalUserInformation::instance()\n    L  6: {\n    L  7:     if (!m_instance) {\n>>> L  8:         m_instance = new GlobalUserInformation();\n    L  9:     }\n    L 10:     return m_instance;\n    L 11: }\n    L 12: \n    L 13: GlobalUserInformation::GlobalUserInformation(QObject *parent)",
+      "fixed_code_snippet": "    L  3: GlobalUserInformation* GlobalUserInformation::m_instance = nullptr;\n    L  4: \n    L  5: GlobalUserInformation* GlobalUserInformation::instance()\n    L  6: {\n    L  7:     if (!m_instance) {\n>>> L  8:         m_instance = new GlobalUserInformation();\n    L  9:     // TODO: 考虑使用智能指针(std::unique_ptr或QPointer)管理内存\n    L 10:     }\n    L 11:     return m_instance;\n    L 12: }\n    L 13: ",
+      "timestamp": "2025-11-05T16:29:42.330353"
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\networkmanager.cpp",
+      "defect_type": "memory",
+      "defect_message": "[Qt] new创建的QObject对象没有设置父对象，可能导致内存泄漏",
+      "line_number": 10,
+      "strategy": "fix_cpp_memory_leak",
+      "language": "cpp",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "添加智能指针使用建议"
+      ],
+      "original_code_snippet": "    L  5: NetworkManager* NetworkManager::m_instance = nullptr;\n    L  6: \n    L  7: NetworkManager* NetworkManager::instance()\n    L  8: {\n    L  9:     if (!m_instance) {\n>>> L 10:         m_instance = new NetworkManager();\n    L 11:     }\n    L 12:     return m_instance;\n    L 13: }\n    L 14: \n    L 15: NetworkManager::NetworkManager(QObject *parent) : QObject(parent)",
+      "fixed_code_snippet": "    L  5: NetworkManager* NetworkManager::m_instance = nullptr;\n    L  6: \n    L  7: NetworkManager* NetworkManager::instance()\n    L  8: {\n    L  9:     if (!m_instance) {\n>>> L 10:         m_instance = new NetworkManager();\n    L 11:     // TODO: 考虑使用智能指针(std::unique_ptr或QPointer)管理内存\n    L 12:     }\n    L 13:     return m_instance;\n    L 14: }\n    L 15: ",
+      "timestamp": "2025-11-05T16:29:42.333353"
+    },
+    {
+      "file_path": "D:\\QtWork\\chatPart\\chatwindow.cpp",
+      "defect_type": "code_smell",
+      "defect_message": "[code_smell] 函数过长（375行），影响可维护性",
+      "line_number": 282,
+      "strategy": "fix_cpp_code_smell",
+      "language": "cpp",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "添加重构建议"
+      ],
+      "original_code_snippet": "    L277:             QWidget *imageBubble = createImageBubble(sender, content, isSelf);\n    L278:             item->setSizeHint(imageBubble->sizeHint());\n    L279:             ui->ui_mag->addItem(item);\n    L280:             ui->ui_mag->setItemWidget(item, imageBubble);\n    L281:         }\n>>> L282:     } else if (contentType == \"2\") {\n    L283:         if(receiver == currentusername)\n    L284:         {\n    L285:             QListWidgetItem *item = new QListWidgetItem();\n    L286:             QWidget *fileBubble = createFileBubble(sender + content);\n    L287:             item->setSizeHint(fileBubble->sizeHint());",
+      "fixed_code_snippet": "    L277:             QWidget *imageBubble = createImageBubble(sender, content, isSelf);\n    L278:             item->setSizeHint(imageBubble->sizeHint());\n    L279:             ui->ui_mag->addItem(item);\n    L280:             ui->ui_mag->setItemWidget(item, imageBubble);\n    L281:         }\n>>> L282: // TODO: 考虑重构此代码，拆分为更小的函数或文件\n    L283:     } else if (contentType == \"2\") {\n    L284:         if(receiver == currentusername)\n    L285:         {\n    L286:             QListWidgetItem *item = new QListWidgetItem();\n    L287:             QWidget *fileBubble = createFileBubble(sender + content);",
+      "timestamp": "2025-11-05T16:29:42.338037"
+    },
+    {
+      "file_path": "D:\\QtWork\\DataBase_00\\tcpserver.cpp",
+      "defect_type": "code_smell",
+      "defect_message": "[code_smell] 函数过长（163行），影响可维护性",
+      "line_number": 119,
+      "strategy": "fix_cpp_code_smell",
+      "language": "cpp",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "添加重构建议"
+      ],
+      "original_code_snippet": "    L114:         handleGetDepartmentsList(jsonData);\n    L115:     }else if (action == \"get_available_doctors\") {\n    L116:         handleGetAvailableDoctors(jsonData);\n    L117:     }else if (action == \"get_all_doctors\") {\n    L118:         handleGetAllDoctors(jsonData);\n>>> L119:     }else if (action == \"get_doctor_appointments\") {\n    L120:         handleGetDoctorAppointments(jsonData);\n    L121:     }else {\n    L122:         qDebug() << \"未知的action类型:\" << action;\n    L123:         sendErrorResponse(\"未知的操作类型\");\n    L124:     }",
+      "fixed_code_snippet": "    L114:         handleGetDepartmentsList(jsonData);\n    L115:     }else if (action == \"get_available_doctors\") {\n    L116:         handleGetAvailableDoctors(jsonData);\n    L117:     }else if (action == \"get_all_doctors\") {\n    L118:         handleGetAllDoctors(jsonData);\n>>> L119: // TODO: 考虑重构此代码，拆分为更小的函数或文件\n    L120:     }else if (action == \"get_doctor_appointments\") {\n    L121:         handleGetDoctorAppointments(jsonData);\n    L122:     }else {\n    L123:         qDebug() << \"未知的action类型:\" << action;\n    L124:         sendErrorResponse(\"未知的操作类型\");",
+      "timestamp": "2025-11-05T16:29:42.369459"
+    },
+    {
+      "file_path": "D:\\QtWork\\DataBase_00\\tcpserver.cpp",
+      "defect_type": "code_smell",
+      "defect_message": "[code_smell] 函数过长（1222行），影响可维护性",
+      "line_number": 283,
+      "strategy": "fix_cpp_code_smell",
+      "language": "cpp",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "添加重构建议"
+      ],
+      "original_code_snippet": "    L278:             if (!doctorsQuery.exec()) {\n    L279:                 db.rollback();\n    L280:                 sendErrorResponse(\"创建医生信息失败: \" + doctorsQuery.lastError().text(), \"register_response\");\n    L281:                 return;\n    L282:             }\n>>> L283:         } else if (usertype == \"patient\") {\n    L284:             // 插入病人信息\n    L285:             QSqlQuery patientsQuery;\n    L286:             patientsQuery.prepare(\"INSERT INTO patient (user_id, full_name) \"\n    L287:                                   \"VALUES (:user_id, :full_name)\");\n    L288:             patientsQuery.bindValue(\":user_id\", newUserId);",
+      "fixed_code_snippet": "    L278:             if (!doctorsQuery.exec()) {\n    L279:                 db.rollback();\n    L280:                 sendErrorResponse(\"创建医生信息失败: \" + doctorsQuery.lastError().text(), \"register_response\");\n    L281:                 return;\n    L282:             }\n>>> L283: // TODO: 考虑重构此代码，拆分为更小的函数或文件\n    L284:         } else if (usertype == \"patient\") {\n    L285:             // 插入病人信息\n    L286:             QSqlQuery patientsQuery;\n    L287:             patientsQuery.prepare(\"INSERT INTO patient (user_id, full_name) \"\n    L288:                                   \"VALUES (:user_id, :full_name)\");",
+      "timestamp": "2025-11-05T16:29:42.374969"
+    },
+    {
+      "file_path": "D:\\QtWork\\DataBase_00\\widget.cpp",
+      "defect_type": "logic",
+      "defect_message": "[llm] 重复的条件判断：medicalHistoryButton 被检查了三次，这可能是复制粘贴错误",
+      "line_number": 32,
+      "strategy": "ai_automatic_fix",
+      "language": "cpp",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI自动修复(cpp): [llm] 重复的条件判断：medicalHistoryButton 被检查了三次，这可能是复制粘贴错误"
+      ],
+      "original_code_snippet": "    L 27:         }\n    L 28:         else if(selectedButton == ui->reservationButton){\n    L 29:             qDebug() << \"reservationButton selected\";\n    L 30:         }\n    L 31:         else if(selectedButton == ui->medicalHistoryButton){\n>>> L 32:             qDebug() << \"medicalHistoryButton selected\";\n    L 33:         }\n    L 34:         else if(selectedButton == ui->detailsButton){\n    L 35:             qDebug() << \"detailsButton selected\";\n    L 36:         }\n    L 37:         else if(selectedButton == ui->medicalHistoryButton){",
+      "fixed_code_snippet": "    L 27:         }\n    L 28:         else if(selectedButton == ui->reservationButton){\n    L 29:             qDebug() << \"reservationButton selected\";\n    L 30:         }\n    L 31:         else if(selectedButton == ui->detailsButton){\n>>> L 32:             qDebug() << \"detailsButton selected\";\n    L 33:         }\n    L 34:     } else {\n    L 35:         // 如果没有按钮被选中\n    L 36:         qDebug() << \"No button is selected.\";\n    L 37:     }",
+      "timestamp": "2025-11-05T16:29:55.134567"
+    },
+    {
+      "file_path": "D:\\QtWork\\DataBase_00\\widget.cpp",
+      "defect_type": "logic",
+      "defect_message": "[llm] 重复的条件判断：medicalHistoryButton 被检查了三次，这可能是复制粘贴错误",
+      "line_number": 38,
+      "strategy": "ai_automatic_fix",
+      "language": "cpp",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "使用AI自动修复(cpp): [llm] 重复的条件判断：medicalHistoryButton 被检查了三次，这可能是复制粘贴错误"
+      ],
+      "original_code_snippet": "    L 33:         }\n    L 34:         else if(selectedButton == ui->detailsButton){\n    L 35:             qDebug() << \"detailsButton selected\";\n    L 36:         }\n    L 37:         else if(selectedButton == ui->medicalHistoryButton){\n>>> L 38:             qDebug() << \"medicalHistoryButton selected\";\n    L 39:         }\n    L 40:     } else {\n    L 41:         // 如果没有按钮被选中\n    L 42:         qDebug() << \"No button is selected.\";\n    L 43:     }",
+      "fixed_code_snippet": "    L 33:         }\n    L 34:     } else {\n    L 35:         // 如果没有按钮被选中\n    L 36:         qDebug() << \"No button is selected.\";\n    L 37:     }\n>>> L 38: }\n    L 39: \n    L 40: Widget::~Widget()\n    L 41: {\n    L 42:     delete ui;\n    L 43: }",
+      "timestamp": "2025-11-05T16:30:08.086446"
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\bookwindow.cpp",
+      "defect_type": "performance",
+      "defect_message": "[performance] 可能存在不必要的容器拷贝，建议使用移动语义",
+      "line_number": 376,
+      "strategy": "fix_cpp_performance",
+      "language": "cpp",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [],
+      "original_code_snippet": "    L371: void BookWindow::onDepartmentBtnClicked()\n    L372: {\n    L373:     QPushButton *senderBtn = qobject_cast<QPushButton *>(sender());\n    L374:     if (!senderBtn) return;\n    L375: \n>>> L376:     QList<QPushButton *> deptBtns = leftWidget->findChildren<QPushButton *>();\n    L377:     for (auto btn : deptBtns) {\n    L378:         if (btn->text() != \"返回主页面\") {  // 修正判断条件\n    L379:             // 未选中状态样式\n    L380:             btn->setStyleSheet(\"background-color: #ecf0f1; color: #2c3e50; padding: 10px; border-radius: 5px; text-align: left;\");\n    L381:         }",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-11-05T16:30:08.090741"
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\bookwindow.cpp",
+      "defect_type": "performance",
+      "defect_message": "[performance] 可能存在不必要的容器拷贝，建议使用移动语义",
+      "line_number": 395,
+      "strategy": "fix_cpp_performance",
+      "language": "cpp",
+      "success": false,
+      "confidence": 0.1,
+      "changes_made": [],
+      "original_code_snippet": "    L390: void BookWindow::onDateBtnClicked()\n    L391: {\n    L392:     QPushButton *senderBtn = qobject_cast<QPushButton *>(sender());\n    L393:     if (!senderBtn) return;\n    L394: \n>>> L395:     QList<QPushButton *> dateBtns = rightWidget->findChildren<QPushButton *>();\n    L396:     for (auto btn : dateBtns) {\n    L397:         // 未选中状态样式\n    L398:         btn->setStyleSheet(\"background-color: #ecf0f1; color: #2c3e50; padding: 8px; border-radius: 5px;\");\n    L399:     }\n    L400: ",
+      "fixed_code_snippet": "无变化",
+      "timestamp": "2025-11-05T16:30:08.093009"
+    },
+    {
+      "file_path": "D:\\QtWork\\Patient\\doctordetail.cpp",
+      "defect_type": "code_smell",
+      "defect_message": "[code_smell] 函数过长（177行），影响可维护性",
+      "line_number": 350,
+      "strategy": "fix_cpp_code_smell",
+      "language": "cpp",
+      "success": true,
+      "confidence": 0.9,
+      "changes_made": [
+        "添加重构建议"
+      ],
+      "original_code_snippet": "    L345: \n    L346:     // 生成患者评价（根据职称和挂号费生成）\n    L347:     QString reviewText = \"患者评价：\\n\";\n    L348:     if (doctorInfo.title == \"主任医师\") {\n    L349:         reviewText += \"★★★★★ (4.9/5.0) 来自300+位患者评价\\n医术精湛，经验丰富，诊断准确\";\n>>> L350:     } else if (doctorInfo.title == \"副主任医师\") {\n    L351:         reviewText += \"★★★★☆ (4.7/5.0) 来自200+位患者评价\\n态度和蔼，耐心细致，治疗效果显著\";\n    L352:     } else {\n    L353:         reviewText += \"★★★★☆ (4.5/5.0) 来自100+位患者评价\\n认真负责，沟通顺畅，深受患者信赖\";\n    L354:     }\n    L355:     patientReviewLabel->setText(reviewText);",
+      "fixed_code_snippet": "    L345: \n    L346:     // 生成患者评价（根据职称和挂号费生成）\n    L347:     QString reviewText = \"患者评价：\\n\";\n    L348:     if (doctorInfo.title == \"主任医师\") {\n    L349:         reviewText += \"★★★★★ (4.9/5.0) 来自300+位患者评价\\n医术精湛，经验丰富，诊断准确\";\n>>> L350: // TODO: 考虑重构此代码，拆分为更小的函数或文件\n    L351:     } else if (doctorInfo.title == \"副主任医师\") {\n    L352:         reviewText += \"★★★★☆ (4.7/5.0) 来自200+位患者评价\\n态度和蔼，耐心细致，治疗效果显著\";\n    L353:     } else {\n    L354:         reviewText += \"★★★★☆ (4.5/5.0) 来自100+位患者评价\\n认真负责，沟通顺畅，深受患者信赖\";\n    L355:     }",
+      "timestamp": "2025-11-05T16:30:08.094563"
+    }
+  ]
+}

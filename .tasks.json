@@ -1,0 +1,17 @@
+{
+  "2cdc08b3-b5e7-4cde-a63e-b90a4c7027ca": {
+    "id": "2cdc08b3-b5e7-4cde-a63e-b90a4c7027ca",
+    "status": "finished",
+    "stage": "finished",
+    "progress": 100,
+    "started_at": 1763359714.1156955,
+    "finished_at": 1763359715.9453366,
+    "output_dir": "D:\\PycharmProjects\\AI Agent\\backend\\output\\2cdc08b3-b5e7-4cde-a63e-b90a4c7027ca",
+    "artifacts": {
+      "defect_report": "sample_defect_report.json",
+      "repair_report": "sample_repair_report.json",
+      "quality_report": "sample_quality_report.html"
+    },
+    "last_message": ""
+  }
+}

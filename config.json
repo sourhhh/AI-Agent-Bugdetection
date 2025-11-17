@@ -1,0 +1,16 @@
+{
+    "deepseek": {
+        "api_key": "your_api_key_here",
+        "base_url": "https://api.deepseek.com",
+        "api_base": "https://api.deepseek.com/v1",
+        "model": "deepseek-coder",
+        "timeout": 60,
+        "chunk_size": 5,
+        "stream": false
+    },
+    "analysis": {
+        "skip_deepseek": true,
+
+        "max_files": 100
+    }
+}

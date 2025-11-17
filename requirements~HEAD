@@ -1,0 +1,6 @@
+python-dotenv>=1.0.0
+requests>=2.28.0
+openai>=0.27.0
+pytest>=7.0.0
+pylint>=2.17.0            # 代码质量检测
+bandit>=1.7.5             # 安全漏洞检测

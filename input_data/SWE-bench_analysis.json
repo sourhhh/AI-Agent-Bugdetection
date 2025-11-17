@@ -1,0 +1,1168 @@
+{
+    "project_context": {
+        "project_root": "D:\\PY\\SWE-bench",
+        "python_files": [
+            "D:\\PY\\SWE-bench\\docs\\blog\\posts\\250808-gpt5\\default.py",
+            "D:\\PY\\SWE-bench\\swebench\\__init__.py",
+            "D:\\PY\\SWE-bench\\swebench\\collect\\build_dataset.py",
+            "D:\\PY\\SWE-bench\\swebench\\collect\\build_dataset_ft.py",
+            "D:\\PY\\SWE-bench\\swebench\\collect\\get_tasks_pipeline.py",
+            "D:\\PY\\SWE-bench\\swebench\\collect\\get_top_pypi.py",
+            "D:\\PY\\SWE-bench\\swebench\\collect\\print_pulls.py",
+            "D:\\PY\\SWE-bench\\swebench\\collect\\utils.py",
+            "D:\\PY\\SWE-bench\\swebench\\collect\\__init__.py",
+            "D:\\PY\\SWE-bench\\swebench\\collect\\cleanup\\delete_gh_workflows.py",
+            "D:\\PY\\SWE-bench\\swebench\\collect\\cleanup\\remove_envs.py",
+            "D:\\PY\\SWE-bench\\swebench\\collect\\make_lite\\criteria.py",
+            "D:\\PY\\SWE-bench\\swebench\\collect\\make_lite\\make_lite.py",
+            "D:\\PY\\SWE-bench\\swebench\\collect\\make_repo\\call_make_repo.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\docker_build.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\docker_utils.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\grading.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\prepare_images.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\remove_containers.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\reporting.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\run_evaluation.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\utils.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\__init__.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\c.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\go.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\java.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\javascript.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\php.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\python.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\ruby.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\rust.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\__init__.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\c.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\go.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\java.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\javascript.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\php.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\python.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\ruby.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\rust.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\__init__.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\c.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\go.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\java.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\javascript.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\php.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\python.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\ruby.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\rust.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\__init__.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\modal_eval\\run_evaluation_modal.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\modal_eval\\run_evaluation_modal_entrypoint.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\modal_eval\\utils.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\modal_eval\\__init__.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\test_spec\\create_scripts.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\test_spec\\javascript.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\test_spec\\python.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\test_spec\\test_spec.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\test_spec\\utils.py",
+            "D:\\PY\\SWE-bench\\swebench\\harness\\test_spec\\__init__.py",
+            "D:\\PY\\SWE-bench\\swebench\\inference\\run_api.py",
+            "D:\\PY\\SWE-bench\\swebench\\inference\\run_live.py",
+            "D:\\PY\\SWE-bench\\swebench\\inference\\run_llama.py",
+            "D:\\PY\\SWE-bench\\swebench\\inference\\__init__.py",
+            "D:\\PY\\SWE-bench\\swebench\\inference\\llamao\\distributed_attention.py",
+            "D:\\PY\\SWE-bench\\swebench\\inference\\llamao\\modeling_flash_llama.py",
+            "D:\\PY\\SWE-bench\\swebench\\inference\\llamao\\__init__.py",
+            "D:\\PY\\SWE-bench\\swebench\\inference\\make_datasets\\bm25_retrieval.py",
+            "D:\\PY\\SWE-bench\\swebench\\inference\\make_datasets\\create_instance.py",
+            "D:\\PY\\SWE-bench\\swebench\\inference\\make_datasets\\create_text_dataset.py",
+            "D:\\PY\\SWE-bench\\swebench\\inference\\make_datasets\\eval_retrieval.py",
+            "D:\\PY\\SWE-bench\\swebench\\inference\\make_datasets\\tokenize_dataset.py",
+            "D:\\PY\\SWE-bench\\swebench\\inference\\make_datasets\\utils.py",
+            "D:\\PY\\SWE-bench\\swebench\\inference\\make_datasets\\__init__.py",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\__init__.py",
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\constants.py",
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\get_versions.py",
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\utils.py",
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\__init__.py",
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\extract_web\\get_versions_astropy.py",
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\extract_web\\get_versions_matplotlib.py",
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\extract_web\\get_versions_pvlib-python.py",
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\extract_web\\get_versions_pydicom.py",
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\extract_web\\get_versions_sqlfluff.py",
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\extract_web\\get_versions_xarray.py",
+            "D:\\PY\\SWE-bench\\tests\\test_cli.py",
+            "D:\\PY\\SWE-bench\\tests\\test_collect_cli.py",
+            "D:\\PY\\SWE-bench\\tests\\test_evaluation.py",
+            "D:\\PY\\SWE-bench\\tests\\test_harness_utils.py"
+        ],
+        "test_directories": [
+            "D:\\PY\\SWE-bench\\swebench\\harness\\test_spec",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\10051",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\10081",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\10356",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\5262",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\5631",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\5787",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\5809",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\5840",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\6197",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\6202",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\7205",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\7236",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\7324",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\7432",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\7490",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\7521",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\7571",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\7982",
+            "D:\\PY\\SWE-bench\\swebench\\resources\\swebench-og\\pytest-dev__pytest\\8399",
+            "D:\\PY\\SWE-bench\\tests",
+            "D:\\PY\\SWE-bench\\tests\\test_data"
+        ],
+        "dependencies": [],
+        "entry_points": [],
+        "requirements_path": "D:\\PY\\SWE-bench\\pyproject.toml",
+        "java_files": [],
+        "qt_files": [],
+        "c_files": [],
+        "cpp_files": []
+    },
+    "raw_analysis": {
+        "modules": {
+            "default.py": {
+                "classes": [
+                    "AgentConfig",
+                    "NonTerminatingException",
+                    "FormatError",
+                    "ExecutionTimeoutError",
+                    "TerminatingException",
+                    "Submitted",
+                    "LimitsExceeded",
+                    "DefaultAgent"
+                ],
+                "functions": []
+            },
+            "__init__.py": {
+                "classes": [],
+                "functions": [
+                    "build_dataset",
+                    "get_tasks_pipeline",
+                    "print_pulls",
+                    "build_image",
+                    "build_base_images",
+                    "build_env_images",
+                    "build_instance_images",
+                    "build_instance_image",
+                    "close_logger",
+                    "setup_logger",
+                    "cleanup_container",
+                    "remove_image",
+                    "copy_to_container",
+                    "exec_run_with_timeout",
+                    "list_images",
+                    "compute_fail_to_pass",
+                    "compute_pass_to_pass",
+                    "get_logs_eval",
+                    "get_eval_report",
+                    "get_resolution_status",
+                    "run_evaluation",
+                    "run_threadpool",
+                    "get_version",
+                    "get_versions_from_build",
+                    "get_versions_from_web",
+                    "map_version_to_task_instances",
+                    "split_instances"
+                ]
+            },
+            "build_dataset.py": {
+                "classes": [],
+                "functions": [
+                    "create_instance",
+                    "is_valid_pull",
+                    "is_valid_instance"
+                ]
+            },
+            "build_dataset_ft.py": {
+                "classes": [],
+                "functions": [
+                    "main"
+                ]
+            },
+            "get_tasks_pipeline.py": {
+                "classes": [],
+                "functions": [
+                    "split_instances",
+                    "construct_data_files"
+                ]
+            },
+            "get_top_pypi.py": {
+                "classes": [],
+                "functions": [
+                    "get_package_stats"
+                ]
+            },
+            "print_pulls.py": {
+                "classes": [],
+                "functions": [
+                    "log_all_pulls",
+                    "log_single_pull"
+                ]
+            },
+            "utils.py": {
+                "classes": [],
+                "functions": [
+                    "get_instances",
+                    "split_instances"
+                ]
+            },
+            "delete_gh_workflows.py": {
+                "classes": [],
+                "functions": [
+                    "main"
+                ]
+            },
+            "remove_envs.py": {
+                "classes": [],
+                "functions": [
+                    "get_conda_env_names",
+                    "delete_folders_with_prefix",
+                    "remove_environment"
+                ]
+            },
+            "criteria.py": {
+                "classes": [],
+                "functions": [
+                    "contains_git_commit_hash",
+                    "contains_hyperlinks",
+                    "contains_image"
+                ]
+            },
+            "make_lite.py": {
+                "classes": [],
+                "functions": [
+                    "filter_problem_statement",
+                    "filter_patch",
+                    "filter_patch_test",
+                    "apply_filters",
+                    "take_subset"
+                ]
+            },
+            "call_make_repo.py": {
+                "classes": [],
+                "functions": []
+            },
+            "docker_build.py": {
+                "classes": [
+                    "BuildImageError"
+                ],
+                "functions": [
+                    "setup_logger",
+                    "close_logger",
+                    "build_base_images",
+                    "build_env_images",
+                    "build_instance_images",
+                    "build_instance_image"
+                ]
+            },
+            "docker_utils.py": {
+                "classes": [],
+                "functions": [
+                    "copy_to_container",
+                    "write_to_container",
+                    "remove_image",
+                    "cleanup_container",
+                    "exec_run_with_timeout",
+                    "list_images",
+                    "should_remove",
+                    "clean_images"
+                ]
+            },
+            "grading.py": {
+                "classes": [],
+                "functions": [
+                    "test_passed",
+                    "test_failed",
+                    "get_logs_eval",
+                    "get_eval_report",
+                    "get_resolution_status",
+                    "compute_fail_to_pass",
+                    "compute_pass_to_pass"
+                ]
+            },
+            "prepare_images.py": {
+                "classes": [],
+                "functions": [
+                    "filter_dataset_to_build"
+                ]
+            },
+            "remove_containers.py": {
+                "classes": [],
+                "functions": [
+                    "main"
+                ]
+            },
+            "reporting.py": {
+                "classes": [],
+                "functions": [
+                    "make_run_report"
+                ]
+            },
+            "run_evaluation.py": {
+                "classes": [],
+                "functions": [
+                    "run_instance",
+                    "run_instances_modal"
+                ]
+            },
+            "run_api.py": {
+                "classes": [],
+                "functions": [
+                    "call_chat",
+                    "call_anthropic"
+                ]
+            },
+            "run_live.py": {
+                "classes": [],
+                "functions": [
+                    "get_problem_statement",
+                    "get_readme_files"
+                ]
+            },
+            "run_llama.py": {
+                "classes": [],
+                "functions": [
+                    "get_output_file"
+                ]
+            },
+            "distributed_attention.py": {
+                "classes": [
+                    "SeqAllToAll",
+                    "DistributedAttention"
+                ],
+                "functions": []
+            },
+            "modeling_flash_llama.py": {
+                "classes": [
+                    "LlamaForCausalLM"
+                ],
+                "functions": []
+            },
+            "bm25_retrieval.py": {
+                "classes": [
+                    "ContextManager"
+                ],
+                "functions": [
+                    "clone_repo",
+                    "make_index",
+                    "search"
+                ]
+            },
+            "create_instance.py": {
+                "classes": [],
+                "functions": [
+                    "make_code_text",
+                    "ingest_files",
+                    "add_text_inputs"
+                ]
+            },
+            "create_text_dataset.py": {
+                "classes": [],
+                "functions": [
+                    "load_jsonl_file",
+                    "instances_generator",
+                    "get_training_and_eval_instances",
+                    "extract_fields"
+                ]
+            },
+            "eval_retrieval.py": {
+                "classes": [],
+                "functions": [
+                    "main"
+                ]
+            },
+            "tokenize_dataset.py": {
+                "classes": [],
+                "functions": [
+                    "cl100k",
+                    "llama",
+                    "extract_fields"
+                ]
+            },
+            "get_versions.py": {
+                "classes": [],
+                "functions": [
+                    "_find_version_in_text",
+                    "get_version",
+                    "get_versions_from_build",
+                    "get_versions_from_web",
+                    "map_version_to_task_instances"
+                ]
+            },
+            "test_cli.py": {
+                "classes": [],
+                "functions": [
+                    "test_smoke_test",
+                    "test_one_instance"
+                ]
+            },
+            "test_collect_cli.py": {
+                "classes": [],
+                "functions": [
+                    "test_collect_smoke_test",
+                    "test_collect_one",
+                    "test_collect_ds",
+                    "test_collect_get_issues"
+                ]
+            },
+            "test_evaluation.py": {
+                "classes": [],
+                "functions": [
+                    "test_make_run_report"
+                ]
+            },
+            "test_harness_utils.py": {
+                "classes": [],
+                "functions": [
+                    "test_run_threadpool_all_failures",
+                    "test_environment_yml_cleaner"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\docs\\blog\\posts\\250808-gpt5\\default.py": {
+                "classes": [
+                    "[自动填充]default"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\collect\\build_dataset.py": {
+                "classes": [
+                    "[自动填充]build_dataset"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\collect\\build_dataset_ft.py": {
+                "classes": [
+                    "[自动填充]build_dataset_ft"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\collect\\get_tasks_pipeline.py": {
+                "classes": [
+                    "[自动填充]get_tasks_pipeline"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\collect\\get_top_pypi.py": {
+                "classes": [
+                    "[自动填充]get_top_pypi"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\collect\\print_pulls.py": {
+                "classes": [
+                    "[自动填充]print_pulls"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\collect\\utils.py": {
+                "classes": [
+                    "[自动填充]utils"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\collect\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\collect\\cleanup\\delete_gh_workflows.py": {
+                "classes": [
+                    "[自动填充]delete_gh_workflows"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\collect\\cleanup\\remove_envs.py": {
+                "classes": [
+                    "[自动填充]remove_envs"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\collect\\make_lite\\criteria.py": {
+                "classes": [
+                    "[自动填充]criteria"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\collect\\make_lite\\make_lite.py": {
+                "classes": [
+                    "[自动填充]make_lite"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\collect\\make_repo\\call_make_repo.py": {
+                "classes": [
+                    "[自动填充]call_make_repo"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\docker_build.py": {
+                "classes": [
+                    "[自动填充]docker_build"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\docker_utils.py": {
+                "classes": [
+                    "[自动填充]docker_utils"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\grading.py": {
+                "classes": [
+                    "[自动填充]grading"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\prepare_images.py": {
+                "classes": [
+                    "[自动填充]prepare_images"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\remove_containers.py": {
+                "classes": [
+                    "[自动填充]remove_containers"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\reporting.py": {
+                "classes": [
+                    "[自动填充]reporting"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\run_evaluation.py": {
+                "classes": [
+                    "[自动填充]run_evaluation"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\utils.py": {
+                "classes": [
+                    "[自动填充]utils"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\c.py": {
+                "classes": [
+                    "[自动填充]c"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\go.py": {
+                "classes": [
+                    "[自动填充]go"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\java.py": {
+                "classes": [
+                    "[自动填充]java"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\javascript.py": {
+                "classes": [
+                    "[自动填充]javascript"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\php.py": {
+                "classes": [
+                    "[自动填充]php"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\python.py": {
+                "classes": [
+                    "[自动填充]python"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\ruby.py": {
+                "classes": [
+                    "[自动填充]ruby"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\rust.py": {
+                "classes": [
+                    "[自动填充]rust"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\constants\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\c.py": {
+                "classes": [
+                    "[自动填充]c"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\go.py": {
+                "classes": [
+                    "[自动填充]go"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\java.py": {
+                "classes": [
+                    "[自动填充]java"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\javascript.py": {
+                "classes": [
+                    "[自动填充]javascript"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\php.py": {
+                "classes": [
+                    "[自动填充]php"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\python.py": {
+                "classes": [
+                    "[自动填充]python"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\ruby.py": {
+                "classes": [
+                    "[自动填充]ruby"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\rust.py": {
+                "classes": [
+                    "[自动填充]rust"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\dockerfiles\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\c.py": {
+                "classes": [
+                    "[自动填充]c"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\go.py": {
+                "classes": [
+                    "[自动填充]go"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\java.py": {
+                "classes": [
+                    "[自动填充]java"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\javascript.py": {
+                "classes": [
+                    "[自动填充]javascript"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\php.py": {
+                "classes": [
+                    "[自动填充]php"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\python.py": {
+                "classes": [
+                    "[自动填充]python"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\ruby.py": {
+                "classes": [
+                    "[自动填充]ruby"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\rust.py": {
+                "classes": [
+                    "[自动填充]rust"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\log_parsers\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\modal_eval\\run_evaluation_modal.py": {
+                "classes": [
+                    "[自动填充]run_evaluation_modal"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\modal_eval\\run_evaluation_modal_entrypoint.py": {
+                "classes": [
+                    "[自动填充]run_evaluation_modal_entrypoint"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\modal_eval\\utils.py": {
+                "classes": [
+                    "[自动填充]utils"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\modal_eval\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\test_spec\\create_scripts.py": {
+                "classes": [
+                    "[自动填充]create_scripts"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\test_spec\\javascript.py": {
+                "classes": [
+                    "[自动填充]javascript"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\test_spec\\python.py": {
+                "classes": [
+                    "[自动填充]python"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\test_spec\\test_spec.py": {
+                "classes": [
+                    "[自动填充]test_spec"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\test_spec\\utils.py": {
+                "classes": [
+                    "[自动填充]utils"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\harness\\test_spec\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\inference\\run_api.py": {
+                "classes": [
+                    "[自动填充]run_api"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\inference\\run_live.py": {
+                "classes": [
+                    "[自动填充]run_live"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\inference\\run_llama.py": {
+                "classes": [
+                    "[自动填充]run_llama"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\inference\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\inference\\llamao\\distributed_attention.py": {
+                "classes": [
+                    "[自动填充]distributed_attention"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\inference\\llamao\\modeling_flash_llama.py": {
+                "classes": [
+                    "[自动填充]modeling_flash_llama"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\inference\\llamao\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\inference\\make_datasets\\bm25_retrieval.py": {
+                "classes": [
+                    "[自动填充]bm25_retrieval"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\inference\\make_datasets\\create_instance.py": {
+                "classes": [
+                    "[自动填充]create_instance"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\inference\\make_datasets\\create_text_dataset.py": {
+                "classes": [
+                    "[自动填充]create_text_dataset"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\inference\\make_datasets\\eval_retrieval.py": {
+                "classes": [
+                    "[自动填充]eval_retrieval"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\inference\\make_datasets\\tokenize_dataset.py": {
+                "classes": [
+                    "[自动填充]tokenize_dataset"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\inference\\make_datasets\\utils.py": {
+                "classes": [
+                    "[自动填充]utils"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\inference\\make_datasets\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\resources\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\constants.py": {
+                "classes": [
+                    "[自动填充]constants"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\get_versions.py": {
+                "classes": [
+                    "[自动填充]get_versions"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\utils.py": {
+                "classes": [
+                    "[自动填充]utils"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\__init__.py": {
+                "classes": [
+                    "[自动填充]__init__"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\extract_web\\get_versions_astropy.py": {
+                "classes": [
+                    "[自动填充]get_versions_astropy"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\extract_web\\get_versions_matplotlib.py": {
+                "classes": [
+                    "[自动填充]get_versions_matplotlib"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\extract_web\\get_versions_pvlib-python.py": {
+                "classes": [
+                    "[自动填充]get_versions_pvlib-python"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\extract_web\\get_versions_pydicom.py": {
+                "classes": [
+                    "[自动填充]get_versions_pydicom"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\extract_web\\get_versions_sqlfluff.py": {
+                "classes": [
+                    "[自动填充]get_versions_sqlfluff"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\swebench\\versioning\\extract_web\\get_versions_xarray.py": {
+                "classes": [
+                    "[自动填充]get_versions_xarray"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\tests\\test_cli.py": {
+                "classes": [
+                    "[自动填充]test_cli"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\tests\\test_collect_cli.py": {
+                "classes": [
+                    "[自动填充]test_collect_cli"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\tests\\test_evaluation.py": {
+                "classes": [
+                    "[自动填充]test_evaluation"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            },
+            "D:\\PY\\SWE-bench\\tests\\test_harness_utils.py": {
+                "classes": [
+                    "[自动填充]test_harness_utils"
+                ],
+                "functions": [
+                    "[自动填充]未识别函数"
+                ]
+            }
+        }
+    },
+    "deepseek_analysis": {
+        "total_files": 89,
+        "project_type": "Python项目",
+        "analysis_chunks": 18,
+        "chunk_results": [
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\docs\\\\blog\\\\posts\\\\250808-gpt5\\\\default.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"is_main_entry\": false,\n        \"description\": \"博客文章相关的示例或模板文件\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\__init__.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"is_main_entry\": false,\n        \"description\": \"swebench包的初始化文件，定义包级别的导入和配置\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\collect\\\\build_dataset.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          \"build_dataset\",\n          \"process_repository\",\n          \"extract_issues\",\n          \"validate_test_cases\"\n        ],\n        \"dependencies\": [\n          \"os\",\n          \"json\",\n          \"logging\",\n          \"git\",\n          \"pandas\"\n        ],\n        \"is_main_entry\": true,\n        \"description\": \"数据集构建的主要逻辑，包含数据处理和验证功能\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\collect\\\\build_dataset_ft.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          \"build_finetuning_dataset\",\n          \"preprocess_training_data\",\n          \"generate_examples\"\n        ],\n        \"dependencies\": [\n          \"transformers\",\n          \"torch\",\n          \"datasets\",\n          \"build_dataset\"\n        ],\n        \"is_main_entry\": false,\n        \"description\": \"微调数据集的构建模块，依赖于基础数据集构建功能\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\collect\\\\get_tasks_pipeline.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          \"get_tasks\",\n          \"filter_tasks\",\n          \"pipeline_execution\"\n        ],\n        \"dependencies\": [\n          \"requests\",\n          \"yaml\",\n          \"concurrent.futures\",\n          \"swebench.collect.build_dataset\"\n        ],\n        \"is_main_entry\": false,\n        \"description\": \"任务获取和处理流水线，支持并发执行和任务过滤\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"build_dataset.py\": [\"基础文件系统操作\", \"Git仓库管理\", \"数据验证\"],\n      \"build_dataset_ft.py\": [\"build_dataset.py\", \"深度学习框架\", \"数据处理库\"],\n      \"get_tasks_pipeline.py\": [\"build_dataset.py\", \"网络请求\", \"配置解析\"]\n    },\n    \"main_entry_points\": [\n      {\n        \"file\": \"build_dataset.py\",\n        \"function\": \"build_dataset\",\n        \"description\": \"数据集构建的主入口函数\"\n      }\n    ],\n    \"architecture_summary\": \"这是一个Python项目，专注于软件工程基准测试数据集的收集和构建。项目采用模块化设计，包含数据收集、处理和微调准备等功能模块。build_dataset.py作为核心模块提供基础数据集构建功能，其他模块在此基础上扩展特定功能。\"\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\collect\\\\get_top_pypi.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          \"get_top_pypi_packages\",\n          \"main\"\n        ],\n        \"dependencies\": [\n          \"requests\",\n          \"argparse\",\n          \"sys\"\n        ],\n        \"entry_logic\": \"main函数作为程序入口，处理命令行参数并调用get_top_pypi_packages获取PyPI热门包信息\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\collect\\\\print_pulls.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          \"print_pull_requests\",\n          \"main\"\n        ],\n        \"dependencies\": [\n          \"github\",\n          \"argparse\",\n          \"sys\"\n        ],\n        \"entry_logic\": \"main函数作为程序入口，处理命令行参数并调用print_pull_requests打印pull request信息\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\collect\\\\utils.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          \"setup_logging\",\n          \"read_config\",\n          \"validate_repo_url\",\n          \"clone_repository\",\n          \"parse_arguments\"\n        ],\n        \"dependencies\": [\n          \"logging\",\n          \"json\",\n          \"os\",\n          \"subprocess\",\n          \"argparse\",\n          \"re\"\n        ],\n        \"entry_logic\": \"工具函数模块，无主入口逻辑，提供通用的辅助功能\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\collect\\\\__init__.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"entry_logic\": \"包初始化文件，无主入口逻辑\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\collect\\\\cleanup\\\\delete_gh_workflows.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          \"delete_github_workflows\",\n          \"main\"\n        ],\n        \"dependencies\": [\n          \"os\",\n          \"shutil\",\n          \"argparse\",\n          \"pathlib\"\n        ],\n        \"entry_logic\": \"main函数作为程序入口，处理命令行参数并调用delete_github_workflows删除GitHub workflows\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"internal_dependencies\": {\n        \"get_top_pypi.py\": [\"utils\"],\n        \"print_pulls.py\": [\"utils\"],\n        \"delete_gh_workflows.py\": [\"utils\"]\n      },\n      \"external_dependencies\": {\n        \"standard_library\": [\n          \"argparse\", \"sys\", \"os\", \"logging\", \"json\", \"subprocess\", \"re\", \"shutil\", \"pathlib\"\n        ],\n        \"third_party\": [\n          \"requests\", \"github\"\n        ]\n      }\n    },\n    \"project_structure\": {\n      \"package_hierarchy\": [\n        \"swebench.collect\",\n        \"swebench.collect.cleanup\"\n      ],\n      \"entry_points\": [\n        \"get_top_pypi.py:main\",\n        \"print_pulls.py:main\", \n        \"delete_gh_workflows.py:main\"\n      ]\n    }\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\collect\\\\cleanup\\\\remove_envs.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          {\n            \"name\": \"remove_envs\",\n            \"description\": \"清理环境的函数，可能用于删除虚拟环境或容器环境\"\n          }\n        ],\n        \"dependencies\": [\n          \"os\",\n          \"shutil\",\n          \"pathlib\"\n        ],\n        \"entry_logic\": \"脚本执行入口，调用remove_envs函数执行清理操作\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\collect\\\\make_lite\\\\criteria.py\",\n        \"language\": \"Python\",\n        \"classes\": [\n          {\n            \"name\": \"LiteCriteria\",\n            \"methods\": [\n              \"evaluate\",\n              \"filter_tasks\",\n              \"calculate_complexity\"\n            ]\n          }\n        ],\n        \"functions\": [\n          {\n            \"name\": \"load_criteria_config\",\n            \"description\": \"加载精简标准的配置文件\"\n          }\n        ],\n        \"dependencies\": [\n          \"json\",\n          \"yaml\",\n          \"dataclasses\"\n        ],\n        \"entry_logic\": \"定义任务筛选标准，不包含主执行逻辑\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\collect\\\\make_lite\\\\make_lite.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          {\n            \"name\": \"main\",\n            \"description\": \"主执行函数，协调精简流程\"\n          },\n          {\n            \"name\": \"process_dataset\",\n            \"description\": \"处理数据集的核心函数\"\n          },\n          {\n            \"name\": \"apply_criteria\",\n            \"description\": \"应用筛选标准\"\n          }\n        ],\n        \"dependencies\": [\n          \"criteria\",\n          \"sys\",\n          \"argparse\"\n        ],\n        \"entry_logic\": \"主入口脚本，包含if __name__ == '__main__'逻辑，调用main函数\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\collect\\\\make_repo\\\\call_make_repo.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          {\n            \"name\": \"call_make_repo\",\n            \"description\": \"调用仓库创建功能的函数\"\n          },\n          {\n            \"name\": \"setup_repository\",\n            \"description\": \"设置仓库结构和配置\"\n          }\n        ],\n        \"dependencies\": [\n          \"subprocess\",\n          \"os\",\n          \"tempfile\"\n        ],\n        \"entry_logic\": \"仓库创建工具的调用接口，可能通过命令行参数执行\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\docker_build.py\",\n        \"language\": \"Python\",\n        \"classes\": [\n          {\n            \"name\": \"DockerBuilder\",\n            \"methods\": [\n              \"build_image\",\n              \"validate_dockerfile\",\n              \"push_image\"\n            ]\n          }\n        ],\n        \"functions\": [\n          {\n            \"name\": \"parse_build_args\",\n            \"description\": \"解析Docker构建参数\"\n          }\n        ],\n        \"dependencies\": [\n          \"docker\",\n          \"subprocess\",\n          \"argparse\"\n        ],\n        \"entry_logic\": \"Docker镜像构建工具，包含构建、验证和推送功能\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"internal_dependencies\": [\n        \"swebench.collect.cleanup.remove_envs → 系统工具依赖\",\n        \"swebench.collect.make_lite.criteria → 配置处理依赖\", \n        \"swebench.collect.make_lite.make_lite → criteria模块依赖\",\n        \"swebench.collect.make_repo.call_make_repo → 子进程执行依赖\",\n        \"swebench.harness.docker_build → Docker SDK依赖\"\n      ],\n      \"external_dependencies\": [\n        \"标准库: os, sys, subprocess, shutil, pathlib, tempfile, argparse, json, dataclasses\",\n        \"第三方库: docker, yaml\"\n      ]\n    },\n    \"main_entry_points\": [\n      {\n        \"file\": \"make_lite.py\",\n        \"function\": \"main\",\n        \"description\": \"数据集精简流程的主入口\"\n      },\n      {\n        \"file\": \"call_make_repo.py\", \n        \"function\": \"call_make_repo\",\n        \"description\": \"仓库创建工具的执行入口\"\n      },\n      {\n        \"file\": \"docker_build.py\",\n        \"function\": \"DockerBuilder.build_image\",\n        \"description\": \"Docker镜像构建的主要入口\"\n      }\n    ]\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\docker_utils.py\",\n        \"classes\": [\n          {\n            \"name\": \"DockerManager\",\n            \"methods\": [\n              \"build_image\",\n              \"run_container\",\n              \"stop_container\",\n              \"remove_container\",\n              \"exec_command\",\n              \"copy_to_container\",\n              \"copy_from_container\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"get_docker_client\",\n          \"validate_docker_environment\",\n          \"cleanup_orphaned_containers\"\n        ],\n        \"dependencies\": [\n          \"docker\",\n          \"os\",\n          \"subprocess\",\n          \"time\"\n        ],\n        \"main_logic\": \"提供Docker容器管理功能，包括构建镜像、运行容器、执行命令等操作\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\grading.py\",\n        \"classes\": [\n          {\n            \"name\": \"TestGrader\",\n            \"methods\": [\n              \"run_tests\",\n              \"evaluate_results\",\n              \"calculate_score\",\n              \"generate_report\"\n            ]\n          },\n          {\n            \"name\": \"GradingCriteria\",\n            \"methods\": [\n              \"validate_test_cases\",\n              \"set_weighting\",\n              \"check_coverage\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"parse_test_output\",\n          \"normalize_scores\",\n          \"create_grading_summary\"\n        ],\n        \"dependencies\": [\n          \"json\",\n          \"yaml\",\n          \"unittest\",\n          \"pytest\",\n          \"docker_utils\"\n        ],\n        \"main_logic\": \"测试评分系统，执行测试用例并评估结果，生成评分报告\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\prepare_images.py\",\n        \"classes\": [\n          {\n            \"name\": \"ImagePreparer\",\n            \"methods\": [\n              \"download_base_image\",\n              \"install_dependencies\",\n              \"configure_environment\",\n              \"build_custom_image\",\n              \"verify_image\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"read_image_spec\",\n          \"generate_dockerfile\",\n          \"check_image_exists\"\n        ],\n        \"dependencies\": [\n          \"docker_utils\",\n          \"os\",\n          \"shutil\",\n          \"tempfile\"\n        ],\n        \"main_logic\": \"准备Docker镜像，包括下载基础镜像、安装依赖、构建自定义镜像\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\remove_containers.py\",\n        \"classes\": [],\n        \"functions\": [\n          \"remove_all_containers\",\n          \"remove_stopped_containers\",\n          \"cleanup_by_pattern\",\n          \"force_remove_container\"\n        ],\n        \"dependencies\": [\n          \"docker_utils\",\n          \"argparse\",\n          \"sys\"\n        ],\n        \"main_logic\": \"容器清理工具，提供批量删除和按条件删除容器的功能\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\reporting.py\",\n        \"classes\": [\n          {\n            \"name\": \"ReportGenerator\",\n            \"methods\": [\n              \"collect_results\",\n              \"generate_html_report\",\n              \"generate_json_report\",\n              \"create_summary\",\n              \"export_to_file\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"format_timestamp\",\n          \"calculate_statistics\",\n          \"create_visualizations\"\n        ],\n        \"dependencies\": [\n          \"grading\",\n          \"json\",\n          \"datetime\",\n          \"matplotlib\",\n          \"pandas\"\n        ],\n        \"main_logic\": \"报告生成系统，收集测试结果并生成多种格式的报告和可视化\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"core_modules\": [\n        \"docker_utils\",\n        \"grading\",\n        \"reporting\"\n      ],\n      \"dependency_graph\": {\n        \"docker_utils\": [],\n        \"grading\": [\"docker_utils\"],\n        \"prepare_images\": [\"docker_utils\"],\n        \"remove_containers\": [\"docker_utils\"],\n        \"reporting\": [\"grading\"]\n      },\n      \"main_entry_points\": [\n        {\n          \"module\": \"grading.py\",\n          \"purpose\": \"主要的测试评分入口\"\n        },\n        {\n          \"module\": \"reporting.py\",\n          \"purpose\": \"报告生成入口\"\n        },\n        {\n          \"module\": \"remove_containers.py\",\n          \"purpose\": \"容器清理脚本入口\"\n        }\n      ]\n    },\n    \"architecture_summary\": \"这是一个Python语言的SWE-bench测试框架工具集，围绕Docker容器管理构建，包含镜像准备、测试执行、评分和报告生成的完整流程。docker_utils作为基础模块被其他模块依赖。\"\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\run_evaluation.py\",\n        \"classes\": [],\n        \"functions\": [\n          \"run_evaluation\",\n          \"main\"\n        ],\n        \"dependencies\": [\n          \"swebench.harness.utils\",\n          \"swebench.harness.constants.c\",\n          \"swebench.harness.constants.go\"\n        ],\n        \"is_main_entry\": true,\n        \"description\": \"评估运行的主入口文件\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\utils.py\",\n        \"classes\": [],\n        \"functions\": [\n          \"setup_environment\",\n          \"load_test_cases\",\n          \"validate_results\",\n          \"generate_report\"\n        ],\n        \"dependencies\": [],\n        \"is_main_entry\": false,\n        \"description\": \"工具函数模块，包含环境设置、测试用例加载等功能\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\__init__.py\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"is_main_entry\": false,\n        \"description\": \"包初始化文件，可能包含包级别的导入和配置\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\constants\\\\c.py\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"is_main_entry\": false,\n        \"description\": \"C语言相关的常量定义文件\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\constants\\\\go.py\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"is_main_entry\": false,\n        \"description\": \"Go语言相关的常量定义文件\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"main_module\": \"swebench.harness.run_evaluation\",\n      \"dependency_graph\": {\n        \"run_evaluation.py\": [\"utils.py\", \"constants/c.py\", \"constants/go.py\"],\n        \"utils.py\": [],\n        \"constants/c.py\": [],\n        \"constants/go.py\": []\n      }\n    },\n    \"main_entry_logic\": {\n      \"entry_file\": \"run_evaluation.py\",\n      \"entry_function\": \"main\",\n      \"execution_flow\": [\n        \"导入必要的工具模块和常量\",\n        \"调用run_evaluation函数开始评估流程\",\n        \"使用utils模块进行环境设置和测试用例加载\",\n        \"执行测试并验证结果\",\n        \"生成评估报告\"\n      ]\n    }\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\constants\\\\java.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_logic\": \"Java语言相关的常量定义模块\",\n        \"description\": \"包含Java语言测试相关的常量定义\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\constants\\\\javascript.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_logic\": \"JavaScript语言相关的常量定义模块\",\n        \"description\": \"包含JavaScript语言测试相关的常量定义\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\constants\\\\php.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_logic\": \"PHP语言相关的常量定义模块\",\n        \"description\": \"包含PHP语言测试相关的常量定义\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\constants\\\\python.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_logic\": \"Python语言相关的常量定义模块\",\n        \"description\": \"包含Python语言测试相关的常量定义\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\constants\\\\ruby.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_logic\": \"Ruby语言相关的常量定义模块\",\n        \"description\": \"包含Ruby语言测试相关的常量定义\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"constants_package\": {\n        \"description\": \"多语言常量定义包\",\n        \"modules\": [\n          \"java.py\",\n          \"javascript.py\", \n          \"php.py\",\n          \"python.py\",\n          \"ruby.py\"\n        ],\n        \"dependencies\": [],\n        \"purpose\": \"为SWE-bench测试框架提供不同编程语言的常量定义支持\"\n      }\n    },\n    \"project_structure\": {\n      \"type\": \"Python包结构\",\n      \"package_hierarchy\": \"swebench/harness/constants/\",\n      \"files_count\": 5,\n      \"description\": \"这是一个Python项目的常量定义包，专门用于定义不同编程语言在测试框架中使用的常量\"\n    }\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\constants\\\\rust.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_logic\": \"常量定义文件，可能包含Rust相关的配置常量\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\constants\\\\__init__.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_logic\": \"包初始化文件，用于导出constants模块的内容\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\dockerfiles\\\\c.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_logic\": \"C语言相关的Docker配置管理\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\dockerfiles\\\\go.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_logic\": \"Go语言相关的Docker配置管理\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\dockerfiles\\\\java.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_logic\": \"Java语言相关的Docker配置管理\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"constants_module\": {\n        \"rust.py\": \"Rust相关常量\",\n        \"__init__.py\": \"包导出文件\"\n      },\n      \"dockerfiles_module\": {\n        \"c.py\": \"C语言Docker配置\",\n        \"go.py\": \"Go语言Docker配置\", \n        \"java.py\": \"Java语言Docker配置\"\n      },\n      \"inter_module_dependencies\": [\n        \"constants模块为整个harness提供配置常量\",\n        \"dockerfiles模块包含不同语言的Docker环境配置\",\n        \"这两个模块可能被harness的主逻辑模块调用\"\n      ]\n    },\n    \"main_entry_logic\": {\n      \"description\": \"这是一个SWE-bench测试框架的配置模块，包含常量和Docker环境配置\",\n      \"primary_modules\": [\n        \"constants - 包含各种编程语言相关的配置常量\",\n        \"dockerfiles - 包含不同语言环境的Docker配置管理\"\n      ],\n      \"architecture\": \"模块化配置管理架构，支持多语言测试环境\"\n    }\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\dockerfiles\\\\javascript.py\",\n        \"classes\": [],\n        \"functions\": [\n          {\n            \"name\": \"build_docker_image\",\n            \"parameters\": [\"base_image\", \"dependencies\", \"workdir\"],\n            \"purpose\": \"构建JavaScript环境的Docker镜像\"\n          },\n          {\n            \"name\": \"setup_node_environment\",\n            \"parameters\": [\"node_version\", \"package_manager\"],\n            \"purpose\": \"设置Node.js开发环境\"\n          }\n        ],\n        \"dependencies\": [\"docker\", \"subprocess\", \"os\"],\n        \"entry_logic\": \"JavaScript Docker镜像构建入口\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\dockerfiles\\\\php.py\",\n        \"classes\": [],\n        \"functions\": [\n          {\n            \"name\": \"build_docker_image\",\n            \"parameters\": [\"php_version\", \"extensions\", \"composer\"],\n            \"purpose\": \"构建PHP环境的Docker镜像\"\n          },\n          {\n            \"name\": \"configure_php\",\n            \"parameters\": [\"ini_settings\", \"modules\"],\n            \"purpose\": \"配置PHP运行环境\"\n          }\n        ],\n        \"dependencies\": [\"docker\", \"subprocess\", \"configparser\"],\n        \"entry_logic\": \"PHP Docker镜像构建入口\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\dockerfiles\\\\python.py\",\n        \"classes\": [\n          {\n            \"name\": \"PythonDockerBuilder\",\n            \"methods\": [\n              {\n                \"name\": \"__init__\",\n                \"parameters\": [\"python_version\", \"pip_packages\"],\n                \"purpose\": \"初始化Python Docker构建器\"\n              },\n              {\n                \"name\": \"build_image\",\n                \"parameters\": [],\n                \"purpose\": \"构建Python Docker镜像\"\n              },\n              {\n                \"name\": \"install_dependencies\",\n                \"parameters\": [\"requirements_file\"],\n                \"purpose\": \"安装Python依赖包\"\n              }\n            ]\n          }\n        ],\n        \"functions\": [\n          {\n            \"name\": \"create_python_environment\",\n            \"parameters\": [\"venv_path\", \"packages\"],\n            \"purpose\": \"创建Python虚拟环境\"\n          }\n        ],\n        \"dependencies\": [\"docker\", \"subprocess\", \"venv\", \"pip\"],\n        \"entry_logic\": \"Python Docker镜像构建主入口，使用PythonDockerBuilder类\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\dockerfiles\\\\ruby.py\",\n        \"classes\": [],\n        \"functions\": [\n          {\n            \"name\": \"build_docker_image\",\n            \"parameters\": [\"ruby_version\", \"gems\", \"bundler\"],\n            \"purpose\": \"构建Ruby环境的Docker镜像\"\n          },\n          {\n            \"name\": \"setup_ruby_gems\",\n            \"parameters\": [\"gemfile_path\"],\n            \"purpose\": \"设置Ruby Gem依赖\"\n          }\n        ],\n        \"dependencies\": [\"docker\", \"subprocess\", \"yaml\"],\n        \"entry_logic\": \"Ruby Docker镜像构建入口\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\dockerfiles\\\\rust.py\",\n        \"classes\": [\n          {\n            \"name\": \"RustDockerBuilder\",\n            \"methods\": [\n              {\n                \"name\": \"__init__\",\n                \"parameters\": [\"rust_version\", \"cargo_packages\"],\n                \"purpose\": \"初始化Rust Docker构建器\"\n              },\n              {\n                \"name\": \"build_image\",\n                \"parameters\": [],\n                \"purpose\": \"构建Rust Docker镜像\"\n              },\n              {\n                \"name\": \"compile_project\",\n                \"parameters\": [\"cargo_toml_path\"],\n                \"purpose\": \"编译Rust项目\"\n              }\n            ]\n          }\n        ],\n        \"functions\": [\n          {\n            \"name\": \"setup_cargo_registry\",\n            \"parameters\": [\"registry_url\"],\n            \"purpose\": \"设置Cargo包注册表\"\n          }\n        ],\n        \"dependencies\": [\"docker\", \"subprocess\", \"toml\"],\n        \"entry_logic\": \"Rust Docker镜像构建主入口，使用RustDockerBuilder类\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"common_dependencies\": [\"docker\", \"subprocess\"],\n      \"language_specific_dependencies\": {\n        \"javascript\": [\"os\"],\n        \"php\": [\"configparser\"],\n        \"python\": [\"venv\", \"pip\"],\n        \"ruby\": [\"yaml\"],\n        \"rust\": [\"toml\"]\n      },\n      \"inter_file_dependencies\": \"所有文件都依赖于SWE-bench框架的Docker构建基础设施\"\n    },\n    \"main_entry_points\": [\n      {\n        \"language\": \"javascript\",\n        \"entry_function\": \"build_docker_image\",\n        \"description\": \"JavaScript环境Docker镜像构建入口\"\n      },\n      {\n        \"language\": \"php\",\n        \"entry_function\": \"build_docker_image\",\n        \"description\": \"PHP环境Docker镜像构建入口\"\n      },\n      {\n        \"language\": \"python\",\n        \"entry_class\": \"PythonDockerBuilder\",\n        \"entry_method\": \"build_image\",\n        \"description\": \"Python环境Docker镜像构建入口\"\n      },\n      {\n        \"language\": \"ruby\",\n        \"entry_function\": \"build_docker_image\",\n        \"description\": \"Ruby环境Docker镜像构建入口\"\n      },\n      {\n        \"language\": \"rust\",\n        \"entry_class\": \"RustDockerBuilder\",\n        \"entry_method\": \"build_image\",\n        \"description\": \"Rust环境Docker镜像构建入口\"\n      }\n    ],\n    \"architecture_pattern\": \"多语言Docker构建器模式，每个文件负责特定编程语言的Docker环境配置和镜像构建\"\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\dockerfiles\\\\__init__.py\",\n        \"file_type\": \"Python package initializer\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_logic\": \"Package initialization file, typically empty or containing package-level imports\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\log_parsers\\\\c.py\",\n        \"file_type\": \"Python module\",\n        \"classes\": [\n          {\n            \"name\": \"CLogParser\",\n            \"methods\": [\n              \"parse\",\n              \"extract_errors\",\n              \"extract_warnings\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"parse_c_log\",\n          \"extract_compilation_errors\"\n        ],\n        \"dependencies\": [\n          \"re\",\n          \"typing\",\n          \"pathlib\"\n        ],\n        \"main_logic\": \"C语言日志解析器，处理C项目的编译日志和错误信息\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\log_parsers\\\\go.py\",\n        \"file_type\": \"Python module\",\n        \"classes\": [\n          {\n            \"name\": \"GoLogParser\",\n            \"methods\": [\n              \"parse\",\n              \"extract_go_errors\",\n              \"parse_test_results\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"parse_go_build_log\",\n          \"extract_go_test_output\"\n        ],\n        \"dependencies\": [\n          \"re\",\n          \"json\",\n          \"subprocess\"\n        ],\n        \"main_logic\": \"Go语言日志解析器，处理Go项目的构建日志和测试结果\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\log_parsers\\\\java.py\",\n        \"file_type\": \"Python module\",\n        \"classes\": [\n          {\n            \"name\": \"JavaLogParser\",\n            \"methods\": [\n              \"parse\",\n              \"extract_java_exceptions\",\n              \"parse_maven_log\",\n              \"parse_gradle_log\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"parse_java_compilation_log\",\n          \"extract_stack_traces\"\n        ],\n        \"dependencies\": [\n          \"re\",\n          \"xml.etree.ElementTree\",\n          \"logging\"\n        ],\n        \"main_logic\": \"Java语言日志解析器，处理Java项目的编译日志、异常信息和构建工具输出\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\log_parsers\\\\javascript.py\",\n        \"file_type\": \"Python module\",\n        \"classes\": [\n          {\n            \"name\": \"JavaScriptLogParser\",\n            \"methods\": [\n              \"parse\",\n              \"extract_npm_errors\",\n              \"parse_node_errors\",\n              \"parse_webpack_log\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"parse_javascript_log\",\n          \"extract_eslint_warnings\"\n        ],\n        \"dependencies\": [\n          \"re\",\n          \"json\",\n          \"os\"\n        ],\n        \"main_logic\": \"JavaScript语言日志解析器，处理Node.js、npm和相关前端工具的日志输出\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"internal_dependencies\": [\n        \"所有log_parsers模块共享相似的接口设计\",\n        \"可能继承自同一个基类或实现相同的接口\"\n      ],\n      \"external_dependencies\": [\n        \"Python标准库: re, json, subprocess, pathlib, xml, logging, os\",\n        \"可能的第三方依赖: 无明确第三方库依赖\"\n      ]\n    },\n    \"architecture_overview\": {\n      \"pattern\": \"多语言日志解析器架构\",\n      \"description\": \"这是一个SWE-bench测试框架的日志解析子系统，包含针对不同编程语言(C, Go, Java, JavaScript)的专用日志解析器，每个解析器负责处理特定语言的构建、编译和测试日志\",\n      \"entry_points\": [\n        \"各解析器类的parse方法作为主要入口点\",\n        \"可能通过工厂模式或配置驱动选择具体解析器\"\n      ]\n    }\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\log_parsers\\\\php.py\",\n        \"classes\": [\n          {\n            \"name\": \"PHPLogParser\",\n            \"methods\": [\n              \"parse_test_output\",\n              \"parse_duration\",\n              \"parse_errors\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"extract_php_test_results\",\n          \"parse_php_stack_trace\"\n        ],\n        \"dependencies\": [\n          \"re\",\n          \"typing\",\n          \"..base_parser\"\n        ],\n        \"main_logic\": \"PHP测试日志解析器，处理PHP项目的测试输出和错误信息\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\log_parsers\\\\python.py\",\n        \"classes\": [\n          {\n            \"name\": \"PythonLogParser\",\n            \"methods\": [\n              \"parse_pytest_output\",\n              \"parse_unittest_output\",\n              \"parse_coverage\",\n              \"extract_failures\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"parse_python_traceback\",\n          \"extract_test_duration\"\n        ],\n        \"dependencies\": [\n          \"re\",\n          \"json\",\n          \"pathlib\",\n          \"..base_parser\"\n        ],\n        \"main_logic\": \"Python测试日志解析器，支持pytest和unittest框架的日志解析\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\log_parsers\\\\ruby.py\",\n        \"classes\": [\n          {\n            \"name\": \"RubyLogParser\",\n            \"methods\": [\n              \"parse_rspec_output\",\n              \"parse_minitest_output\",\n              \"parse_ruby_errors\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"extract_ruby_test_results\",\n          \"parse_ruby_backtrace\"\n        ],\n        \"dependencies\": [\n          \"re\",\n          \"typing\",\n          \"..base_parser\"\n        ],\n        \"main_logic\": \"Ruby测试日志解析器，处理RSpec和Minitest框架的输出\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\log_parsers\\\\rust.py\",\n        \"classes\": [\n          {\n            \"name\": \"RustLogParser\",\n            \"methods\": [\n              \"parse_cargo_test_output\",\n              \"parse_compilation_errors\",\n              \"extract_rust_panics\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"parse_rust_backtrace\",\n          \"extract_test_metadata\"\n        ],\n        \"dependencies\": [\n          \"re\",\n          \"typing\",\n          \"..base_parser\"\n        ],\n        \"main_logic\": \"Rust测试日志解析器，处理Cargo测试输出和编译错误\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\log_parsers\\\\__init__.py\",\n        \"classes\": [],\n        \"functions\": [\n          \"get_log_parser\",\n          \"register_parser\",\n          \"list_supported_languages\"\n        ],\n        \"dependencies\": [\n          \"importlib\",\n          \"typing\",\n          \".php\",\n          \".python\", \n          \".ruby\",\n          \".rust\"\n        ],\n        \"main_logic\": \"日志解析器工厂模块，提供统一的解析器获取接口和语言支持注册\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"core_dependencies\": [\n        \"re\",\n        \"typing\",\n        \"json\",\n        \"pathlib\",\n        \"importlib\"\n      ],\n      \"internal_dependencies\": [\n        \"..base_parser\",\n        \".php\",\n        \".python\", \n        \".ruby\",\n        \".rust\"\n      ],\n      \"dependency_graph\": {\n        \"__init__.py\": [\"php\", \"python\", \"ruby\", \"rust\"],\n        \"php.py\": [\"base_parser\"],\n        \"python.py\": [\"base_parser\"], \n        \"ruby.py\": [\"base_parser\"],\n        \"rust.py\": [\"base_parser\"]\n      }\n    },\n    \"main_entry_logic\": {\n      \"primary_entry\": \"__init__.py中的get_log_parser函数\",\n      \"usage_pattern\": \"根据编程语言类型动态返回对应的日志解析器实例\",\n      \"supported_languages\": [\"php\", \"python\", \"ruby\", \"rust\"],\n      \"factory_pattern\": \"采用工厂模式统一管理不同语言的日志解析器\"\n    }\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\modal_eval\\\\run_evaluation_modal.py\",\n        \"classes\": [],\n        \"functions\": [\n          \"run_evaluation_modal\",\n          \"main\"\n        ],\n        \"dependencies\": [\n          \"modal\",\n          \"swebench.harness.utils\",\n          \"swebench.harness.test_spec\"\n        ],\n        \"is_entry_point\": true,\n        \"description\": \"Modal评估运行主逻辑，包含主要的评估流程\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\modal_eval\\\\run_evaluation_modal_entrypoint.py\",\n        \"classes\": [],\n        \"functions\": [\n          \"main\"\n        ],\n        \"dependencies\": [\n          \"swebench.harness.modal_eval.run_evaluation_modal\"\n        ],\n        \"is_entry_point\": true,\n        \"description\": \"Modal评估的入口点文件\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\modal_eval\\\\utils.py\",\n        \"classes\": [],\n        \"functions\": [\n          \"setup_modal_environment\",\n          \"prepare_evaluation_data\",\n          \"cleanup_modal_resources\"\n        ],\n        \"dependencies\": [\n          \"modal\",\n          \"os\",\n          \"tempfile\"\n        ],\n        \"is_entry_point\": false,\n        \"description\": \"Modal评估相关的工具函数\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\modal_eval\\\\__init__.py\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"is_entry_point\": false,\n        \"description\": \"Modal评估模块的初始化文件\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\test_spec\\\\create_scripts.py\",\n        \"classes\": [],\n        \"functions\": [\n          \"create_test_scripts\",\n          \"generate_test_spec\"\n        ],\n        \"dependencies\": [\n          \"json\",\n          \"pathlib\",\n          \"swebench.harness.utils\"\n        ],\n        \"is_entry_point\": false,\n        \"description\": \"测试脚本创建和测试规范生成功能\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"modal_eval\": [\n        \"modal\",\n        \"swebench.harness.utils\",\n        \"swebench.harness.test_spec\"\n      ],\n      \"test_spec\": [\n        \"swebench.harness.utils\"\n      ]\n    },\n    \"entry_points\": [\n      {\n        \"file\": \"run_evaluation_modal.py\",\n        \"function\": \"main\",\n        \"type\": \"primary\"\n      },\n      {\n        \"file\": \"run_evaluation_modal_entrypoint.py\", \n        \"function\": \"main\",\n        \"type\": \"entrypoint\"\n      }\n    ],\n    \"architecture_summary\": \"这是一个基于Modal平台的SWE-bench评估系统，包含评估运行主逻辑、入口点、工具函数和测试脚本生成功能。采用模块化设计，modal_eval模块负责评估流程，test_spec模块负责测试规范处理。\"\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\test_spec\\\\javascript.py\",\n        \"classes\": [],\n        \"functions\": [\n          {\n            \"name\": \"parse_javascript_test_output\",\n            \"description\": \"解析JavaScript测试输出结果\",\n            \"dependencies\": [\"re\", \"typing.Dict\", \"typing.List\"]\n          },\n          {\n            \"name\": \"extract_javascript_test_cases\",\n            \"description\": \"提取JavaScript测试用例信息\",\n            \"dependencies\": [\"json\", \"pathlib.Path\"]\n          }\n        ],\n        \"dependencies\": [\"re\", \"json\", \"pathlib\", \"typing\"]\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\test_spec\\\\python.py\",\n        \"classes\": [],\n        \"functions\": [\n          {\n            \"name\": \"parse_python_test_output\",\n            \"description\": \"解析Python测试输出结果\",\n            \"dependencies\": [\"unittest\", \"sys\", \"io.StringIO\"]\n          },\n          {\n            \"name\": \"run_python_tests\",\n            \"description\": \"运行Python测试套件\",\n            \"dependencies\": [\"subprocess\", \"tempfile\"]\n          }\n        ],\n        \"dependencies\": [\"unittest\", \"subprocess\", \"tempfile\", \"sys\", \"io\"]\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\test_spec\\\\test_spec.py\",\n        \"classes\": [\n          {\n            \"name\": \"TestSpec\",\n            \"description\": \"测试规范基类，定义测试规范接口\",\n            \"methods\": [\n              {\n                \"name\": \"__init__\",\n                \"description\": \"初始化测试规范\"\n              },\n              {\n                \"name\": \"parse_output\",\n                \"description\": \"解析测试输出\"\n              },\n              {\n                \"name\": \"generate_report\",\n                \"description\": \"生成测试报告\"\n              },\n              {\n                \"name\": \"validate_spec\",\n                \"description\": \"验证测试规范\"\n              }\n            ]\n          },\n          {\n            \"name\": \"LanguageTestSpec\",\n            \"description\": \"语言特定测试规范抽象类\",\n            \"parent_class\": \"TestSpec\",\n            \"methods\": [\n              {\n                \"name\": \"get_language\",\n                \"description\": \"获取目标语言类型\"\n              },\n              {\n                \"name\": \"get_test_framework\",\n                \"description\": \"获取测试框架信息\"\n              }\n            ]\n          }\n        ],\n        \"functions\": [\n          {\n            \"name\": \"create_test_spec\",\n            \"description\": \"工厂函数，创建特定语言的测试规范实例\",\n            \"dependencies\": [\"javascript\", \"python\", \"utils\"]\n          }\n        ],\n        \"dependencies\": [\"abc\", \"typing\", \"javascript\", \"python\", \"utils\"]\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\test_spec\\\\utils.py\",\n        \"classes\": [],\n        \"functions\": [\n          {\n            \"name\": \"read_test_file\",\n            \"description\": \"读取测试文件内容\",\n            \"dependencies\": [\"pathlib.Path\", \"json\"]\n          },\n          {\n            \"name\": \"write_test_results\",\n            \"description\": \"写入测试结果\",\n            \"dependencies\": [\"json\", \"datetime\"]\n          },\n          {\n            \"name\": \"format_test_output\",\n            \"description\": \"格式化测试输出\",\n            \"dependencies\": [\"collections.defaultdict\"]\n          },\n          {\n            \"name\": \"validate_test_spec\",\n            \"description\": \"验证测试规范格式\",\n            \"dependencies\": [\"jsonschema\"]\n          }\n        ],\n        \"dependencies\": [\"pathlib\", \"json\", \"datetime\", \"collections\", \"jsonschema\"]\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\harness\\\\test_spec\\\\__init__.py\",\n        \"classes\": [],\n        \"functions\": [\n          {\n            \"name\": \"__all__\",\n            \"description\": \"模块导出列表\",\n            \"dependencies\": []\n          }\n        ],\n        \"dependencies\": []\n      }\n    ],\n    \"module_dependencies\": {\n      \"test_spec\": [\"javascript\", \"python\", \"utils\", \"abc\", \"typing\"],\n      \"javascript\": [\"re\", \"json\", \"pathlib\", \"typing\"],\n      \"python\": [\"unittest\", \"subprocess\", \"tempfile\", \"sys\", \"io\"],\n      \"utils\": [\"pathlib\", \"json\", \"datetime\", \"collections\", \"jsonschema\"]\n    },\n    \"main_entry_logic\": {\n      \"primary_module\": \"test_spec.py\",\n      \"entry_points\": [\n        {\n          \"name\": \"create_test_spec\",\n          \"description\": \"主要入口函数，根据语言类型创建相应的测试规范处理器\",\n          \"parameters\": [\"language_type\", \"test_config\"],\n          \"return_type\": \"TestSpec\"\n        },\n        {\n          \"name\": \"TestSpec.parse_output\",\n          \"description\": \"核心处理逻辑，解析测试输出并生成报告\",\n          \"parameters\": [\"test_output\", \"config\"],\n          \"return_type\": \"Dict\"\n        }\n      ],\n      \"execution_flow\": [\n        \"用户调用 create_test_spec 创建特定语言测试规范\",\n        \"调用相应语言的 parse_*_test_output 函数解析输出\",\n        \"使用 TestSpec 类的方法处理和分析结果\",\n        \"通过 utils 模块的工具函数进行文件操作和格式处理\",\n        \"最终生成标准化的测试报告\"\n      ]\n    },\n    \"architecture_summary\": \"这是一个Python测试规范处理框架，采用模块化设计，包含语言特定的测试解析器（javascript.py, python.py）、核心规范类（test_spec.py）和工具函数（utils.py）。支持多语言测试输出的标准化处理和分析。\"\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\inference\\\\run_api.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          {\n            \"name\": \"main\",\n            \"type\": \"function\",\n            \"description\": \"主入口函数，处理API运行逻辑\"\n          }\n        ],\n        \"dependencies\": [\n          \"argparse\",\n          \"swebench.inference相关模块\"\n        ],\n        \"entry_point\": true,\n        \"description\": \"API运行入口文件\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\inference\\\\run_live.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          {\n            \"name\": \"main\",\n            \"type\": \"function\",\n            \"description\": \"实时运行的主入口函数\"\n          }\n        ],\n        \"dependencies\": [\n          \"argparse\",\n          \"swebench.inference相关模块\"\n        ],\n        \"entry_point\": true,\n        \"description\": \"实时运行入口文件\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\inference\\\\run_llama.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          {\n            \"name\": \"main\",\n            \"type\": \"function\",\n            \"description\": \"Llama模型运行的主入口函数\"\n          }\n        ],\n        \"dependencies\": [\n          \"argparse\",\n          \"swebench.inference.llamao.distributed_attention\"\n        ],\n        \"entry_point\": true,\n        \"description\": \"Llama模型运行入口文件\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\inference\\\\__init__.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"entry_point\": false,\n        \"description\": \"inference模块的初始化文件\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\inference\\\\llamao\\\\distributed_attention.py\",\n        \"language\": \"Python\",\n        \"classes\": [\n          {\n            \"name\": \"DistributedAttention\",\n            \"type\": \"class\",\n            \"description\": \"分布式注意力机制的实现类\"\n          }\n        ],\n        \"functions\": [\n          {\n            \"name\": \"__init__\",\n            \"type\": \"method\",\n            \"class\": \"DistributedAttention\",\n            \"description\": \"分布式注意力类的构造函数\"\n          },\n          {\n            \"name\": \"forward\",\n            \"type\": \"method\",\n            \"class\": \"DistributedAttention\",\n            \"description\": \"前向传播方法\"\n          }\n        ],\n        \"dependencies\": [\n          \"torch\",\n          \"torch.nn\"\n        ],\n        \"entry_point\": false,\n        \"description\": \"Llama模型的分布式注意力实现\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"run_api.py\": [\"swebench.inference基础模块\"],\n      \"run_live.py\": [\"swebench.inference基础模块\"],\n      \"run_llama.py\": [\"swebench.inference.llamao.distributed_attention\"],\n      \"distributed_attention.py\": [\"torch\", \"torch.nn\"]\n    },\n    \"entry_points\": [\n      \"run_api.py中的main函数\",\n      \"run_live.py中的main函数\",\n      \"run_llama.py中的main函数\"\n    ],\n    \"architecture_summary\": \"这是一个Python项目，包含多个运行入口点（run_*.py）和一个核心的分布式注意力模块。项目采用模块化设计，inference模块包含API运行、实时运行和Llama模型运行三种执行方式，llamao子模块提供分布式注意力机制的核心实现。\"\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\inference\\\\llamao\\\\modeling_flash_llama.py\",\n        \"language\": \"Python\",\n        \"classes\": [\n          {\n            \"class_name\": \"FlashLlamaModel\",\n            \"methods\": [\n              \"__init__\",\n              \"forward\",\n              \"prepare_inputs_for_generation\"\n            ]\n          },\n          {\n            \"class_name\": \"FlashLlamaForCausalLM\", \n            \"methods\": [\n              \"__init__\",\n              \"forward\",\n              \"prepare_inputs_for_generation\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"rotate_half\",\n          \"apply_rotary_pos_emb\",\n          \"repeat_kv\"\n        ],\n        \"dependencies\": [\n          \"torch\",\n          \"torch.nn\",\n          \"transformers\",\n          \"flash_attn\"\n        ]\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\inference\\\\llamao\\\\__init__.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"module_exports\": [\n          \"FlashLlamaModel\",\n          \"FlashLlamaForCausalLM\"\n        ]\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\inference\\\\make_datasets\\\\bm25_retrieval.py\",\n        \"language\": \"Python\", \n        \"classes\": [\n          {\n            \"class_name\": \"BM25Retriever\",\n            \"methods\": [\n              \"__init__\",\n              \"fit\",\n              \"retrieve\",\n              \"batch_retrieve\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"preprocess_text\",\n          \"compute_bm25_scores\"\n        ],\n        \"dependencies\": [\n          \"rank_bm25\",\n          \"numpy\",\n          \"tqdm\"\n        ]\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\inference\\\\make_datasets\\\\create_instance.py\",\n        \"language\": \"Python\",\n        \"classes\": [\n          {\n            \"class_name\": \"InstanceCreator\",\n            \"methods\": [\n              \"__init__\", \n              \"create_training_instances\",\n              \"create_inference_instances\",\n              \"save_instances\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"load_dataset\",\n          \"preprocess_instance\",\n          \"validate_instance\"\n        ],\n        \"dependencies\": [\n          \"json\",\n          \"datasets\",\n          \"transformers\"\n        ]\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\inference\\\\make_datasets\\\\create_text_dataset.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          \"main\",\n          \"create_dataset\",\n          \"parse_arguments\"\n        ],\n        \"dependencies\": [\n          \"argparse\",\n          \"os\",\n          \"sys\",\n          \"bm25_retrieval\",\n          \"create_instance\"\n        ],\n        \"main_entry\": {\n          \"function\": \"main\",\n          \"description\": \"主入口函数，处理命令行参数并调用数据集创建流程\"\n        }\n      }\n    ],\n    \"module_dependencies\": {\n      \"llamao\": {\n        \"external\": [\"torch\", \"transformers\", \"flash_attn\"],\n        \"internal\": []\n      },\n      \"make_datasets\": {\n        \"external\": [\"rank_bm25\", \"numpy\", \"datasets\", \"argparse\"],\n        \"internal\": [\"bm25_retrieval\", \"create_instance\"]\n      }\n    },\n    \"main_entry_points\": [\n      {\n        \"file\": \"create_text_dataset.py\",\n        \"function\": \"main\",\n        \"description\": \"数据集创建流程的主入口点\"\n      }\n    ]\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\inference\\\\make_datasets\\\\eval_retrieval.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_entry\": false,\n        \"description\": \"评估检索功能的Python脚本\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\inference\\\\make_datasets\\\\tokenize_dataset.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_entry\": false,\n        \"description\": \"数据集分词处理的Python脚本\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\inference\\\\make_datasets\\\\utils.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_entry\": false,\n        \"description\": \"工具函数模块\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\inference\\\\make_datasets\\\\__init__.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_entry\": false,\n        \"description\": \"make_datasets包的初始化文件\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\resources\\\\__init__.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"main_entry\": false,\n        \"description\": \"resources包的初始化文件\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"make_datasets_package\": {\n        \"modules\": [\n          \"eval_retrieval.py\",\n          \"tokenize_dataset.py\", \n          \"utils.py\"\n        ],\n        \"internal_dependencies\": \"模块间可能存在相互调用关系\",\n        \"external_dependencies\": \"可能依赖其他Python标准库或第三方库\"\n      },\n      \"resources_package\": {\n        \"modules\": [\"__init__.py\"],\n        \"description\": \"资源管理包\"\n      }\n    },\n    \"project_structure\": {\n      \"root_package\": \"swebench\",\n      \"sub_packages\": [\n        \"swebench.inference.make_datasets\",\n        \"swebench.resources\"\n      ],\n      \"package_hierarchy\": [\n        \"swebench/\",\n        \"├── inference/\",\n        \"│   └── make_datasets/\",\n        \"│       ├── eval_retrieval.py\",\n        \"│       ├── tokenize_dataset.py\", \n        \"│       ├── utils.py\",\n        \"│       └── __init__.py\",\n        \"└── resources/\",\n        \"    └── __init__.py\"\n      ]\n    },\n    \"main_entry_analysis\": {\n      \"has_explicit_main\": false,\n      \"potential_entry_points\": [\n        \"eval_retrieval.py - 可能包含评估检索性能的主逻辑\",\n        \"tokenize_dataset.py - 可能包含数据集处理的主逻辑\"\n      ],\n      \"entry_point_type\": \"模块化脚本，可能通过命令行或其他模块调用\"\n    },\n    \"summary\": {\n      \"total_files\": 5,\n      \"python_files\": 5,\n      \"package_files\": 2,\n      \"module_files\": 3,\n      \"architecture\": \"标准的Python包结构，包含数据处理和资源管理功能模块\"\n    }\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\versioning\\\\constants.py\",\n        \"type\": \"module\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [],\n        \"description\": \"常量定义模块，可能包含版本控制相关的常量\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\versioning\\\\get_versions.py\",\n        \"type\": \"module\",\n        \"classes\": [],\n        \"functions\": [\n          \"get_versions\"\n        ],\n        \"dependencies\": [\n          \"swebench.versioning.utils\",\n          \"swebench.versioning.constants\"\n        ],\n        \"description\": \"版本获取主逻辑模块，可能包含获取软件版本的核心函数\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\versioning\\\\utils.py\",\n        \"type\": \"module\",\n        \"classes\": [],\n        \"functions\": [\n          \"extract_version_info\",\n          \"parse_version_string\",\n          \"validate_version\"\n        ],\n        \"dependencies\": [],\n        \"description\": \"工具函数模块，包含版本处理相关的辅助函数\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\versioning\\\\__init__.py\",\n        \"type\": \"package_init\",\n        \"classes\": [],\n        \"functions\": [],\n        \"dependencies\": [\n          \"swebench.versioning.get_versions\",\n          \"swebench.versioning.utils\",\n          \"swebench.versioning.constants\"\n        ],\n        \"description\": \"版本控制包的初始化文件，定义包的公共接口\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\versioning\\\\extract_web\\\\get_versions_astropy.py\",\n        \"type\": \"specialized_module\",\n        \"classes\": [],\n        \"functions\": [\n          \"get_astropy_versions\",\n          \"scrape_astropy_releases\"\n        ],\n        \"dependencies\": [\n          \"swebench.versioning.get_versions\",\n          \"requests\",\n          \"bs4\"\n        ],\n        \"description\": \"Astropy项目特定版本获取模块，包含网页抓取功能\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"swebench.versioning.get_versions\": [\n        \"swebench.versioning.utils\",\n        \"swebench.versioning.constants\"\n      ],\n      \"swebench.versioning.__init__\": [\n        \"swebench.versioning.get_versions\",\n        \"swebench.versioning.utils\", \n        \"swebench.versioning.constants\"\n      ],\n      \"swebench.versioning.extract_web.get_versions_astropy\": [\n        \"swebench.versioning.get_versions\",\n        \"requests\",\n        \"bs4\"\n      ]\n    },\n    \"main_entry_logic\": {\n      \"primary_entry\": \"swebench.versioning.get_versions.get_versions\",\n      \"description\": \"版本获取系统的主入口点，通过get_versions函数提供统一的版本查询接口\",\n      \"specialized_entries\": [\n        {\n          \"module\": \"swebench.versioning.extract_web.get_versions_astropy\",\n          \"function\": \"get_astropy_versions\", \n          \"description\": \"Astropy项目特定的版本获取入口\"\n        }\n      ]\n    },\n    \"architecture_summary\": \"这是一个Python版本的版本控制系统，采用模块化设计，包含核心版本获取逻辑、工具函数、常量定义和特定项目（如Astropy）的版本提取功能。项目结构清晰，职责分离明确。\"\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\versioning\\\\extract_web\\\\get_versions_matplotlib.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          \"get_versions_matplotlib\",\n          \"main\"\n        ],\n        \"dependencies\": [\n          \"requests\",\n          \"bs4\",\n          \"re\",\n          \"json\"\n        ],\n        \"main_logic\": \"从Matplotlib项目的GitHub releases页面提取版本信息\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\versioning\\\\extract_web\\\\get_versions_pvlib-python.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          \"get_versions_pvlib_python\",\n          \"main\"\n        ],\n        \"dependencies\": [\n          \"requests\",\n          \"bs4\",\n          \"re\",\n          \"json\"\n        ],\n        \"main_logic\": \"从pvlib-python项目的GitHub releases页面提取版本信息\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\versioning\\\\extract_web\\\\get_versions_pydicom.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          \"get_versions_pydicom\",\n          \"main\"\n        ],\n        \"dependencies\": [\n          \"requests\",\n          \"bs4\",\n          \"re\",\n          \"json\"\n        ],\n        \"main_logic\": \"从pydicom项目的GitHub releases页面提取版本信息\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\versioning\\\\extract_web\\\\get_versions_sqlfluff.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          \"get_versions_sqlfluff\",\n          \"main\"\n        ],\n        \"dependencies\": [\n          \"requests\",\n          \"bs4\",\n          \"re\",\n          \"json\"\n        ],\n        \"main_logic\": \"从SQLFluff项目的GitHub releases页面提取版本信息\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\swebench\\\\versioning\\\\extract_web\\\\get_versions_xarray.py\",\n        \"language\": \"Python\",\n        \"classes\": [],\n        \"functions\": [\n          \"get_versions_xarray\",\n          \"main\"\n        ],\n        \"dependencies\": [\n          \"requests\",\n          \"bs4\",\n          \"re\",\n          \"json\"\n        ],\n        \"main_logic\": \"从xarray项目的GitHub releases页面提取版本信息\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"external_dependencies\": [\n        \"requests\",\n        \"bs4.BeautifulSoup\",\n        \"re\",\n        \"json\"\n      ],\n      \"internal_dependencies\": [],\n      \"dependency_pattern\": \"所有文件共享相同的依赖结构，用于网页抓取和数据解析\"\n    },\n    \"architecture_pattern\": {\n      \"pattern\": \"模块化脚本集合\",\n      \"description\": \"每个文件都是独立的脚本，遵循相同的结构模式：包含一个特定项目的版本获取函数和一个main函数\",\n      \"common_structure\": \"函数get_versions_*用于获取特定项目版本，main函数作为执行入口\"\n    }\n  }\n}\n```",
+            "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"files\": [\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\tests\\\\test_cli.py\",\n        \"classes\": [\n          {\n            \"class_name\": \"TestCLI\",\n            \"methods\": [\n              \"test_cli_help\",\n              \"test_cli_version\",\n              \"test_cli_invalid_command\",\n              \"test_cli_valid_command\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"test_main_functionality\",\n          \"test_command_line_arguments\"\n        ],\n        \"dependencies\": [\n          \"pytest\",\n          \"click\",\n          \"swe_bench.cli\"\n        ],\n        \"main_logic\": \"CLI命令测试入口，使用pytest框架测试命令行接口的各种功能\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\tests\\\\test_collect_cli.py\",\n        \"classes\": [\n          {\n            \"class_name\": \"TestCollectCLI\",\n            \"methods\": [\n              \"test_collect_help\",\n              \"test_collect_data\",\n              \"test_collect_with_filters\",\n              \"test_collect_output_format\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"test_collection_workflow\",\n          \"test_data_validation\"\n        ],\n        \"dependencies\": [\n          \"pytest\",\n          \"click.testing\",\n          \"swe_bench.collect\"\n        ],\n        \"main_logic\": \"数据收集CLI测试，验证数据收集命令的各种参数和功能\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\tests\\\\test_evaluation.py\",\n        \"classes\": [\n          {\n            \"class_name\": \"TestEvaluation\",\n            \"methods\": [\n              \"test_evaluation_metrics\",\n              \"test_score_calculation\",\n              \"test_result_aggregation\",\n              \"test_performance_benchmark\"\n            ]\n          },\n          {\n            \"class_name\": \"TestEvaluationUtils\",\n            \"methods\": [\n              \"test_metric_computation\",\n              \"test_result_parsing\",\n              \"test_comparison_logic\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"test_evaluation_pipeline\",\n          \"test_benchmark_consistency\"\n        ],\n        \"dependencies\": [\n          \"pytest\",\n          \"unittest.mock\",\n          \"swe_bench.evaluation\",\n          \"numpy\",\n          \"pandas\"\n        ],\n        \"main_logic\": \"评估系统测试，验证评估指标计算、结果聚合和性能基准测试\"\n      },\n      {\n        \"file_path\": \"D:\\\\PY\\\\SWE-bench\\\\tests\\\\test_harness_utils.py\",\n        \"classes\": [\n          {\n            \"class_name\": \"TestHarnessUtils\",\n            \"methods\": [\n              \"test_harness_initialization\",\n              \"test_execution_environment\",\n              \"test_resource_management\",\n              \"test_error_handling\"\n            ]\n          }\n        ],\n        \"functions\": [\n          \"test_utility_functions\",\n          \"test_config_parsing\",\n          \"test_file_operations\"\n        ],\n        \"dependencies\": [\n          \"pytest\",\n          \"tempfile\",\n          \"pathlib\",\n          \"swe_bench.harness_utils\"\n        ],\n        \"main_logic\": \"测试工具函数验证，包括执行环境设置、资源管理和错误处理\"\n      }\n    ],\n    \"module_dependencies\": {\n      \"test_dependencies\": [\n        \"pytest\",\n        \"click\",\n        \"click.testing\",\n        \"unittest.mock\"\n      ],\n      \"project_dependencies\": [\n        \"swe_bench.cli\",\n        \"swe_bench.collect\",\n        \"swe_bench.evaluation\",\n        \"swe_bench.harness_utils\"\n      ],\n      \"external_dependencies\": [\n        \"numpy\",\n        \"pandas\",\n        \"tempfile\",\n        \"pathlib\"\n      ]\n    },\n    \"test_structure\": {\n      \"framework\": \"pytest\",\n      \"test_types\": [\n        \"CLI命令测试\",\n        \"数据收集测试\",\n        \"评估系统测试\",\n        \"工具函数测试\"\n      ],\n      \"coverage_areas\": [\n        \"命令行接口\",\n        \"数据收集流程\",\n        \"评估指标计算\",\n        \"测试工具功能\"\n      ]\n    }\n  }\n}\n```"
+        ],
+        "summary": "```json\n{\n  \"project_analysis\": {\n    \"language_type\": \"Python\",\n    \"project_overview\": {\n      \"name\": \"SWE-bench\",\n      \"description\": \"软件工程基准测试框架，专注于多语言代码评估和测试\",\n      \"architecture\": \"模块化设计，包含数据收集、测试执行、模型推理和版本管理四大核心模块\"\n    },\n    \"module_structure\": {\n      \"core_modules\": [\n        {\n          \"name\": \"swebench.collect\",\n          \"description\": \"数据收集模块，负责数据集构建和任务处理\",\n          \"submodules\": [\n            \"build_dataset - 基础数据集构建\",\n            \"build_dataset_ft - 微调数据集构建\", \n            \"get_tasks_pipeline - 任务获取流水线\",\n            \"get_top_pypi - PyPI热门包获取\",\n            \"cleanup - 环境清理工具\",\n            \"make_lite - 数据集精简\",\n            \"make_repo - 仓库创建\"\n          ]\n        },\n        {\n          \"name\": \"swebench.harness\",\n          \"description\": \"测试执行框架，基于Docker的多语言测试环境\",\n          \"submodules\": [\n            \"docker_utils - Docker容器管理\",\n            \"grading - 测试评分系统\",\n            \"prepare_images - 镜像准备\",\n            \"run_evaluation - 评估运行主逻辑\",\n            \"constants - 多语言常量定义\",\n            \"dockerfiles - 多语言Docker配置\",\n            \"log_parsers - 多语言日志解析\",\n            \"modal_eval - Modal平台评估\",\n            \"test_spec - 测试规范处理\"\n          ]\n        },\n        {\n          \"name\": \"swebench.inference\",\n          \"description\": \"模型推理模块，支持多种运行方式和数据集处理\",\n          \"submodules\": [\n            \"run_api - API运行\",\n            \"run_live - 实时运行\", \n            \"run_llama - Llama模型运行\",\n            \"llamao - Llama模型实现\",\n            \"make_datasets - 数据集创建\"\n          ]\n        },\n        {\n          \"name\": \"swebench.versioning\",\n          \"description\": \"版本管理系统，支持多项目版本提取\",\n          \"submodules\": [\n            \"get_versions - 版本获取核心\",\n            \"extract_web - 网页版本提取\",\n            \"utils - 版本处理工具\"\n          ]\n        },\n        {\n          \"name\": \"tests\",\n          \"description\": \"测试套件，覆盖CLI、数据收集、评估系统等功能\"\n        }\n      ]\n    },\n    \"class_definitions\": {\n      \"data_collection_classes\": [\n        {\n          \"class_name\": \"LiteCriteria\",\n          \"module\": \"swebench.collect.make_lite.criteria\",\n          \"methods\": [\"evaluate\", \"filter_tasks\", \"calculate_complexity\"]\n        }\n      ],\n      \"docker_management_classes\": [\n        {\n          \"class_name\": \"DockerBuilder\", \n          \"module\": \"swebench.harness.docker_build\",\n          \"methods\": [\"build_image\", \"validate_dockerfile\", \"push_image\"]\n        },\n        {\n          \"class_name\": \"DockerManager\",\n          \"module\": \"swebench.harness.docker_utils\", \n          \"methods\": [\"build_image\", \"run_container\", \"stop_container\", \"remove_container\", \"exec_command\", \"copy_to_container\", \"copy_from_container\"]\n        },\n        {\n          \"class_name\": \"ImagePreparer\",\n          \"module\": \"swebench.harness.prepare_images\",\n          \"methods\": [\"download_base_image\", \"install_dependencies\", \"configure_environment\", \"build_custom_image\", \"verify_image\"]\n        }\n      ],\n      \"testing_classes\": [\n        {\n          \"class_name\": \"TestGrader\",\n          \"module\": \"swebench.harness.grading\",\n          \"methods\": [\"run_tests\", \"evaluate_results\", \"calculate_score\", \"generate_report\"]\n        },\n        {\n          \"class_name\": \"GradingCriteria\", \n          \"module\": \"swebench.harness.grading\",\n          \"methods\": [\"validate_test_cases\", \"set_weighting\", \"check_coverage\"]\n        },\n        {\n          \"class_name\": \"ReportGenerator\",\n          \"module\": \"swebench.harness.reporting\",\n          \"methods\": [\"collect_results\", \"generate_html_report\", \"generate_json_report\", \"create_summary\", \"export_to_file\"]\n        }\n      ],\n      \"log_parser_classes\": [\n        {\n          \"class_name\": \"CLogParser\",\n          \"module\": \"swebench.harness.log_parsers.c\",\n          \"methods\": [\"parse\", \"extract_errors\", \"extract_warnings\"]\n        },\n        {\n          \"class_name\": \"GoLogParser\",\n          \"module\": \"swebench.harness.log_parsers.go\", \n          \"methods\": [\"parse\", \"extract_go_errors\", \"parse_test_results\"]\n        },\n        {\n          \"class_name\": \"JavaLogParser\",\n          \"module\": \"swebench.harness.log_parsers.java\",\n          \"methods\": [\"parse\", \"extract_java_exceptions\", \"parse_maven_log\", \"parse_gradle_log\"]\n        },\n        {\n          \"class_name\": \"JavaScriptLogParser\",\n          \"module\": \"swebench.harness.log_parsers.javascript\",\n          \"methods\": [\"parse\", \"extract_npm_errors\", \"parse_node_errors\", \"parse_webpack_log\"]\n        },\n        {\n          \"class_name\": \"PHPLogParser\",\n          \"module\": \"swebench.harness.log_parsers.php\",\n          \"methods\": [\"parse_test_output\", \"parse_duration\", \"parse_errors\"]\n        },\n        {\n          \"class_name\": \"PythonLogParser\",\n          \"module\": \"swebench.harness.log_parsers.python\",\n          \"methods\": [\"parse_pytest_output\", \"parse_unittest_output\", \"parse_coverage\", \"extract_failures\"]\n        },\n        {\n          \"class_name\": \"RubyLogParser\",\n          \"module\": \"swebench.harness.log_parsers.ruby\",\n          \"methods\": [\"parse_rspec_output\", \"parse_minitest_output\", \"parse_ruby_errors\"]\n        },\n        {\n          \"class_name\": \"RustLogParser\",\n          \"module\": \"swebench.harness.log_parsers.rust\",\n          \"methods\": [\"parse_cargo_test_output\", \"parse_compilation_errors\", \"extract_rust_panics\"]\n        }\n      ],\n      \"test_spec_classes\": [\n        {\n          \"class_name\": \"TestSpec\",\n          \"module\": \"swebench.harness.test_spec.test_spec\",\n          \"methods\": [\"__init__\", \"parse_output\", \"generate_report\", \"validate_spec\"]\n        },\n        {\n          \"class_name\": \"LanguageTestSpec\",\n          \"module\": \"swebench.harness.test_spec.test_spec\",\n          \"parent_class\": \"TestSpec\",\n          \"methods\": [\"get_language\", \"get_test_framework\"]\n        }\n      ],\n      \"inference_classes\": [\n        {\n          \"class_name\": \"DistributedAttention\",\n          \"module\": \"swebench.inference.llamao.distributed_attention\",\n          \"methods\": [\"__init__\", \"forward\"]\n        },\n        {\n          \"class_name\": \"FlashLlamaModel\",\n          \"module\": \"swebench.inference.llamao.modeling_flash_llama\", \n          \"methods\": [\"__init__\", \"forward\", \"prepare_inputs_for_generation\"]\n        },\n        {\n          \"class_name\": \"FlashLlamaForCausalLM\",\n          \"module\": \"swebench.inference.llamao.modeling_flash_llama\",\n          \"methods\": [\"__init__\", \"forward\", \"prepare_inputs_for_generation\"]\n        },\n        {\n          \"class_name\": \"BM25Retriever\",\n          \"module\": \"swebench.inference.make_datasets.bm25_retrieval\",\n          \"methods\": [\"__init__\", \"fit\", \"retrieve\", \"batch_retrieve\"]\n        },\n        {\n          \"class_name\": \"InstanceCreator\",\n          \"module\": \"swebench.inference.make_datasets.create_instance\",\n          \"methods\": [\"__init__\", \"create_training_instances\", \"create_inference_instances\", \"save_instances\"]\n        }\n      ],\n      \"docker_builder_classes\": [\n        {\n          \"class_name\": \"PythonDockerBuilder\",\n          \"module\": \"swebench.harness.dockerfiles.python\",\n          \"methods\": [\"__init__\", \"build_image\", \"install_dependencies\"]\n        },\n        {\n          \"class_name\": \"RustDockerBuilder\", \n          \"module\": \"swebench.harness.dockerfiles.rust\",\n          \"methods\": [\"__init__\", \"build_image\", \"compile_project\"]\n        }\n      ]\n    },\n    \"function_definitions\": {\n      \"core_functions\": [\n        {\n          \"function_name\": \"build_dataset\",\n          \"module\": \"swebench.collect.build_dataset\",\n          \"description\": \"数据集构建的主入口函数\"\n        },\n        {\n          \"function_name\": \"run_evaluation\", \n          \"module\": \"swebench.harness.run_evaluation\",\n          \"description\": \"评估运行的主入口函数\"\n        },\n        {\n          \"function_name\": \"main\",\n          \"modules\": [\n            \"swebench.collect.get_top_pypi\",\n            \"swebench.collect.print_pulls\", \n            \"swebench.collect.cleanup.delete_gh_workflows\",\n            \"swebench.collect.make_lite.make_lite\",\n            \"swebench.harness.run_evaluation\",\n            \"swebench.harness.modal_eval.run_evaluation_modal\",\n            \"swebench.harness.modal_eval.run_evaluation_modal_entrypoint\",\n            \"swebench.inference.run_api\",\n            \"swebench.inference.run_live\", \n            \"swebench.inference.run_llama\",\n            \"swebench.inference.make_datasets.create_text_dataset\",\n            \"swebench.versioning.extract_web.get_versions_*\"\n          ],\n          \"description\": \"各模块的主入口函数\"\n        }\n      ],\n      \"utility_functions\": [\n        {\n          \"function_name\": \"setup_logging\",\n          \"module\": \"swebench.collect.utils\",\n          \"description\": \"日志设置工具函数\"\n        },\n        {\n          \"function_name\": \"setup_environment\", \n          \"module\": \"swebench.harness.utils\",\n          \"description\": \"环境设置工具函数\"\n        },\n        {\n          \"function_name\": \"get_log_parser\",\n          \"module\": \"swebench.harness.log_parsers\",\n          \"description\": \"日志解析器工厂函数\"\n        },\n        {\n          \"function_name\": \"create_test_spec\",\n          \"module\": \"swebench.harness.test_spec.test_spec\", \n          \"description\": \"测试规范创建工厂函数\"\n        }\n      ],\n      \"language_specific_functions\": [\n        {\n          \"category\": \"Docker构建\",\n          \"functions\": [\n            {\n              \"function_name\": \"build_docker_image\",\n              \"modules\": [\n                \"swebench.harness.dockerfiles.javascript\",\n                \"swebench.harness.dockerfiles.php\", \n                \"swebench.harness.dockerfiles.ruby\"\n              ],\n              \"description\": \"各语言Docker镜像构建函数\"\n            }\n          ]\n        },\n        {\n          \"category\": \"日志解析\",\n          \"functions\": [\n            {\n              \"function_name\": \"parse_*_test_output\",\n              \"modules\": [\n                \"swebench.harness.test_spec.javascript\",\n                \"swebench.harness.test_spec.python\"\n              ],\n              \"description\": \"各语言测试输出解析函数\"\n            }\n          ]\n        },\n        {\n          \"category\": \"版本获取\",\n          \"functions\": [\n            {\n              \"function_name\": \"get_versions_*\",\n              \"modules\": [\n                \"swebench.versioning.extract_web.get_versions_astropy\",\n                \"swebench.versioning.extract_web.get_versions_matplotlib\",\n                \"swebench.versioning.extract_web.get_versions_pvlib-python\", \n                \"swebench.versioning.extract_web.get_versions_pydicom\",\n                \"swebench.versioning.extract_web.get_versions_sqlfluff\",\n                \"swebench.versioning.extract_web.get_versions_xarray\"\n              ],\n              \"description\": \"各项目版本获取函数\"\n            }\n          ]\n        }\n      ]\n    },\n    \"module_dependencies\": {\n      \"external_dependencies\": {\n        \"standard_library\": [\n          \"os\", \"sys\", \"json\", \"re\", \"argparse\", \"subprocess\", \"logging\", \"pathlib\", \n          \"tempfile\", \"shutil\", \"datetime\", \"collections\", \"typing\", \"abc\", \"importlib\",\n          \"unittest\", \"io\", \"xml.etree.ElementTree\"\n        ],\n        \"third_party\": [\n          \"docker\", \"requests\", \"bs4\", \"pytest\", \"click\", \"transformers\", \"torch\",\n          \"torch.nn\", \"flash_attn\", \"rank_bm25\", \"numpy\", \"pandas\", \"datasets\",\n          \"tqdm\", \"yaml\", \"jsonschema\", \"github\", \"modal\", \"venv\", \"pip\", \"toml\",\n          \"configparser\"\n        ]\n      },\n      \"internal_dependencies\": {\n        \"core_dependencies\": [\n          \"swebench.harness.docker_utils → 被grading, prepare_images, remove_containers依赖\",\n          \"swebench.harness.grading → 被reporting依赖\",\n          \"swebench.harness.utils → 被run_evaluation, test_spec依赖\",\n          \"swebench.collect.utils → 被get_top_pypi, print_pulls, delete_gh_workflows依赖\"\n        ],\n        \"specialized_dependencies\": [\n          \"swebench.harness.log_parsers.__init__ → 工厂模式管理所有语言解析器\",\n          \"swebench.harness.constants.* → 为各语言提供常量定义\",\n          \"swebench.harness.dockerfiles.* → 为各语言提供Docker配置\",\n          \"swebench.inference.llamao.* → Llama模型相关实现\"\n        ]\n      },\n      \"dependency_graph\": {\n        \"swebench.collect\": {\n          \"build_dataset\": [\"基础数据收集核心\"],\n          \"build_dataset_ft\": [\"build_dataset\", \"transformers\", \"torch\"],\n          \"get_tasks_pipeline\": [\"build_dataset\", \"requests\", \"yaml\"]\n        },\n        \"swebench.harness\": {\n          \"run_evaluation\": [\"utils\", \"constants\", \"grading\"],\n          \"grading\": [\"docker_utils\", \"json\", \"yaml\"],\n          \"reporting\": [\"grading\", \"json\", \"matplotlib\"],\n          \"log_parsers\": [\"统一接口，各语言独立实现\"],\n          \"test_spec\": [\"utils\", \"javascript\", \"python\"]\n        },\n        \"swebench.inference\": {\n          \"run_llama\": [\"llamao.distributed_attention\"],\n          \"make_datasets\": [\"bm25_retrieval\", \"create_instance\"]\n        }\n      }\n    },\n    \"main_entry_logic\": {\n      \"primary_entry_points\": [\n        {\n          \"module\": \"swebench.collect.build_dataset\",\n          \"function\": \"build_dataset\",\n          \"description\": \"数据集构建主入口\"\n        },\n        {\n          \"module\": \"swebench.harness.run_evaluation\", \n          \"function\": \"main\",\n          \"description\": \"评估运行主入口\"\n        },\n        {\n          \"module\": \"swebench.inference.run_api\",\n          \"function\": \"main\",\n          \"description\": \"API推理运行入口\"\n        },\n        {\n          \"module\": \"swebench.inference.run_live\",\n          \"function\": \"main\", \n          \"description\": \"实时推理运行入口\"\n        },\n        {\n          \"module\": \"swebench.inference.run_llama\",\n          \"function\": \"main\",\n          \"description\": \"Llama模型运行入口\"\n        }\n      ],\n      \"secondary_entry_points\": [\n        {\n          \"category\": \"数据收集工具\",\n          \"entries\": [\n            \"swebench.collect.get_top_pypi:main\",\n            \"swebench.collect.print_pulls:main\",\n            \"swebench.collect.cleanup.delete_gh_workflows:main\", \n            \"swebench.collect.make_lite.make_lite:main\"\n          ]\n        },\n        {\n          \"category\": \"测试执行工具\",\n          \"entries\": [\n            \"swebench.harness.modal_eval.run_evaluation_modal:main\",\n            \"swebench.harness.modal_eval.run_evaluation_modal_entrypoint:main\"\n          ]\n        },\n        {\n          \"category\": \"数据集处理\",\n          \"entries\": [\n            \"swebench.inference.make_datasets.create_text_dataset:main\"\n          ]\n        }\n      ],\n      \"execution_workflows\": [\n        {\n          \"workflow\": \"数据集构建流程\",\n          \"steps\": [\n            \"调用build_dataset构建基础数据集\",\n            \"可选使用build_dataset_ft构建微调数据集\", \n            \"通过get_tasks_pipeline处理任务流水线\",\n            \"使用make_lite进行数据集精简\"\n          ]\n        },\n        {\n          \"workflow\": \"测试评估流程\", \n          \"steps\": [\n            \"通过prepare_images准备Docker环境\",\n            \"使用run_evaluation执行评估\",\n            \"通过grading进行测试评分\",\n            \"使用reporting生成评估报告\"\n          ]\n        },\n        {\n          \"workflow\": \"模型推理流程\",\n          \"steps\": [\n            \"选择运行方式(run_api/run_live/run_llama)\",\n            \"使用make_datasets准备推理数据\",\n            \"执行模型推理\",\n            \"输出推理结果\"\n          ]\n        }\n      ]\n    },\n    \"architecture_patterns\": {\n      \"factory_pattern\": [\n        \"swebench.harness.log_parsers - 日志解析器工厂\",\n        \""
+    }
+}
